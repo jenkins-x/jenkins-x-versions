@@ -2,6 +2,11 @@
 set -e
 set -x
 
+export GHE_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
+export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
+export GKE_SA="$(jx step credential -s gke-sa)"
+
+
 JX_HOME="/tmp/jxhome"
 KUBECONFIG="/tmp/jxhome/config"
 
@@ -10,7 +15,7 @@ mkdir -p $JX_HOME
 jx --version
 jx step git credentials
 
-gcloud auth activate-service-account --key-file $SERVICE_ACCOUNT_FILE
+gcloud auth activate-service-account --key-file $GKE_SA
 
 # lets setup git 
 git config --global --add user.name JenkinsXBot
