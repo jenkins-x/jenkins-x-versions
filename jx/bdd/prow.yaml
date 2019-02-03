@@ -1,0 +1,14 @@
+clusters:
+  - name: bdd-prow-gke
+    args:
+      - create
+      - cluster
+      - gke
+      - --prow
+      - --no-tiller
+      - --project-id=jenkinsx-dev
+      - -m=n1-standard-2
+      - --min-num-nodes=3
+      - --max-num-nodes=5
+      - -z=europe-west1-c
+      - --skip-login

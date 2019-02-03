@@ -1,0 +1,13 @@
+clusters:
+  - name: bdd-jenkins-gke
+    args:
+      - create
+      - cluster
+      - gke
+      - --project-id=jenkinsx-dev
+      - --no-tiller
+      - -m=n1-standard-2
+      - --min-num-nodes=3
+      - --max-num-nodes=5
+      - -z=europe-west1-c
+      - --skip-login
