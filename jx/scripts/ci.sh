@@ -6,6 +6,8 @@ export GHE_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
 export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
 export GKE_SA="$(jx step credential -s gke-sa)"
 
+# fix broken `BUILD_NUMBER` env var
+export BUILD_NUMBER="$BUILD_ID"
 
 JX_HOME="/tmp/jxhome"
 KUBECONFIG="/tmp/jxhome/config"
