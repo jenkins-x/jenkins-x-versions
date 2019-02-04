@@ -8,5 +8,10 @@ This repository  contains the consistent set of versions of packages and helm ch
 
 ## Layout
 
-Each folder contains a list of YAML files for each package or chart name which contains its `version` and its `url` to the GitHub project storing its source code.
+Each folder contains a list of YAML files for each package or chart name which contains its `version` and its `gitUrl`, `url` to the GitHub project storing its source code.
 
+## Managing versions
+
+By default this git repository is used by the [jx](https://github.com/jenkins-x/jx) binary whenever it needs to install a helm a chart so that rather than using the latest released chart, we can keep the versions locked down to known good versions.
+
+Then as charts get released we can generate Pull Requests against this repository which will then trigger our [BDD tests](https://github.com/jenkins-x/bdd-jx) via [jx step bdd](https://jenkins-x.io/commands/jx_step_bdd/) and verify the new chart version works.
