@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-prow-gke
+  - name: bdd-prow-kp-gke
     args:
       - create
       - cluster
