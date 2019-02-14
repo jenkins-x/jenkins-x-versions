@@ -1,0 +1,11 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    release:
+      pipeline:
+        agent:
+          image: some-image
+        stages:
+          - name: BDD Tests on Prow
+            steps:
+              - command: jx/scripts/ci-prow.sh
