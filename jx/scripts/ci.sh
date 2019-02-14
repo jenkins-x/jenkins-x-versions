@@ -31,5 +31,5 @@ echo "running the BDD tests with JX_HOME = $JX_HOME"
 
 #jx step bdd --config jx/bdd/staticjenkins.yaml --gopath /tmp --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
 
-jx step bdd --config jx/bdd/prow.yaml --gopath /tmp --git-provider=github --git-provider-url=https://github.com --git-username $GH_USERNAME --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd --config jx/bdd/prow.yaml --gopath /tmp --git-provider=github --git-provider-url=https://github.com --git-username $GH_USERNAME --git-owner $GH_USERNAME --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
 
