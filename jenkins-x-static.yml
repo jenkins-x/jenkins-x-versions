@@ -4,7 +4,7 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: some-image
+          image: jenkinsxio/jenkins-go:256.0.103
         stages:
           - name: BDD Tests on Static Jenkins
             steps:
