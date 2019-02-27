@@ -1,11 +1,12 @@
 buildPack: none
 pipelineConfig:
   pipelines:
-    release:
+    pullRequest:
       pipeline:
         agent:
-          image: jenkinsxio/jenkins-go:256.0.103
+          image: jenkinsxio/builder-go:0.1.253
         stages:
-          - name: BDD Tests on Static Jenkins
+          - name: ci
             steps:
               - command: jx/scripts/ci.sh
+                name: runci
