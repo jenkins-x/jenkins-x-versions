@@ -1,0 +1,12 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: jenkinsxio/builder-go:0.1.253
+        stages:
+          - name: ci
+            steps:
+              - command: jx/scripts/ci-tekton.sh
+                name: runci
