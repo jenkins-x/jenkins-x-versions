@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-ng-gke
+  - name: bdd-tekton-gke
     args:
       - create
       - cluster
