@@ -2,14 +2,10 @@
 set -e
 set -x
 
-export GHE_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
+export GH_USERNAME="jenkins-x-bot-test"
+export GH_CREDS_PSW="$(jx step credential -s jenkins-x-bot-test-github)"
 export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
 export GKE_SA="$(jx step credential -s gke-sa)"
-
-echo "BRANCH_NAME=$BRANCH_NAME"
-
-echo "the downward API labels are:"
-cat /etc/podinfo/labels
 
 # fix broken `BUILD_NUMBER` env var
 export BUILD_NUMBER="$BUILD_ID"
@@ -30,4 +26,4 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-jx step bdd --config jx/bdd/staticjenkins.yaml --gopath /tmp --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd --config jx/bdd/tekton.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_USERNAME --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
