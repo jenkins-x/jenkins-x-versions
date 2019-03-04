@@ -1,0 +1,12 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: jenkinsxio/builder-go-maven:0.1.260
+        stages:
+          - name: ci
+            steps:
+              - command: jx/scripts/ci-gitops.sh
+                name: runci
