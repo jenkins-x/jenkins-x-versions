@@ -28,6 +28,7 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
+# TODO replace with a simple step instead
 echo "lets copy over the local jenkins-x-versions repo for now"
 mkdir -p ~/.jx
 pushd ~/.jx
