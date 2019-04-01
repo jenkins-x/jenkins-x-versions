@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-terraform
+  - name: terraform-bdd
     args:
       - create
       - terraform

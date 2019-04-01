@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-jenkins-gke
+  - name: jenkins-gkebdd
     args:
       - create
       - cluster

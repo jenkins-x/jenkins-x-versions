@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-gitops-gke
+  - name: gitops-gkebdd
     args:
       - create
       - cluster
