@@ -1,5 +1,5 @@
 clusters:
-  - name: bdd-ng-gke
+  - name: ng-gkebdd
     args:
       - create
       - cluster
