@@ -4,7 +4,7 @@ set -x
 
 export GHE_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
 export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
-export GKE_SA="$(jx step credential -s gke-sa)"
+export GKE_SA="$(jx step credential -s bdd-secret)"
 
 echo "BRANCH_NAME=$BRANCH_NAME"
 

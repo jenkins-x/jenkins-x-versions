@@ -6,7 +6,7 @@ clusters:
       - gke
       - --prow
       - --no-tiller
-      - --project-id=jenkinsx-dev
+      - --project-id=jenkins-x-bdd
       - -m=n1-standard-2
       - --min-num-nodes=3
       - --max-num-nodes=5
