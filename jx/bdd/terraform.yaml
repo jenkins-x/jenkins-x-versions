@@ -14,4 +14,4 @@ clusters:
       - --gke-min-num-nodes=3
       - --gke-max-num-nodes=5
       - --environment-git-owner=$GITHUB_USER
-      - --gke-project-id=jenkinsx-dev
+      - --gke-project-id=jenkins-x-bdd
