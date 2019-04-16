@@ -28,12 +28,4 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-# TODO replace with a simple step instead
-echo "lets copy over the local jenkins-x-versions repo for now"
-mkdir -p ~/.jx
-pushd ~/.jx
-git clone https://github.com/jenkins-x/jenkins-x-versions.git
-popd
-cp -r * ~/.jx/jenkins-x-versions
-
 jx step bdd --config jx/bdd/tekton.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
