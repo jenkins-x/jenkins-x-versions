@@ -5,7 +5,7 @@ clusters:
       - cluster
       - gke
       - --prow
-      - --knative-pipeline
+      - --knative-build
       - --project-id=jenkins-x-bdd
       - -m=n1-standard-2
       - --min-num-nodes=3
