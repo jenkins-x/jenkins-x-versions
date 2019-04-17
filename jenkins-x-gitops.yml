@@ -8,5 +8,5 @@ pipelineConfig:
         stages:
           - name: ci
             steps:
-              - command: jx/scripts/ci-gitops.sh
+              - command: jx/bdd/gitops/ci.sh
                 name: runci

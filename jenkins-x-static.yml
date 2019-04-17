@@ -8,5 +8,5 @@ pipelineConfig:
         stages:
           - name: ci
             steps:
-              - command: jx/scripts/ci.sh
+              - command: jx/bdd/static/ci.sh
                 name: runci

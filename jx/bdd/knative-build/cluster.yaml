@@ -1,11 +1,11 @@
 clusters:
-  - name: prow-gkebdd
+  - name: kn-gkebdd
     args:
       - create
       - cluster
       - gke
       - --prow
-      - --no-tiller
+      - --knative-pipeline
       - --project-id=jenkins-x-bdd
       - -m=n1-standard-2
       - --min-num-nodes=3

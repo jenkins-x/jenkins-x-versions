@@ -30,12 +30,4 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-# TODO replace with a simple step instead
-echo "lets copy over the local jenkins-x-versions repo for now"
-mkdir -p ~/.jx
-pushd ~/.jx
-git clone https://github.com/jenkins-x/jenkins-x-versions.git
-popd
-cp -r * ~/.jx/jenkins-x-versions
-
-jx step bdd --dir . --config jx/bdd/staticjenkins.yaml --gopath /tmp --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/static/cluster.yaml --gopath /tmp --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring

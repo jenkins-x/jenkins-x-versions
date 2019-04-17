@@ -8,5 +8,5 @@ pipelineConfig:
         stages:
           - name: ci
             steps:
-              - command: jx/scripts/ci-tekton.sh
+              - command: jx/bdd/tekton/ci.sh
                 name: runci
