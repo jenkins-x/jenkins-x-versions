@@ -17,6 +17,7 @@ KUBECONFIG="/tmp/jxhome/config"
 
 mkdir -p $JX_HOME
 
+git version
 jx --version
 jx step git credentials
 
