@@ -8,5 +8,5 @@ pipelineConfig:
         stages:
           - name: ci
             steps:
-              - command: jx/bdd/prow/ci.sh
+              - command: jx/bdd/knative-build/ci.sh
                 name: runci
