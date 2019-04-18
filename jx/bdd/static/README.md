@@ -1,0 +1,1 @@
+## BDD test for static jenkins server

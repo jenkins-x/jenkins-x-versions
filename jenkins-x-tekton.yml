@@ -4,9 +4,9 @@ pipelineConfig:
     pullRequest:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go-maven:0.1.395
+          image: jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-3663-1
         stages:
           - name: ci
             steps:
-              - command: jx/scripts/ci-tekton.sh
+              - command: jx/bdd/tekton/ci.sh
                 name: runci

@@ -1,0 +1,1 @@
+## BDD test for using GitOps with Static Jenkins

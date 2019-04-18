@@ -4,9 +4,9 @@ pipelineConfig:
     pullRequest:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go-maven:0.1.395
+          image: jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-3663-1
         stages:
           - name: ci
             steps:
-              - command: jx/scripts/ci-gitops.sh
+              - command: jx/bdd/gitops/ci.sh
                 name: runci
