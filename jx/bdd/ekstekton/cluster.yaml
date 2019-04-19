@@ -1,0 +1,10 @@
+clusters:
+  - name: tekton-eksbdd
+    args:
+      - create
+      - cluster
+      - eks
+      - --tekton
+      - --no-tiller
+      - --batch-mode
+      - --install-dependencies=true
