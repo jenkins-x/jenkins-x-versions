@@ -1,0 +1,12 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go:0.1.412
+        stages:
+          - name: ci
+            steps:
+              - command: jx/bdd/static/ci.sh
+                name: runci
