@@ -1,10 +1,10 @@
 buildPack: none
 pipelineConfig:
-  agent:
-    container: gcr.io/jenkinsxio/builder-go
   pipelines:
     pullRequest:
       pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go
         stages:
           - name: ci
             steps:
