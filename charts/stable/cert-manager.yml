@@ -1,2 +1,2 @@
-version: v0.6.0
+version: v0.7.0
 gitUrl: https://github.com/helm/charts/tree/master/stable/cert-manager
