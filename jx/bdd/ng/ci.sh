@@ -15,8 +15,6 @@ export BUILD_NUMBER="$BUILD_ID"
 JX_HOME="/tmp/jxhome"
 KUBECONFIG="/tmp/jxhome/config"
 
-mkdir -p $JX_HOME
-
 jx --version
 jx step git credentials
 
@@ -27,5 +25,26 @@ git config --global --add user.name JenkinsXBot
 git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
+
+# most users may have an existing configuration - so set this to something valid (but missing) so things should break if they can not be found stuff (e.g. picking up the incorrect namespace)
+# or maybe we should set things to a valid jx install and make sure we do not pick up things instead?
+cat << EOF > $KUBECONFIG
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://localhost:666
+  name: non-existant-cluster
+contexts:
+- context:
+    cluster: docker-for-desktop-cluster
+    namespace: default
+    user: non-existant-cluster
+  name: non-existant-context
+current-context: non-existant-context
+kind: Config
+preferences: {}
+EOF
+
 
 jx step bdd --use-revision --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/ng/cluster.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
