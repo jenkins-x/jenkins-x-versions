@@ -26,6 +26,8 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
+mkdir $JX_HOME || echo "JX Home already existed"
+
 # most users may have an existing configuration - so set this to something valid (but missing) so things should break if they can not be found stuff (e.g. picking up the incorrect namespace)
 # or maybe we should set things to a valid jx install and make sure we do not pick up things instead?
 cat << EOF > $KUBECONFIG
