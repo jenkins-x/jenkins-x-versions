@@ -5,6 +5,7 @@ clusters:
       - cluster
       - gke
       - --ng
+      - --image-type=UBUNTU
       - --project-id=jenkins-x-bdd
       - -m=n1-standard-2
       - --min-num-nodes=3
