@@ -1,0 +1,151 @@
+Step: build-step-credential-initializer-mrjpn:
+
+{"level":"warn","ts":1557489626.1900933,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1557489626.197046,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-l9zhz:
+
+{"level":"warn","ts":1557489635.317613,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1557489636.58898,"logger":"fallback-logger","caller":"git-init/main.go:99","msg":"Successfully cloned \"https://github.com/jenkins-x/jenkins-x-versions\" @ \"53db1b8aef19dda1fb29bb202b6da0996576c6fc\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+548a93a-dev+981c48321: No Major.Minor.Patch elements found
+Using SHAs from PULL_REFS=master:d3fc0027ba6bfacc7a5255b6672c787eee9bf677,258:53db1b8aef19dda1fb29bb202b6da0996576c6fc
+ran git fetch --unshallow origin 53db1b8aef19dda1fb29bb202b6da0996576c6fc: d3fc0027ba6bfacc7a5255b6672c787eee9bf677: in 
+ran git checkout master in 
+ran git reset --hard d3fc0027ba6bfacc7a5255b6672c787eee9bf677 in 
+ran clean --force -d . in 
+ran git merge 53db1b8aef19dda1fb29bb202b6da0996576c6fc in 
+Step: build-step-runci:
+
++ export GH_USERNAME=*************-test
++ GH_USERNAME=*************-test
++ export GH_OWNER=cb-kubecd
++ GH_OWNER=cb-kubecd
+++ ** step credential -s *************-test-github
++ export GH_CREDS_PSW=****************************************
++ GH_CREDS_PSW=****************************************
+++ ** step credential -s test-jenkins-user
++ export JENKINS_CREDS_PSW=************
++ JENKINS_CREDS_PSW=************
+++ ** step credential -k bdd-credentials.json -s bdd-secret -f sa.json
++ export GKE_SA=sa.json
++ GKE_SA=sa.json
++ export BUILD_NUMBER=
++ BUILD_NUMBER=
++ JX_HOME=/tmp/**home
++ KUBECONFIG=/tmp/**home/config
++ mkdir -p /tmp/**home
++ ** --version
+2.0.72
++ ** step git credentials
+Generated Git credentials file /builder/home/git/credentials
++ gcloud auth activate-service-account --key-file sa.json
+Activated service account credentials for: [jenkins-x-bdd@jenkins-x-bdd.iam.gserviceaccount.com]
++ git config --global --add user.name JenkinsXBot
++ git config --global --add user.email jenkins-x@googlegroups.com
++ echo 'running the BDD tests with JX_HOME = /tmp/**home'
+running the BDD tests with JX_HOME = /tmp/**home
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config **/bdd/ng/cluster.yaml --gopath /tmp --git-provider=github --git-username *************-test --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+Error: unknown flag: --version-repo-pr
+
+
+Examples:
+  # run the BDD tests in the current team
+  ** step bdd --use-current-team --git-provider-url=https://my.git.server.com
+  
+  # create a new team for the tests, run the tests then tear everything down again
+  ** step bdd -b --provider=gke --git-provider=ghe --git-provider-url=https://my.git.server.com --default-*****-password=my*****pwd --git-username myuser --git-api-token mygittoken
+Options:
+      --binary='**': the binary location of the '**' executable for creating clusters
+      --buildpack='': The name of the build pack to use for the Team
+      --cleanup-temp-files=true: Cleans up any temporary values.yaml used by helm install [default true]
+      --cloud-environment-repo='https://github.com/jenkins-x/cloud-environments': Cloud Environments Git repo
+  -c, --config='': the config YAML file containing the clusters to create
+      --default-*****-password='': the default ***** password to access Jenkins, Kubernetes Dashboard, ChartMuseum and Nexus
+      --default-*****-username='*****': the default ***** username to access Jenkins, Kubernetes Dashboard, ChartMuseum and Nexus
+      --default-environment-prefix='': Default environment repo prefix, your Git repos will be of the form 'environment-$prefix-$envName'
+      --delete-team=true: Whether we should delete the Team we create for each Git Provider
+      --dir='': the git clone of the jenkins-x/jenkins-x-versions git repository. Used to default the version of jenkins-x-platform when creating clusters if no --version option is supplied
+      --docker-registry='': The Docker Registry host or host:port which is used when tagging and pushing images. If not specified it defaults to the internal registry unless there is a better provider default (e.g. ECR on AWS/EKS)
+      --docker-registry-org='': The Docker Registry organiation/user to create images inside. On GCP this is typically your Google Project ID.
+      --domain='': Domain to expose ingress endpoints.  Example: jenkinsx.io
+      --draft-client-only=false: Only install draft client
+      --environment-git-owner='': The Git provider organisation to create the environment Git repositories in
+      --exposecontroller-pathmode='': The ExposeController path mode for how services should be exposed as URLs. Defaults to using subnets. Use a value of `path` to use relative paths within the domain host such as when using AWS ELB host names
+      --exposecontroller-urltemplate='': The ExposeController urltemplate for how services should be exposed as URLs. Defaults to being empty, which in turn defaults to "{{.Service}}.{{.Namespace}}.{{.Domain}}".
+      --exposer='Ingress': Used to describe which strategy exposecontroller should use to access applications
+      --external-dns=false: Installs external-dns into the cluster. ExternalDNS manages service DNS records for your cluster, providing you've setup your domain record
+      --external-ip='': The external IP used to access ingress endpoints from outside the Kubernetes cluster. For bare metal on premise clusters this is often the IP of the Kubernetes master. For cloud installations this is often the external IP of the ingress LoadBalancer.
+      --git-api-token='': The Git API token to use for creating new Git repositories
+      --git-owner='': the git owner of new git repositories created by the tests
+      --git-private=false: Create new Git repositories as private
+  -g, --git-provider='': the git provider kind
+      --git-provider-kind='': Kind of Git server. If not specified, kind of server will be autodetected from Git provider URL. Possible values: bitbucketcloud, bitbucketserver, gitea, gitlab, github, fakegit
+      --git-provider-url='https://github.com': The Git server URL to create new Git repositories inside
+      --git-username='': The Git username to use for creating new Git repositories
+      --gitops=false: Creates a git repository for the Dev environment to manage the installation, configuration, upgrade and addition of Apps in Jenkins X all via GitOps
+      --global-tiller=true: Whether or not to use a cluster global tiller
+      --gopath='': the GOPATH directory where the BDD test git repository will be cloned
+      --helm-client-only=false: Only install helm client
+      --helm-tls=false: Whether to use TLS with helm
+      --helm3=false: Use helm3 to install Jenkins X which does not use Tiller
+  -i, --ignore-fail=false: Ignores test failures so that a BDD test run can capture the output and report on the test passes/failures
+      --ingress-cluster-role='cluster-*****': The cluster role for the Ingress controller
+      --ingress-deployment='**ing-nginx-ingress-controller': The name of the Ingress controller Deployment
+      --ingress-namespace='kube-system': The namespace for the Ingress controller
+      --ingress-service='**ing-nginx-ingress-controller': The name of the Ingress controller Service
+      --install-only=false: Force the install command to fail if there is already an installation. Otherwise lets update the installation
+      --kaniko=false: Use Kaniko for building docker images
+      --keep-exposecontroller-job=false: Prevents Helm deleting the exposecontroller Job and Pod after running.  Useful for debugging exposecontroller logs but you will need to manually delete the job if you update an environment
+      --knative-build=false: Note this option is deprecated now in favour of tekton. If specified this will keep using the old knative build with Prow instead of the strategic tekton
+      --local-cloud-environment=false: Ignores default cloud-environment-repo and uses current directory 
+      --local-helm-repo-name='releases': The name of the helm repository for the installed ChartMuseum
+      --namespace='**': The namespace the Jenkins X platform should be installed into
+      --ng=false: Use the Next Generation Jenkins X features like Prow, Tekton, No Tiller, Vault, Dev GitOps
+      --no-default-environments=false: Disables the creation of the default Staging and Production environments
+      --no-delete-app=false: Disables deleting the created app after the test
+      --no-delete-repo=false: Disables deleting the created repository after the test
+      --no-gitops-env-apply=false: When using GitOps to create the source code for the development environment and installation, don't run '** step env apply' to perform the install
+      --no-gitops-env-repo=false: When using GitOps to create the source code for the development environment this flag disables the creation of a git repository for the source code
+      --no-gitops-env-setup=false: When using GitOps to install the development environment this flag skips the post-install setup
+      --no-gitops-vault=false: When using GitOps to create the source code for the development environment this flag disables the creation of a vault
+      --no-tiller=true: Whether to disable the use of tiller with helm. If disabled we use 'helm template' to generate the YAML from helm charts then we use 'kubectl apply' to install it to avoid using tiller completely.
+      --on-premise=false: If installing on an on premise cluster then lets default the 'external-ip' to be the Kubernetes master IP address
+      --parallel=false: Should we process each cluster configuration in parallel
+      --provider='': Cloud service providing the Kubernetes cluster.  Supported providers: aks, aws, eks, gke, icp, iks, **-infra, kubernetes, minikube, minishift, oke, openshift, pks
+      --prow=false: Enable Prow to implement Serverless Jenkins and support ChatOps on Pull Requests
+      --recreate-existing-draft-repos=false: Delete existing helm repos used by Jenkins X under ~/draft/packs
+      --register-local-helmrepo=false: Registers the Jenkins X ChartMuseum registry with your helm client [default false]
+      --remote-environments=false: Indicates you intend Staging and Production environments to run in remote clusters. See https://jenkins-x.io/getting-started/multi-cluster/
+      --remote-tiller=true: If enabled and we are using tiller for helm then run tiller remotely in the kubernetes cluster. Otherwise we run the tiller process locally.
+      --reports-dir='reports': the directory used to copy in any generated report files
+      --skip-cluster-role=false: Don't enable cluster ***** role for user
+      --skip-ingress=false: Skips the installation of ingress controller. Note that a ingress controller must already be installed into the cluster in order for the installation to succeed
+      --skip-setup-tiller=false: Don't setup the Helm Tiller service - lets use whatever tiller is already setup for us.
+      --skip-test-git-repo-clone=false: Skip cloning the bdd test git repo
+      --static-jenkins=false: Install a static Jenkins master to use as the pipeline engine. Note this functionality is deprecated in favour of running serverless Tekton builds
+      --tekton=false: Enables the Tekton pipeline engine (which used to be called knative build pipeline) along with Prow to provide Serverless Jenkins. Otherwise we default to use Knative Build if you enable Prow
+      --test-git-branch='master': the git repository branch to use for the BDD tests
+      --test-git-pr-number='': the Pull Request number to fetch from the repository for the BDD tests
+  -r, --test-git-repo='https://github.com/jenkins-x/bdd-**.git': the git repository to clone for the BDD tests
+  -t, --tests=[test-quickstart-node-http]: the list of the test cases to run
+      --tiller-cluster-role='cluster-*****': The cluster role for Helm's tiller
+      --tiller-namespace='kube-system': The namespace for the Tiller when using a global tiller
+      --timeout='6000': The number of seconds to wait for the helm install to complete
+      --urltemplate='': For ingress; exposers can set the urltemplate to expose
+      --use-current-team=false: If enabled lets use the current Team to run the tests
+      --use-revision=true: Use the git revision from the current git clone instead of the Pull Request branch
+      --user-cluster-role='cluster-*****': The cluster role for the current user to be able to *****ister helm
+      --username='': The Kubernetes username used to initialise helm. Usually your email address for your Kubernetes account
+      --vault=false: Sets up a Hashicorp Vault for storing secrets during installation (supported only for GKE)
+      --vault-bucket-recreate=true: If the vault bucket already exists delete it then create it empty
+      --version='': The specific platform version to install
+      --versions-ref='': Jenkins X versions Git repository reference (tag, branch, sha etc)
+      --versions-repo='https://github.com/jenkins-x/jenkins-x-versions.git': Jenkins X versions Git repo
+Usage:
+  ** step bdd [flags] [options]
+Use "** options" for a list of global command-line options (applies to all commands).
+
+{"component":"entrypoint","error":"wrapped process failed: exit status 1","level":"error","msg":"Error executing test process","time":"2019-05-10T12:00:41Z"}
