@@ -40,7 +40,7 @@ jx step bdd --use-revision --versions-repo https://github.com/jenkins-x/jenkins-
     --no-delete-repo \
     --tests install \
     --tests test-verify-pods \
-    --tests test-upgrade-platfrom \
+    --tests test-upgrade-platform \
     --tests test-upgrade-ingress \
     --tests test-app-lifecycle \
     --tests test-create-spring \
