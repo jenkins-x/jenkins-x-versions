@@ -28,5 +28,27 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-jx step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/tekton/cluster.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+# test configuration
+export SKIP_JENKINS_CHECK="yes"
 
+jx step bdd \
+    --use-revision \
+    --version-repo-pr \
+    --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
+    --config jx/bdd/tekton/cluster.yaml \
+    --gopath /tmp \
+    --git-provider=github \
+    --git-username $GH_USERNAME \
+    --git-owner $GH_OWNER \
+    --git-api-token $GH_CREDS_PSW \
+    --default-admin-password $JENKINS_CREDS_PSW \
+    --no-delete-app \
+    --no-delete-repo \
+    --tests install \
+    --tests test-verify-pods \
+    --tests test-upgrade-platform \
+    --tests test-upgrade-ingress \
+    --tests test-app-lifecycle \
+    --tests test-create-spring \
+    --tests test-quickstart-golang-http \
+    --tests test-import
