@@ -1,0 +1,1 @@
+## BDD test for Jenkins X Pipelines with a Static Jenkins Master on EKS
