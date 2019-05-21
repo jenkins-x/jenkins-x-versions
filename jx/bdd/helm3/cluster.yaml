@@ -1,5 +1,5 @@
 clusters:
-  - name: tekton-gkebdd
+  - name: helm3-gkebdd
     args:
       - create
       - cluster
