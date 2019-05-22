@@ -6,6 +6,7 @@ export GHE_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
 export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
 export AWS_ACCESS_KEY_ID="$(jx step credential -s jx-bdd-aws -k AWS_ACCESS_KEY_ID)"
 export AWS_SECRET_ACCESS_KEY="$(jx step credential -s jx-bdd-aws -k AWS_SECRET_ACCESS_KEY)"
+export AWS_REGION="us-east-1"
 
 
 # fix broken `BUILD_NUMBER` env var
