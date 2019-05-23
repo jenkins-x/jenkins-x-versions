@@ -7,6 +7,6 @@ clusters:
       - eks
       - --region=us-east-1
       - --zones=us-east-1a,us-east-1b
-      - --ng
+      - --tekton
       - --batch-mode
       - --install-dependencies=true
