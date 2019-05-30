@@ -1,0 +1,12 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-4037-58
+        stages:
+          - name: ci
+            steps:
+              - command: jx/bdd/eksclassic/ci.sh
+                name: runci

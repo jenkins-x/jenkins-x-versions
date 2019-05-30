@@ -1,0 +1,11 @@
+clusters:
+  - name: classic-eksbdd
+    noLabels: true
+    args:
+      - create
+      - cluster
+      - eks
+      - --region=us-east-1
+      - --zones=us-east-1a,us-east-1b
+      - --batch-mode
+      - --install-dependencies=true

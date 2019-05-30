@@ -1,0 +1,12 @@
+clusters:
+  - name: tekton-eksbdd
+    noLabels: true
+    args:
+      - create
+      - cluster
+      - eks
+      - --region=us-east-1
+      - --zones=us-east-1a,us-east-1b
+      - --tekton
+      - --batch-mode
+      - --install-dependencies=true
