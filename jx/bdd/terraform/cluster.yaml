@@ -15,3 +15,4 @@ clusters:
       - --gke-max-num-nodes=5
       - --environment-git-owner=$GITHUB_USER
       - --gke-project-id=jenkins-x-bdd
+    noLabels: true
