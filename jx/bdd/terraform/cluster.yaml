@@ -6,7 +6,6 @@ clusters:
       - -b
       - --install-dependencies=true
       - --skip-login
-      - --organisation-name=bdd
       - --cloud-provider=gke
       - --jx-environment=bdd-terraform-$JX_BUILD_NUMBER
       - --gke-zone=europe-west1-c
@@ -16,3 +15,4 @@ clusters:
       - --environment-git-owner=$GITHUB_USER
       - --gke-project-id=jenkins-x-bdd
     noLabels: true
+    terraform: true
