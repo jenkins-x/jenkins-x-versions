@@ -31,7 +31,7 @@ echo "running the BDD tests with JX_HOME = $JX_HOME"
 # test configuration
 export SKIP_JENKINS_CHECK="yes"
 
-jx step bdd \
+jx step bdd --test-git-repo=https://github.com/pmuir/bdd-jx.git \
     --use-revision \
     --version-repo-pr \
     --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
