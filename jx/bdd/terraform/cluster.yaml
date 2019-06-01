@@ -16,5 +16,6 @@ clusters:
       - --gke-project-id=jenkins-x-bdd
       - --tekton
       - --no-tiller
+      - --vault=false
     noLabels: true
     terraform: true
