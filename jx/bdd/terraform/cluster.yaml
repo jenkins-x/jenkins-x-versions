@@ -6,13 +6,17 @@ clusters:
       - -b
       - --install-dependencies=true
       - --skip-login
-      - --organisation-name=bdd
       - --cloud-provider=gke
-      - --jx-environment=bdd-terraform-$JX_BUILD_NUMBER
+      - --jx-environment=dev
       - --gke-zone=europe-west1-c
       - --gke-machine-type=n1-standard-2
       - --gke-min-num-nodes=3
       - --gke-max-num-nodes=5
       - --environment-git-owner=$GITHUB_USER
       - --gke-project-id=jenkins-x-bdd
+      - --tekton
+      - --kaniko
+      - --no-tiller
+      - --vault
     noLabels: true
+    terraform: true
