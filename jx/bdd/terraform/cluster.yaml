@@ -15,6 +15,7 @@ clusters:
       - --environment-git-owner=$GITHUB_USER
       - --gke-project-id=jenkins-x-bdd
       - --tekton
+      - --kaniko
       - --no-tiller
       - --vault
     noLabels: true
