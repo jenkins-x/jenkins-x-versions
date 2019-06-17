@@ -1,0 +1,10 @@
+changelog:
+  skip: true
+
+release:
+  github:
+    owner: jenkins-x
+    name: jx
+  draft: false
+  prerelease: false
+  name_template: "{{.Version}}"
