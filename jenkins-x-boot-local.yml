@@ -4,7 +4,7 @@ pipelineConfig:
     pullRequest:
       pipeline:
         agent:
-          image: jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-4537-9
+          image: jenkinsxio/builder-go:0.0.0-SNAPSHOT-PR-4537-12
         stages:
           - name: ci
             steps:
