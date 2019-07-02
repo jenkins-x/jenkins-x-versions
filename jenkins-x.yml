@@ -4,32 +4,9 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
+          image: gcr.io/jenkinsxio/builder-go-maven:0.1.537
         stages:
-          - name: release
-            environment:
-              - name: GIT_COMMITTER_EMAIL
-                value: jenkins-x@googlegroups.com
-              - name: GIT_AUTHOR_EMAIL
-                value: jenkins-x@googlegroups.com
-              - name: GIT_AUTHOR_NAME
-                value: jenkins-x-bot
-              - name: GIT_COMMITTER_NAME
-                value: jenkins-x-bot
-              - name: BASE_WORKSPACE
-                value: /workspace/source
-            options:
-              containerOptions:
-                resources:
-                  limits:
-                    cpu: 4
-                    memory: 6144Mi
-                  requests:
-                    cpu: 3
-                    memory: 3072Mi
-              - name: release
-                #image: docker.io/golang:1.11.5
-                # needs helm in the image for install_gitops_integration_test.go
-                image: gcr.io/jenkinsxio/builder-go:0.1.332
-                command: make
-                args: ['release']
+          - name: ci
+            steps:
+              - command: jx/bdd/tekton/ci.sh
+                name: runci
