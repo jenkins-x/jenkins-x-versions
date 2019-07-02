@@ -30,4 +30,16 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-jx step bdd --use-revision  --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/static/cluster.yaml --gopath /tmp --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd \
+    --use-revision \
+    --version-repo-pr \
+    --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
+    --config jx/bdd/static/cluster.yaml \
+    --gopath /tmp \
+    --git-provider=ghe \
+    --git-provider-url=https://github.beescloud.com \
+    --git-username dev1 \
+    --git-api-token $GHE_CREDS_PSW \
+    --default-admin-password $JENKINS_CREDS_PSW \
+    --tests install \
+    --tests test-create-spring

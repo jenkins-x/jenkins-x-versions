@@ -42,8 +42,6 @@ jx step bdd \
     --git-owner $GH_OWNER \
     --git-api-token $GH_CREDS_PSW \
     --default-admin-password $JENKINS_CREDS_PSW \
-    --no-delete-app \
-    --no-delete-repo \
     --tests install \
     --tests test-verify-pods \
     --tests test-upgrade-platform \

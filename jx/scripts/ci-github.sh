@@ -36,4 +36,12 @@ git clone https://github.com/jenkins-x/jenkins-x-versions.git
 popd
 cp -r * ~/.jx/jenkins-x-versions
 
-jx step bdd --dir . --config jx/bdd/staticjenkins.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd --dir . --config jx/bdd/staticjenkins.yaml \
+    --gopath /tmp \
+    --git-provider=github \
+    --git-username $GH_USERNAME \
+    --git-owner $GH_OWNER \
+    --git-api-token $GH_CREDS_PSW \
+    --default-admin-password $JENKINS_CREDS_PSW \
+    --tests install \
+    --tests test-create-spring
