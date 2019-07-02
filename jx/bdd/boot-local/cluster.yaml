@@ -13,6 +13,6 @@ clusters:
       - --skip-installation
     commands:
       - command: jx
-        arg:
+        args:
           - boot
           - -b
