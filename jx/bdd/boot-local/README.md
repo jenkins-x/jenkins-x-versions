@@ -1,1 +1,1 @@
-## BDD test for the NG flag
+## BDD test using JX Boot with Local secrets
