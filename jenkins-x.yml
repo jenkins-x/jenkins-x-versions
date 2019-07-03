@@ -4,9 +4,33 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go-maven:0.1.537
+          image: gcr.io/jenkinsxio/builder-jx:0.1.546
         stages:
-          - name: ci
+          - name: release
+            environment:
+              - name: GIT_COMMITTER_EMAIL
+                value: jenkins-x@googlegroups.com
+              - name: GIT_AUTHOR_EMAIL
+                value: jenkins-x@googlegroups.com
+              - name: GIT_AUTHOR_NAME
+                value: jenkins-x-bot
+              - name: GIT_COMMITTER_NAME
+                value: jenkins-x-bot
+              - name: BASE_WORKSPACE
+                value: /workspace/source
             steps:
-              - command: jx/bdd/tekton/ci.sh
-                name: runci
+
+              - image: jenkinsxio/jx:2.0.399
+                command: jx
+                args:
+                  - step
+                  - credential
+                  - -s
+                  - knative-git-user-pass
+                  - -k
+                  - password
+                  - -f
+                  - /builder/home/git-token
+
+              - name: release-jx
+                command: ./jx/scripts/release-jx.sh
