@@ -1,0 +1,17 @@
+provider: gke
+secretStorage: local
+kaniko: true
+project: jenkins-x-bdd2
+clusterName: bdd-boot
+zone: europe-west1-c
+environmentGitOwner: cb-kubecd
+environments:
+  - key: dev
+    owner: ""
+    repository: ""
+  - key: staging
+    owner: ""
+    repository: ""
+  - key: production
+    owner: ""
+    repository: ""
