@@ -4,16 +4,13 @@ set -x
 
 export GH_OWNER="jenkins-x"
 export GH_REPO="jx"
-export GITHUB_ACCESS_TOKEN="$(cat /builder/home/git-token 2> /dev/null)"
+export DEPENDENCY_MATRIX="dependency-matrix/matrix.md"
 
-VERSION=$(cat packages/jx.yml | grep version | cut -d':' -f2 | tr -d ' ')
-RELEASE_ID=$(curl -f "https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/releases/tags/${VERSION}?access_token=${GITHUB_ACCESS_TOKEN}" -s | jq '. | select(.prerelease == true) | .id')
-
-if [ ! -z $RELEASE_ID ]
+if [ -f $DEPENDENCY_MATRIX ]
 then
-  curl -X PATCH \
-       -H 'Content-Type: application/json' \
-       -d '{"prerelease": false}' \
-       -f \
-       "https://api.github.com/repos/cagiti/quickstart-go2/releases/${RELEASE_ID}?access_token=${GITHUB_ACCESS_TOKEN}"
+  JX_VERSION=$(sed "s:^.*$GH_OWNER\/$GH_REPO.*\[\([0-9.]*\)\].*$:\1:;t;d" ../jenkins-x-platform/$DEPENDENCY_MATRIX)
+  if [ ! -z $JX_VERSION ]
+  then
+    jx step update release-status github --owner $GH_OWNER --repository $GH_REPO --version $JX_VERSION --prerelease=false
+  fi
 fi
