@@ -38,8 +38,8 @@ export JX_VALUE_PROW_HMACTOKEN="$GH_CREDS_PSW"
 export JX_BATCH_MODE="true"
 
 git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
-cp jx/bdd/boot-local/jx-requirements.yml boot-source
-cp jx/bdd/boot-local/parameters.yaml boot-source/env
+cp jx/bdd/boot-vault/jx-requirements.yml boot-source
+cp jx/bdd/boot-vault/parameters.yaml boot-source/env
 cd boot-source
 
 jx step bdd --use-revision  --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config ../jx/bdd/boot-vault/cluster.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
