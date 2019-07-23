@@ -1,0 +1,12 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-go-maven:0.1.590
+        stages:
+          - name: ci
+            steps:
+              - command: jx/bdd/boot-lh-ghe/ci.sh
+                name: runci

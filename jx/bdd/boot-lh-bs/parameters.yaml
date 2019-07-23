@@ -1,0 +1,6 @@
+adminUser:
+  username: admin
+enableDocker: false
+gpg: {}
+pipelineUser:
+  username: jenkins-x-bdd
