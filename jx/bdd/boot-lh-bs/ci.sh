@@ -52,7 +52,7 @@ jx step bdd \
     --version-repo-pr \
     --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
     --config ../jx/bdd/boot-lh-bs/cluster.yaml \
-    --gopath /tmp
+    --gopath /tmp \
     --git-provider bitbucketeserver \
     --git-provider-url https://bitbucket.beescloud.com \
     --git-owner $GH_OWNER \
