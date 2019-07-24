@@ -1,0 +1,22 @@
+clusters:
+  - name: tftk
+    args:
+      - create
+      - terraform
+      - -b
+      - --install-dependencies=true
+      - --skip-login
+      - --cloud-provider=gke
+      - --jx-environment=dev
+      - --gke-zone=europe-west1-c
+      - --gke-machine-type=n1-standard-2
+      - --gke-min-num-nodes=3
+      - --gke-max-num-nodes=5
+      - --environment-git-owner=$GITHUB_USER
+      - --gke-project-id=jenkins-x-bdd2
+      - --tekton
+      - --kaniko
+      - --no-tiller
+      - --vault
+    noLabels: true
+    terraform: true

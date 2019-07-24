@@ -20,5 +20,5 @@ pipelineConfig:
         stages:
           - name: ci
             steps:
-              - command: jx/bdd/terraform/ci.sh
+              - command: jx/bdd/terraform-tekton/ci.sh
                 name: runci

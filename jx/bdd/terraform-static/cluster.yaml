@@ -1,5 +1,5 @@
 clusters:
-  - name: tf-bdd
+  - name: tfst
     args:
       - create
       - terraform
@@ -14,7 +14,7 @@ clusters:
       - --gke-max-num-nodes=5
       - --environment-git-owner=$GITHUB_USER
       - --gke-project-id=jenkins-x-bdd2
-      - --tekton
+      - --static-jenkins
       - --kaniko
       - --no-tiller
       - --vault
