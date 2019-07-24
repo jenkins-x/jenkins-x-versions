@@ -44,4 +44,9 @@ cp jx/bdd/boot-lh-ghe/jx-requirements.yml boot-source
 cp jx/bdd/boot-lh-ghe/parameters.yaml boot-source/env
 cd boot-source
 
+# TODO hack until we fix boot to do this too!
+helm init --client-only
+helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+
+
 jx step bdd --use-revision  --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config ../jx/bdd/boot-lh-ghe-ghe/cluster.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME  --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
