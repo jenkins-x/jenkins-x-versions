@@ -19,3 +19,17 @@ Then as charts get released we can generate Pull Requests against this repositor
 ## BDD Test Pipelines
 
 You can browse all of the separate BDD tests we run on different kinds of cluster and installation in the [jx/bdd](jx/bdd) folder.
+
+## Running the BDD Tests on a PR
+
+You can test each context individually on a PR via a comment like:
+
+    /test tekton
+    
+Or to run them all
+
+    /test all
+    
+Or to run all the boot based BDD tests
+
+    /test boot
