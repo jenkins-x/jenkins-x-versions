@@ -30,8 +30,8 @@ echo "running the BDD tests with JX_HOME = $JX_HOME"
 
 # setup jx boot parameters
 export JX_VALUE_ADMINUSER_PASSWORD="$JENKINS_CREDS_PSW"
-export JX_VALUE_PIPELINEUSER_GITHUB_USERNAME="$GH_USERNAME"
-export JX_VALUE_PIPELINEUSER_GITHUB_TOKEN="$GH_CREDS_PSW"
+export JX_VALUE_PIPELINEUSER_USERNAME="$GH_USERNAME"
+export JX_VALUE_PIPELINEUSER_TOKEN="$GH_CREDS_PSW"
 export JX_VALUE_PROW_HMACTOKEN="$GH_CREDS_PSW"
 
 # TODO temporary hack until the batch mode in jx is fixed...
