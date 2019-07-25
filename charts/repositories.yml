@@ -2,9 +2,12 @@ repositories:
   - prefix: bitnami
     urls:
       - https://charts.bitnami.com/bitnami
-  - prefix: flagger
+  - prefix: jetstack
     urls:
-      - https://flagger.app
+      - https://charts.jetstack.io
+  - prefix: jenkins-x
+    urls:
+      - https://storage.googleapis.com/chartmuseum.jenkins-x.io
   - prefix: jenkins-x
     urls:
       - https://storage.googleapis.com/chartmuseum.jenkins-x.io
