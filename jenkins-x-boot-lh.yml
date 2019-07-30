@@ -4,7 +4,7 @@ pipelineConfig:
     pullRequest:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-go-maven:0.1.606
+          image: gcr.io/jenkinsxio/builder-go-maven:0.1.609
         stages:
           - name: ci
             steps:
