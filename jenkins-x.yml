@@ -1,0 +1,2 @@
+buildPack: git
+buildPackGitURL: https://github.com/jenkins-x-buildpacks/jenkins-x-classic.git
