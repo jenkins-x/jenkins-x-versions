@@ -1,2 +1,2 @@
-version: 1.11.4
 gitUrl: https://github.com/helm/charts/tree/master/stable/nginx-ingress
+version: 1.12.1
