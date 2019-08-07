@@ -8,3 +8,21 @@ Step: build-step-working-dir-initializer-4htrl:
 {"level":"info","ts":1565211594.1608222,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 Step: build-step-place-tools:
 
+Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-srdq5:
+
+{"level":"warn","ts":1565211596.4020498,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565211597.7178507,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/jenkins-x-versions @ 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-07T20:59:58Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:af71fb3264b78166e150a1f2f5fd90cf68b96f96,384:900ca4ca205008ef830e7ef2d6b9cc397037b6d4
+ran git remote update in 
+ran git fetch origin 900ca4ca205008ef830e7ef2d6b9cc397037b6d4: af71fb3264b78166e150a1f2f5fd90cf68b96f96: in 
+Unshallowed git repo in 
+ran git checkout master in 
+ran git reset --hard af71fb3264b78166e150a1f2f5fd90cf68b96f96 in 
+ran clean --force -d . in 
+error: merging 900ca4ca205008ef830e7ef2d6b9cc397037b6d4 into master: failed to run 'git merge 900ca4ca205008ef830e7ef2d6b9cc397037b6d4' command in directory '', output: 'merge: 900ca4ca205008ef830e7ef2d6b9cc397037b6d4 - not something we can merge'
+Step: build-step-runci:
+
