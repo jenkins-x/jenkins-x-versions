@@ -24,11 +24,11 @@ ran clean --force -d . in
 ran git merge 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b in 
 Step: build-step-runci:
 
-+ export GH_USERNAME=******************
-+ GH_USERNAME=******************
++ export GH_USERNAME=*************-test
++ GH_USERNAME=*************-test
 + export GH_OWNER=cb-kubecd
 + GH_OWNER=cb-kubecd
-++ ** step credential -s ******************-github
+++ ** step credential -s *************-test-github
 + export GH_CREDS_PSW=****************************************
 + GH_CREDS_PSW=****************************************
 ++ ** step credential -s test-jenkins-user
@@ -54,8 +54,8 @@ Activated service account credentials for: [*************@*************2.iam.gse
 running the BDD tests with JX_HOME = /tmp/**home
 + export JX_VALUE_ADMINUSER_PASSWORD=************
 + JX_VALUE_ADMINUSER_PASSWORD=************
-+ export JX_VALUE_PIPELINEUSER_USERNAME=******************
-+ JX_VALUE_PIPELINEUSER_USERNAME=******************
++ export JX_VALUE_PIPELINEUSER_USERNAME=*************-test
++ JX_VALUE_PIPELINEUSER_USERNAME=*************-test
 + export JX_VALUE_PIPELINEUSER_TOKEN=****************************************
 + JX_VALUE_PIPELINEUSER_TOKEN=****************************************
 + export JX_VALUE_PROW_HMACTOKEN=****************************************
@@ -82,7 +82,7 @@ $HELM_HOME has been configured at /builder/home/.helm.
 Not installing Tiller due to 'client-only' flag having been set
 + helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 "jenkins-x" has been added to your repositories
-+ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config ../**/bdd/boot-local/cluster.yaml --gopath /tmp --git-provider=github --git-username ****************** --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-create-spring
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config ../**/bdd/boot-local/cluster.yaml --gopath /tmp --git-provider=github --git-username *************-test --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-create-spring
 has 1 post create cluster commands
 post create command: ** boot -b
 found git revision 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b: branch PR-384
@@ -144,7 +144,7 @@ WARNING: could not find a stable version from charts of jenkins-x/jenkins-x-plat
 For background see: https://jenkins-x.io/architecture/version-stream/
 Please lock this version down via the command: ** step create version pr -k charts -n jenkins-x/jenkins-x-platform
 loaded version  from Makefile in directory 
-running command: ** create cluster gke --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --skip-installation --cluster-name pr-384-388-boot-local --batch-mode --labels cluster=boot-local,branch=pr-384 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b --git-username ****************** --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+running command: ** create cluster gke --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --skip-installation --cluster-name pr-384-388-boot-local --batch-mode --labels cluster=boot-local,branch=pr-384 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
 ? Configured project id: *************2
 Updated property [core/project].
 ? Configured cluster name: pr-384-388-boot-local
@@ -163,5 +163,5 @@ ERROR: (gcloud.container.clusters.create) ResponseError: code=409, message=Alrea
 ERROR: Error: Command failed  gcloud container clusters create pr-384-388-boot-local --num-nodes 3 --machine-type n1-standard-2 --enable-autoscaling --min-nodes 3 --max-nodes 5 --zone europe-west1-c --labels=cluster=boot-local,branch=pr-384,created-by=root,create-time=wed-aug-7-2019-21-00-26
 ERROR: error creating cluster exit status 1
 error: exit status 1
-ERROR: Error: Command failed  ** create cluster gke --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --skip-installation --cluster-name pr-384-388-boot-local --batch-mode --labels cluster=boot-local,branch=pr-384 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b --git-username ****************** --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+ERROR: Error: Command failed  ** create cluster gke --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --skip-installation --cluster-name pr-384-388-boot-local --batch-mode --labels cluster=boot-local,branch=pr-384 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 93f38d8c1b7454c2b9aa6ad8f6d6cfce77f0364b --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
 error: exit status 1
