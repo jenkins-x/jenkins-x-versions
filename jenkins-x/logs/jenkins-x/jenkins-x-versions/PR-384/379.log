@@ -24,11 +24,11 @@ ran clean --force -d . in
 ran git merge 900ca4ca205008ef830e7ef2d6b9cc397037b6d4 in 
 Step: build-step-runci:
 
-+ export GH_USERNAME=*************-test
-+ GH_USERNAME=*************-test
++ export GH_USERNAME=******************
++ GH_USERNAME=******************
 + export GH_OWNER=cb-kubecd
 + GH_OWNER=cb-kubecd
-++ ** step credential -s *************-test-github
+++ ** step credential -s ******************-github
 + export GH_CREDS_PSW=****************************************
 + GH_CREDS_PSW=****************************************
 ++ ** step credential -s test-jenkins-user
@@ -54,14 +54,14 @@ Activated service account credentials for: [*************@*************2.iam.gse
 + export SKIP_JENKINS_CHECK=yes
 + SKIP_JENKINS_CHECK=yes
 running the BDD tests with JX_HOME = /tmp/**home
-+ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config **/bdd/tekton/cluster.yaml --gopath /tmp --git-provider=github --git-username *************-test --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-verify-pods --tests test-upgrade-platform --tests test-upgrade-ingress --tests test-app-lifecycle --tests test-create-spring --tests test-quickstart-golang-http --tests test-import
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config **/bdd/tekton/cluster.yaml --gopath /tmp --git-provider=github --git-username ****************** --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-verify-pods --tests test-upgrade-platform --tests test-upgrade-ingress --tests test-app-lifecycle --tests test-create-spring --tests test-quickstart-golang-http --tests test-import
 has 0 post create cluster commands
 found git revision 900ca4ca205008ef830e7ef2d6b9cc397037b6d4: branch PR-384
 using versions git repo https://github.com/jenkins-x/jenkins-x-versions.git and ref 900ca4ca205008ef830e7ef2d6b9cc397037b6d4
 
 Creating cluster pr-384-379-tekton-gkebdd
 loaded version 2.0.926 from Makefile in directory 
-running command: ** create cluster gke --tekton --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-384-379-tekton-gkebdd --batch-mode --version 2.0.926 --labels cluster=tekton-gkebdd,branch=pr-384 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 900ca4ca205008ef830e7ef2d6b9cc397037b6d4 --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+running command: ** create cluster gke --tekton --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-384-379-tekton-gkebdd --batch-mode --version 2.0.926 --labels cluster=tekton-gkebdd,branch=pr-384 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 900ca4ca205008ef830e7ef2d6b9cc397037b6d4 --git-username ****************** --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
 ? Configured project id: *************2
 Updated property [core/project].
 ? Configured cluster name: pr-384-379-tekton-gkebdd
@@ -110,7 +110,7 @@ nginx ingress controller installed and configured
 ? Configured to use long term logs storage: No
 Set up a Git username and API token to be able to perform CI/CD
 Select the CI/CD pipelines Git server and user
-Setting the pipelines Git server https://github.com and user name *************-test.
+Setting the pipelines Git server https://github.com and user name ******************.
 Deleting and cloning the Jenkins X versions repo
 Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 900ca4ca205008ef830e7ef2d6b9cc397037b6d4 to /builder/home/.**/jenkins-x-versions
 From https://github.com/jenkins-x/jenkins-x-versions
@@ -152,7 +152,7 @@ Jenkins X deployments ready in namespace **
 Configuring the TeamSettings for ImportMode YAML
 Creating default staging and production environments
 Using Git provider GitHub at https://github.com
-? Using Git user name: *************-test
+? Using Git user name: ******************
 ? Using organisation: cb-kubecd
 Creating repository cb-kubecd/environment-pr-384-379-tekton-gkebdd-staging
 Creating Git repository cb-kubecd/environment-pr-384-379-tekton-gkebdd-staging
@@ -163,7 +163,7 @@ Created environment staging
 Namespace **-staging created 
 Creating GitHub webhook for cb-kubecd/environment-pr-384-379-tekton-gkebdd-staging for url http://hook.**.35.190.199.78.nip.io/hook
 Using Git provider GitHub at https://github.com
-? Using Git user name: *************-test
+? Using Git user name: ******************
 ? Using organisation: cb-kubecd
 Creating repository cb-kubecd/environment-pr-384-379-tekton-gkebdd-production
 Creating Git repository cb-kubecd/environment-pr-384-379-tekton-gkebdd-production
@@ -1163,7 +1163,7 @@ spec:
     helmTemplate: true
     importMode: YAML
     kubeProvider: gke
-    pipelineUsername: *************-test
+    pipelineUsername: ******************
     promotionEngine: Prow
     prowConfig: Legacy
     prowEngine: Tekton
