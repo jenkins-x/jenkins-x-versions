@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/weaveworks/flagger
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x
+  repo: dex
+  url: https://github.com/jenkins-x/dex
+  version: ""
+  versionURL: ""
