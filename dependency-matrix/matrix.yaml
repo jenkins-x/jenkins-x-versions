@@ -107,3 +107,9 @@ dependencies:
   url: https://github.com/grafana/grafana
   version: ""
   versionURL: ""
+- host: github.com
+  owner: prometheus
+  repo: alertmanager
+  url: https://github.com/prometheus/alertmanager
+  version: ""
+  versionURL: ""

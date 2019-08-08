@@ -20,3 +20,4 @@ Dependency | Sources | Version | Mismatched versions
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | []() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | []() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | []() | 
+[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | []() | 
