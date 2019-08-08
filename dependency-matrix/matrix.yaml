@@ -92,7 +92,7 @@ dependencies:
 - host: github.com
   owner: helm
   repo: charts
-  url: https://github.com/helm/charts/tree/master/stable/cert-manager
+  url: https://github.com/helm/charts/tree/master/stable/nginx-ingress
   version: ""
   versionURL: ""
 - host: github.com
