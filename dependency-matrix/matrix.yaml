@@ -83,3 +83,9 @@ dependencies:
   url: https://github.com/jenkins-x/helm-charts/tree/master/vault-operator
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jetstack
+  repo: cert-manager
+  url: https://github.com/jetstack/cert-manager
+  version: ""
+  versionURL: ""

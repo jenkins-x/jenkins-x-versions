@@ -16,3 +16,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | []() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | []() | 
 [jenkins-x/helm-charts](https://github.com/jenkins-x/helm-charts/tree/master/vault-operator) |  | []() | 
+[jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | []() | 
