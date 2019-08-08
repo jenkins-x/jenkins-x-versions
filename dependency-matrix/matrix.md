@@ -21,3 +21,4 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | []() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | []() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | []() | 
+[jenkins-x/jx](https://github.com/jenkins-x/jx) |  | []() | 
