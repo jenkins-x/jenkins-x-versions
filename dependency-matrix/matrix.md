@@ -19,3 +19,4 @@ Dependency | Sources | Version | Mismatched versions
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | []() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager) |  | []() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | []() | 
+[grafana/grafana](https://github.com/grafana/grafana) |  | []() | 
