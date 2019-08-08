@@ -101,3 +101,9 @@ dependencies:
   url: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
   version: ""
   versionURL: ""
+- host: github.com
+  owner: grafana
+  repo: grafana
+  url: https://github.com/grafana/grafana
+  version: ""
+  versionURL: ""
