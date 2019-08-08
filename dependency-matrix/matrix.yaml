@@ -71,3 +71,9 @@ dependencies:
   url: https://github.com/jenkins-x/sso-operator
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-charts
+  repo: tekton
+  url: https://github.com/jenkins-x-charts/tekton
+  version: ""
+  versionURL: ""

@@ -14,3 +14,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | []() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | []() | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | []() | 
+[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | []() | 
