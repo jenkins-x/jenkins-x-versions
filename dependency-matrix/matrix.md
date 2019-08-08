@@ -19,3 +19,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/helm-charts](https://github.com/jenkins-x/helm-charts/tree/master/vault-operator) |  | [0.2.1]() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.0](https://github.com/jetstack/cert-manager/releases/tag/v0.9.0) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager) |  | [v0.6.7]() | 
+[bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.5.3]() | 
