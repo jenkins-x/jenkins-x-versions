@@ -77,3 +77,9 @@ dependencies:
   url: https://github.com/jenkins-x-charts/tekton
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x
+  repo: helm-charts
+  url: https://github.com/jenkins-x/helm-charts/tree/master/vault-operator
+  version: ""
+  versionURL: ""
