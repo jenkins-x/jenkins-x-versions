@@ -13,3 +13,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | []() | 
 [jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | []() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | []() | 
+[jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | []() | 
