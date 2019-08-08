@@ -113,3 +113,9 @@ dependencies:
   url: https://github.com/prometheus/alertmanager
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x
+  repo: jx
+  url: https://github.com/jenkins-x/jx
+  version: ""
+  versionURL: ""
