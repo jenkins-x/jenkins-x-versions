@@ -17,3 +17,25 @@ dependencies:
   url: https://github.com/jenkins-x/dex
   version: 2.13.12
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-charts
+  repo: environment-controller
+  url: https://github.com/jenkins-x-charts/environment-controller
+  version: 0.0.204
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.204
+- host: github.com
+  owner: jenkins-x
+  repo: jx
+  sources:
+  - path:
+    - host: github.com
+      owner: jenkins-x-charts
+      repo: environment-controller
+      url: https://github.com/jenkins-x-charts/environment-controller
+      version: 0.0.204
+      versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.204
+    version: 0.1.641
+    versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.641
+  url: https://github.com/jenkins-x/jx
+  version: 0.1.641
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.641
