@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/kubernetes-incubator/external-dns
   version: ""
   versionURL: ""
+- host: github.com
+  owner: weaveworks
+  repo: flagger
+  url: https://github.com/weaveworks/flagger
+  version: ""
+  versionURL: ""
