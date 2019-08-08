@@ -1,0 +1,1959 @@
+Step: build-step-credential-initializer-d72k9:
+
+{"level":"warn","ts":1565284794.7453408,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565284794.7459087,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-kh2ht:
+
+{"level":"warn","ts":1565284795.238016,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565284795.2393072,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-7rn6p:
+
+{"level":"warn","ts":1565284797.6814764,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565284798.949375,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/jenkins-x-versions @ c176e996582d38b10710800b6fff710b950d55d8 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T17:19:59Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03,388:c176e996582d38b10710800b6fff710b950d55d8
+ran git fetch --unshallow origin c176e996582d38b10710800b6fff710b950d55d8: 8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03: in 
+ran git checkout master in 
+ran git reset --hard 8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03 in 
+ran clean --force -d . in 
+ran git merge c176e996582d38b10710800b6fff710b950d55d8 in 
+Step: build-step-runci:
+
++ export GH_USERNAME=*************-test
++ GH_USERNAME=*************-test
++ export GH_OWNER=cb-kubecd
++ GH_OWNER=cb-kubecd
+++ ** step credential -s *************-test-github
++ export GH_CREDS_PSW=****************************************
++ GH_CREDS_PSW=****************************************
+++ ** step credential -s test-jenkins-user
++ export JENKINS_CREDS_PSW=************
++ JENKINS_CREDS_PSW=************
+++ ** step credential -k bdd-credentials.json -s bdd-secret -f sa.json
++ export GKE_SA=sa.json
++ GKE_SA=sa.json
++ export BUILD_NUMBER=
++ BUILD_NUMBER=
++ JX_HOME=/tmp/**home
++ KUBECONFIG=/tmp/**home/config
++ mkdir -p /tmp/**home
++ ** --version
+2.0.569
++ ** step git credentials
+Generated Git credentials file /builder/home/git/credentials
++ gcloud auth activate-service-account --key-file sa.json
+Activated service account credentials for: [*************@*************2.iam.gserviceaccount.com]
++ git config --global --add user.name JenkinsXBot
++ git config --global --add user.email jenkins-x@googlegroups.com
++ echo 'running the BDD tests with JX_HOME = /tmp/**home'
++ export SKIP_JENKINS_CHECK=yes
++ SKIP_JENKINS_CHECK=yes
+running the BDD tests with JX_HOME = /tmp/**home
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config **/bdd/tekton/cluster.yaml --gopath /tmp --git-provider=github --git-username *************-test --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-verify-pods --tests test-upgrade-platform --tests test-upgrade-ingress --tests test-app-lifecycle --tests test-create-spring --tests test-quickstart-golang-http --tests test-import
+has 0 post create cluster commands
+found git revision c176e996582d38b10710800b6fff710b950d55d8: branch PR-388
+using versions git repo https://github.com/jenkins-x/jenkins-x-versions.git and ref c176e996582d38b10710800b6fff710b950d55d8
+
+Creating cluster pr-388-38-tekton-gkebdd
+loaded version 2.0.934 from Makefile in directory 
+running command: ** create cluster gke --tekton --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-388-38-tekton-gkebdd --batch-mode --version 2.0.934 --labels cluster=tekton-gkebdd,branch=pr-388 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref c176e996582d38b10710800b6fff710b950d55d8 --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+? Configured project id: *************2
+Updated property [core/project].
+? Configured cluster name: pr-388-38-tekton-gkebdd
+? Configured to machine type: n1-standard-2
+? Configured to minimum number of nodes: 3
+? Configured to maximum number of nodes: 5
+Creating cluster...
+WARNING: In June 2019, node auto-upgrade will be enabled by default for newly created clusters and node pools. To disable it, use the `--no-enable-autoupgrade` flag.
+WARNING: Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+WARNING: Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+WARNING: Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+WARNING: Starting in 1.12, default node pools in new clusters will have their legacy Compute Engine instance metadata endpoints disabled by default. To create a cluster with legacy instance metadata endpoints disabled in the default node pool, run `clusters create` with the flag `--metadata disable-legacy-endpoints=true`.
+WARNING: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s). 
+This will enable the autorepair feature for nodes. Please see https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more information on node autorepairs.
+Creating cluster pr-388-38-tekton-gkebdd in europe-west1-c...
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................done.
+Created [https://container.googleapis.com/v1/projects/*************2/zones/europe-west1-c/clusters/pr-388-38-tekton-gkebdd].
+To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west1-c/pr-388-38-tekton-gkebdd?project=*************2
+kubeconfig entry generated for pr-388-38-tekton-gkebdd.
+NAME                     LOCATION        MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+pr-388-38-tekton-gkebdd  europe-west1-c  1.12.8-gke.10   35.205.108.201  n1-standard-2  1.12.8-gke.10  3          RUNNING
+Initialising cluster ...
+Namespace ** created 
+Context "gke_*************2_europe-west1-c_pr-388-38-tekton-gkebdd" modified.
+Setting the docker registry organisation to *************2 in the TeamSettings
+Git configured for user: JenkinsXBot and email jenkins-x@googlegroups.com
+helm installed and configured
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+WARNING: failed to create system vault in namespace ** due to no "**-vault-pr-388-38-tek" vault found in namespace "**"
+
+Note: this loadbalancer will fail to be provisioned if you have insufficient quotas, this can happen easily on a GKE free account.
+To view quotas run: gcloud compute project-info describe
+Waiting for external loadbalancer to be created and update the nginx-ingress-controller service in kube-system namespace
+External loadbalancer created
+
+Waiting to find the external host name of the ingress controller Service in namespace kube-system with name **ing-nginx-ingress-controller
+No domain flag provided so using default 130.211.109.125.nip.io to generate Ingress rules
+nginx ingress controller installed and configured
+? Configured to use long term logs storage: No
+Set up a Git username and API token to be able to perform CI/CD
+Select the CI/CD pipelines Git server and user
+Setting the pipelines Git server https://github.com and user name *************-test.
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+Cloning the Jenkins X cloud environments repo to /builder/home/.**/cloud-environments
+Enumerating objects: 1440, done.
+Total 1440 (delta 0), reused 0 (delta 0), pack-reused 1440
+Configuring Kaniko service account pr-388-38-tekton-gkebdd-ko for project *************2
+Unable to find service account pr-388-38-tekton-gkebdd-ko, checking if we have enough permission to create
+Creating service account pr-388-38-tekton-gkebdd-ko
+Assigning role roles/storage.*****
+Assigning role roles/storage.objectAdmin
+Assigning role roles/storage.objectCreator
+Downloading service account key
+Setting up prow config into namespace **
+Installing tekton into namespace **
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+
+Installing Prow into namespace **
+with values file /builder/home/.**/cloud-environments/env-gke/myvalues.yaml
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+
+Installing ** into namespace **
+Installing jenkins-x-platform version: 2.0.934
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+
+
+WARNING: waiting for install to be ready, if this is the first time then it will take a while to download images
+Jenkins X deployments ready in namespace **
+Configuring the TeamSettings for ImportMode YAML
+Creating default staging and production environments
+Using Git provider GitHub at https://github.com
+? Using Git user name: *************-test
+? Using organisation: cb-kubecd
+Creating repository cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging
+Creating Git repository cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging
+Pushed Git repository to https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging
+
+Creating staging Environment in namespace **
+Created environment staging
+Namespace **-staging created 
+Creating GitHub webhook for cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging for url http://hook.**.130.211.109.125.nip.io/hook
+Using Git provider GitHub at https://github.com
+? Using Git user name: *************-test
+? Using organisation: cb-kubecd
+Creating repository cb-kubecd/environment-pr-388-38-tekton-gkebdd-production
+Creating Git repository cb-kubecd/environment-pr-388-38-tekton-gkebdd-production
+Pushed Git repository to https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production
+
+Creating production Environment in namespace **
+Created environment production
+Namespace **-production created 
+Creating GitHub webhook for cb-kubecd/environment-pr-388-38-tekton-gkebdd-production for url http://hook.**.130.211.109.125.nip.io/hook
+
+Jenkins X installation completed successfully
+
+
+	********************************************************
+
+	     NOTE: Your ***** password is: ************
+
+	********************************************************
+
+	
+Your Kubernetes context is now set to the namespace: ** 
+To switch back to your original namespace use: ** namespace **
+Or to use this context/namespace in just one terminal use: ** shell
+For help on switching contexts see: https://jenkins-x.io/developing/kube-context/
+To import existing projects into Jenkins:       ** import
+To create a new Spring Boot microservice:       ** create spring -d web -d actuator
+To create a new microservice from a quickstart: ** create quickstart
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for pr-388-38-tekton-gkebdd.
+Context "gke_*************2_europe-west1-c_pr-388-38-tekton-gkebdd" modified.
+NAME          HOSTS                                   ADDRESS           PORTS   AGE
+chartmuseum   chartmuseum.**.130.211.109.125.nip.io   130.211.109.125   80      89s
+deck          deck.**.130.211.109.125.nip.io          130.211.109.125   80      90s
+hook          hook.**.130.211.109.125.nip.io          130.211.109.125   80      90s
+nexus         nexus.**.130.211.109.125.nip.io         130.211.109.125   80      90s
+tide          tide.**.130.211.109.125.nip.io          130.211.109.125   80      90s
+cloning BDD test repository to: /tmp/jenkins-x/bdd-**
+Cloning git repository https://github.com/jenkins-x/bdd-**.git to dir /tmp/jenkins-x/bdd-**
+Checking out repository branch master to dir /tmp/jenkins-x/bdd-**
+go: finding github.com/gogo/protobuf v1.1.1
+go: finding github.com/petergtz/pegomock v0.0.0-20181206220228-b113d17a7e81
+go: finding github.com/sethvargo/go-password v0.1.2
+go: finding github.com/hashicorp/vault v0.11.4
+go: finding github.com/go-openapi/jsonreference v0.17.0
+go: finding github.com/pkg/browser v0.0.0-20170505125900-c90ca0c84f15
+go: finding code.gitea.io/sdk v0.0.0-20180702024448-79a281c4e34a
+go: finding github.com/acarl005/stripansi v0.0.0-20180116102854-5a71ef0e047d
+go: finding k8s.io/helm v2.7.2+incompatible
+go: finding github.com/onsi/ginkgo v1.8.0
+go: finding github.com/shirou/gopsutil v0.0.0-20180901134234-eb1f1ab16f2e
+go: finding github.com/beevik/etree v1.0.1
+go: finding github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+go: finding github.com/jetstack/cert-manager v0.5.2
+go: finding github.com/onsi/gomega v1.5.0
+go: finding github.com/hashicorp/go-version v0.0.0-20180716215031-270f2f71b1ee
+go: finding github.com/sirupsen/logrus v1.2.0
+go: finding github.com/fatih/color v1.7.0
+go: finding github.com/andygrunwald/go-jira v1.5.0
+go: finding github.com/google/go-github v17.0.0+incompatible
+go: finding k8s.io/client-go v2.0.0-alpha.0.0.20190115164855-701b91367003+incompatible
+go: finding github.com/xanzy/go-gitlab v0.0.0-20180814191223-f3bc634ab936
+go: finding github.com/pmezard/go-difflib v1.0.0
+go: finding github.com/mitchellh/mapstructure v0.0.0-20180715050151-f15292f7a699
+go: finding github.com/go-openapi/jsonpointer v0.17.0
+go: finding github.com/hashicorp/hcl v0.0.0-20180404174102-ef8a98b0bbce
+go: finding github.com/jenkins-x/golang-jenkins v0.0.0-20180919102630-65b83ad42314
+go: finding golang.org/x/net v0.0.0-20181005035420-146acd28ed58
+go: finding github.com/fatih/structs v1.0.0
+go: finding github.com/pborman/uuid v0.0.0-20170612153648-e790cca94e6c
+go: finding github.com/aws/aws-sdk-go v1.17.10
+go: finding github.com/davecgh/go-spew v1.1.1
+go: finding k8s.io/metrics v0.0.0-20181128195641-3954d62a524d
+go: finding gopkg.in/yaml.v2 v2.2.1
+go: finding golang.org/x/crypto v0.0.0-20180904163835-0709b304e793
+go: finding golang.org/x/sync v0.0.0-20181221193216-37e7f081c4d4
+go: finding k8s.io/kube-openapi v0.0.0-20180719232738-d8ea2fe547a4
+go: finding github.com/banzaicloud/bank-vaults v0.0.0-20181129101211-e31657d7c4fe
+go: finding github.com/rodaine/hclencoder v0.0.0-20180926060551-0680c4321930
+go: finding github.com/google/go-cmp v0.2.0
+go: finding github.com/blang/semver v3.5.1+incompatible
+go: finding github.com/go-openapi/swag v0.17.0
+go: finding github.com/mailru/easyjson v0.0.0-20180823135443-60711f1a8329
+go: finding golang.org/x/text v0.3.0
+go: finding github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
+go: finding github.com/ghodss/yaml v1.0.0
+go: finding github.com/cenkalti/backoff v2.0.0+incompatible
+go: finding github.com/spf13/pflag v1.0.3
+go: finding github.com/denormal/go-gitignore v0.0.0-20180713143441-75ce8f3e513c
+go: finding github.com/andygrunwald/go-gerrit v0.0.0-20181026193842-43cfd7a94eb4
+go: finding gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+go: finding github.com/go-openapi/spec v0.17.1
+go: finding golang.org/x/sys v0.0.0-20180909124046-d0be0721c37e
+go: finding github.com/hinshun/vt10x v0.0.0-20180809195222-d55458df857c
+go: finding github.com/magiconair/properties v1.8.0
+go: finding github.com/stretchr/testify v1.3.0
+go: finding github.com/codeship/codeship-go v0.0.0-20180717142545-7793ca823354
+go: finding k8s.io/apiextensions-apiserver v0.0.0-20181128195303-1f84094d7e8e
+go: finding github.com/MakeNowJust/heredoc v0.0.0-20171113091838-e9091a26100e
+go: finding github.com/jenkins-x/** v1.3.1037
+go: finding github.com/alexflint/go-filemutex v0.0.0-20171028004239-d358565f3c3f
+go: finding github.com/jenkins-x/sonobuoy v0.11.7-0.20190318120422-253758214767
+go: finding github.com/hpcloud/tail v1.0.0
+go: finding k8s.io/api v0.0.0-20181128191700-6db15a15d2d3
+go: finding github.com/antham/chyle v1.4.0
+go: finding github.com/knative/pkg v0.0.0-20190125193334-994b801b03ef
+go: finding github.com/stretchr/ob** v0.1.0
+go: finding github.com/chromedp/chromedp v0.1.1
+go: finding github.com/fsnotify/fsnotify v1.4.7
+go: finding github.com/gotestyourself/gotestyourself v2.2.0+incompatible
+go: finding github.com/hashicorp/go-hclog v0.0.0-20190109152822-4783caec6f2e
+go: finding github.com/kr/pty v1.1.2
+go: finding github.com/docker/spdystream v0.0.0-20170912183627-bc6354cbbc29
+go: finding github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b
+go: finding github.com/elazarl/go-bindata-assetfs v1.0.0
+go: finding github.com/sergi/go-diff v1.0.0
+go: finding github.com/hashicorp/go-retryablehttp v0.0.0-20180718195005-e651d75abec6
+go: finding github.com/mitchellh/mapstructure v0.0.0-20180511142126-bb74f1db0675
+go: finding github.com/elazarl/goproxy v0.0.0-20181111060418-2ce16c963a8a
+go: finding gopkg.in/src-d/go-billy.v4 v4.2.0
+go: finding github.com/knq/sysutil v0.0.0-20180306023629-0218e141a794
+go: finding github.com/SAP/go-hdb v0.13.2
+go: finding github.com/ory/dockertest v3.3.4+incompatible
+go: finding github.com/Jeffail/gabs v1.1.1
+go: finding github.com/nbio/st v0.0.0-20140626010706-e9e8d9816f32
+go: finding github.com/mholt/archiver v3.1.1+incompatible
+go: finding golang.org/x/image v0.0.0-20180708004352-c73c2afc3b81
+go: finding github.com/sethgrid/pester v0.0.0-20180430140037-03e26c9abbbf
+go: finding github.com/patrickmn/go-cache v2.1.0+incompatible
+go: finding github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
+go: finding github.com/emicklei/go-restful v2.8.0+incompatible
+go: finding github.com/spf13/cast v1.2.0
+go: finding github.com/disintegration/imaging v1.4.2
+go: finding golang.org/x/crypto v0.0.0-20180621125126-a49355c7e3f8
+go: finding github.com/knq/snaker v0.0.0-20180306023312-d9ad1e7f342a
+go: finding github.com/chromedp/cdproto v0.0.0-20180720050708-57cf4773008d
+go: finding github.com/armon/go-radix v1.0.0
+go: finding github.com/chromedp/cdproto v0.0.0-20180703215205-c125a34ea3b3
+go: finding github.com/lusis/slack-test v0.0.0-20180109053238-3c758769bfa6
+go: finding golang.org/x/sys v0.0.0-20180905080454-ebe1bf3edb33
+go: finding github.com/alcortesm/tgz v0.0.0-20161220082320-9c5fe88206d7
+go: finding github.com/Azure/draft v0.15.0
+go: finding github.com/prometheus/common v0.2.0
+go: finding google.golang.org/api v0.1.0
+go: finding golang.org/x/sys v0.0.0-20190130150945-aca44879d564
+go: finding github.com/peterbourgon/diskv v2.0.1+incompatible
+go: finding github.com/petar/GoLLRB v0.0.0-20130427215148-53be0d36a84c
+go: finding github.com/containerd/continuity v0.0.0-20181203112020-004b46473808
+go: finding gocloud.dev v0.9.0
+go: finding github.com/gorilla/context v1.1.1
+go: finding github.com/operator-framework/operator-sdk v0.0.0-20181011175812-913cbf711929
+go: finding github.com/stoewer/go-strcase v1.0.1
+go: finding gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405
+go: finding github.com/gogo/protobuf v1.0.0
+go: finding github.com/json-iterator/go v0.0.0-20180701071628-ab8a2e0c74be
+go: finding github.com/huandu/xstrings v1.0.0
+go: finding gopkg.in/src-d/go-git-fixtures.v3 v3.3.0
+go: finding github.com/pelletier/go-buffruneio v0.2.0
+go: finding github.com/onsi/ginkgo v1.6.0
+go: finding gopkg.in/mgo.v2 v2.0.0-20180705113604-9856a29383ce
+go: finding github.com/cpuguy83/go-md2man v1.0.8
+go: finding github.com/go-logfmt/logfmt v0.3.0
+go: finding go.uber.org/multierr v1.1.0
+go: finding github.com/golang/protobuf v1.1.0
+go: finding github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f
+go: finding golang.org/x/net v0.0.0-20181114220301-adae6a3d119a
+go: finding gopkg.in/src-d/go-git.v4 v4.5.0
+go: finding github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
+go: finding gopkg.in/AlecAivazis/survey.v1 v1.6.2
+go: finding github.com/pierrec/lz4 v2.0.5+incompatible
+go: finding k8s.io/apimachinery v0.0.0-20190122181752-bebe27e40fb7
+go: finding github.com/gophercloud/gophercloud v0.0.0-20180629215909-9e34f4686044
+go: finding github.com/prometheus/client_model v0.0.0-20180712105110-5c3871d89910
+go: finding github.com/google/btree v0.0.0-20180124185431-e89373fe6b4a
+go: finding github.com/hashicorp/vault-plugin-secrets-kv v0.0.0-20190115203747-edbfe287c5d9
+go: finding github.com/julienschmidt/httprouter v1.2.0
+go: finding sigs.k8s.io/yaml v1.1.0
+go: finding github.com/imdario/mergo v0.3.6
+go: finding github.com/spf13/afero v1.1.1
+go: finding github.com/googleapis/gax-go v2.0.0+incompatible
+go: finding google.golang.org/genproto v0.0.0-20181202183823-bd91e49a0898
+go: finding github.com/gorilla/mux v1.6.2
+go: finding github.com/bitly/go-hostpool v0.0.0-20171023180738-a3a6125de932
+go: finding golang.org/x/image v0.0.0-20180628062038-cc896f830ced
+go: finding cloud.google.com/go v0.24.0
+go: finding github.com/Pallinder/go-randomdata v0.0.0-20180616180521-15df0648130a
+go: finding github.com/jenkins-x/draft-repo v0.0.0-20180417100212-2f66cc518135
+go: finding github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
+go: finding github.com/go-stack/stack v1.8.0
+go: finding github.com/prometheus/common v0.0.0-20181015124227-bcb74de08d37
+go: finding k8s.io/kubernetes v1.11.3
+go: finding github.com/hashicorp/consul v1.4.2
+go: finding github.com/gfleury/go-bitbucket-v1 v0.0.0-20190216152406-3a732135aa4d
+go: finding github.com/spf13/cobra v0.0.3
+go: finding github.com/shirou/w32 v0.0.0-20160930032740-bb4de0191aa4
+go: finding go.opencensus.io v0.18.0
+go: finding github.com/nwaples/rardecode v1.0.0
+go: finding github.com/trivago/tgo v1.0.1
+go: finding contrib.go.opencensus.io/exporter/stackdriver v0.6.0
+go: finding github.com/matttproud/golang_protobuf_extensions v1.0.1
+go: finding google.golang.org/grpc v1.15.0
+go: finding github.com/mailru/easyjson v0.0.0-20180606163543-3fdea8d05856
+go: finding github.com/tidwall/gjson v1.1.0
+go: finding k8s.io/test-infra v0.0.0-20190131093439-a22cef183a8f
+go: finding github.com/c2h5oh/datasize v0.0.0-20171227191756-4eba002a5eae
+go: finding github.com/hashicorp/go-cleanhttp v0.5.0
+go: finding github.com/mitchellh/go-testing-interface v1.0.0
+go: finding github.com/duosecurity/duo_api_golang v0.0.0-20190107154727-539434bf0d45
+go: finding go.uber.org/zap v1.9.1
+go: finding github.com/src-d/gcfg v1.3.0
+go: finding github.com/google/subcommands v0.0.0-20181012225330-46f0354f6315
+go: finding github.com/keybase/go-crypto v0.0.0-20181127160227-255a5089e85a
+go: finding gotest.tools v2.2.0+incompatible
+go: finding github.com/chai2010/gettext-go v0.0.0-20170215093142-bf70f2a70fb1
+go: finding github.com/google/uuid v1.1.0
+go: finding github.com/markbates/inflect v1.0.4
+go: finding github.com/coreos/bbolt v1.3.1-coreos.6
+go: finding golang.org/x/sys v0.0.0-20181004145325-8469e314837c
+go: finding github.com/jinzhu/inflection v0.0.0-20151009084129-3272df6c21d0
+go: finding google.golang.org/api v0.0.0-20181017004218-3f6e8463aa1d
+go: finding github.com/iancoleman/orderedmap v0.0.0-20181121102841-22c6ecc9fe13
+go: finding github.com/go-openapi/swag v0.0.0-20171111214437-cf0bdb963811
+go: finding github.com/hashicorp/go-memdb v0.0.0-20181108192425-032f93b25bec
+go: finding google.golang.org/genproto v0.0.0-20190219182410-082222b4a5c5
+go: finding github.com/googleapis/gnostic v0.1.0
+go: finding github.com/dnaeon/go-vcr v1.0.1
+go: finding github.com/go-sql-driver/mysql v1.4.0
+go: finding github.com/ugorji/go/codec v0.0.0-20181012064053-8333dd449516
+go: finding github.com/PuerkitoBio/purell v1.1.0
+go: finding github.com/xiang90/probing v0.0.0-20160813154853-07dd2e8dfe18
+go: finding github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6
+go: finding github.com/hashicorp/go-plugin v0.0.0-20190129155509-362c99b11937
+go: finding github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
+go: finding github.com/jbrukh/bayesian v0.0.0-20161210175230-bf3f261f9a9c
+go: finding gopkg.in/warnings.v0 v0.1.2
+go: finding github.com/kisielk/gotool v1.0.0
+go: finding github.com/kr/pretty v0.1.0
+go: finding github.com/mattn/go-isatty v0.0.2
+go: finding github.com/openzipkin/zipkin-go v0.1.1
+go: finding golang.org/x/tools v0.0.0-20180828015842-6cd1fcedba52
+go: finding github.com/qor/inflection v0.0.0-20180308033659-04140366298a
+go: finding github.com/google/uuid v1.0.0
+go: finding gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
+go: finding github.com/gorilla/sessions v1.1.3
+go: finding github.com/aws/aws-k8s-tester v0.0.0-20190114231546-b411acf57dfe
+go: finding github.com/gorilla/securecookie v1.1.1
+go: finding contrib.go.opencensus.io/integrations/ocsql v0.1.2
+go: finding k8s.io/gengo v0.0.0-20180718083919-906d99f89cd6
+go: finding github.com/aws/aws-sdk-go v1.16.18
+go: finding github.com/go-ldap/ldap v3.0.1+incompatible
+go: finding github.com/coreos/go-systemd v0.0.0-20181012123002-c6f51f82210d
+go: finding github.com/gregjones/httpcache v0.0.0-20160524185540-16db777d8ebe
+go: finding github.com/peterbourgon/diskv v0.0.0-20171120014656-2973218375c3
+go: finding github.com/go-test/deep v1.0.1
+go: finding github.com/NYTimes/gziphandler v0.0.0-20160419202541-63027b26b87e
+go: finding github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
+go: finding github.com/Azure/go-autorest v10.15.5+incompatible
+go: finding github.com/asaskevich/govalidator v0.0.0-20180720115003-f9ffefc3facf
+go: finding github.com/json-iterator/go v1.1.5
+go: finding golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890
+go: finding github.com/prometheus/client_golang v0.9.0
+go: finding github.com/fsouza/fake-gcs-server v0.0.0-20180612165233-e85be23bdaa8
+go: finding github.com/jinzhu/gorm v0.0.0-20170316141641-572d0a0ab1eb
+go: finding k8s.io/kube-openapi v0.0.0-20180711000925-0cf8f7e6ed1d
+go: finding github.com/hashicorp/go-hclog v0.0.0-20180709165350-ff2cf002a8dd
+go: finding github.com/spf13/pflag v1.0.1
+go: finding github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
+go: finding github.com/opencontainers/go-digest v1.0.0-rc1
+go: finding github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7
+go: finding github.com/IBM-Cloud/bluemix-go v0.0.0-20181008063305-d718d474c7c2
+go: finding github.com/dsnet/compress v0.0.0-20171208185109-cc9eb1d7ad76
+go: finding gopkg.in/inf.v0 v0.9.1
+go: finding github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
+go: finding github.com/knative/build v0.1.2
+go: finding github.com/lib/pq v1.0.0
+go: finding github.com/spf13/jwalterweatherman v0.0.0-20180109140146-7c0cea34c8ec
+go: finding github.com/smartystreets/assertions v0.0.0-20180927180507-b2de0cb4f26d
+go: finding github.com/onsi/gomega v1.4.2
+go: finding github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: finding golang.org/x/exp v0.0.0-20190121172915-509febef88a4
+go: finding github.com/gobuffalo/envy v1.6.5
+go: finding github.com/pelletier/go-toml v1.2.0
+go: finding github.com/Azure/azure-storage-blob-go v0.0.0-20181023070848-cf01652132cc
+go: finding github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223
+go: finding github.com/circonus-labs/circonus-gometrics v2.2.6+incompatible
+go: finding github.com/konsorten/go-windows-terminal-sequences v1.0.1
+go: finding google.golang.org/grpc v1.14.0
+go: finding k8s.io/apiextensions-apiserver v0.0.0-20180621085152-bbc52469f98b
+go: finding google.golang.org/genproto v0.0.0-20180831171423-11092d34479b
+go: finding github.com/DataDog/datadog-go v0.0.0-20180822151419-281ae9f2d895
+go: finding github.com/Azure/azure-pipeline-go v0.0.0-20180507050906-098e490af5dc
+go: finding google.golang.org/api v0.0.0-20180910000450-7ca32eb868bf
+go: finding github.com/BurntSushi/toml v0.3.0
+go: finding github.com/golang/groupcache v0.0.0-20180924190550-6f2cf27854a4
+go: finding golang.org/x/oauth2 v0.0.0-20180620175406-ef147856a6dd
+go: finding github.com/influxdata/influxdb v0.0.0-20161215172503-049f9b42e9a5
+go: finding github.com/golang/protobuf v1.2.0
+go: finding github.com/golang/groupcache v0.0.0-20180513044358-24b0969c4cb7
+go: finding github.com/aws/aws-sdk-go v1.15.57
+go: finding github.com/hashicorp/serf v0.8.2
+go: finding golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9
+go: finding golang.org/x/crypto v0.0.0-20181015023909-0c41d7ab0a0e
+go: finding github.com/docker/go-connections v0.3.0
+go: finding github.com/googleapis/gnostic v0.2.0
+go: finding github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c
+go: finding gopkg.in/asn1-ber.v1 v1.0.0-20181015200546-f715ec2f112d
+go: finding github.com/google/go-containerregistry v0.0.0-20190317040536-ebbba8469d06
+go: finding github.com/Microsoft/go-winio v0.4.6
+go: finding github.com/mattn/go-colorable v0.0.8
+go: finding github.com/golang/lint v0.0.0-20180702182130-06c8688daad7
+go: finding github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239
+go: finding github.com/tektoncd/pipeline v0.1.1-0.20190315182348-1861bddc364c
+go: finding github.com/davecgh/go-spew v1.1.0
+go: finding github.com/stretchr/ob** v0.1.1
+go: finding github.com/emirpasic/gods v1.9.0
+go: finding gopkg.in/ini.v1 v1.39.0
+go: finding github.com/go-ole/go-ole v1.2.1
+go: finding github.com/streadway/amqp v0.0.0-20181107104731-27835f1a64e9
+go: finding github.com/ulikunitz/xz v0.5.6
+go: finding github.com/prometheus/procfs v0.0.0-20180725123919-05ee40e3a273
+go: finding github.com/djherbis/atime v1.0.0
+go: finding golang.org/x/sys v0.0.0-20180627142611-7138fd3d9dc8
+go: finding github.com/shurcooL/go v0.0.0-20180423040247-9e1955d9fb6e
+go: finding github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964
+go: finding github.com/gophercloud/gophercloud v0.0.0-20181215224939-bdd8b1ecd793
+go: finding github.com/lusis/go-slackbot v0.0.0-20180109053408-401027ccfef5
+go: finding github.com/tmc/grpc-websocket-proxy v0.0.0-20171017195756-830351dc03c6
+go: finding github.com/ryanuber/columnize v0.0.0-20160712163229-9b3edd62028f
+go: finding github.com/kr/text v0.1.0
+go: finding github.com/prometheus/common v0.0.0-20181020173914-7e9e6cabbd39
+go: finding github.com/hashicorp/go-msgpack v0.5.3
+go: finding github.com/hashicorp/go-syslog v1.0.0
+go: finding github.com/jmespath/go-jmespath v0.0.0-20160202185014-0b12d6b521d8
+go: finding github.com/SermoDigital/jose v0.9.1
+go: finding github.com/hashicorp/go-uuid v1.0.1
+go: finding github.com/wbrefvem/go-bitbucket v0.0.0-20190128183802-fc08fd046abb
+go: finding cloud.google.com/go v0.30.0
+go: finding github.com/mailru/easyjson v0.0.0-20171120080333-32fa128f234d
+go: finding github.com/shurcooL/githubv4 v0.0.0-20180925043049-51d7b505e2e9
+go: finding gopkg.in/h2non/gock.v0 v0.0.0-20160419120746-1baf36abac00
+go: finding github.com/bwmarrin/snowflake v0.0.0-20180412010544-68117e6bbede
+go: finding github.com/mitchellh/go-homedir v0.0.0-20180523094522-3864e76763d9
+go: finding github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: finding github.com/grpc-ecosystem/grpc-gateway v1.5.1
+go: finding github.com/hashicorp/golang-lru v0.0.0-20180201235237-0fb14efe8c47
+go: finding github.com/antham/envh v1.2.0
+go: finding github.com/onsi/ginkgo v1.5.0
+go: finding github.com/bouk/monkey v1.0.0
+go: finding github.com/bwmarrin/snowflake v0.0.0-20170221160716-02cc386c183a
+go: finding github.com/kr/pty v1.1.1
+go: finding github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568
+go: finding k8s.io/test-infra v0.0.0-20181019233642-2e10a0bbe9b3
+go: finding github.com/Masterminds/semver v1.3.1
+go: finding github.com/knative/pkg v0.0.0-20181205230426-0e41760cea1d
+go: finding github.com/inconshreveable/mousetrap v0.0.0-20141017200713-76626ae9c91c
+go: finding honnef.co/go/tools v0.0.0-20180728063816-88497007e858
+go: finding google.golang.org/grpc v1.17.0
+go: finding github.com/Netflix/go-expect v0.0.0-20180814212900-124a37274874
+go: finding github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742
+go: finding golang.org/x/net v0.0.0-20181017193950-04a2e542c03f
+go: finding k8s.io/utils v0.0.0-20181019225348-5e321f9a457c
+go: finding github.com/tidwall/match v0.0.0-20171002075945-1731857f09b1
+go: finding gopkg.in/pipe.v2 v2.0.0-20140414041502-3c2ca4d52544
+go: finding google.golang.org/appengine v1.3.0
+go: finding github.com/kevinburke/ssh_config v0.0.0-20180317175531-9fc7bb800b55
+go: finding github.com/knative/build-pipeline v0.1.0
+go: finding github.com/hashicorp/yamux v0.0.0-20180604194846-3520598351bb
+go: finding gopkg.in/fsnotify.v1 v1.4.7
+go: finding github.com/prometheus/procfs v0.0.0-20181005140218-185b4288413d
+go: finding go.uber.org/atomic v1.3.2
+go: finding github.com/dustin/go-humanize v1.0.0
+go: finding github.com/bazelbuild/buildtools v0.0.0-20180226164855-80c7f0d45d7e
+go: finding github.com/erikstmartin/go-testdb v0.0.0-20160219214506-8d10e4a1bae5
+go: finding github.com/xlab/handysort v0.0.0-20150421192137-fb3537ed64a1
+go: finding github.com/grpc-ecosystem/go-grpc-middleware v1.0.0
+go: finding github.com/jinzhu/now v0.0.0-20181116074157-8ec929ed50c3
+go: finding contrib.go.opencensus.io/exporter/aws v0.0.0-20180906190126-dd54a7ef511e
+go: finding github.com/mitchellh/copystructure v1.0.0
+go: finding github.com/client9/misspell v0.3.4
+go: finding github.com/go-openapi/jsonpointer v0.0.0-20170102174223-779f45308c19
+go: finding k8s.io/cli-runtime v0.0.0-20181026155151-1ee5ba10d7e3
+go: finding github.com/hashicorp/go-version v0.0.0-20180322230233-23480c066577
+go: finding github.com/go-yaml/yaml v2.1.0+incompatible
+go: finding github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf
+go: finding github.com/spf13/viper v1.0.2
+go: finding golang.org/x/sync v0.0.0-20181108010431-42b317875d0f
+go: finding github.com/smartystreets/goconvey v0.0.0-20180222194500-ef6db91d284a
+go: finding github.com/golang/mock v1.1.1
+go: finding golang.org/x/net v0.0.0-20180724234803-3673e40ba225
+go: finding go.etcd.io/etcd v0.0.0-20181031231232-83304cfc808c
+go: finding github.com/go-ini/ini v1.39.0
+go: finding github.com/Masterminds/semver v1.4.2
+go: finding github.com/go-kit/kit v0.8.0
+go: finding gopkg.in/src-d/go-git.v4 v4.1.1
+go: finding github.com/gorilla/websocket v1.4.0
+go: finding github.com/inconshreveable/mousetrap v1.0.0
+go: finding google.golang.org/genproto v0.0.0-20180817151627-c66870c02cf8
+go: finding github.com/dgrijalva/jwt-go v3.2.0+incompatible
+go: finding github.com/rifflock/lfshook v0.0.0-20180227222202-bf539943797a
+go: finding github.com/mitchellh/gox v0.4.0
+go: finding github.com/mattn/go-sqlite3 v0.0.0-20160514122348-38ee283dabf1
+go: finding github.com/google/wire v0.2.0
+go: finding github.com/evanphx/json-patch v4.1.0+incompatible
+go: finding golang.org/x/lint v0.0.0-20180702182130-06c8688daad7
+go: finding github.com/apache/thrift v0.0.0-20180902110319-2566ecd5d999
+go: finding github.com/mattn/go-isatty v0.0.4
+go: finding github.com/google/go-github v0.0.0-20170604030111-7a51fb928f52
+go: finding github.com/kr/pty v1.0.0
+go: finding github.com/matttproud/golang_protobuf_extensions v1.0.0
+go: finding github.com/Azure/azure-sdk-for-go v21.1.0+incompatible
+go: finding github.com/antham/strumt v0.0.0-20171215230529-6776189777d3
+go: finding google.golang.org/appengine v1.2.0
+go: finding golang.org/x/sys v0.0.0-20181116152217-5ac8a444bdc5
+go: finding github.com/nlopes/slack v0.0.0-20180721202243-347a74b1ea30
+go: finding gopkg.in/cheggaaa/pb.v1 v1.0.25
+go: finding github.com/gliderlabs/ssh v0.1.1
+go: finding github.com/spf13/cobra v0.0.0-00000000000000-c46add8a6528
+go: finding github.com/jtolds/gls v4.2.1+incompatible
+go: finding github.com/aokoli/goutils v1.0.1
+go: finding github.com/go-openapi/spec v0.0.0-20171219195406-fa03337d7da5
+go: finding golang.org/x/net v0.0.0-20180906233101-161cd47e91fd
+go: finding github.com/grpc-ecosystem/grpc-gateway v1.4.1
+go: finding github.com/deckarep/golang-set v0.0.0-20171013212420-1d4478f51bed
+go: finding github.com/denisenkom/go-mssqldb v0.0.0-20190111225525-2fea367d496d
+go: finding github.com/fatih/color v1.5.0
+go: finding golang.org/x/sys v0.0.0-20181011152604-fa43e7bc11ba
+go: finding github.com/joho/godotenv v1.3.0
+go: finding google.golang.org/api v0.0.0-20181021000519-a2651947f503
+go: finding go.opencensus.io v0.17.0
+go: finding github.com/docker/distribution v0.0.0-20170726174610-edc3ab29cdff
+go: finding gopkg.in/alecthomas/kingpin.v2 v2.2.6
+go: finding github.com/jonboulle/clockwork v0.1.0
+go: finding github.com/mitchellh/cli v1.0.0
+go: finding github.com/docker/docker v0.0.0-20171206114025-5e5fadb3c020
+go: finding github.com/mitchellh/reflectwalk v1.0.0
+go: finding github.com/hashicorp/mdns v1.0.0
+go: finding golang.org/x/oauth2 v0.0.0-20181017192945-9dcd33a902f4
+go: finding golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be
+go: finding github.com/Masterminds/sprig v0.0.0-20180403013413-6b2a58267f6a
+go: finding github.com/prometheus/common v0.0.0-20180518154759-7600349dcfe1
+go: finding golang.org/x/sys v0.0.0-20190129075346-302c3dd5f1cc
+go: finding golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: finding gopkg.in/robfig/cron.v2 v2.0.0-20150107220207-be2e0b0deed5
+go: finding github.com/mitchellh/go-testing-interface v0.0.0-20171004221916-a61a99592b77
+go: finding google.golang.org/genproto v0.0.0-20181016170114-94acd270e44e
+go: finding github.com/hashicorp/logutils v1.0.0
+go: finding github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc
+go: finding github.com/urfave/cli v1.18.0
+go: finding github.com/hashicorp/go.net v0.0.1
+go: finding github.com/satori/go.uuid v0.0.0-20160713180306-0aa62d5ddceb
+go: finding golang.org/x/net v0.0.0-20180702212446-ed29d75add3d
+go: finding github.com/ryanuber/go-glob v0.0.0-20170128012129-256dc444b735
+go: finding github.com/mitchellh/mapstructure v0.0.0-20160808181253-ca63d7c062ee
+go: finding github.com/opencontainers/runc v0.1.1
+go: finding github.com/posener/complete v1.1.1
+go: finding github.com/mattn/go-runewidth v0.0.2
+go: finding google.golang.org/appengine v1.1.0
+go: finding golang.org/x/sys v0.0.0-20181026203630-95b1ffbd15a5
+go: finding github.com/coreos/go-semver v0.2.0
+go: finding github.com/viniciuschiele/tarx v0.0.0-20151205142357-6e3da540444d
+go: finding vbom.ml/util v0.0.0-20170409195630-256737ac55c4
+go: finding golang.org/x/net v0.0.0-20181023162649-9b4f9f5ad519
+go: finding github.com/soheilhy/cmux v0.1.4
+go: finding golang.org/x/crypto v0.0.0-20180608092829-8ac0e0d97ce4
+go: finding github.com/opencontainers/image-spec v1.0.1
+go: finding github.com/mattn/go-colorable v0.0.9
+go: finding github.com/grpc-ecosystem/grpc-gateway v1.5.0
+go: finding github.com/andygrunwald/go-gerrit v0.0.0-20171029143327-95b11af228a1
+go: finding github.com/xanzy/ssh-agent v0.2.0
+go: finding github.com/hashicorp/go-multierror v1.0.0
+go: finding github.com/coreos/go-systemd v0.0.0-20180511133405-39ca1b05acc7
+go: finding google.golang.org/genproto v0.0.0-20180608181217-32ee49c4dd80
+go: finding golang.org/x/sys v0.0.0-20180830151530-49385e6e1522
+go: finding github.com/google/martian v2.1.0+incompatible
+go: finding github.com/knative/build v0.3.0
+go: finding github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1
+go: finding github.com/mitchellh/iochan v1.0.0
+go: finding github.com/Azure/go-autorest v10.12.0+incompatible
+go: finding github.com/ugorji/go v1.1.1
+go: finding golang.org/x/sys v0.0.0-20180823144017-11551d06cbcc
+go: finding golang.org/x/tools v0.0.0-20181017214349-06f26fdaaa28
+go: finding golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3
+go: finding github.com/mattn/go-isatty v0.0.3
+go: finding github.com/russross/blackfriday v1.5.1
+go: finding github.com/hashicorp/errwrap v1.0.0
+go: finding cloud.google.com/go v0.34.0
+go: finding github.com/gorilla/websocket v1.2.0
+go: finding github.com/coreos/etcd v3.3.10+incompatible
+go: finding github.com/armon/circbuf v0.0.0-20150827004946-bbbad097214e
+go: finding github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
+go: finding github.com/prometheus/client_golang v0.8.0
+go: finding github.com/miekg/dns v1.0.14
+go: finding github.com/mattbaird/jsonpatch v0.0.0-20171005235357-81af80346b1a
+go: finding github.com/jefferai/jsonx v1.0.0
+go: finding github.com/gorilla/websocket v0.0.0-20170926233335-4201258b820c
+go: finding github.com/shurcooL/graphql v0.0.0-20181231061246-d48a9a75455f
+go: finding github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf
+go: finding gopkg.in/check.v1 v1.0.0-20161208181325-20d25e280405
+go: finding golang.org/x/net v0.0.0-20180826012351-8a410e7b638d
+go: finding github.com/bgentry/speakeasy v0.1.0
+go: finding github.com/google/go-querystring v0.0.0-20150414214848-547ef5ac9797
+go: finding github.com/dustin/go-humanize v0.0.0-20171111073723-bb3d318650d4
+go: finding github.com/coreos/pkg v0.0.0-20160727233714-3ac0863d7acf
+go: finding github.com/hashicorp/memberlist v0.1.3
+go: finding github.com/oklog/run v1.0.0
+go: finding github.com/go-sql-driver/mysql v0.0.0-20160411075031-7ebe0a500653
+go: finding google.golang.org/grpc v1.16.0
+go: finding github.com/sirupsen/logrus v1.1.1
+go: finding github.com/hashicorp/go-multierror v0.0.0-20171204182908-b7773ae21874
+go: finding github.com/GoogleCloudPlatform/cloudsql-proxy v0.0.0-20181009230506-ac834ce67862
+go: finding github.com/knative/build v0.2.0
+go: finding golang.org/x/net v0.0.0-20181106065722-10aee1819953
+go: finding golang.org/x/crypto v0.0.0-20181029021203-45a5f77698d3
+go: finding github.com/imdario/mergo v0.0.0-20180119215619-163f41321a19
+go: finding github.com/imdario/mergo v0.3.5
+go: finding github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310
+go: finding github.com/prometheus/client_model v0.0.0-20170216185247-6f3806018612
+go: finding github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
+go: finding github.com/olekukonko/tablewriter v0.0.0-20170122224234-a0225b3f23b5
+go: finding github.com/Azure/azure-storage-blob-go v0.0.0-20180507052152-66ba96e49ebb
+go: finding github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c
+go: finding github.com/docker/go-units v0.3.2
+go: finding go.opencensus.io v0.15.0
+go: finding github.com/aws/aws-sdk-go v1.15.27
+go: finding github.com/prometheus/common v0.0.0-20180801064454-c7de2306084e
+go: finding github.com/go-ini/ini v1.25.4
+go: finding github.com/stretchr/testify v1.2.2
+go: finding golang.org/x/sync v0.0.0-20180314180146-1d60e4601c6f
+go: finding go.etcd.io/bbolt v1.3.1-etcd.7
+go: finding github.com/golang/groupcache v0.0.0-20160516000752-02826c3e7903
+go: finding github.com/sirupsen/logrus v1.0.5
+go: finding github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515
+go: finding github.com/hashicorp/go-sockaddr v1.0.0
+go: finding github.com/hashicorp/go-immutable-radix v1.0.0
+go: finding golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2
+go: finding cloud.google.com/go v0.26.0
+go: finding k8s.io/code-generator v0.0.0-20181017053441-8c97d6ab64da
+go: finding github.com/go-openapi/jsonreference v0.0.0-20161105162150-36d33bfe519e
+go: finding github.com/modern-go/reflect2 v1.0.1
+go: finding github.com/konsorten/go-windows-terminal-sequences v0.0.0-20180402223658-b729f2633dfe
+go: finding github.com/Azure/azure-pipeline-go v0.1.8
+go: finding github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5
+go: finding github.com/gobwas/glob v0.2.3
+go: finding github.com/mitchellh/ioprogress v0.0.0-20180201004757-6a23b12fa88e
+go: finding github.com/pkg/errors v0.8.0
+go: finding gopkg.in/gemnasium/logrus-airbrake-hook.v2 v2.1.2
+go: finding github.com/prometheus/procfs v0.0.0-20180612222113-7d6f385de8be
+go: finding github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8
+go: finding github.com/tmc/grpc-websocket-proxy v0.0.0-20170815181823-89b8d40f7ca8
+go: finding gopkg.in/airbrake/gobrake.v2 v2.0.9
+go: finding github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529
+go: finding github.com/hashicorp/go-uuid v1.0.0
+go: finding github.com/gocql/gocql v0.0.0-20190126123547-8516aabb0f99
+go: finding github.com/hashicorp/errwrap v0.0.0-20141028054710-7554cd9344ce
+go: finding github.com/prometheus/client_golang v0.9.1
+go: finding github.com/spf13/pflag v0.0.0-20170508184408-e57e3eeb33f7
+go: finding github.com/mattn/go-zglob v0.0.0-20180607075734-49693fbb3fe3
+go: finding github.com/google/go-querystring v0.0.0-20170111101155-53e6ce116135
+go: finding github.com/hashicorp/golang-lru v0.5.0
+go: finding github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869
+go: finding github.com/golang/snappy v0.0.0-20170215233205-553a64147049
+go: finding github.com/hailocab/go-hostpool v0.0.0-20160125115350-e80d13ce29ed
+go: downloading github.com/onsi/ginkgo v1.8.0
+go: downloading k8s.io/api v0.0.0-20181128191700-6db15a15d2d3
+go: downloading github.com/onsi/gomega v1.5.0
+go: downloading github.com/jenkins-x/** v1.3.1037
+go: downloading github.com/pkg/errors v0.8.0
+go: downloading github.com/jenkins-x/golang-jenkins v0.0.0-20180919102630-65b83ad42314
+go: extracting github.com/jenkins-x/golang-jenkins v0.0.0-20180919102630-65b83ad42314
+go: extracting github.com/pkg/errors v0.8.0
+go: downloading k8s.io/client-go v2.0.0-alpha.0.0.20190115164855-701b91367003+incompatible
+go: extracting github.com/onsi/gomega v1.5.0
+go: extracting github.com/onsi/ginkgo v1.8.0
+go: downloading k8s.io/apimachinery v0.0.0-20190122181752-bebe27e40fb7
+go: extracting k8s.io/api v0.0.0-20181128191700-6db15a15d2d3
+go: downloading github.com/hpcloud/tail v1.0.0
+go: extracting github.com/hpcloud/tail v1.0.0
+go: downloading github.com/cenkalti/backoff v2.0.0+incompatible
+go: extracting k8s.io/apimachinery v0.0.0-20190122181752-bebe27e40fb7
+go: extracting github.com/cenkalti/backoff v2.0.0+incompatible
+go: downloading gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+go: extracting k8s.io/client-go v2.0.0-alpha.0.0.20190115164855-701b91367003+incompatible
+go: extracting gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7
+go: downloading golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: downloading gopkg.in/yaml.v2 v2.2.1
+go: extracting gopkg.in/yaml.v2 v2.2.1
+go: downloading github.com/gogo/protobuf v1.1.1
+go: downloading gopkg.in/inf.v0 v0.9.1
+go: downloading github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+go: extracting github.com/jenkins-x/** v1.3.1037
+go: extracting github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+go: extracting gopkg.in/inf.v0 v0.9.1
+go: extracting golang.org/x/net v0.0.0-20181201002055-351d144fa1fc
+go: downloading github.com/golang/protobuf v1.2.0
+go: extracting github.com/golang/protobuf v1.2.0
+go: extracting github.com/gogo/protobuf v1.1.1
+go: downloading golang.org/x/text v0.3.0
+go: downloading golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2
+go: extracting golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2
+go: downloading github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf
+go: extracting github.com/google/gofuzz v0.0.0-20170612174753-24818f796faf
+go: downloading gopkg.in/fsnotify.v1 v1.4.7
+go: extracting gopkg.in/fsnotify.v1 v1.4.7
+go: downloading golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9
+go: extracting golang.org/x/crypto v0.0.0-20181203042331-505ab145d0a9
+go: downloading golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890
+go: downloading github.com/fatih/color v1.7.0
+go: downloading github.com/banzaicloud/bank-vaults v0.0.0-20181129101211-e31657d7c4fe
+go: downloading github.com/google/go-github v17.0.0+incompatible
+go: extracting github.com/fatih/color v1.7.0
+go: extracting golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890
+go: downloading code.gitea.io/sdk v0.0.0-20180702024448-79a281c4e34a
+go: extracting code.gitea.io/sdk v0.0.0-20180702024448-79a281c4e34a
+go: extracting github.com/google/go-github v17.0.0+incompatible
+go: downloading github.com/mitchellh/mapstructure v0.0.0-20180715050151-f15292f7a699
+go: extracting github.com/mitchellh/mapstructure v0.0.0-20180715050151-f15292f7a699
+go: downloading github.com/go-openapi/spec v0.17.1
+go: downloading gopkg.in/AlecAivazis/survey.v1 v1.6.2
+go: extracting gopkg.in/AlecAivazis/survey.v1 v1.6.2
+go: downloading github.com/google/go-querystring v0.0.0-20170111101155-53e6ce116135
+go: extracting github.com/google/go-querystring v0.0.0-20170111101155-53e6ce116135
+go: extracting github.com/go-openapi/spec v0.17.1
+go: downloading gopkg.in/src-d/go-git.v4 v4.5.0
+go: downloading github.com/tektoncd/pipeline v0.1.1-0.20190315182348-1861bddc364c
+go: downloading github.com/json-iterator/go v1.1.5
+go: extracting golang.org/x/text v0.3.0
+go: extracting github.com/json-iterator/go v1.1.5
+go: downloading github.com/jenkins-x/sonobuoy v0.11.7-0.20190318120422-253758214767
+go: downloading k8s.io/apiextensions-apiserver v0.0.0-20181128195303-1f84094d7e8e
+go: extracting github.com/tektoncd/pipeline v0.1.1-0.20190315182348-1861bddc364c
+go: extracting github.com/jenkins-x/sonobuoy v0.11.7-0.20190318120422-253758214767
+go: downloading github.com/hashicorp/vault v0.11.4
+go: extracting k8s.io/apiextensions-apiserver v0.0.0-20181128195303-1f84094d7e8e
+go: extracting gopkg.in/src-d/go-git.v4 v4.5.0
+go: extracting github.com/banzaicloud/bank-vaults v0.0.0-20181129101211-e31657d7c4fe
+go: downloading k8s.io/kube-openapi v0.0.0-20180719232738-d8ea2fe547a4
+go: downloading github.com/wbrefvem/go-bitbucket v0.0.0-20190128183802-fc08fd046abb
+go: extracting k8s.io/kube-openapi v0.0.0-20180719232738-d8ea2fe547a4
+go: downloading github.com/googleapis/gnostic v0.2.0
+go: downloading github.com/Jeffail/gabs v1.1.1
+go: extracting github.com/Jeffail/gabs v1.1.1
+go: extracting github.com/googleapis/gnostic v0.2.0
+go: extracting github.com/wbrefvem/go-bitbucket v0.0.0-20190128183802-fc08fd046abb
+go: downloading golang.org/x/sys v0.0.0-20190130150945-aca44879d564
+go: downloading github.com/modern-go/reflect2 v1.0.1
+go: extracting github.com/modern-go/reflect2 v1.0.1
+go: downloading github.com/go-openapi/jsonreference v0.17.0
+go: downloading github.com/gfleury/go-bitbucket-v1 v0.0.0-20190216152406-3a732135aa4d
+go: extracting github.com/go-openapi/jsonreference v0.17.0
+go: downloading github.com/mattn/go-colorable v0.0.9
+go: extracting github.com/mattn/go-colorable v0.0.9
+go: extracting github.com/gfleury/go-bitbucket-v1 v0.0.0-20190216152406-3a732135aa4d
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/blang/semver v3.5.1+incompatible
+go: extracting github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/knative/build v0.3.0
+go: extracting github.com/blang/semver v3.5.1+incompatible
+go: extracting golang.org/x/sys v0.0.0-20190130150945-aca44879d564
+go: downloading k8s.io/metrics v0.0.0-20181128195641-3954d62a524d
+go: extracting github.com/knative/build v0.3.0
+go: downloading github.com/stoewer/go-strcase v1.0.1
+go: downloading github.com/mattn/go-isatty v0.0.4
+go: extracting k8s.io/metrics v0.0.0-20181128195641-3954d62a524d
+go: extracting github.com/stoewer/go-strcase v1.0.1
+go: extracting github.com/mattn/go-isatty v0.0.4
+go: downloading github.com/andygrunwald/go-gerrit v0.0.0-20181026193842-43cfd7a94eb4
+go: downloading github.com/peterbourgon/diskv v2.0.1+incompatible
+go: downloading github.com/beevik/etree v1.0.1
+go: extracting github.com/peterbourgon/diskv v2.0.1+incompatible
+go: extracting github.com/andygrunwald/go-gerrit v0.0.0-20181026193842-43cfd7a94eb4
+go: downloading github.com/sethvargo/go-password v0.1.2
+go: extracting github.com/beevik/etree v1.0.1
+go: extracting github.com/sethvargo/go-password v0.1.2
+go: downloading github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7
+go: downloading github.com/xanzy/go-gitlab v0.0.0-20180814191223-f3bc634ab936
+go: downloading github.com/go-openapi/jsonpointer v0.17.0
+go: extracting github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7
+go: downloading github.com/PuerkitoBio/purell v1.1.0
+go: extracting github.com/go-openapi/jsonpointer v0.17.0
+go: downloading github.com/sirupsen/logrus v1.2.0
+go: downloading github.com/operator-framework/operator-sdk v0.0.0-20181011175812-913cbf711929
+go: extracting github.com/PuerkitoBio/purell v1.1.0
+go: extracting github.com/xanzy/go-gitlab v0.0.0-20180814191223-f3bc634ab936
+go: downloading k8s.io/helm v2.7.2+incompatible
+go: extracting github.com/sirupsen/logrus v1.2.0
+go: downloading github.com/src-d/gcfg v1.3.0
+go: extracting github.com/operator-framework/operator-sdk v0.0.0-20181011175812-913cbf711929
+go: downloading github.com/gophercloud/gophercloud v0.0.0-20181215224939-bdd8b1ecd793
+go: extracting github.com/src-d/gcfg v1.3.0
+go: downloading github.com/Azure/go-autorest v10.15.5+incompatible
+go: extracting github.com/Azure/go-autorest v10.15.5+incompatible
+go: extracting k8s.io/helm v2.7.2+incompatible
+go: downloading github.com/rifflock/lfshook v0.0.0-20180227222202-bf539943797a
+go: downloading github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: extracting github.com/rifflock/lfshook v0.0.0-20180227222202-bf539943797a
+go: downloading github.com/emicklei/go-restful v2.8.0+incompatible
+go: downloading github.com/pborman/uuid v0.0.0-20170612153648-e790cca94e6c
+go: downloading github.com/spf13/cobra v0.0.3
+go: downloading github.com/go-openapi/swag v0.17.0
+go: extracting github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578
+go: downloading github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
+go: downloading github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b
+go: extracting github.com/pborman/uuid v0.0.0-20170612153648-e790cca94e6c
+go: extracting github.com/emicklei/go-restful v2.8.0+incompatible
+go: downloading github.com/knative/pkg v0.0.0-20190125193334-994b801b03ef
+go: extracting github.com/satori/go.uuid v1.2.1-0.20180103174451-36e9d2ebbde5
+go: downloading gopkg.in/warnings.v0 v0.1.2
+go: extracting github.com/spf13/cobra v0.0.3
+go: extracting github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b
+go: extracting github.com/go-openapi/swag v0.17.0
+go: downloading github.com/jetstack/cert-manager v0.5.2
+go: downloading github.com/hashicorp/go-version v0.0.0-20180716215031-270f2f71b1ee
+go: extracting gopkg.in/warnings.v0 v0.1.2
+go: downloading cloud.google.com/go v0.34.0
+go: extracting github.com/hashicorp/go-version v0.0.0-20180716215031-270f2f71b1ee
+go: extracting github.com/knative/pkg v0.0.0-20190125193334-994b801b03ef
+go: downloading sigs.k8s.io/yaml v1.1.0
+go: extracting github.com/gophercloud/gophercloud v0.0.0-20181215224939-bdd8b1ecd793
+go: downloading github.com/ghodss/yaml v1.0.0
+go: downloading github.com/shirou/gopsutil v0.0.0-20180901134234-eb1f1ab16f2e
+go: downloading github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c
+go: extracting github.com/ghodss/yaml v1.0.0
+go: extracting sigs.k8s.io/yaml v1.1.0
+go: downloading github.com/fatih/structs v1.0.0
+go: extracting github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c
+go: downloading github.com/mailru/easyjson v0.0.0-20180823135443-60711f1a8329
+go: extracting github.com/fatih/structs v1.0.0
+go: extracting github.com/shirou/gopsutil v0.0.0-20180901134234-eb1f1ab16f2e
+go: extracting github.com/hashicorp/vault v0.11.4
+go: downloading github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
+go: extracting github.com/jetstack/cert-manager v0.5.2
+go: extracting github.com/mailru/easyjson v0.0.0-20180823135443-60711f1a8329
+go: extracting github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
+go: downloading github.com/rodaine/hclencoder v0.0.0-20180926060551-0680c4321930
+go: downloading github.com/spf13/cast v1.2.0
+go: extracting github.com/spf13/cast v1.2.0
+go: downloading github.com/c2h5oh/datasize v0.0.0-20171227191756-4eba002a5eae
+go: downloading github.com/imdario/mergo v0.3.6
+go: extracting github.com/rodaine/hclencoder v0.0.0-20180926060551-0680c4321930
+go: extracting github.com/c2h5oh/datasize v0.0.0-20171227191756-4eba002a5eae
+go: downloading github.com/hashicorp/hcl v0.0.0-20180404174102-ef8a98b0bbce
+go: extracting github.com/imdario/mergo v0.3.6
+go: downloading github.com/spf13/pflag v1.0.3
+go: downloading github.com/gorilla/mux v1.6.2
+go: extracting github.com/hashicorp/hcl v0.0.0-20180404174102-ef8a98b0bbce
+go: extracting github.com/gorilla/mux v1.6.2
+go: extracting github.com/spf13/pflag v1.0.3
+go: downloading github.com/evanphx/json-patch v4.1.0+incompatible
+go: extracting github.com/evanphx/json-patch v4.1.0+incompatible
+go: downloading github.com/spf13/viper v1.0.2
+go: downloading github.com/viniciuschiele/tarx v0.0.0-20151205142357-6e3da540444d
+go: downloading github.com/hashicorp/golang-lru v0.5.0
+go: extracting cloud.google.com/go v0.34.0
+go: extracting github.com/viniciuschiele/tarx v0.0.0-20151205142357-6e3da540444d
+go: extracting github.com/spf13/viper v1.0.2
+go: extracting github.com/hashicorp/golang-lru v0.5.0
+go: downloading github.com/mattbaird/jsonpatch v0.0.0-20171005235357-81af80346b1a
+go: downloading github.com/dgrijalva/jwt-go v3.2.0+incompatible
+go: extracting github.com/mattbaird/jsonpatch v0.0.0-20171005235357-81af80346b1a
+go: downloading github.com/spf13/jwalterweatherman v0.0.0-20180109140146-7c0cea34c8ec
+go: downloading github.com/fsnotify/fsnotify v1.4.7
+go: extracting github.com/dgrijalva/jwt-go v3.2.0+incompatible
+go: extracting github.com/spf13/jwalterweatherman v0.0.0-20180109140146-7c0cea34c8ec
+go: downloading github.com/magiconair/properties v1.8.0
+go: extracting github.com/fsnotify/fsnotify v1.4.7
+go: downloading github.com/gobwas/glob v0.2.3
+go: downloading github.com/spf13/afero v1.1.1
+go: extracting github.com/magiconair/properties v1.8.0
+go: downloading github.com/pelletier/go-toml v1.2.0
+go: downloading github.com/davecgh/go-spew v1.1.1
+go: extracting github.com/spf13/afero v1.1.1
+go: downloading github.com/BurntSushi/toml v0.3.0
+go: extracting github.com/gobwas/glob v0.2.3
+go: extracting github.com/pelletier/go-toml v1.2.0
+go: extracting github.com/davecgh/go-spew v1.1.1
+go: downloading github.com/Masterminds/semver v1.4.2
+go: downloading github.com/google/go-cmp v0.2.0
+go: downloading github.com/docker/spdystream v0.0.0-20170912183627-bc6354cbbc29
+go: extracting github.com/BurntSushi/toml v0.3.0
+go: extracting github.com/Masterminds/semver v1.4.2
+go: extracting github.com/docker/spdystream v0.0.0-20170912183627-bc6354cbbc29
+go: extracting github.com/google/go-cmp v0.2.0
+go: downloading github.com/hashicorp/go-cleanhttp v0.5.0
+go: downloading github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
+go: downloading github.com/hashicorp/errwrap v1.0.0
+go: downloading github.com/hashicorp/go-sockaddr v1.0.0
+go: downloading github.com/pierrec/lz4 v2.0.5+incompatible
+go: downloading github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
+go: downloading github.com/hashicorp/go-retryablehttp v0.0.0-20180718195005-e651d75abec6
+go: downloading github.com/hashicorp/go-multierror v1.0.0
+go: downloading github.com/ryanuber/go-glob v0.0.0-20170128012129-256dc444b735
+go: extracting github.com/hashicorp/go-cleanhttp v0.5.0
+go: extracting github.com/hashicorp/errwrap v1.0.0
+go: extracting github.com/hashicorp/go-rootcerts v0.0.0-20160503143440-6bb64b370b90
+go: extracting github.com/hashicorp/go-retryablehttp v0.0.0-20180718195005-e651d75abec6
+go: extracting github.com/ryanuber/go-glob v0.0.0-20170128012129-256dc444b735
+go: extracting github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
+go: extracting github.com/hashicorp/go-multierror v1.0.0
+go: extracting github.com/hashicorp/go-sockaddr v1.0.0
+go: extracting github.com/pierrec/lz4 v2.0.5+incompatible
+GO111MODULE=on go build  ./test/...
+GO111MODULE=on go get github.com/onsi/ginkgo/ginkgo
+GO111MODULE=on go get github.com/onsi/gomega/...
+JX VERSION INFORMATION
+
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision c176e996582d38b10710800b6fff710b950d55d8 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            c176e996582d38b10710800b6fff710b950d55d8 -> FETCH_HEAD
+WARNING: could not find a stable package version for git from /builder/home/.**/jenkins-x-versions
+For background see: https://jenkins-x.io/architecture/version-stream/
+Please lock this version down via the command: ** step create version pr -k package -n git
+NAME               VERSION
+**                 2.0.569
+jenkins x platform 2.0.934
+Kubernetes cluster v1.12.8-gke.10
+kubectl            v1.15.0
+helm client        Client: v2.14.1+g5270352
+git                2.21.0
+Operating System   "CentOS Linux release 7.6.1810 (Core) "
+
+GIT_ORGANISATION set to cb-kubecd
+GIT_PROVIDER_URL set to https://github.com
+JX_DISABLE_DELETE_APP is set. Apps created in the test run will NOT be deleted
+JX_DISABLE_DELETE_REPO is set. Repos created in the test run will NOT be deleted
+JX_DISABLE_WAIT_FOR_FIRST_RELEASE is not set.  If you would like to disable waiting for the build to be promoted to staging set this variable to TRUE
+JX_BDD_INCLUDE_APPS is set to **-app-jacoco:0.0.100
+BDD_TIMEOUT_BUILD_COMPLETES timeout value is 20
+BDD_TIMEOUT_BUILD_RUNNING_IN_STAGING timeout value is 10
+BDD_TIMEOUT_URL_RETURNS timeout value is 5
+BDD_TIMEOUT_CMD_LINE timeout value is 1
+BDD_TIMEOUT_APP_TESTS timeout value is 60
+BDD_TIMEOUT_SESSION_WAIT timeout value is 60
+BDD_TIMEOUT_JX_RUNNER timeout value is 
+JX_BDD_INCLUDE_APPS is set to **-app-jacoco:0.0.100
+GO111MODULE=on ginkgo  -r test/step --slowSpecThreshold=50000
+      About to verify podsRunning Suite: Jenkins X E2E tests: verify_pods
+===============================================
+Random Seed: [1m1565285444[0m
+Will run [1m1[0m of [1m1[0m specs
+
+[32m•[0m
+[1m[32mRan 1 of 1 Specs in 0.134 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m1 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 6.429364299s
+Test Suite Passed
+GO111MODULE=on ginkgo  -r test/platform --slowSpecThreshold=50000
+Running Suite: Jenkins X E2E tests: platform
+============================================
+Random Seed: [1m1565285451[0m
+Will run [1m2[0m of [1m2[0m specs
+
+[32m• [SLOW TEST:14.226 seconds][0m
+upgrade platfrom
+
+[90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:55[0m
+  Given valid parameters
+  [90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:70[0m
+    when running upgrade platform
+    [90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:71[0m
+      updates the platfrom to the given vresion
+      
+      [90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:72[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:32.777 seconds][0m
+upgrade platfrom
+
+[90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:55[0m
+  Given valid parameters
+  [90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:81[0m
+    when running upgrade platform in force mode
+    [90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:82[0m
+      updates always the platfrom to the given vresion
+      
+      [90m/tmp/jenkins-x/bdd-**/test/platform/**_upgrade_platform.go:83[0m
+[90m------------------------------[0m
+
+[1m[32mRan 2 of 2 Specs in 47.005 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m2 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 1m1.417818733s
+Test Suite Passed
+GO111MODULE=on ginkgo  -r test/ingress --slowSpecThreshold=50000
+Running Suite: Jenkins X E2E tests: ingress
+===========================================
+Random Seed: [1m1565285512[0m
+Will run [1m3[0m of [1m3[0m specs
+
+[32m• [SLOW TEST:27.283 seconds][0m
+upgrade ingress
+
+[90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:256[0m
+  Given valid parameters
+  [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:267[0m
+    when running upgrade ingress
+    [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:268[0m
+      creates the ingress resource for services from specified namespace
+      
+      [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:269[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:33.437 seconds][0m
+upgrade ingress
+
+[90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:256[0m
+  Given valid parameters
+  [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:281[0m
+    when running upgrade ingress
+    [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:282[0m
+      creates the ingress resource only for selected service from specified namespace
+      
+      [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:283[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:67.023 seconds][0m
+upgrade ingress
+
+[90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:256[0m
+  Given valid parameters
+  [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:300[0m
+    when running upgrade ingress
+    [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:301[0m
+      creates the ingress resource and fetch a TLS certificate for services from specified namespace
+      
+      [90m/tmp/jenkins-x/bdd-**/test/ingress/**_upgrade_ingress.go:302[0m
+[90m------------------------------[0m
+
+[1m[32mRan 3 of 3 Specs in 127.744 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m3 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 2m14.739083746s
+Test Suite Passed
+JX_BDD_INCLUDE_APPS="**-app-jacoco:0.0.100" GO111MODULE=on ginkgo  -r test/apps --slowSpecThreshold=50000
+Running Suite: Jenkins X E2E tests: verify_apps_lifecycle
+=========================================================
+Random Seed: [1m1565285647[0m
+Will run [1m4[0m of [1m4[0m specs
+
+[32m• [SLOW TEST:16.641 seconds][0m
+Apps Framework
+[90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:38[0m
+  Adding an app
+  [90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:61[0m
+    by running ** add app **-app-jacoco
+    [90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:62[0m
+      should be added
+      [90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:63[0m
+[90m------------------------------[0m
+[32m•[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:10.908 seconds][0m
+Apps Framework
+[90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:38[0m
+  Upgrading an app
+  [90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:116[0m
+    by running ** upgrade app **-app-jacoco
+    [90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:117[0m
+      should be upgraded
+      [90m/tmp/jenkins-x/bdd-**/test/apps/apps.go:118[0m
+[90m------------------------------[0m
+[32m•[0m
+[1m[32mRan 4 of 4 Specs in 31.789 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m4 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 33.596539186s
+Test Suite Passed
+GO111MODULE=on ginkgo  -r test/spring --slowSpecThreshold=50000
+Running Suite: Jenkins X E2E tests: create_spring_application
+=============================================================
+Random Seed: [1m1565285680[0m
+Will run [1m1[0m of [1m1[0m specs
+
+[32m• [SLOW TEST:823.568 seconds][0m
+create spring
+
+[90m/tmp/jenkins-x/bdd-**/test/spring/**_create_spring.go:20[0m
+  Given valid parameters
+  [90m/tmp/jenkins-x/bdd-**/test/spring/**_create_spring.go:34[0m
+    when running ** create spring
+    [90m/tmp/jenkins-x/bdd-**/test/spring/**_create_spring.go:35[0m
+      creates a spring application and promotes it to staging
+      
+      [90m/tmp/jenkins-x/bdd-**/test/spring/**_create_spring.go:36[0m
+[90m------------------------------[0m
+
+[1m[32mRan 1 of 1 Specs in 823.587 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m1 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 13m45.983847091s
+Test Suite Passed
+JX_BDD_QUICKSTARTS=golang-http GO111MODULE=on ginkgo  -r test/quickstart --slowSpecThreshold=50000 -focus=batch
+Running Suite: Jenkins X E2E tests: create_quickstarts
+======================================================
+Random Seed: [1m1565286506[0m
+Will run [1m3[0m of [1m3[0m specs
+
+[32m• [SLOW TEST:361.175 seconds][0m
+[batch] quickstart golang-http
+
+[90m/tmp/jenkins-x/bdd-**/test/quickstart/helpers.go:55[0m
+  Create a quickstart
+  [90m/tmp/jenkins-x/bdd-**/test/quickstart/helpers.go:75[0m
+    by running ** create quickstart golang-http
+    [90m/tmp/jenkins-x/bdd-**/test/quickstart/helpers.go:76[0m
+      creates a new source repository and promotes it to staging
+      [90m/tmp/jenkins-x/bdd-**/test/quickstart/helpers.go:77[0m
+[90m------------------------------[0m
+[32m•[0m[32m•[0m
+[1m[32mRan 3 of 3 Specs in 362.971 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m3 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 6m5.026817066s
+Test Suite Passed
+JX_BDD_IMPORTS=node-http,spring-boot-rest-prometheus,spring-boot-http-gradle,golang-http,golang-http-from-jenkins-x-yml GO111MODULE=on ginkgo  -r test/_import --slowSpecThreshold=50000
+go: downloading gopkg.in/src-d/go-billy.v4 v4.2.0
+go: downloading github.com/emirpasic/gods v1.9.0
+go: downloading github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
+go: downloading github.com/sergi/go-diff v1.0.0
+go: extracting github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
+go: extracting gopkg.in/src-d/go-billy.v4 v4.2.0
+go: downloading github.com/xanzy/ssh-agent v0.2.0
+go: downloading github.com/mitchellh/go-homedir v0.0.0-20180523094522-3864e76763d9
+go: extracting github.com/emirpasic/gods v1.9.0
+go: downloading github.com/kevinburke/ssh_config v0.0.0-20180317175531-9fc7bb800b55
+go: extracting github.com/sergi/go-diff v1.0.0
+go: extracting github.com/xanzy/ssh-agent v0.2.0
+go: extracting github.com/mitchellh/go-homedir v0.0.0-20180523094522-3864e76763d9
+go: extracting github.com/kevinburke/ssh_config v0.0.0-20180317175531-9fc7bb800b55
+go: downloading github.com/pelletier/go-buffruneio v0.2.0
+go: extracting github.com/pelletier/go-buffruneio v0.2.0
+
+Running Suite: Jenkins X E2E tests: import_applications
+=======================================================
+Random Seed: [1m1565286872[0m
+Will run [1m5[0m of [1m5[0m specs
+
+[32m• [SLOW TEST:369.154 seconds][0m
+Creating application spring-boot-http-gradle
+[90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:38[0m
+  by running ** import
+  [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:56[0m
+    creates an application from the specified folder and promotes it to staging
+    [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:57[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:434.078 seconds][0m
+Creating application node-http
+[90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:38[0m
+  by running ** import
+  [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:56[0m
+    creates an application from the specified folder and promotes it to staging
+    [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:57[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:299.590 seconds][0m
+Creating application golang-http-from-jenkins-x-yml
+[90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:38[0m
+  by running ** import
+  [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:56[0m
+    creates an application from the specified folder and promotes it to staging
+    [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:57[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:344.295 seconds][0m
+Creating application spring-boot-rest-prometheus
+[90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:38[0m
+  by running ** import
+  [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:56[0m
+    creates an application from the specified folder and promotes it to staging
+    [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:57[0m
+[90m------------------------------[0m
+[32m• [SLOW TEST:233.494 seconds][0m
+Creating application golang-http
+[90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:38[0m
+  by running ** import
+  [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:56[0m
+    creates an application from the specified folder and promotes it to staging
+    [90m/tmp/jenkins-x/bdd-**/test/_import/**_import.go:57[0m
+[90m------------------------------[0m
+
+[1m[32mRan 5 of 5 Specs in 1680.678 seconds[0m
+[1m[32mSUCCESS![0m -- [32m[1m5 Passed[0m | [91m[1m0 Failed[0m | [33m[1m0 Pending[0m | [36m[1m0 Skipped[0m
+PASS
+
+Ginkgo ran 1 suite in 28m7.328111798s
+Test Suite Passed
+
+Running kubectl get pods
+
+NAME                                                                       READY   STATUS      RESTARTS   AGE
+cb-kubecd-bdd-gh-1565286506-mas-1-from-build-pack-dnfwl-pod-590c69         0/9     Completed   0          33m
+cb-kubecd-bdd-gh-1565286506-pr-1-from-build-pack-w8md4-pod-757410          0/7     Completed   0          29m
+cb-kubecd-bdd-gh-import-1565286-1-from-build-pack-d6kc5-pod-8a5b74         0/9     Completed   0          3m18s
+cb-kubecd-bdd-ghf**y-import-156-1-everything-else-jg9jq-pod-7f592d         0/7     Completed   0          12m
+cb-kubecd-bdd-ghf**y-import-156-1-run-make-s966s-pod-62b19e                0/6     Completed   0          13m
+cb-kubecd-bdd-nh-import-1565286-1-from-build-pack-qmdpk-pod-864315         0/11    Completed   0          21m
+cb-kubecd-bdd-sbhg-import-15652-1-from-build-pack-78dqn-pod-905100         0/9     Completed   0          27m
+cb-kubecd-bdd-sbrp-import-15652-1-from-build-pack-784gv-pod-d4dc82         0/10    Completed   0          8m23s
+cb-kubecd-bdd-spring-1565285680-1-from-build-pack-77p25-pod-2b7a0c         0/10    Completed   0          45m
+cb-kubecd-bdd-spring-1565285680-hh9hp-1-from-build-pack-mpm2b-pod-bf580d   0/9     Completed   0          40m
+cb-kubecd-environment-pr-388-38-1-from-build-pack-x265f-pod-47091f         0/3     Completed   0          43m
+cb-kubecd-environment-pr-388-38-29rg8-1-from-build-pack-98mql-pod-970a40   0/4     Completed   0          42m
+cb-kubecd-environment-pr-388-38-2q7kj-1-from-build-pack-v97vr-pod-b8c915   0/3     Completed   0          17m
+cb-kubecd-environment-pr-388-38-4mwc4-1-from-build-pack-8n65l-pod-3a7994   0/3     Completed   0          6m45s
+cb-kubecd-environment-pr-388-38-6tvll-5-from-build-pack-7hd28-pod-ede874   0/4     Completed   0          10m
+cb-kubecd-environment-pr-388-38-btrwk-1-from-build-pack-24srw-pod-dee2f8   0/3     Completed   0          24m
+cb-kubecd-environment-pr-388-38-jt54m-1-from-build-pack-7rdx7-pod-f8aeaa   0/3     Completed   0          11m
+cb-kubecd-environment-pr-388-38-n647q-1-from-build-pack-qrn8c-pod-507de9   0/3     Completed   0          36m
+cb-kubecd-environment-pr-388-38-nhd9v-4-from-build-pack-spwhx-pod-360c69   0/4     Completed   0          16m
+cb-kubecd-environment-pr-388-38-s6vm4-6-from-build-pack-wvdqq-pod-2e7f79   0/4     Completed   0          5m35s
+cb-kubecd-environment-pr-388-38-t84zz-1-from-build-pack-4cv97-pod-36aa58   0/3     Completed   0          2m1s
+cb-kubecd-environment-pr-388-38-v8qcr-1-from-build-pack-8mb6z-pod-e7816f   0/3     Completed   0          31m
+cb-kubecd-environment-pr-388-38-x5xzm-1-from-build-pack-vh65p-pod-18d4fb   0/4     Completed   0          35m
+cb-kubecd-environment-pr-388-38-xhfhs-2-from-build-pack-hn49r-pod-2bcfeb   0/4     Completed   0          30m
+cb-kubecd-environment-pr-388-38-zf7rc-7-from-build-pack-txwsv-pod-a06873   0/4     Completed   0          101s
+crier-c8f8dbc76-qf5ws                                                      1/1     Running     0          56m
+deck-77d89699db-jw9tl                                                      1/1     Running     0          56m
+deck-77d89699db-tzksv                                                      1/1     Running     0          56m
+hook-59f445fd7-cm5hf                                                       1/1     Running     0          56m
+hook-59f445fd7-cnn8b                                                       1/1     Running     0          56m
+horologium-6dd8865b59-zgwcd                                                1/1     Running     0          56m
+jenkins-x-chartmuseum-75d45b6d7f-wlwbl                                     1/1     Running     0          56m
+jenkins-x-controllerbuild-685f9d87df-bhpfg                                 1/1     Running     0          56m
+jenkins-x-controllerrole-98f54897-jjq99                                    1/1     Running     0          56m
+jenkins-x-controllerteam-85d644bfdf-vzvgp                                  1/1     Running     0          56m
+jenkins-x-gcactivities-1565287200-dbl4h                                    0/1     Completed   0          22m
+jenkins-x-gcpods-1565287200-jndmc                                          0/1     Completed   0          22m
+jenkins-x-gcpreviews-1565287200-lfvbj                                      0/1     Completed   0          22m
+jenkins-x-heapster-6586795784-prw97                                        2/2     Running     0          19m
+jenkins-x-nexus-6ccd45c57c-pzsvv                                           1/1     Running     0          56m
+meta-cb-kubecd-bdd-gh-156528650-1-app-extension-4gtlw-pod-c16099           0/5     Completed   0          33m
+meta-cb-kubecd-bdd-gh-156528650-kndn7-1-app-extension-lgwjp-pod-c572f3     0/5     Completed   0          29m
+meta-cb-kubecd-bdd-gh-import-15-1-app-extension-j4wfv-pod-5f1203           0/5     Completed   0          3m40s
+meta-cb-kubecd-bdd-ghf**y-impor-1-app-extension-rl6j9-pod-1aa3c8           0/5     Completed   0          14m
+meta-cb-kubecd-bdd-nh-import-15-1-app-extension-8hj4x-pod-697d5c           0/5     Completed   0          21m
+meta-cb-kubecd-bdd-sbhg-import-1-app-extension-pldhq-pod-367139            0/5     Completed   0          27m
+meta-cb-kubecd-bdd-sbrp-import-1-app-extension-9ws2b-pod-259697            0/5     Completed   0          9m8s
+meta-cb-kubecd-bdd-spring-15652-1-app-extension-96shs-pod-a76ce8           0/5     Completed   0          47m
+meta-cb-kubecd-bdd-spring-15652-xllb8-1-app-extension-h7qdz-pod-8a78df     0/5     Completed   0          40m
+meta-cb-kubecd-environment-pr-3-1-app-extension-dnkvk-pod-2ac18f           0/5     Completed   0          44m
+meta-cb-kubecd-environment-pr-3-458hr-5-app-extension-vxd46-pod-979fd1     0/5     Completed   0          11m
+meta-cb-kubecd-environment-pr-3-668kd-1-app-extension-rwp5f-pod-42b48a     0/5     Completed   0          37m
+meta-cb-kubecd-environment-pr-3-6l2hm-2-app-extension-6gsss-pod-61e177     0/5     Completed   0          31m
+meta-cb-kubecd-environment-pr-3-7b7p8-3-app-extension-tmgxx-pod-21f5b8     0/5     Completed   0          24m
+meta-cb-kubecd-environment-pr-3-b2sll-1-app-extension-85n9h-pod-0ad4f2     0/5     Completed   0          43m
+meta-cb-kubecd-environment-pr-3-bxkzm-6-app-extension-cxklb-pod-040b22     0/5     Completed   0          5m59s
+meta-cb-kubecd-environment-pr-3-ccdkt-1-app-extension-7wglr-pod-c1c8fb     0/5     Completed   0          19m
+meta-cb-kubecd-environment-pr-3-d5gcr-1-app-extension-7cfms-pod-e09389     0/5     Completed   0          7m7s
+meta-cb-kubecd-environment-pr-3-nhqhp-4-app-extension-kfdlb-pod-a13394     0/5     Completed   0          19m
+meta-cb-kubecd-environment-pr-3-nwd6c-7-app-extension-jjl4m-pod-e8ede8     0/5     Completed   0          2m7s
+meta-cb-kubecd-environment-pr-3-rnd25-1-app-extension-xlkbk-pod-a16d98     0/5     Completed   0          2m30s
+meta-cb-kubecd-environment-pr-3-td7gd-1-app-extension-52xwr-pod-988b1e     0/5     Completed   0          36m
+meta-cb-kubecd-environment-pr-3-tgq4t-1-app-extension-2p278-pod-3c867f     0/5     Completed   0          32m
+meta-cb-kubecd-environment-pr-3-wrt2q-1-app-extension-bhp79-pod-a9ac87     0/5     Completed   0          25m
+meta-cb-kubecd-environment-pr-3-xngbk-1-app-extension-8thtz-pod-2b6018     0/5     Completed   0          12m
+pipeline-6f8f44688d-994qp                                                  1/1     Running     0          56m
+pipelinerunner-7bf667467c-z64mk                                            1/1     Running     0          56m
+plank-6975774c75-lqjht                                                     1/1     Running     0          56m
+sinker-6789684d48-rt9g2                                                    1/1     Running     0          56m
+tekton-pipelines-controller-54fddb69b9-dx6br                               1/1     Running     0          56m
+tekton-pipelines-webhook-56c5bb58c7-gfzkj                                  1/1     Running     0          56m
+tide-7b5d79d959-tgtf5                                                      1/1     Running     0          56m
+
+Running kubectl get env dev -oyaml
+
+apiVersion: jenkins.io/v1
+kind: Environment
+metadata:
+  creationTimestamp: "2019-08-08T17:24:00Z"
+  generation: 1
+  labels:
+    env: dev
+    team: **
+  name: dev
+  namespace: **
+  resourceVersion: "2726"
+  selfLink: /apis/jenkins.io/v1/namespaces/**/environments/dev
+  uid: 4f97f4fe-ba01-11e9-8c60-42010a8400cd
+spec:
+  kind: Development
+  label: Development
+  namespace: **
+  previewGitInfo:
+    user: {}
+  promotionStrategy: Never
+  source: {}
+  teamSettings:
+    appsRepository: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+    buildPackRef: master
+    buildPackUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes.git
+    defaultScheduler:
+      kind: ""
+      name: ""
+    dockerRegistryOrg: *************2
+    envOrganisation: cb-kubecd
+    gitServer: https://github.com
+    helmTemplate: true
+    importMode: YAML
+    kubeProvider: gke
+    pipelineUsername: *************-test
+    promotionEngine: Prow
+    prowConfig: Legacy
+    prowEngine: Tekton
+    quickstartLocations:
+    - excludes:
+      - WIP-*
+      gitKind: github
+      gitUrl: https://github.com
+      includes:
+      - '*'
+      owner: jenkins-x-quickstarts
+    useGitOps: true
+    versionStreamRef: c176e996582d38b10710800b6fff710b950d55d8
+    versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webHookEngine: Prow
+status: {}
+
+Running ** status -b
+
+Jenkins X checks passed for Cluster(gke_*************2_europe-west1-c_pr-388-38-tekton-gkebdd): 4 nodes, memory 28% of 23112832Ki, cpu 75% of 7720m.
+
+Running ** version -b
+
+NAME               VERSION
+**                 2.0.569
+jenkins x platform 2.0.934
+Kubernetes cluster v1.12.8-gke.10
+kubectl            v1.15.0
+helm client        Client: v2.14.1+g5270352
+git                2.21.0
+Operating System   "CentOS Linux release 7.6.1810 (Core) "
+WARNING: 
+A new ** version is available: 2.0.574
+WARNING: To upgrade to this new version use: ** upgrade cli
+
+Running ** get env -b
+
+NAME       LABEL       KIND        PROMOTE NAMESPACE     ORDER CLUSTER SOURCE                                                                          REF PR
+dev        Development Development Never   **            0                                                                                                 
+staging    Staging     Permanent   Auto    **-staging    100           https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git        
+production Production  Permanent   Manual  **-production 200           https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production.git     
+
+Running ** get activities -b
+
+STEP                                                               STARTED AGO DURATION STATUS
+cb-kubecd/bdd-gh-1565286506/master #1                                    34m1s     3m4s Succeeded Version: 0.0.1
+  app extension                                                          34m1s      24s Succeeded 
+    Credential Initializer 6c7rh                                         34m1s       0s Succeeded 
+    Working Dir Initializer Vl7fc                                        34m1s       0s Succeeded 
+    Place Tools                                                          34m0s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Gh 156528650 2p88h                    33m59s       6s Succeeded https://github.com/cb-kubecd/bdd-gh-1565286506.git
+    Git Merge                                                           33m58s       5s Succeeded 
+    Merge Pull Refs                                                     33m57s       5s Succeeded 
+    Create Effective Pipeline                                           33m57s      10s Succeeded 
+    Create Tekton Crds                                                  33m56s      19s Succeeded 
+  from build pack                                                       33m36s    2m39s Succeeded 
+    Credential Initializer Rwxt6                                        33m36s       0s Succeeded 
+    Working Dir Initializer Fmtwc                                       33m36s       1s Succeeded 
+    Place Tools                                                         33m35s       1s Succeeded 
+    Git Source Cb Kubecd Bdd Gh 1565286506 Mas Bpgzx                    33m33s      35s Succeeded https://github.com/cb-kubecd/bdd-gh-1565286506.git
+    Git Merge                                                           33m33s      36s Succeeded 
+    Setup Jx Git Credentials                                             33m3s       6s Succeeded 
+    Build Make Build                                                     33m3s      13s Succeeded 
+    Build Container Build                                                33m3s      20s Succeeded 
+    Build Post Build                                                     33m3s      21s Succeeded 
+    Promote Changelog                                                    33m2s      26s Succeeded 
+    Promote Helm Release                                                 33m2s      30s Succeeded 
+    Promote Jx Promote                                                   33m2s     2m5s Succeeded 
+  Promote: staging                                                      32m23s    1m26s Succeeded 
+    PullRequest                                                         32m23s    1m26s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/2 Merge SHA: 86feb671ecd1ae600f2ef67eafa468d2e08e6baa
+    Update                                                              30m57s       0s Succeeded 
+cb-kubecd/bdd-gh-1565286506/PR-1 #1                                     29m43s    1m24s Succeeded 
+  app extension                                                         29m43s      21s Succeeded 
+    Credential Initializer D6nfz                                        29m43s       0s Succeeded 
+    Working Dir Initializer Wz4hx                                       29m42s       0s Succeeded 
+    Place Tools                                                         29m41s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Gh 156528650 B4pm4                    29m40s       5s Succeeded https://github.com/cb-kubecd/bdd-gh-1565286506.git
+    Git Merge                                                           29m40s       8s Succeeded 
+    Merge Pull Refs                                                     29m39s       7s Succeeded 
+    Create Effective Pipeline                                           29m39s      13s Succeeded 
+    Create Tekton Crds                                                  29m39s      17s Succeeded 
+  from build pack                                                       29m21s     1m2s Succeeded 
+    Credential Initializer M4cj6                                        29m21s       0s Succeeded 
+    Working Dir Initializer 4n8fg                                       29m20s       0s Succeeded 
+    Place Tools                                                         29m19s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Gh 1565286506 Pr 6smlp                     29m18s       4s Succeeded https://github.com/cb-kubecd/bdd-gh-1565286506.git
+    Git Merge                                                           29m18s       4s Succeeded 
+    Build Make Linux                                                    29m17s      10s Succeeded 
+    Build Container Build                                               29m17s      17s Succeeded 
+    Postbuild Post Build                                                29m17s      18s Succeeded 
+    Promote Make Preview                                                29m17s      37s Succeeded 
+    Promote Jx Preview                                                  29m17s      58s Succeeded 
+  Preview                                                               28m20s           https://github.com/cb-kubecd/bdd-gh-1565286506/pull/1
+    Preview Application                                                 28m20s           http://bdd-gh-1565286506.**-cb-kubecd-bdd-gh-1565286506-pr-1.130.211.109.125.nip.io
+cb-kubecd/bdd-gh-import-1565286872/master #1                             3m42s    1m46s Succeeded Version: 0.0.1
+  Release                                                                3m42s     1m0s Succeeded 
+  Promote: staging                                                       2m42s      46s Succeeded 
+    PullRequest                                                          2m42s      46s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/7 Merge SHA: 3bb3ae6fba894296ac1b4c322847143ba78e4f5f
+    Update                                                               1m56s       0s Succeeded 
+  app extension                                                          3m44s      21s Succeeded 
+    Credential Initializer Dfwpz                                         3m44s       0s Succeeded 
+    Working Dir Initializer Rgtsp                                        3m44s       0s Succeeded 
+    Place Tools                                                          3m43s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Gh Import 15 S96vx                     3m42s       5s Succeeded https://github.com/cb-kubecd/bdd-gh-import-1565286872.git
+    Git Merge                                                            3m41s       5s Succeeded 
+    Merge Pull Refs                                                      3m41s       5s Succeeded 
+    Create Effective Pipeline                                            3m41s      10s Succeeded 
+    Create Tekton Crds                                                   3m41s      18s Succeeded 
+  from build pack                                                        3m22s    1m26s Succeeded 
+    Credential Initializer 2wrj5                                         3m22s       0s Succeeded 
+    Working Dir Initializer Pjwqv                                        3m22s       1s Succeeded 
+    Place Tools                                                          3m20s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Gh Import 1565286 Dxtvm                     3m19s       5s Succeeded https://github.com/cb-kubecd/bdd-gh-import-1565286872.git
+    Git Merge                                                            3m19s       6s Succeeded 
+    Setup Jx Git Credentials                                             3m19s       6s Succeeded 
+    Build Make Build                                                     3m19s      13s Succeeded 
+    Build Container Build                                                3m19s      21s Succeeded 
+    Build Post Build                                                     3m19s      22s Succeeded 
+    Promote Changelog                                                    3m18s      23s Succeeded 
+    Promote Helm Release                                                 3m18s      27s Succeeded 
+    Promote Jx Promote                                                   3m18s    1m22s Succeeded 
+cb-kubecd/bdd-ghf**y-import-1565286872/master #1                        14m25s    3m30s Succeeded Version: 0.0.1
+  app extension                                                         14m25s      23s Succeeded 
+    Credential Initializer Khlrn                                        14m25s       1s Succeeded 
+    Working Dir Initializer Rf5pq                                       14m24s       1s Succeeded 
+    Place Tools                                                         14m23s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Ghf**y Impor 22kxz                    14m22s       6s Succeeded https://github.com/cb-kubecd/bdd-ghf**y-import-1565286872.git
+    Git Merge                                                           14m22s       6s Succeeded 
+    Merge Pull Refs                                                     14m21s       6s Succeeded 
+    Create Effective Pipeline                                           14m21s      12s Succeeded 
+    Create Tekton Crds                                                  14m21s      19s Succeeded 
+  run make                                                              13m48s      44s Succeeded 
+    Credential Initializer Fqrz7                                        13m48s       0s Succeeded 
+    Working Dir Initializer 5fzmw                                       13m47s       0s Succeeded 
+    Place Tools                                                         13m46s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Ghf**y Import 156 9rfng                    13m45s      32s Succeeded https://github.com/cb-kubecd/bdd-ghf**y-import-1565286872.git
+    Git Merge                                                           13m45s      33s Succeeded 
+    Setup Jx Git Credentials                                            13m16s       5s Succeeded 
+    Build Make Build                                                    13m16s      11s Succeeded 
+    Source Mkdir Cb Kubecd Bdd Ghf**y Import 156 Fcffc                  13m16s      11s Succeeded 
+    Source Copy Cb Kubecd Bdd Ghf**y Import 156 W4bfd                   13m16s      12s Succeeded 
+  everything else                                                       12m56s     2m1s Succeeded 
+    Credential Initializer Mj2kb                                        12m56s       0s Succeeded 
+    Working Dir Initializer Kqpwq                                       12m54s       0s Succeeded 
+    Place Tools                                                         12m53s       0s Succeeded 
+    Create Dir Workspace Rbw77                                          12m52s       6s Succeeded 
+    Source Copy Workspace Ksvzt                                         12m52s       6s Succeeded 
+    Build Container Build                                               12m50s      11s Succeeded 
+    Build Post Build                                                    12m50s      12s Succeeded 
+    Promote Changelog                                                   12m49s      15s Succeeded 
+    Promote Helm Release                                                12m49s      19s Succeeded 
+    Promote Jx Promote                                                  12m49s    1m54s Succeeded 
+  Promote: staging                                                      12m22s    1m27s Succeeded 
+    PullRequest                                                         12m22s    1m27s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/5 Merge SHA: a158ec159e62e12c3054caafc551e1f51be0af77
+    Update                                                              10m55s       0s Succeeded 
+cb-kubecd/bdd-nh-import-1565286872/master #1                            21m42s    2m42s Succeeded Version: 0.0.1
+  app extension                                                         21m42s      25s Succeeded 
+    Credential Initializer 66dl6                                        21m42s       0s Succeeded 
+    Working Dir Initializer 757nm                                       21m42s       0s Succeeded 
+    Place Tools                                                         21m41s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Nh Import 15 Bjd7g                    21m40s       5s Succeeded https://github.com/cb-kubecd/bdd-nh-import-1565286872.git
+    Git Merge                                                           21m40s       7s Succeeded 
+    Merge Pull Refs                                                     21m39s       6s Succeeded 
+    Create Effective Pipeline                                           21m39s      14s Succeeded 
+    Create Tekton Crds                                                  21m39s      22s Succeeded 
+  from build pack                                                       21m15s    2m15s Succeeded 
+    Credential Initializer Lqtft                                        21m15s       0s Succeeded 
+    Working Dir Initializer Kc7sf                                       21m14s       0s Succeeded 
+    Place Tools                                                         21m13s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Nh Import 1565286 6wt4p                    21m12s      36s Succeeded https://github.com/cb-kubecd/bdd-nh-import-1565286872.git
+    Git Merge                                                           21m12s      36s Succeeded 
+    Setup Jx Git Credentials                                            20m41s       6s Succeeded 
+    Build Npmrc                                                         20m41s       6s Succeeded 
+    Build Npm Install                                                   20m41s       8s Succeeded 
+    Build Npm Test                                                      20m41s       9s Succeeded 
+    Build Container Build                                               20m40s      17s Succeeded 
+    Build Post Build                                                    20m40s      17s Succeeded 
+    Promote Changelog                                                   20m40s      20s Succeeded 
+    Promote Helm Release                                                20m40s      24s Succeeded 
+    Promote Jx Promote                                                  20m39s    1m39s Succeeded 
+  Promote: staging                                                       20m7s     1m7s Succeeded 
+    PullRequest                                                          20m7s     1m7s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/4 Merge SHA: aff5ab780f14c2b8dd16524840fbbd5bf27f201e
+    Update                                                               19m0s       0s Succeeded 
+cb-kubecd/bdd-sbhg-import-1565286872/master #1                          27m51s    3m47s Succeeded Version: 0.0.1
+  app extension                                                         27m51s      25s Succeeded 
+    Credential Initializer Tcpm9                                        27m51s       0s Succeeded 
+    Working Dir Initializer Bsmvm                                       27m51s       0s Succeeded 
+    Place Tools                                                         27m50s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Sbhg Import Jhz75                     27m49s       6s Succeeded https://github.com/cb-kubecd/bdd-sbhg-import-1565286872.git
+    Git Merge                                                           27m48s       6s Succeeded 
+    Merge Pull Refs                                                     27m48s       6s Succeeded 
+    Create Effective Pipeline                                           27m48s      14s Succeeded 
+    Create Tekton Crds                                                  27m48s      22s Succeeded 
+  from build pack                                                       27m25s    3m21s Succeeded 
+    Credential Initializer Kssbh                                        27m25s       0s Succeeded 
+    Working Dir Initializer 2v89d                                       27m23s       0s Succeeded 
+    Place Tools                                                         27m22s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Sbhg Import 15652 24gg2                    27m21s      35s Succeeded https://github.com/cb-kubecd/bdd-sbhg-import-1565286872.git
+    Git Merge                                                           27m21s      36s Succeeded 
+    Setup Jx Git Credentials                                            26m51s       7s Succeeded 
+    Build Gradle Build                                                  26m51s    1m15s Succeeded 
+    Build Container Build                                               26m51s    1m24s Succeeded 
+    Build Post Build                                                    26m50s    1m24s Succeeded 
+    Promote Changelog                                                   26m50s    1m28s Succeeded 
+    Promote Helm Release                                                26m50s    1m32s Succeeded 
+    Promote Jx Promote                                                  26m50s    2m46s Succeeded 
+  Promote: staging                                                      25m10s     1m6s Succeeded 
+    PullRequest                                                         25m10s     1m6s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/3 Merge SHA: 9039821522e701127d53ec8c981a32df6bae9b9e
+    Update                                                               24m4s       0s Succeeded 
+cb-kubecd/bdd-sbrp-import-1565286872/master #1                           9m12s    3m23s Succeeded Version: 0.0.1
+  app extension                                                          9m12s      44s Succeeded 
+    Credential Initializer 4npqt                                         9m12s       0s Succeeded 
+    Working Dir Initializer Vkv4r                                        9m11s       0s Succeeded 
+    Place Tools                                                          9m10s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Sbrp Import 7g9gj                       9m9s       5s Succeeded https://github.com/cb-kubecd/bdd-sbrp-import-1565286872.git
+    Git Merge                                                             9m9s       6s Succeeded 
+    Merge Pull Refs                                                       9m9s       6s Succeeded 
+    Create Effective Pipeline                                             9m8s      10s Succeeded 
+    Create Tekton Crds                                                    9m8s      40s Succeeded 
+  from build pack                                                        8m27s    2m38s Succeeded 
+    Credential Initializer Fr544                                         8m27s       0s Succeeded 
+    Working Dir Initializer Qj2gv                                        8m27s       0s Succeeded 
+    Place Tools                                                          8m26s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Sbrp Import 15652 4pbht                     8m25s       8s Succeeded https://github.com/cb-kubecd/bdd-sbrp-import-1565286872.git
+    Git Merge                                                            8m23s       6s Succeeded 
+    Setup Jx Git Credentials                                             8m23s       6s Succeeded 
+    Build Mvn Deploy                                                     8m23s      42s Succeeded 
+    Build Skaffold Version                                               8m22s      42s Succeeded 
+    Build Container Build                                                8m22s      51s Succeeded 
+    Build Post Build                                                     8m22s      51s Succeeded 
+    Promote Changelog                                                    8m22s      54s Succeeded 
+    Promote Helm Release                                                 8m22s      58s Succeeded 
+    Promote Jx Promote                                                   8m21s    2m32s Succeeded 
+  Promote: staging                                                       7m16s    1m27s Succeeded 
+    PullRequest                                                          7m16s    1m27s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/6 Merge SHA: efd52382e2bf71454d26cea104a12538d7423294
+    Update                                                               5m49s       0s Succeeded 
+cb-kubecd/bdd-spring-1565285680/master #1                               47m13s    4m20s Succeeded Version: 0.0.1
+  app extension                                                         47m13s    1m11s Succeeded 
+    Credential Initializer 8csl4                                        47m13s       0s Succeeded 
+    Working Dir Initializer X6fbh                                       47m11s       0s Succeeded 
+    Place Tools                                                         47m10s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Spring 15652 Hzntc                     47m8s      11s Succeeded https://github.com/cb-kubecd/bdd-spring-1565285680.git
+    Git Merge                                                            47m2s       5s Succeeded 
+    Merge Pull Refs                                                      47m2s       5s Succeeded 
+    Create Effective Pipeline                                            47m2s      10s Succeeded 
+    Create Tekton Crds                                                   47m1s      59s Succeeded 
+  from build pack                                                        46m1s     3m8s Succeeded 
+    Credential Initializer Vnsc9                                         46m1s       0s Succeeded 
+    Working Dir Initializer 6dftk                                        46m1s       1s Succeeded 
+    Place Tools                                                         45m59s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Spring 1565285680 K9pgz                    45m58s       9s Succeeded https://github.com/cb-kubecd/bdd-spring-1565285680.git
+    Git Merge                                                           45m57s       8s Succeeded 
+    Setup Jx Git Credentials                                            45m57s       9s Succeeded 
+    Build Mvn Deploy                                                    45m57s     1m0s Succeeded 
+    Build Skaffold Version                                              45m56s     1m0s Succeeded 
+    Build Container Build                                               45m54s     1m8s Succeeded 
+    Build Post Build                                                    45m53s     1m8s Succeeded 
+    Promote Changelog                                                   45m53s    1m13s Succeeded 
+    Promote Helm Release                                                45m53s    1m19s Succeeded 
+    Promote Jx Promote                                                  45m53s     3m0s Succeeded 
+  Promote: staging                                                      44m20s    1m27s Succeeded 
+    PullRequest                                                         44m20s    1m26s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/pull/1 Merge SHA: 7714e18cb2fd249b94def81924a0ce533b133570
+    Update                                                              42m54s       1s Succeeded 
+cb-kubecd/bdd-spring-1565285680/PR-1 #1                                 40m52s    3m15s Succeeded 
+  app extension                                                         40m52s      23s Succeeded 
+    Credential Initializer Gf4fd                                        40m52s       0s Succeeded 
+    Working Dir Initializer 2wsnh                                       40m51s       0s Succeeded 
+    Place Tools                                                         40m50s       0s Succeeded 
+    Git Source Meta Cb Kubecd Bdd Spring 15652 Fsx8p                    40m49s       5s Succeeded https://github.com/cb-kubecd/bdd-spring-1565285680.git
+    Git Merge                                                           40m49s       9s Succeeded 
+    Merge Pull Refs                                                     40m49s      10s Succeeded 
+    Create Effective Pipeline                                           40m48s      15s Succeeded 
+    Create Tekton Crds                                                  40m48s      19s Succeeded 
+  from build pack                                                       40m25s    2m48s Succeeded 
+    Credential Initializer B7ftw                                        40m25s       0s Succeeded 
+    Working Dir Initializer 4ldvw                                       40m23s       1s Succeeded 
+    Place Tools                                                         40m21s       0s Succeeded 
+    Git Source Cb Kubecd Bdd Spring 1565285680 G5j6z                    40m20s      22s Succeeded https://github.com/cb-kubecd/bdd-spring-1565285680.git
+    Git Merge                                                           40m13s      16s Succeeded 
+    Build Set Version                                                    40m5s      23s Succeeded 
+    Build Mvn Install                                                    40m5s      53s Succeeded 
+    Build Skaffold Version                                               40m5s      54s Succeeded 
+    Build Container Build                                                40m2s     1m3s Succeeded 
+    Postbuild Post Build                                                 40m2s     1m3s Succeeded 
+    Promote Make Preview                                                 40m2s    1m22s Succeeded 
+    Promote Jx Preview                                                   40m1s    2m24s Succeeded 
+  Preview                                                               38m19s           https://github.com/cb-kubecd/bdd-spring-1565285680/pull/1
+    Preview Application                                                 38m19s           http://bdd-spring-1565285680.**-cb-kubecd-bdd-spring-1565285680-pr-1.130.211.109.125.nip.io
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-production/master #1       36m7s    1m23s Succeeded 
+  app extension                                                          36m7s      23s Succeeded 
+    Credential Initializer Hq6jt                                         36m7s       1s Succeeded 
+    Working Dir Initializer Cl2p2                                        36m5s       0s Succeeded 
+    Place Tools                                                          36m4s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Fp5vh                     36m3s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production.git
+    Git Merge                                                            36m3s       5s Succeeded 
+    Merge Pull Refs                                                      36m2s       5s Succeeded 
+    Create Effective Pipeline                                            36m2s      11s Succeeded 
+    Create Tekton Crds                                                   36m2s      18s Succeeded 
+  from build pack                                                       35m43s      59s Succeeded 
+    Credential Initializer 2c569                                        35m43s       0s Succeeded 
+    Working Dir Initializer 8s8p5                                       35m42s       0s Succeeded 
+    Place Tools                                                         35m41s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 5vzbs                    35m40s       6s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production.git
+    Git Merge                                                           35m39s       5s Succeeded 
+    Setup Jx Git Credentials                                            35m39s       6s Succeeded 
+    Build Helm Apply                                                    35m39s      55s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-production/PR-1 #1        37m14s     2m5s Succeeded 
+  app extension                                                         37m14s      22s Succeeded 
+    Credential Initializer Fsz2v                                        37m14s       0s Succeeded 
+    Working Dir Initializer Qd8j6                                       37m12s       0s Succeeded 
+    Place Tools                                                         37m11s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Bwg7d                    37m10s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production.git
+    Git Merge                                                           37m10s       6s Succeeded 
+    Merge Pull Refs                                                     37m10s       7s Succeeded 
+    Create Effective Pipeline                                            37m9s      13s Succeeded 
+    Create Tekton Crds                                                   37m9s      17s Succeeded 
+  from build pack                                                       36m51s    1m42s Succeeded 
+    Credential Initializer G28lp                                        36m51s       0s Succeeded 
+    Working Dir Initializer Q7cp5                                       36m50s       1s Succeeded 
+    Place Tools                                                         36m49s       1s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 77v47                    36m47s     1m4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production.git
+    Git Merge                                                           36m47s     1m5s Succeeded 
+    Build Helm Build                                                    35m45s      36s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #1          43m2s    1m21s Succeeded 
+  app extension                                                          43m2s      27s Succeeded 
+    Credential Initializer Bcnl2                                         43m2s       0s Succeeded 
+    Working Dir Initializer 9qtvp                                        43m1s       0s Succeeded 
+    Place Tools                                                          43m0s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 6cntb                    42m59s       3s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           42m59s       4s Succeeded 
+    Merge Pull Refs                                                     42m58s       4s Succeeded 
+    Create Effective Pipeline                                           42m58s      10s Succeeded 
+    Create Tekton Crds                                                  42m58s      23s Succeeded 
+  from build pack                                                       42m34s      53s Succeeded 
+    Credential Initializer S5hgv                                        42m34s       0s Succeeded 
+    Working Dir Initializer Ghqhf                                       42m33s       0s Succeeded 
+    Place Tools                                                         42m32s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 X4w97                    42m31s       3s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           42m31s       4s Succeeded 
+    Setup Jx Git Credentials                                            42m31s       5s Succeeded 
+    Build Helm Apply                                                    42m30s      49s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #2         31m12s    1m17s Succeeded 
+  app extension                                                         31m12s      25s Succeeded 
+    Credential Initializer T9mpl                                        31m12s       0s Succeeded 
+    Working Dir Initializer Qhfhw                                       31m11s       0s Succeeded 
+    Place Tools                                                         31m10s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 H2nng                     31m9s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            31m9s       6s Succeeded 
+    Merge Pull Refs                                                      31m8s       5s Succeeded 
+    Create Effective Pipeline                                            31m8s      12s Succeeded 
+    Create Tekton Crds                                                   31m8s      21s Succeeded 
+  from build pack                                                       30m46s      51s Succeeded 
+    Credential Initializer 9j8hh                                        30m46s       0s Succeeded 
+    Working Dir Initializer 57fb2                                       30m44s       0s Succeeded 
+    Place Tools                                                         30m43s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 Tnq5r                    30m42s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           30m42s       5s Succeeded 
+    Setup Jx Git Credentials                                            30m42s       5s Succeeded 
+    Build Helm Apply                                                    30m42s      47s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #3         24m18s    1m21s Succeeded 
+  app extension                                                         24m18s      21s Succeeded 
+    Credential Initializer Gszg9                                        24m18s       0s Succeeded 
+    Working Dir Initializer Kh6h5                                       24m18s       0s Succeeded 
+    Place Tools                                                         24m17s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Jzxkm                    24m16s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           24m15s       4s Succeeded 
+    Merge Pull Refs                                                     24m15s       4s Succeeded 
+    Create Effective Pipeline                                           24m15s      10s Succeeded 
+    Create Tekton Crds                                                  24m15s      18s Succeeded 
+  from build pack                                                       23m56s      59s Succeeded 
+    Credential Initializer Msnz9                                        23m56s       0s Succeeded 
+    Working Dir Initializer Bg7gt                                       23m55s       0s Succeeded 
+    Place Tools                                                         23m54s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 Pf5bg                    23m53s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           23m53s       5s Succeeded 
+    Setup Jx Git Credentials                                            23m53s       5s Succeeded 
+    Build Helm Apply                                                    23m53s      56s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #4         19m12s    4m26s Succeeded 
+  app extension                                                         19m12s     2m6s Succeeded 
+    Credential Initializer Bxq8m                                        19m12s       0s Succeeded 
+    Working Dir Initializer Vvncd                                       19m10s       0s Succeeded 
+    Place Tools                                                          19m9s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 W465f                     19m7s    1m45s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           17m34s      13s Succeeded 
+    Merge Pull Refs                                                     17m26s       6s Succeeded 
+    Create Effective Pipeline                                           17m26s      12s Succeeded 
+    Create Tekton Crds                                                  17m25s      19s Succeeded 
+  from build pack                                                       16m52s     2m6s Succeeded 
+    Credential Initializer Mzxkl                                        16m52s       0s Succeeded 
+    Working Dir Initializer H7lzv                                       16m50s       0s Succeeded 
+    Place Tools                                                         16m50s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 Bp9jk                    16m49s      46s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           16m48s      45s Succeeded 
+    Setup Jx Git Credentials                                             16m7s       5s Succeeded 
+    Build Helm Apply                                                     16m7s    1m21s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #5         11m10s    1m21s Succeeded 
+  app extension                                                         11m10s      22s Succeeded 
+    Credential Initializer Pr4ln                                        11m10s       0s Succeeded 
+    Working Dir Initializer Ztq4v                                        11m9s       0s Succeeded 
+    Place Tools                                                          11m8s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 M864c                     11m7s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            11m7s       4s Succeeded 
+    Merge Pull Refs                                                      11m7s       4s Succeeded 
+    Create Effective Pipeline                                            11m6s      10s Succeeded 
+    Create Tekton Crds                                                   11m6s      18s Succeeded 
+  from build pack                                                       10m47s      58s Succeeded 
+    Credential Initializer F8fxq                                        10m47s       0s Succeeded 
+    Working Dir Initializer Ck4qq                                       10m47s       0s Succeeded 
+    Place Tools                                                         10m46s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 V8sp2                    10m45s       6s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           10m45s       7s Succeeded 
+    Setup Jx Git Credentials                                            10m45s       7s Succeeded 
+    Build Helm Apply                                                    10m45s      56s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #6           6m2s    1m28s Succeeded 
+  app extension                                                           6m2s      22s Succeeded 
+    Credential Initializer S8nqx                                          6m2s       0s Succeeded 
+    Working Dir Initializer Xbfvw                                         6m1s       0s Succeeded 
+    Place Tools                                                           6m0s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 6lmrh                     5m59s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            5m59s       4s Succeeded 
+    Merge Pull Refs                                                      5m59s       4s Succeeded 
+    Create Effective Pipeline                                            5m59s      10s Succeeded 
+    Create Tekton Crds                                                   5m59s      19s Succeeded 
+  from build pack                                                        5m39s     1m5s Succeeded 
+    Credential Initializer 4btgk                                         5m39s       0s Succeeded 
+    Working Dir Initializer 9mkpd                                        5m38s       0s Succeeded 
+    Place Tools                                                          5m37s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 2f5h4                     5m36s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            5m36s       6s Succeeded 
+    Setup Jx Git Credentials                                             5m35s       5s Succeeded 
+    Build Helm Apply                                                     5m35s     1m1s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/master #7          2m11s      25s Succeeded 
+  app extension                                                          2m11s      25s Succeeded 
+    Credential Initializer 2sqxs                                         2m11s       0s Succeeded 
+    Working Dir Initializer Rjpts                                        2m10s       0s Succeeded 
+    Place Tools                                                           2m9s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 597cg                      2m8s       6s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                             2m8s       7s Succeeded 
+    Merge Pull Refs                                                       2m7s       6s Succeeded 
+    Create Effective Pipeline                                             2m7s      12s Succeeded 
+    Create Tekton Crds                                                    2m7s      21s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-1 #1           44m15s    1m56s Succeeded 
+  app extension                                                         44m15s      21s Succeeded 
+    Credential Initializer Wkd9c                                        44m15s       0s Succeeded 
+    Working Dir Initializer 2lx2f                                       44m15s       0s Succeeded 
+    Place Tools                                                         44m14s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 R5cst                    44m13s       6s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           44m12s       6s Succeeded 
+    Merge Pull Refs                                                     44m11s       6s Succeeded 
+    Create Effective Pipeline                                           44m11s      13s Succeeded 
+    Create Tekton Crds                                                  44m11s      17s Succeeded 
+  from build pack                                                       43m53s    1m34s Succeeded 
+    Credential Initializer 7qrzf                                        43m53s       0s Succeeded 
+    Working Dir Initializer Chlqs                                       43m53s       0s Succeeded 
+    Place Tools                                                         43m52s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 M22jd                    43m51s     1m3s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           43m51s     1m4s Succeeded 
+    Build Helm Build                                                    42m53s      34s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-2 #1           32m18s      50s Succeeded 
+  app extension                                                         32m18s      20s Succeeded 
+    Credential Initializer K594r                                        32m18s       0s Succeeded 
+    Working Dir Initializer 66swm                                       32m18s       0s Succeeded 
+    Place Tools                                                         32m17s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Jf582                    32m16s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           32m15s       5s Succeeded 
+    Merge Pull Refs                                                     32m14s       5s Succeeded 
+    Create Effective Pipeline                                           32m14s      12s Succeeded 
+    Create Tekton Crds                                                  32m14s      16s Succeeded 
+  from build pack                                                       31m57s      29s Succeeded 
+    Credential Initializer Fv7pt                                        31m57s       0s Succeeded 
+    Working Dir Initializer 7ngb7                                       31m56s       0s Succeeded 
+    Place Tools                                                         31m55s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 Fvrn8                    31m54s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           31m53s       3s Succeeded 
+    Build Helm Build                                                    31m53s      25s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-3 #1            25m5s      55s Succeeded 
+  app extension                                                          25m5s      21s Succeeded 
+    Credential Initializer 6xfpj                                         25m5s       0s Succeeded 
+    Working Dir Initializer Cz2jw                                        25m4s       0s Succeeded 
+    Place Tools                                                          25m3s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Dszn9                     25m2s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            25m1s       5s Succeeded 
+    Merge Pull Refs                                                      25m1s       7s Succeeded 
+    Create Effective Pipeline                                            25m1s      13s Succeeded 
+    Create Tekton Crds                                                   25m1s      17s Succeeded 
+  from build pack                                                       24m43s      33s Succeeded 
+    Credential Initializer 47pt5                                        24m43s       0s Succeeded 
+    Working Dir Initializer Xd687                                       24m42s       0s Succeeded 
+    Place Tools                                                         24m41s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 P7lzx                    24m40s       3s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           24m40s       4s Succeeded 
+    Build Helm Build                                                    24m40s      30s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-4 #1           19m13s    3m58s Succeeded 
+  app extension                                                         19m13s     2m5s Succeeded 
+    Credential Initializer Mbdkj                                        19m13s       0s Succeeded 
+    Working Dir Initializer Qxqqp                                       19m11s       0s Succeeded 
+    Place Tools                                                          19m9s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 4h2hl                     19m7s    1m46s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           17m34s      15s Succeeded 
+    Merge Pull Refs                                                     17m26s       8s Succeeded 
+    Create Effective Pipeline                                           17m26s      14s Succeeded 
+    Create Tekton Crds                                                  17m25s      17s Succeeded 
+  from build pack                                                        17m7s    1m52s Succeeded 
+    Credential Initializer 57rh4                                         17m7s       0s Succeeded 
+    Working Dir Initializer 6dtgc                                        17m7s       0s Succeeded 
+    Place Tools                                                          17m5s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 9rxsp                     17m4s      59s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            17m4s      59s Succeeded 
+    Build Helm Build                                                     16m7s      52s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-5 #1           12m17s     1m1s Succeeded 
+  app extension                                                         12m17s      21s Succeeded 
+    Credential Initializer G6kgs                                        12m17s       0s Succeeded 
+    Working Dir Initializer Hxgms                                       12m16s       0s Succeeded 
+    Place Tools                                                         12m15s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Xdztt                    12m14s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           12m14s       6s Succeeded 
+    Merge Pull Refs                                                     12m14s       7s Succeeded 
+    Create Effective Pipeline                                           12m13s      14s Succeeded 
+    Create Tekton Crds                                                  12m13s      17s Succeeded 
+  from build pack                                                       11m55s      39s Succeeded 
+    Credential Initializer Vfx5p                                        11m55s       0s Succeeded 
+    Working Dir Initializer Kmcjz                                       11m54s       0s Succeeded 
+    Place Tools                                                         11m53s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 447j2                    11m52s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                           11m52s       5s Succeeded 
+    Build Helm Build                                                    11m52s      36s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-6 #1            7m11s     1m4s Succeeded 
+  app extension                                                          7m11s      21s Succeeded 
+    Credential Initializer 9jhq6                                         7m11s       0s Succeeded 
+    Working Dir Initializer 9wm24                                        7m10s       0s Succeeded 
+    Place Tools                                                           7m9s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 5trdl                      7m8s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                             7m8s       6s Succeeded 
+    Merge Pull Refs                                                       7m8s       8s Succeeded 
+    Create Effective Pipeline                                             7m8s      14s Succeeded 
+    Create Tekton Crds                                                    7m7s      17s Succeeded 
+  from build pack                                                        6m49s      42s Succeeded 
+    Credential Initializer V2288                                         6m49s       0s Succeeded 
+    Working Dir Initializer Nkkwv                                        6m48s       0s Succeeded 
+    Place Tools                                                          6m47s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 Df55w                     6m46s       6s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            6m46s       6s Succeeded 
+    Build Helm Build                                                     6m46s      39s Succeeded 
+cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging/PR-7 #1            2m34s    1m40s Succeeded 
+  app extension                                                          2m34s      24s Succeeded 
+    Credential Initializer Lzv2z                                         2m34s       0s Succeeded 
+    Working Dir Initializer Whdjh                                        2m32s       0s Succeeded 
+    Place Tools                                                          2m31s       0s Succeeded 
+    Git Source Meta Cb Kubecd Environment Pr 3 Wphv7                     2m30s       4s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                            2m30s       6s Succeeded 
+    Merge Pull Refs                                                      2m30s       8s Succeeded 
+    Create Effective Pipeline                                            2m30s      14s Succeeded 
+    Create Tekton Crds                                                   2m30s      20s Succeeded 
+  from build pack                                                         2m5s    1m11s Succeeded 
+    Credential Initializer Fdg7x                                          2m5s       0s Succeeded 
+    Working Dir Initializer 6vm6p                                         2m4s       0s Succeeded 
+    Place Tools                                                           2m3s       0s Succeeded 
+    Git Source Cb Kubecd Environment Pr 388 38 7xt2g                      2m2s       5s Succeeded https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-staging.git
+    Git Merge                                                             2m2s       6s Succeeded 
+    Build Helm Build                                                      2m2s     1m8s Succeeded 
+jenkins-x/jenkins-x-versions/PR-388 #38                                                 Running Version: 0.0.1
+  Release                                                               38m19s     1m0s Succeeded 
+  Promote: production                                                   37m19s    1m27s Succeeded 
+    PullRequest                                                         37m19s    1m27s Succeeded  PullRequest: https://github.com/cb-kubecd/environment-pr-388-38-tekton-gkebdd-production/pull/1 Merge SHA: fcb7b262a96905ba433ec16c26ea17dcf9cea4e3
+    Update                                                              35m52s       0s Succeeded 
+
+Running ** get application -b
+
+APPLICATION                  STAGING PODS URL                                                                   PRODUCTION PODS URL
+bdd-gh-1565286506            0.0.1   1/1  http://bdd-gh-1565286506.**-staging.130.211.109.125.nip.io                            
+bdd-gh-import-1565286872     0.0.1   1/1  http://bdd-gh-import-1565286872.**-staging.130.211.109.125.nip.io                     
+bdd-ghf**y-import-1565286872 0.0.1   1/1  http://bdd-ghf**y-import-1565286872.**-staging.130.211.109.125.nip.io                 
+bdd-nh-import-1565286872     0.0.1   1/1  http://bdd-nh-import-1565286872.**-staging.130.211.109.125.nip.io                     
+bdd-sbhg-import-1565286872   0.0.1   1/1  http://bdd-sbhg-import-1565286872.**-staging.130.211.109.125.nip.io                   
+bdd-sbrp-import-1565286872   0.0.1   1/1  http://bdd-sbrp-import-1565286872.**-staging.130.211.109.125.nip.io                   
+bdd-spring-1565285680        0.0.1   1/1  http://bdd-spring-1565285680.**-staging.130.211.109.125.nip.io        0.0.1      1/1  http://bdd-spring-1565285680.**-production.130.211.109.125.nip.io
+
+Running ** get preview -b
+
+PULL REQUEST                                              NAMESPACE                               APPLICATION
+https://github.com/cb-kubecd/bdd-gh-1565286506/pull/1     **-cb-kubecd-bdd-gh-1565286506-pr-1     http://bdd-gh-1565286506.**-cb-kubecd-bdd-gh-1565286506-pr-1.130.211.109.125.nip.io
+https://github.com/cb-kubecd/bdd-spring-1565285680/pull/1 **-cb-kubecd-bdd-spring-1565285680-pr-1 http://bdd-spring-1565285680.**-cb-kubecd-bdd-spring-1565285680-pr-1.130.211.109.125.nip.io
+
+Running ** open
+
+NAME                  URL
+deck                  http://deck.**.130.211.109.125.nip.io
+hook                  http://hook.**.130.211.109.125.nip.io
+jenkins-x-chartmuseum http://chartmuseum.**.130.211.109.125.nip.io
+nexus                 http://nexus.**.130.211.109.125.nip.io
+tide                  http://tide.**.130.211.109.125.nip.io
+pr-388-38-tekton-gkebdd was marked to be deleted
