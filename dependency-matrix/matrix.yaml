@@ -69,3 +69,9 @@ dependencies:
   url: https://github.com/jenkins-x-charts/knative-build
   version: 0.1.19
   versionURL: ""
+- host: github.com
+  owner: jenkins-x
+  repo: lighthouse
+  url: https://github.com/jenkins-x/lighthouse
+  version: 0.0.70
+  versionURL: ""
