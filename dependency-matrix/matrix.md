@@ -17,3 +17,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | []() | 
 [jenkins-x/helm-charts](https://github.com/jenkins-x/helm-charts/tree/master/vault-operator) |  | []() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | []() | 
+[helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager) |  | []() | 

@@ -89,3 +89,9 @@ dependencies:
   url: https://github.com/jetstack/cert-manager
   version: ""
   versionURL: ""
+- host: github.com
+  owner: helm
+  repo: charts
+  url: https://github.com/helm/charts/tree/master/stable/cert-manager
+  version: ""
+  versionURL: ""
