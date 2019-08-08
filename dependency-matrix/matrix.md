@@ -10,3 +10,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | []() | 
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | []() | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | []() | 
+[jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | []() | 

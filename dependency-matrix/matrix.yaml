@@ -47,3 +47,9 @@ dependencies:
   url: https://github.com/jenkins-x-charts/jx-build-templates
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-charts
+  repo: knative-build
+  url: https://github.com/jenkins-x-charts/knative-build
+  version: ""
+  versionURL: ""
