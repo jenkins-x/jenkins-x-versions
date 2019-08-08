@@ -7,3 +7,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/dex](https://github.com/jenkins-x/dex) |  | []() | 
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | []() | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | []() | 
+[jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | []() | 
