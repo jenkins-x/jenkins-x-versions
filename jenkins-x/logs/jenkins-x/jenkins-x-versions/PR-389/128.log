@@ -1,0 +1,695 @@
+Step: build-step-credential-initializer-2j8kl:
+
+{"level":"warn","ts":1565294583.9071977,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565294583.9085035,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-lhhrl:
+
+{"level":"warn","ts":1565294584.2536993,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565294584.2549994,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-dwdrf:
+
+{"level":"warn","ts":1565294586.4828734,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565294588.1183097,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/jenkins-x-versions @ d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T20:03:08Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03,389:d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+ran git fetch --unshallow origin d6a4b277182a0a383a4c99f2225f7ddbd2d661d3: 8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03: in 
+ran git checkout master in 
+ran git reset --hard 8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03 in 
+ran clean --force -d . in 
+ran git merge d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 in 
+Step: build-step-runci:
+
++ export GH_USERNAME=*************-test
++ GH_USERNAME=*************-test
++ export GH_OWNER=cb-kubecd
++ GH_OWNER=cb-kubecd
+++ ** step credential -s *************-test-github
++ export GH_CREDS_PSW=****************************************
++ GH_CREDS_PSW=****************************************
+++ ** step credential -s test-jenkins-user
++ export JENKINS_CREDS_PSW=************
++ JENKINS_CREDS_PSW=************
+++ ** step credential -k bdd-credentials.json -s bdd-secret -f sa.json
++ export GKE_SA=sa.json
++ GKE_SA=sa.json
++ export BUILD_NUMBER=
++ BUILD_NUMBER=
++ JX_HOME=/tmp/**home
++ KUBECONFIG=/tmp/**home/config
++ mkdir -p /tmp/**home
++ ** --version
+2.0.569
++ ** step git credentials
+Generated Git credentials file /builder/home/git/credentials
++ gcloud auth activate-service-account --key-file sa.json
+Activated service account credentials for: [*************@*************2.iam.gserviceaccount.com]
++ git config --global --add user.name JenkinsXBot
++ git config --global --add user.email jenkins-x@googlegroups.com
++ echo 'running the BDD tests with JX_HOME = /tmp/**home'
++ export JX_VALUE_ADMINUSER_PASSWORD=************
++ JX_VALUE_ADMINUSER_PASSWORD=************
++ export JX_VALUE_PIPELINEUSER_USERNAME=*************-test
++ JX_VALUE_PIPELINEUSER_USERNAME=*************-test
+running the BDD tests with JX_HOME = /tmp/**home
++ export JX_VALUE_PIPELINEUSER_TOKEN=****************************************
++ JX_VALUE_PIPELINEUSER_TOKEN=****************************************
++ export JX_VALUE_PROW_HMACTOKEN=****************************************
++ JX_VALUE_PROW_HMACTOKEN=****************************************
++ export JX_BATCH_MODE=true
++ JX_BATCH_MODE=true
++ git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
+Cloning into 'boot-source'...
++ cp **/bdd/boot-vault/**-requirements.yml boot-source
++ cp **/bdd/boot-vault/parameters.yaml boot-source/env
++ cd boot-source
++ helm init --client-only
+Creating /builder/home/.helm 
+Creating /builder/home/.helm/repository 
+Creating /builder/home/.helm/repository/cache 
+Creating /builder/home/.helm/repository/local 
+Creating /builder/home/.helm/plugins 
+Creating /builder/home/.helm/starters 
+Creating /builder/home/.helm/cache/archive 
+Creating /builder/home/.helm/repository/repositories.yaml 
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com 
+Adding local repo with URL: http://127.0.0.1:8879/charts 
+$HELM_HOME has been configured at /builder/home/.helm.
+Not installing Tiller due to 'client-only' flag having been set
++ helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config ../**/bdd/boot-vault/cluster.yaml --gopath /tmp --git-provider=github --git-username *************-test --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+has 1 post create cluster commands
+post create command: ** boot -b
+found git revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3: branch PR-389
+using versions git repo https://github.com/jenkins-x/jenkins-x-versions.git and ref d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+
+Creating cluster pr-389-128-bdd-boot-v
+setting the **-requirements.yml version stream ref to: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+wrote file **-requirements.yml after setting the cluster name to pr-389-128-bdd-boot-v
+**-requirements.yml is:
+cluster:
+  clusterName: pr-389-128-bdd-boot-v
+  environmentGitOwner: cb-kubecd
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: **
+  project: *************2
+  provider: gke
+  zone: europe-west1-c
+environments:
+- key: dev
+- gitKind: github
+  gitServer: https://github.com
+  key: staging
+  owner: cb-kubecd
+  repository: environment-pr-389-128-bdd-boot-v-staging
+- gitKind: github
+  gitServer: https://github.com
+  key: production
+  owner: cb-kubecd
+  repository: environment-pr-389-128-bdd-boot-v-production
+ingress:
+  domain: ""
+  externalDNS: false
+  namespaceSubDomain: -**.
+  tls:
+    email: ""
+    enabled: false
+    production: false
+kaniko: true
+secretStorage: vault
+storage:
+  logs:
+    enabled: true
+    url: gs://**-bdd-log-store
+  reports:
+    enabled: true
+    url: gs://**-bdd-log-store
+  repository:
+    enabled: true
+    url: gs://**-bdd-repo
+versionStream:
+  ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+  url: https://github.com/jenkins-x/jenkins-x-versions.git
+webhook: prow
+
+
+WARNING: could not find a stable version from charts of jenkins-x/jenkins-x-platform from 
+For background see: https://jenkins-x.io/architecture/version-stream/
+Please lock this version down via the command: ** step create version pr -k charts -n jenkins-x/jenkins-x-platform
+loaded version  from Makefile in directory 
+running command: ** create cluster gke --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --skip-installation --cluster-name pr-389-128-bdd-boot-v --batch-mode --labels cluster=bdd-boot-v,branch=pr-389 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+? Configured project id: *************2
+Updated property [core/project].
+? Configured cluster name: pr-389-128-bdd-boot-v
+? Configured to machine type: n1-standard-2
+? Configured to minimum number of nodes: 3
+? Configured to maximum number of nodes: 5
+Creating cluster...
+WARNING: In June 2019, node auto-upgrade will be enabled by default for newly created clusters and node pools. To disable it, use the `--no-enable-autoupgrade` flag.
+WARNING: Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+WARNING: Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+WARNING: Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+WARNING: Starting in 1.12, default node pools in new clusters will have their legacy Compute Engine instance metadata endpoints disabled by default. To create a cluster with legacy instance metadata endpoints disabled in the default node pool, run `clusters create` with the flag `--metadata disable-legacy-endpoints=true`.
+WARNING: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s). 
+This will enable the autorepair feature for nodes. Please see https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more information on node autorepairs.
+Creating cluster pr-389-128-bdd-boot-v in europe-west1-c...
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................done.
+Created [https://container.googleapis.com/v1/projects/*************2/zones/europe-west1-c/clusters/pr-389-128-bdd-boot-v].
+To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west1-c/pr-389-128-bdd-boot-v?project=*************2
+kubeconfig entry generated for pr-389-128-bdd-boot-v.
+NAME                   LOCATION        MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+pr-389-128-bdd-boot-v  europe-west1-c  1.12.8-gke.10   35.241.211.212  n1-standard-2  1.12.8-gke.10  3          RUNNING
+Initialising cluster ...
+gke cluster created. Skipping Jenkins X installation.
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for pr-389-128-bdd-boot-v.
+Context "gke_*************2_europe-west1-c_pr-389-128-bdd-boot-v" modified.
+No resources found.
+running command: ** boot -b
+booting up Jenkins X
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 -> FETCH_HEAD
+
+STEP: validate-git command: /bin/sh -c ** step git validate in dir: env
+
+Git configured for user: JenkinsXBot and email jenkins-x@googlegroups.com
+
+STEP: verify-preinstall command: /bin/sh -c ** step verify preinstall in dir: env
+
+Connecting to cluster pr-389-128-bdd-boot-v
+Will create public environment repos, if you want to create private environment repos, please set environmentGitPrivate to true **-requirements.yaml
+verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **
+we will try to lazily create any missing resources to get the current cluster ready to boot Jenkins X
+attempting to lazily create the deploy namespace **
+Namespace ** created 
+setting the local kubernetes context to the deploy namespace **
+Using namespace '**' from context named 'gke_*************2_europe-west1-c_pr-389-128-bdd-boot-v' on server 'https://35.241.211.212'.
+verifying the CLI packages
+verifying the CLI package using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 -> FETCH_HEAD
+the CLI packages seem to be setup correctly
+NAME               VERSION
+**                 2.0.569
+Kubernetes cluster v1.12.8-gke.10
+kubectl            v1.15.0
+helm client        v2.14.1+g5270352
+git                2.21.0
+the storage looks good
+helm installed and configured
+helm client is setup
+ensure we have the helm repository https://storage.googleapis.com/chartmuseum.jenkins-x.io
+validating the kaniko secret in namespace **
+attempting to lazily create the deploy namespace **
+Configuring Kaniko service account pr-389-128-bdd-boot-v-ko for project *************2
+Unable to find service account pr-389-128-bdd-boot-v-ko, checking if we have enough permission to create
+Creating service account pr-389-128-bdd-boot-v-ko
+Assigning role roles/storage.*****
+Assigning role roles/storage.objectAdmin
+Assigning role roles/storage.objectCreator
+Downloading service account key
+created kaniko Secret: kaniko-secret in namespace: **
+valid: there is a Secret: kaniko-secret in namespace: **
+the cluster looks good, you are ready to '** boot' now!
+
+
+STEP: **-crds command: /bin/sh -c ** upgrade crd in dir: .
+
+Jenkins X CRDs upgraded with success
+
+STEP: kube-system command: /bin/sh -c ** step helm apply --boot --remote --no-vault --name **ing in dir: systems/**ing
+
+Modified file /workspace/source/boot-source/systems/**ing/Chart.yaml to set the chart to version 1
+Copying the helm source directory /workspace/source/boot-source/systems/**ing to a temporary location for building and applying /tmp/**-helm-apply-052127319/**ing
+Applying helm chart at /tmp/**-helm-apply-052127319/**ing as release name **ing to namespace kube-system
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 -> FETCH_HEAD
+Wrote chart values.yaml /tmp/**-helm-apply-052127319/**ing/values.yaml generated from directory tree
+generated helm /tmp/**-helm-apply-052127319/**ing/values.yaml
+
+nginx-ingress:
+  controller:
+    extraArgs:
+      publish-service: kube-system/**ing-nginx-ingress-controller
+    service:
+      omitClusterIP: true
+  defaultBackend:
+    service:
+      omitClusterIP: true
+  rbac:
+    create: true
+
+Using values files: /tmp/**-helm-apply-052127319/**ing/values.yaml
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+adding version 1.13.0 to dependency nginx-ingress in file /tmp/**-helm-apply-052127319/**ing/requirements.yaml
+adding dependency versions to file /tmp/**-helm-apply-052127319/**ing/requirements.yaml
+Applying Apps chart overrides
+Applying chart overrides
+
+
+STEP: helm-cluster-values command: /bin/sh -c ** step create install values -b in dir: env
+
+
+Waiting to find the external host name of the ingress controller Service in namespace kube-system with name **ing-nginx-ingress-controller
+No domain flag provided so using default  to generate Ingress rules
+waiting for external Host on the ingress service **ing-nginx-ingress-controller in namespace kube-system ...
+
+Waiting to find the external host name of the ingress controller Service in namespace kube-system with name **ing-nginx-ingress-controller
+No domain flag provided so using default 35.205.231.22.nip.io to generate Ingress rules
+defaulting the domain to 35.205.231.22.nip.io and modified /workspace/source/boot-source/**-requirements.yml
+Disabling using external-dns as it currently only works on GKE and not nip.io domains
+
+STEP: install-vault command: /bin/sh -c ** step boot vault in dir: systems/vault
+
+applying vault ingress in namespace ** for vault name **-vault-pr-389-128-bd
+ingress.extensions/**-vault-pr-389-128-bd created
+Installing vault-operator...
+WARNING: failed to create system vault in namespace ** due to no "**-vault-pr-389-128-bd" vault found in namespace "**"
+
+vault-operator addon succesfully installed.
+vault operator installed in namespace **
+finding vault in namespace **
+Creating new system vault
+Updated property [core/project].
+Unable to find service account pr-389-128-bdd-b-vt, checking if we have enough permission to create
+Creating service account pr-389-128-bdd-b-vt
+Assigning role roles/storage.objectAdmin
+Assigning role roles/cloudkms.*****
+Assigning role roles/cloudkms.cryptoKeyEncrypterDecrypter
+Downloading service account key
+GCS bucket **-vault-pr-389-128-bd-bucket was created for Vault backend
+Creating Vault...
+Vault **-vault-pr-389-128-bd created in cluster pr-389-128-bdd-b
+Exposing Vault...
+
+job.batch "exposecontroller" deleted
+configmap "exposecontroller" deleted
+serviceaccount "exposecontroller" deleted
+role.rbac.authorization.k8s.io "exposecontroller" deleted
+rolebinding.rbac.authorization.k8s.io "exposecontroller" deleted
+Ingress rules recreated
+Vault **-vault-pr-389-128-bd exposed
+System vault created named **-vault-pr-389-128-bd in namespace **.
+
+STEP: cert-manager-crds command: /bin/sh -c kubectl apply --wait --validate=true -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.8/deploy/manifests/00-crds.yaml in dir: .
+
+customresourcedefinition.apiextensions.k8s.io/certificates.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/challenges.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/clusterissuers.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/issuers.certmanager.k8s.io created
+customresourcedefinition.apiextensions.k8s.io/orders.certmanager.k8s.io created
+
+STEP: cert-manager command: /bin/sh -c ** step helm apply --boot --remote --no-vault --name ** in dir: systems/cm
+
+Modified file /workspace/source/boot-source/systems/cm/Chart.yaml to set the chart to version 1
+Namespace cert-manager created 
+Copying the helm source directory /workspace/source/boot-source/systems/cm to a temporary location for building and applying /tmp/**-helm-apply-763501787/cm
+Applying helm chart at /tmp/**-helm-apply-763501787/cm as release name ** to namespace cert-manager
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 -> FETCH_HEAD
+Wrote chart values.yaml /tmp/**-helm-apply-763501787/cm/values.yaml generated from directory tree
+generated helm /tmp/**-helm-apply-763501787/cm/values.yaml
+
+cert-manager:
+  rbac:
+    create: true
+  webhook:
+    enabled: false
+webhook:
+  enabled: false
+
+Using values files: /tmp/**-helm-apply-763501787/cm/values.yaml
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+adding version v0.8.1 to dependency cert-manager in file /tmp/**-helm-apply-763501787/cm/requirements.yaml
+adding dependency versions to file /tmp/**-helm-apply-763501787/cm/requirements.yaml
+Adding missing Helm repo: charts.jetstack.io https://charts.jetstack.io
+Read credentials for https://charts.jetstack.io from vault helm/repos
+Successfully added Helm repository charts.jetstack.io.
+Applying Apps chart overrides
+Applying chart overrides
+
+
+STEP: helm-populate-params command: /bin/sh -c ** step create values --name parameters in dir: env
+
+defaulting to secret storage scheme vault found from requirements file at /workspace/source/boot-source/**-requirements.yml
+defaulting to secret base path to the cluster name pr-389-128-bdd-boot-v found from requirements file at /workspace/source/boot-source/**-requirements.yml
+
+Jenkins X Admin Username ***** [Automatically accepted existing value]
+defaulting value from $JX_VALUE_ADMINUSER_PASSWORD
+Jenkins X Admin Password *** []
+defaulting value from $JX_VALUE_PIPELINEUSER_USERNAME
+Pipeline bot Git username *************-test []
+defaulting value from $JX_VALUE_PIPELINEUSER_TOKEN
+Pipeline bot Git token *** []
+Generated token 7226505fb4c314b2429298ed9cf6b2fc03df06fb6, to use it press enter.
+This is the only time you will be shown it so remember to save it
+HMAC token, used to validate incoming webhooks. Press enter to use the generated token *** [Automatically accepted default value]
+Do you want to configure an external Docker Registry? false [Automatically accepted existing value]
+
+
+STEP: helm-build command: /bin/sh -c ** step helm apply --boot --remote --name jenkins-x --provider-values-dir ../kubeProviders in dir: env
+
+Modified file /workspace/source/boot-source/env/Chart.yaml to set the chart to version 1
+Copying the helm source directory /workspace/source/boot-source/env to a temporary location for building and applying /tmp/**-helm-apply-271349327/env
+Applying helm chart at /tmp/**-helm-apply-271349327/env as release name jenkins-x to namespace **
+Fetching secrets from vault into directory "/tmp/**-helm-apply-271349327/env"
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 -> FETCH_HEAD
+Ignoring templates/000-namespace.yaml
+Ignoring templates/700-chartmuseum-ing.yaml
+Ignoring templates/700-deck-ing.yaml
+Ignoring templates/700-docker-ing.yaml
+Ignoring templates/700-hook-ing.yaml
+Ignoring templates/700-jenkins-ing.yaml
+Ignoring templates/700-nexus-ing.yaml
+Ignoring templates/700-tide-ing.yaml
+Ignoring templates/cert-manager-prod-certificate.yaml
+Ignoring templates/cert-manager-prod-issuer.yaml
+Ignoring templates/cert-manager-staging-certificate.yaml
+Ignoring templates/cert-manager-staging-issuer.yaml
+Ignoring templates/core-chartmuseum-secret.yaml
+Ignoring templates/default-scheduler.yaml
+Ignoring templates/dev-env.yaml
+Ignoring templates/dev-repo.yaml
+Ignoring templates/env-scheduler.yaml
+Ignoring templates/external-dns-secret.yaml
+Ignoring templates/featureflag-secret.yaml
+Ignoring templates/gh-secret.yaml
+Ignoring templates/ingress-config-configmap.yaml
+Ignoring templates/production-env.yaml
+Ignoring templates/production-repo.yaml
+Ignoring templates/staging-env.yaml
+Ignoring templates/staging-repo.yaml
+Ignoring templates/tekton-artifact-bucket-secret.yaml
+Applying the kubernetes overrides at ../kubeProviders/gke/values.tmpl.yaml
+Wrote chart values.yaml /tmp/**-helm-apply-271349327/env/values.yaml generated from directory tree
+generated helm /tmp/**-helm-apply-271349327/env/values.yaml
+
+JenkinsXGitHub:
+  password: ****************************************
+  username: ******************
+certmanager:
+  enabled: false
+  production: "false"
+cleanup:
+  enabled: false
+cluster:
+  domain: 35.205.231.22.nip.io
+  name: ""
+  namespace: **
+  namespaceSubDomain: -**.
+  projectID: *************2
+  serverUrl: ""
+  zone: europe-west1-c
+controllerbuild:
+  enabled: true
+controllerteam:
+  enabled: false
+controllerworkflow:
+  enabled: false
+docker-registry:
+  enabled: false
+expose:
+  enabled: false
+external-dns:
+  domainFilters:
+  - 35.205.231.22.nip.io
+  enabled: false
+  google:
+    serviceAccountSecret: external-dns-gcp-sa
+  provider: google
+  rbac:
+    create: true
+  sources:
+  - ingress
+gitops:
+  dev:
+    dockerRegistryOrg: *************2
+    envOrganisation: ""
+    owner: ""
+    repo: ""
+    server: ""
+  gitKind: github
+  gitName: github
+  gitUrlPathPrefix: ""
+  owner: cb-kubecd
+  production:
+    owner: cb-kubecd
+    repo: environment-pr-389-128-bdd-boot-v-production
+    server: ""
+  server: https://github.com
+  staging:
+    owner: cb-kubecd
+    repo: environment-pr-389-128-bdd-boot-v-staging
+    server: ""
+  versionStreamRef: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+  versionStreamUrl: https://github.com/jenkins-x/jenkins-x-versions.git
+  webhook: Prow
+jenkins:
+  enabled: false
+jenkins-x-platform:
+  JXBasicAuth: *****:{SHA}K9fiH0i8sGY4rLvW73ZBItTcwas=
+  PipelineSecrets:
+    DockerConfig: |-
+      {
+          "credHelpers": {
+              "gcr.io": "gcr",
+              "us.gcr.io": "gcr",
+              "eu.gcr.io": "gcr",
+              "asia.gcr.io": "gcr",
+              "staging-k8s.gcr.io": "gcr"
+          }
+      }
+    GitCreds: https://******************:****************************************@github.com
+    GithubToken: ****************************************
+    MavenSettingsXML: |-
+      <settings>
+          <localRepository>/home/jenkins/.mvnrepository</localRepository>
+          <!--This sends everything else to /public -->
+          <mirrors>
+              <mirror>
+                  <id>nexus</id>
+                  <mirrorOf>external:*</mirrorOf>
+                  <url>http://nexus/repository/maven-group/</url>
+              </mirror>
+          </mirrors>
+
+          <!-- lets disable the download progress indicator that fills up logs -->
+          <interactiveMode>false</interactiveMode>
+
+          <servers>
+              <server>
+                  <id>local-nexus</id>
+                  <username>*****</username>
+                  <password>************</password>
+              </server>
+              <server>
+                  <id>nexus</id>
+                  <username>*****</username>
+                  <password>************</password>
+              </server>
+              <server>
+                  <id>docker.io</id>
+              </server>
+          </servers>
+
+          <profiles>
+              <profile>
+                  <id>nexus</id>
+                  <properties>
+                      <altDeploymentRepository>local-nexus::default::http://nexus/repository/maven-snapshots/</altDeploymentRepository>
+                      <altReleaseDeploymentRepository>local-nexus::default::http://nexus/repository/maven-releases/</altReleaseDeploymentRepository>
+                      <altSnapshotDeploymentRepository>local-nexus::default::http://nexus/repository/maven-snapshots/</altSnapshotDeploymentRepository>
+                  </properties>
+
+                  <repositories>
+                      <repository>
+                          <id>central</id>
+                          <url>http://central</url>
+                          <releases><enabled>true</enabled></releases>
+                          <snapshots><enabled>true</enabled></snapshots>
+                      </repository>
+                  </repositories>
+                  <pluginRepositories>
+                      <pluginRepository>
+                          <id>central</id>
+                          <url>http://central</url>
+                          <releases><enabled>true</enabled></releases>
+                          <snapshots><enabled>true</enabled></snapshots>
+                      </pluginRepository>
+                  </pluginRepositories>
+              </profile>
+              <profile>
+                  <id>repo.jenkins-ci.org</id>
+                  <properties>
+                      <altDeploymentRepository>repo.jenkins-ci.org::default::https://repo.jenkins-ci.org/releases/</altDeploymentRepository>
+                      <altReleaseDeploymentRepository>repo.jenkins-ci.org::default::https://repo.jenkins-ci.org/releases/</altReleaseDeploymentRepository>
+                      <altSnapshotDeploymentRepository>repo.jenkins-ci.org::default::https://repo.jenkins-ci.org/snapshots/</altSnapshotDeploymentRepository>
+                  </properties>
+
+              </profile>
+              <profile>
+                  <id>maven.jenkins-ci.org</id>
+                  <properties>
+                      <altDeploymentRepository>maven.jenkins-ci.org::default::https://maven.jenkins-ci.org/releases/</altDeploymentRepository>
+                      <altReleaseDeploymentRepository>maven.jenkins-ci.org::default::https://maven.jenkins-ci.org/releases/</altReleaseDeploymentRepository>
+                      <altSnapshotDeploymentRepository>maven.jenkins-ci.org::default::https://maven.jenkins-ci.org/snapshots/</altSnapshotDeploymentRepository>
+                  </properties>
+
+              </profile>
+              <profile>
+                  <id>release</id>
+                  <properties>
+                      <gpg.executable>gpg</gpg.executable>
+                      <!-- TODO use: .Parameters.gpg.passphrase when it is always populated -->
+                      <gpg.passphrase></gpg.passphrase>
+                  </properties>
+              </profile>
+          </profiles>
+
+          <activeProfiles>
+              <activeProfile>nexus</activeProfile>
+          </activeProfiles>
+      </settings>
+    SSHConfig: |-
+      Host github.com
+          User git
+          IdentityFile /root/.ssh-git/ssh-key
+          StrictHostKeyChecking no
+  chartmuseum:
+    env:
+      secret:
+        BASIC_AUTH_PASS: ************
+        BASIC_AUTH_USER: *****
+  cleanup:
+    enabled: false
+  dockerRegistry: gcr.io
+  expose:
+    enabled: false
+  nexus:
+    defaultAdminPassword: ************
+lighthouse:
+  enabled: false
+  git:
+    kind: github
+    name: github
+    server: https://github.com
+  hmacToken: *****************************************
+  image:
+    repository: gcr.io/jenkinsxio/lighthouse
+  replicaCount: 1
+  service:
+    name: hook
+nexus:
+  enabled: true
+prow:
+  buildnum:
+    enabled: false
+  enabled: true
+  hmacToken: *****************************************
+  oauthToken: ****************************************
+  pipelinerunner:
+    enabled: "true"
+  sinker:
+    replicaCount: 0
+  tillerNamespace: ""
+  user: ******************
+storage:
+  logs:
+    url: gs://**-bdd-log-store
+  reports:
+    url: gs://**-bdd-log-store
+  repository:
+    url: gs://**-bdd-repo
+tekton:
+  auth:
+    git:
+      password: ****************************************
+      url: https://github.com
+      username: ******************
+  tillerNamespace: ""
+  webhook:
+    enabled: false
+
+Using values files: 
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+adding version 0.0.42 to dependency tekton in file /tmp/**-helm-apply-271349327/env/requirements.yaml
+adding version 0.0.1000 to dependency prow in file /tmp/**-helm-apply-271349327/env/requirements.yaml
+adding version 0.0.70 to dependency lighthouse in file /tmp/**-helm-apply-271349327/env/requirements.yaml
+adding version 2.0.938 to dependency jenkins-x-platform in file /tmp/**-helm-apply-271349327/env/requirements.yaml
+adding version 1.5.2 to dependency external-dns in file /tmp/**-helm-apply-271349327/env/requirements.yaml
+adding dependency versions to file /tmp/**-helm-apply-271349327/env/requirements.yaml
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Read credentials for http://chartmuseum.jenkins-x.io from vault helm/repos
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+Adding missing Helm repo: charts.bitnami.com https://charts.bitnami.com/bitnami
+Read credentials for https://charts.bitnami.com/bitnami from vault helm/repos
+Successfully added Helm repository charts.bitnami.com.
+Applying Apps chart overrides
+Applying chart overrides
+Copying chart override ../repositories/templates/default-group.yaml
+WARNING: Error copying template ../repositories/templates/default-group.yaml to charts/repositories/templates/default-group.yaml open charts/repositories/templates/default-group.yaml: no such file or directory
+
+
+STEP: verify-env command: /bin/sh -c ** step verify env in dir: .
+
+validating git repository for production at URL https://github.com/cb-kubecd/environment-pr-389-128-bdd-boot-v-production.git
+creating environment production git repository for URL: https://github.com/cb-kubecd/environment-pr-389-128-bdd-boot-v-production.git to namespace **-production
+Using Git provider github at https://github.com
+? Using Git user name: *************-test
+? Using organisation: cb-kubecd
+Creating repository cb-kubecd/environment-pr-389-128-bdd-boot-v-production
+Creating Git repository cb-kubecd/environment-pr-389-128-bdd-boot-v-production
+Pushed Git repository to https://github.com/cb-kubecd/environment-pr-389-128-bdd-boot-v-production
+
+validating git repository for staging at URL https://github.com/cb-kubecd/environment-pr-389-128-bdd-boot-v-staging.git
+creating environment staging git repository for URL: https://github.com/cb-kubecd/environment-pr-389-128-bdd-boot-v-staging.git to namespace **-staging
+Using Git provider github at https://github.com
+? Using Git user name: *************-test
+? Using organisation: cb-kubecd
+Creating repository cb-kubecd/environment-pr-389-128-bdd-boot-v-staging
+Creating Git repository cb-kubecd/environment-pr-389-128-bdd-boot-v-staging
+Pushed Git repository to https://github.com/cb-kubecd/environment-pr-389-128-bdd-boot-v-staging
+
+the git repositories for the environments look good
+
+
+STEP: log-repos command: /bin/sh -c echo   now populating projects....   in dir: repositories
+
+now populating projects....
+
+STEP: apply-repositories command: /bin/sh -c ** step helm apply --boot --name repos in dir: repositories
+
+Modified file /workspace/source/boot-source/repositories/Chart.yaml to set the chart to version 1
+Copying the helm source directory /workspace/source/boot-source/repositories to a temporary location for building and applying /tmp/**-helm-apply-932044455/repositories
+Applying helm chart at /tmp/**-helm-apply-932044455/repositories as release name repos to namespace **
+Fetching secrets from vault into directory "/tmp/**-helm-apply-932044455/repositories"
+verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 to /builder/home/.**/jenkins-x-versions
+error: Server does not allow request for unadvertised object d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+ERROR: Error: Command failed  git fetch origin d6a4b277182a0a383a4c99f2225f7ddbd2d661d3
+error: failed to create version resolver: failed to git fetch origin d6a4b277182a0a383a4c99f2225f7ddbd2d661d3 for repo: https://github.com/jenkins-x/jenkins-x-versions.git in dir /builder/home/.**/jenkins-x-versions: exit status 128
+error: failed to interpret pipeline file jenkins-x.yml: failed to run '/bin/sh -c ** step helm apply --boot --name repos' command in directory 'repositories', output: ''
+ERROR: Error: Command failed  ** boot -b
+error: exit status 1
