@@ -1,0 +1,151 @@
+Step: build-step-credential-initializer-qwblk:
+
+{"level":"warn","ts":1565292270.1367285,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565292270.1372948,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-mnpxr:
+
+{"level":"warn","ts":1565292270.387042,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565292270.3884225,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-bvhzx:
+
+{"level":"warn","ts":1565292272.6905656,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565292273.9222896,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/jenkins-x-versions @ e397fc1520b958e99b2c050f2244a77ef1f68cde in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T19:24:34Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03,387:e397fc1520b958e99b2c050f2244a77ef1f68cde
+ran git fetch --unshallow origin e397fc1520b958e99b2c050f2244a77ef1f68cde: 8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03: in 
+ran git checkout master in 
+ran git reset --hard 8204db3369a083dc5bb5f6eafb4aeb78a0cb2b03 in 
+ran clean --force -d . in 
+ran git merge e397fc1520b958e99b2c050f2244a77ef1f68cde in 
+Step: build-step-runci:
+
++ export GH_USERNAME=******************
++ GH_USERNAME=******************
++ export GH_OWNER=cb-kubecd
++ GH_OWNER=cb-kubecd
+++ ** step credential -s ******************-github
++ export GH_CREDS_PSW=****************************************
++ GH_CREDS_PSW=****************************************
+++ ** step credential -s test-jenkins-user
++ export JENKINS_CREDS_PSW=************
++ JENKINS_CREDS_PSW=************
+++ ** step credential -k bdd-credentials.json -s bdd-secret -f sa.json
++ export GKE_SA=sa.json
++ GKE_SA=sa.json
++ export BUILD_NUMBER=
++ BUILD_NUMBER=
++ JX_HOME=/tmp/**home
++ KUBECONFIG=/tmp/**home/config
++ mkdir -p /tmp/**home
++ ** --version
+2.0.574
++ ** step git credentials
+Generated Git credentials file /builder/home/git/credentials
++ gcloud auth activate-service-account --key-file sa.json
+Activated service account credentials for: [*************@*************2.iam.gserviceaccount.com]
++ git config --global --add user.name JenkinsXBot
++ git config --global --add user.email jenkins-x@googlegroups.com
++ echo 'running the BDD tests with JX_HOME = /tmp/**home'
+running the BDD tests with JX_HOME = /tmp/**home
++ export SKIP_JENKINS_CHECK=yes
++ SKIP_JENKINS_CHECK=yes
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config **/bdd/tekton/cluster.yaml --gopath /tmp --git-provider=github --git-username ****************** --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-verify-pods --tests test-upgrade-platform --tests test-upgrade-ingress --tests test-app-lifecycle --tests test-create-spring --tests test-quickstart-golang-http --tests test-import
+has 0 post create cluster commands
+found git revision e397fc1520b958e99b2c050f2244a77ef1f68cde: branch PR-387
+using versions git repo https://github.com/jenkins-x/jenkins-x-versions.git and ref e397fc1520b958e99b2c050f2244a77ef1f68cde
+
+Creating cluster pr-387-56-tekton-gkebdd
+loaded version 2.0.936 from Makefile in directory 
+running command: ** create cluster gke --tekton --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-387-56-tekton-gkebdd --batch-mode --version 2.0.936 --labels cluster=tekton-gkebdd,branch=pr-387 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref e397fc1520b958e99b2c050f2244a77ef1f68cde --git-username ****************** --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+? Configured project id: *************2
+Updated property [core/project].
+? Configured cluster name: pr-387-56-tekton-gkebdd
+? Configured to machine type: n1-standard-2
+? Configured to minimum number of nodes: 3
+? Configured to maximum number of nodes: 5
+Creating cluster...
+WARNING: In June 2019, node auto-upgrade will be enabled by default for newly created clusters and node pools. To disable it, use the `--no-enable-autoupgrade` flag.
+WARNING: Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+WARNING: Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+WARNING: Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+WARNING: Starting in 1.12, default node pools in new clusters will have their legacy Compute Engine instance metadata endpoints disabled by default. To create a cluster with legacy instance metadata endpoints disabled in the default node pool, run `clusters create` with the flag `--metadata disable-legacy-endpoints=true`.
+WARNING: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s). 
+This will enable the autorepair feature for nodes. Please see https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more information on node autorepairs.
+Creating cluster pr-387-56-tekton-gkebdd in europe-west1-c...
+....................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................done.
+Created [https://container.googleapis.com/v1/projects/*************2/zones/europe-west1-c/clusters/pr-387-56-tekton-gkebdd].
+To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west1-c/pr-387-56-tekton-gkebdd?project=*************2
+kubeconfig entry generated for pr-387-56-tekton-gkebdd.
+NAME                     LOCATION        MASTER_VERSION  MASTER_IP    MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+pr-387-56-tekton-gkebdd  europe-west1-c  1.12.8-gke.10   34.77.95.61  n1-standard-2  1.12.8-gke.10  3          RUNNING
+Initialising cluster ...
+Namespace ** created 
+Context "gke_*************2_europe-west1-c_pr-387-56-tekton-gkebdd" modified.
+Setting the docker registry organisation to *************2 in the TeamSettings
+Git configured for user: JenkinsXBot and email jenkins-x@googlegroups.com
+helm installed and configured
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision e397fc1520b958e99b2c050f2244a77ef1f68cde to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            e397fc1520b958e99b2c050f2244a77ef1f68cde -> FETCH_HEAD
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision e397fc1520b958e99b2c050f2244a77ef1f68cde to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            e397fc1520b958e99b2c050f2244a77ef1f68cde -> FETCH_HEAD
+WARNING: failed to create system vault in namespace ** due to no "**-vault-pr-387-56-tek" vault found in namespace "**"
+
+Note: this loadbalancer will fail to be provisioned if you have insufficient quotas, this can happen easily on a GKE free account.
+To view quotas run: gcloud compute project-info describe
+Waiting for external loadbalancer to be created and update the nginx-ingress-controller service in kube-system namespace
+External loadbalancer created
+
+Waiting to find the external host name of the ingress controller Service in namespace kube-system with name **ing-nginx-ingress-controller
+No domain flag provided so using default 35.240.14.96.nip.io to generate Ingress rules
+nginx ingress controller installed and configured
+? Configured to use long term logs storage: No
+Set up a Git username and API token to be able to perform CI/CD
+Select the CI/CD pipelines Git server and user
+Setting the pipelines Git server https://github.com and user name ******************.
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision e397fc1520b958e99b2c050f2244a77ef1f68cde to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            e397fc1520b958e99b2c050f2244a77ef1f68cde -> FETCH_HEAD
+Cloning the Jenkins X cloud environments repo to /builder/home/.**/cloud-environments
+Enumerating objects: 1440, done.
+Total 1440 (delta 0), reused 0 (delta 0), pack-reused 1440
+Configuring Kaniko service account pr-387-56-tekton-gkebdd-ko for project *************2
+Unable to find service account pr-387-56-tekton-gkebdd-ko, checking if we have enough permission to create
+Creating service account pr-387-56-tekton-gkebdd-ko
+Assigning role roles/storage.*****
+Assigning role roles/storage.objectAdmin
+Assigning role roles/storage.objectCreator
+Downloading service account key
+Setting up prow config into namespace **
+Installing tekton into namespace **
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision e397fc1520b958e99b2c050f2244a77ef1f68cde to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            e397fc1520b958e99b2c050f2244a77ef1f68cde -> FETCH_HEAD
+
+Installing Prow into namespace **
+with values file /builder/home/.**/cloud-environments/env-gke/myvalues.yaml
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision e397fc1520b958e99b2c050f2244a77ef1f68cde to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            e397fc1520b958e99b2c050f2244a77ef1f68cde -> FETCH_HEAD
+
+Installing ** into namespace **
+Installing jenkins-x-platform version: 2.0.936
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision e397fc1520b958e99b2c050f2244a77ef1f68cde to /builder/home/.**/jenkins-x-versions
+error: Server does not allow request for unadvertised object e397fc1520b958e99b2c050f2244a77ef1f68cde
+ERROR: Error: Command failed  git fetch origin e397fc1520b958e99b2c050f2244a77ef1f68cde
+ERROR: error creating cluster installing the Jenkins X platform: failed to install/upgrade the jenkins-x platform chart: failed to git fetch origin e397fc1520b958e99b2c050f2244a77ef1f68cde for repo: https://github.com/jenkins-x/jenkins-x-versions.git in dir /builder/home/.**/jenkins-x-versions: exit status 128
+error: installing the Jenkins X platform: failed to install/upgrade the jenkins-x platform chart: failed to git fetch origin e397fc1520b958e99b2c050f2244a77ef1f68cde for repo: https://github.com/jenkins-x/jenkins-x-versions.git in dir /builder/home/.**/jenkins-x-versions: exit status 128
+ERROR: Error: Command failed  ** create cluster gke --tekton --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-387-56-tekton-gkebdd --batch-mode --version 2.0.936 --labels cluster=tekton-gkebdd,branch=pr-387 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref e397fc1520b958e99b2c050f2244a77ef1f68cde --git-username ****************** --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+error: exit status 1
