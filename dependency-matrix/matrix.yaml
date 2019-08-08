@@ -95,3 +95,9 @@ dependencies:
   url: https://github.com/helm/charts/tree/master/stable/cert-manager
   version: ""
   versionURL: ""
+- host: github.com
+  owner: bitnami
+  repo: charts
+  url: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
+  version: ""
+  versionURL: ""
