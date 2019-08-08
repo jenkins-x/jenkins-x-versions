@@ -1,13 +1,12 @@
 Step: build-step-credential-initializer-9kchp:
 
-{"level":"warn","ts":1565284818.0325181,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1565284818.033532,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Unable to retrieve container logs for docker://5e1740f96f121e3c1b3639b46dd2f66809adca69bb57a438d4cbba4bce7c3c69
 Step: build-step-working-dir-initializer-4w4qb:
 
-{"level":"warn","ts":1565284818.959387,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1565284819.0534997,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Unable to retrieve container logs for docker://f9449d819c11520beb840500fa342c32e218a5e8f2557135394d871a7ddd4a4b
 Step: build-step-place-tools:
 
+Unable to retrieve container logs for docker://7e592d2b8030733103eaf21a900ea505e0aa25877b15a579a4a4af6332d22467
 Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-qd7sx:
 
 {"level":"warn","ts":1565284821.734765,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
