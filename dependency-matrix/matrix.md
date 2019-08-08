@@ -10,3 +10,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.111](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.111) | 
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.938](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.938) | 
+[jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.875]() | 
