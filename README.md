@@ -49,3 +49,4 @@ To mark the cluster for deletion again run:
 jx step e2e label --delete clusterName --project-id=jenkins-x-bdd2
 ```
 The above command will add a label to the cluster with the value `delete-me=true`
+
