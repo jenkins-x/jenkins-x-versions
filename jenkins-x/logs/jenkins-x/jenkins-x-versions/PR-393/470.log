@@ -1,0 +1,164 @@
+Step: build-step-credential-initializer-chfhk:
+
+{"level":"warn","ts":1565619618.6488547,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565619618.6498647,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-297qn:
+
+{"level":"warn","ts":1565619619.0049999,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565619619.007559,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-jenkins-x-versions-pr-gjkp6:
+
+{"level":"warn","ts":1565619621.2108583,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565619622.5095546,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/jenkins-x-versions @ 23a6b1ed4b12614894e675960c20594a27f62066 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-12T14:20:23Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:76e03b63a1b0fa87c5fcaf2abc57e8c0990c6ade,393:23a6b1ed4b12614894e675960c20594a27f62066
+ran git fetch --unshallow origin 23a6b1ed4b12614894e675960c20594a27f62066: 76e03b63a1b0fa87c5fcaf2abc57e8c0990c6ade: in 
+ran git checkout master in 
+ran git reset --hard 76e03b63a1b0fa87c5fcaf2abc57e8c0990c6ade in 
+ran clean --force -d . in 
+ran git merge 23a6b1ed4b12614894e675960c20594a27f62066 in 
+Step: build-step-runci:
+
++ export GH_USERNAME=*************-test
++ GH_USERNAME=*************-test
++ export GH_OWNER=cb-kubecd
++ GH_OWNER=cb-kubecd
+++ ** step credential -s *************-test-github
++ export GH_CREDS_PSW=****************************************
++ GH_CREDS_PSW=****************************************
+++ ** step credential -s test-jenkins-user
++ export JENKINS_CREDS_PSW=************
++ JENKINS_CREDS_PSW=************
+++ ** step credential -k bdd-credentials.json -s bdd-secret -f sa.json
++ export GKE_SA=sa.json
++ GKE_SA=sa.json
++ export BUILD_NUMBER=
++ BUILD_NUMBER=
++ JX_HOME=/tmp/**home
++ KUBECONFIG=/tmp/**home/config
++ mkdir -p /tmp/**home
++ ** --version
+2.0.581
++ ** step git credentials
+Generated Git credentials file /builder/home/git/credentials
++ gcloud auth activate-service-account --key-file sa.json
+Activated service account credentials for: [*************@*************2.iam.gserviceaccount.com]
++ git config --global --add user.name JenkinsXBot
++ git config --global --add user.email jenkins-x@googlegroups.com
++ echo 'running the BDD tests with JX_HOME = /tmp/**home'
+running the BDD tests with JX_HOME = /tmp/**home
++ ** step bdd --use-revision --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config **/bdd/gitops/cluster.yaml --gopath /tmp --git-provider=github --git-username *************-test --git-owner cb-kubecd --git-api-token **************************************** --default-*****-password ************ --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+has 0 post create cluster commands
+found git revision 23a6b1ed4b12614894e675960c20594a27f62066: branch PR-393
+using versions git repo https://github.com/jenkins-x/jenkins-x-versions.git and ref 23a6b1ed4b12614894e675960c20594a27f62066
+
+Creating cluster pr-393-470-gitops-gkebdd
+loaded version 2.0.942 from Makefile in directory 
+running command: ** create cluster gke --vault --gitops --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-393-470-gitops-gkebdd --batch-mode --version 2.0.942 --labels cluster=gitops-gkebdd,branch=pr-393 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 23a6b1ed4b12614894e675960c20594a27f62066 --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+? Configured project id: *************2
+Updated property [core/project].
+? Configured cluster name: pr-393-470-gitops-gkebdd
+? Configured to machine type: n1-standard-2
+? Configured to minimum number of nodes: 3
+? Configured to maximum number of nodes: 5
+Creating cluster...
+WARNING: In June 2019, node auto-upgrade will be enabled by default for newly created clusters and node pools. To disable it, use the `--no-enable-autoupgrade` flag.
+WARNING: Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+WARNING: Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+WARNING: Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+WARNING: Starting in 1.12, default node pools in new clusters will have their legacy Compute Engine instance metadata endpoints disabled by default. To create a cluster with legacy instance metadata endpoints disabled in the default node pool, run `clusters create` with the flag `--metadata disable-legacy-endpoints=true`.
+WARNING: Your Pod address range (`--cluster-ipv4-cidr`) can accommodate at most 1008 node(s). 
+This will enable the autorepair feature for nodes. Please see https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more information on node autorepairs.
+Creating cluster pr-393-470-gitops-gkebdd in europe-west1-c...
+..........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................done.
+Created [https://container.googleapis.com/v1/projects/*************2/zones/europe-west1-c/clusters/pr-393-470-gitops-gkebdd].
+To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/europe-west1-c/pr-393-470-gitops-gkebdd?project=*************2
+kubeconfig entry generated for pr-393-470-gitops-gkebdd.
+NAME                      LOCATION        MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION   NUM_NODES  STATUS
+pr-393-470-gitops-gkebdd  europe-west1-c  1.12.8-gke.10   35.187.20.238  n1-standard-2  1.12.8-gke.10  3          RUNNING
+Initialising cluster ...
+Setting the docker registry organisation to *************2 in the TeamSettings
+Git configured for user: JenkinsXBot and email jenkins-x@googlegroups.com
+helm installed and configured
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 23a6b1ed4b12614894e675960c20594a27f62066 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            23a6b1ed4b12614894e675960c20594a27f62066 -> FETCH_HEAD
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 23a6b1ed4b12614894e675960c20594a27f62066 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            23a6b1ed4b12614894e675960c20594a27f62066 -> FETCH_HEAD
+WARNING: failed to create system vault in namespace ** due to no "**-vault-pr-393-470-gi" vault found in namespace "**"
+
+Note: this loadbalancer will fail to be provisioned if you have insufficient quotas, this can happen easily on a GKE free account.
+To view quotas run: gcloud compute project-info describe
+Waiting for external loadbalancer to be created and update the nginx-ingress-controller service in kube-system namespace
+External loadbalancer created
+
+Waiting to find the external host name of the ingress controller Service in namespace kube-system with name **ing-nginx-ingress-controller
+No domain flag provided so using default 35.205.184.22.nip.io to generate Ingress rules
+nginx ingress controller installed and configured
+? Configured to use long term logs storage: No
+Installing vault-operator...
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 23a6b1ed4b12614894e675960c20594a27f62066 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            23a6b1ed4b12614894e675960c20594a27f62066 -> FETCH_HEAD
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 23a6b1ed4b12614894e675960c20594a27f62066 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            23a6b1ed4b12614894e675960c20594a27f62066 -> FETCH_HEAD
+Namespace ** created 
+
+vault-operator addon succesfully installed.
+Creating new system vault
+Updated property [core/project].
+Unable to find service account pr-393-470-gitop-vt, checking if we have enough permission to create
+Creating service account pr-393-470-gitop-vt
+Assigning role roles/storage.objectAdmin
+Assigning role roles/cloudkms.*****
+Assigning role roles/cloudkms.cryptoKeyEncrypterDecrypter
+Downloading service account key
+GCS bucket **-vault-pr-393-470-gi-bucket was created for Vault backend
+Creating Vault...
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 23a6b1ed4b12614894e675960c20594a27f62066 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            23a6b1ed4b12614894e675960c20594a27f62066 -> FETCH_HEAD
+Vault **-vault-pr-393-470-gi created in cluster pr-393-470-gitop
+Exposing Vault...
+Deleting and cloning the Jenkins X versions repo
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/jenkins-x-versions.git with revision 23a6b1ed4b12614894e675960c20594a27f62066 to /builder/home/.**/jenkins-x-versions
+From https://github.com/jenkins-x/jenkins-x-versions
+ * branch            23a6b1ed4b12614894e675960c20594a27f62066 -> FETCH_HEAD
+
+job.batch "exposecontroller" deleted
+configmap "exposecontroller" deleted
+serviceaccount "exposecontroller" deleted
+role.rbac.authorization.k8s.io "exposecontroller" deleted
+rolebinding.rbac.authorization.k8s.io "exposecontroller" deleted
+Ingress rules recreated
+Vault **-vault-pr-393-470-gi exposed
+System vault created named **-vault-pr-393-470-gi in namespace **.
+Set up a Git username and API token to be able to perform CI/CD
+Select the CI/CD pipelines Git server and user
+Setting the pipelines Git server https://github.com and user name *************-test.
+ERROR: error creating cluster configuring the git auth: saving the Git authentication configuration: saving auth config "gitAuth.yaml" in vault: Error making API request.
+
+URL: PUT http://**-vault-pr-393-470-gi.**.35.205.184.22.nip.io/v1/secret/data/auth/gitAuth.yaml
+Code: 404. Errors:
+
+* no handler for route 'secret/data/auth/gitAuth.yaml'
+error: configuring the git auth: saving the Git authentication configuration: saving auth config "gitAuth.yaml" in vault: Error making API request.
+
+URL: PUT http://**-vault-pr-393-470-gi.**.35.205.184.22.nip.io/v1/secret/data/auth/gitAuth.yaml
+Code: 404. Errors:
+
+* no handler for route 'secret/data/auth/gitAuth.yaml'
+ERROR: Error: Command failed  ** create cluster gke --vault --gitops --project-id=*************2 -m=n1-standard-2 --min-num-nodes=3 --max-num-nodes=5 -z=europe-west1-c --skip-login --cluster-name pr-393-470-gitops-gkebdd --batch-mode --version 2.0.942 --labels cluster=gitops-gkebdd,branch=pr-393 --git-provider-url https://github.com --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --versions-ref 23a6b1ed4b12614894e675960c20594a27f62066 --git-username *************-test --environment-git-owner cb-kubecd --git-api-token **************¬ --default-*****-password **************¬
+error: exit status 1
