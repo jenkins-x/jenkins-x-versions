@@ -36,6 +36,15 @@ dependencies:
       versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.210
     version: 0.1.647
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.647
+  - path:
+    - host: github.com
+      owner: jenkins-x-charts
+      repo: prow
+      url: https://github.com/jenkins-x-charts/prow
+      version: 0.0.1014
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1014
+    version: 0.1.647
+    versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.647
   url: https://github.com/jenkins-x/jx
   version: 0.1.647
   versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.647
@@ -79,5 +88,5 @@ dependencies:
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: ""
-  versionURL: ""
+  version: 0.0.1014
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1014
