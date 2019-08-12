@@ -9,3 +9,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) | [0.1.647](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.647) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.111](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.111) | 
+[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.945](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.945) | 
