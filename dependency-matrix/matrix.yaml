@@ -57,3 +57,9 @@ dependencies:
   url: https://github.com/jenkins-x/jenkins-x-platform
   version: 2.0.945
   versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.945
+- host: github.com
+  owner: jenkins-x-charts
+  repo: jx-build-templates
+  url: https://github.com/jenkins-x-charts/jx-build-templates
+  version: 0.0.878
+  versionURL: ""
