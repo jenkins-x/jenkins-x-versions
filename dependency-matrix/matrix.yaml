@@ -90,3 +90,9 @@ dependencies:
   url: https://github.com/jenkins-x-charts/prow
   version: 0.0.1014
   versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1014
+- host: github.com
+  owner: jenkins-x
+  repo: sso-operator
+  url: https://github.com/jenkins-x/sso-operator
+  version: 1.2.27
+  versionURL: ""
