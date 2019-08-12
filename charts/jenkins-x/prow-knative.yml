@@ -1,3 +1,1 @@
-version: 0.0.419
-description: the version of Prow used for the knative build which is considered deprecated now we have tekton
 gitUrl: https://github.com/jenkins-x-charts/prow

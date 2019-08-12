@@ -13,3 +13,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.878]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
 [jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.70]() | 
+[jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | []() | 
