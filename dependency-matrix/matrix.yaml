@@ -39,3 +39,9 @@ dependencies:
   url: https://github.com/jenkins-x/jx
   version: 0.1.647
   versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.647
+- host: github.com
+  owner: jenkins-x
+  repo: exposecontroller-service
+  url: https://github.com/jenkins-x/exposecontroller-service
+  version: 1.0.7
+  versionURL: ""
