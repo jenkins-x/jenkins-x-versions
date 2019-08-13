@@ -60,3 +60,9 @@ dependencies:
   url: https://github.com/jenkins-x/exposecontroller-service
   version: 1.0.7
   versionURL: ""
+- host: github.com
+  owner: jenkins-x
+  repo: exposecontroller
+  url: https://github.com/jenkins-x/exposecontroller
+  version: 2.3.111
+  versionURL: https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.111
