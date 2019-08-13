@@ -1,2 +1,2 @@
-version: 0.2.1 
 gitUrl: https://github.com/jenkins-x/helm-charts/tree/master/vault-operator
+version: 0.3.1
