@@ -1,0 +1,12 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        agent:
+          image: gcr.io/jenkinsxio/builder-terraform:0.1.595
+        stages:
+          - name: ci
+            steps:
+              - command: jx/bdd/terraform-static/ci.sh
+                name: runci

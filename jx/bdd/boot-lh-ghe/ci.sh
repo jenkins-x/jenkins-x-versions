@@ -36,7 +36,7 @@ export JX_VALUE_PIPELINEUSER_USERNAME="$GH_USERNAME"
 export JX_VALUE_PIPELINEUSER_TOKEN="$GH_CREDS_PSW"
 export JX_VALUE_PROW_HMACTOKEN="$GH_CREDS_PSW"
 
-# TODO temporary hack until the batch mode in jx is fixed...
+# TODO temporary hack until the batch mode in jx is fixed...
 export JX_BATCH_MODE="true"
 
 git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
