@@ -17,3 +17,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1018](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1018) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.27]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.42]() | 
+[jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.1]() | 
