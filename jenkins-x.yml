@@ -5,7 +5,7 @@ pipelineConfig:
     release:
       build:
         steps:
-        - name: release-version
+        - name: changelog
           command: jx
           args:
           - step
