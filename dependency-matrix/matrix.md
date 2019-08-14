@@ -19,7 +19,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.42]() | 
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.1]() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
-[helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager) |  | [v0.6.7]() | 
+[helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.15.0]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.5.3]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [3.8.3]() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [8.15.1]() | 
