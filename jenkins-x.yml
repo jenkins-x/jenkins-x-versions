@@ -1,5 +1,4 @@
-buildPack: git
-buildPackGitURL: https://github.com/jenkins-x-buildpacks/jenkins-x-classic.git
+buildPack: none
 pipelineConfig:
   pipelines:
     release:
