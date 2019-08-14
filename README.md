@@ -6,6 +6,15 @@ This repository  contains the consistent set of versions of packages and helm ch
 * [docker](docker) contains the versions of container images
 * [packages](packages) contains the versions of CLI tools like `jx`, `helm` etc
 
+## Update to latest versions of all depdendencies
+
+To update all the dependencies in the repo to their latest version run
+
+    jx step create pr versions -f '*' --images
+    
+If there is an existing PR to bump versions it will be updated. This command is run using Kubernetes `CronJob` every 12 hours so you normally only need to run it manually if you want to update dependencies faster.
+
+If a PR created using this step is showing conflicts the easiest way to resolve it is to close the PR and rerun the command.
 
 ## Layout
 
