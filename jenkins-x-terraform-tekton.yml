@@ -16,7 +16,7 @@ pipelineConfig:
           - name: GOPROXY
             value: http://jenkins-x-athens-proxy:80
         agent:
-          image: gcr.io/jenkinsxio/builder-terraform:0.1.654
+          image: gcr.io/jenkinsxio/builder-terraform:0.1.659
         stages:
           - name: ci
             steps:
