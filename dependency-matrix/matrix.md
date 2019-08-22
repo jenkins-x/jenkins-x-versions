@@ -22,4 +22,4 @@ Dependency | Sources | Version | Mismatched versions
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.5.4]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [3.8.3]() | 
-[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [8.15.1]() | 
+[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.1.0]() | 
