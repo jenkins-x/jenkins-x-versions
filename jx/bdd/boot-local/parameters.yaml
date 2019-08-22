@@ -7,3 +7,4 @@ pipelineUser:
   github:
     host: github.com
     username: jenkins-x-bot-test
+    email: jenkins-x@googlegroups.com

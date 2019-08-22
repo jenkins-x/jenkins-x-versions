@@ -4,3 +4,4 @@ enableDocker: false
 gpg: {}
 pipelineUser:
   username: jenkins-x-bdd
+  email: jenkins-x@googlegroups.com

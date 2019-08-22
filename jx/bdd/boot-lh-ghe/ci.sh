@@ -3,6 +3,7 @@ set -e
 set -x
 
 export GH_USERNAME="dev1"
+export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
 # export GH_OWNER="cb-kubecd"
 # --git-owner $GH_OWNER
@@ -33,6 +34,7 @@ echo "running the BDD tests with JX_HOME = $JX_HOME"
 # setup jx boot parameters
 export JX_VALUE_ADMINUSER_PASSWORD="$JENKINS_CREDS_PSW"
 export JX_VALUE_PIPELINEUSER_USERNAME="$GH_USERNAME"
+export JX_VALUE_PIPELINEUSER_EMAIL="$GH_EMAIL"
 export JX_VALUE_PIPELINEUSER_TOKEN="$GH_CREDS_PSW"
 export JX_VALUE_PROW_HMACTOKEN="$GH_CREDS_PSW"
 
