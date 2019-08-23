@@ -2,7 +2,7 @@
 
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
-[jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) |  | [0.1.654](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.654) | 
+[jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) |  | [0.1.666](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.666) | 
 [jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git);[github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) | [2.0.592](https://github.com/jenkins-x/jx/releases/tag/v2.0.592) | **2.0.595**: [github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git)<br>**0.1.653**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller)
 [kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.5.3]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger) |  | [1.3.0]() | 
