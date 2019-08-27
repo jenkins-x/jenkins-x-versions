@@ -25,3 +25,4 @@ Dependency | Sources | Version | Mismatched versions
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.1.0]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.18.2](https://github.com/weaveworks/flagger/releases/tag/0.18.2) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.3.0]() | 
+[jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
