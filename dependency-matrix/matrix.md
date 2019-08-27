@@ -23,3 +23,4 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.5.4]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [3.8.4]() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.1.0]() | 
+[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.18.2](https://github.com/weaveworks/flagger/releases/tag/0.18.2) | 

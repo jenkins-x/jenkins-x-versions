@@ -153,3 +153,10 @@ dependencies:
   url: https://github.com/prometheus/alertmanager
   version: 9.1.0
   versionURL: ""
+- component: flagger
+  host: github.com
+  owner: weaveworks
+  repo: flagger
+  url: https://github.com/weaveworks/flagger
+  version: 0.18.2
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.18.2
