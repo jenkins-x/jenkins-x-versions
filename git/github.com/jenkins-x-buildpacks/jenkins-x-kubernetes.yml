@@ -1,2 +1,2 @@
 version: master
-giUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes
+gitUrl: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes
