@@ -4,9 +4,12 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-jx:0.1.610
+          image: gcr.io/jenkinsxio/builder-jx:0.1.639
         stages:
-          - name: changelog
+          - name: versions-release
+            environment:
+              - name: JX_VERSION
+                value: $(sed "s:^.*$GH_OWNER\/$GH_REPO.*\[\([0-9.]*\)\].*$:\1:;t;d" /workspace/source/dependency-matrix/matrix.md)
             steps:
               - name: changelog
                 command: jx
@@ -21,3 +24,15 @@ pipelineConfig:
 
               - name: release-jx
                 command: ./jx/scripts/release-jx.sh
+
+              - name: update-jx-bot
+                image: gcr.io/jenkinsxio/builder-jx:0.1.639
+                command: ./jx/scripts/update-jx-bot.sh
+
+              - name: update-jx-website
+                image: gcr.io/jenkinsxio/builder-go:0.1.639
+                command: ./jx/scripts/update-jx-website.sh
+
+              - name: update-jx-clients
+                image: gcr.io/jenkinsxio/builder-maven:0.1.639
+                command: ./jx/scripts/update-jx-clients.sh

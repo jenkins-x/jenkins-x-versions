@@ -4,9 +4,13 @@ set -x
 
 export GH_OWNER="jenkins-x"
 export GH_REPO="jx"
-export JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-matrix/matrix.md)
+export DEPENDENCY_MATRIX="dependency-matrix/matrix.md"
 
-if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
+if [ -f $DEPENDENCY_MATRIX ]
 then
-  jx step update release-status github --owner $GH_OWNER --repository $GH_REPO --version $JX_VERSION --prerelease=false
+  export JX_VERSION=$(sed "s:^.*$GH_OWNER\/$GH_REPO.*\[\([0-9.]*\)\].*$:\1:;t;d" $DEPENDENCY_MATRIX)
+  if [ ! -z $JX_VERISON ] && [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
+  then
+    jx step update release-status github --owner $GH_OWNER --repository $GH_REPO --version $JX_VERSION --prerelease=false
+  fi
 fi
