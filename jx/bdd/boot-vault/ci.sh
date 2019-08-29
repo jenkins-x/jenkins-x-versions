@@ -40,10 +40,10 @@ export JX_VALUE_PROW_HMACTOKEN="$GH_CREDS_PSW"
 export JX_BATCH_MODE="true"
 
 git clone https://github.com/jstrachan/jenkins-x-boot-config.git boot-source
-cp jx/bdd/boot-local/jx-requirements.yml boot-source
-cp jx/bdd/boot-local/parameters.yaml boot-source/env
 cd boot-source
 git checkout f8fcc0707c7e6736484950ad2dd9d96456cdd82b
+cp jx/bdd/boot-local/jx-requirements.yml .
+cp jx/bdd/boot-local/parameters.yaml env
 
 # TODO hack until we fix boot to do this too!
 helm init --client-only
