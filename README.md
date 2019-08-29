@@ -1,4 +1,4 @@
-# Jenkins X Versions
+# Jenkins X Version Stream
 
 This repository  contains the consistent set of versions of packages and helm charts for use with [Jenkins X](https://jenkins-x.io/) and its associated Apps to provide a [stable version stream](https://jenkins-x.io/architecture/version-stream/).
 
