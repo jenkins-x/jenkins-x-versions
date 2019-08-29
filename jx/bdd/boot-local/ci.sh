@@ -42,8 +42,11 @@ export JX_BATCH_MODE="true"
 git clone https://github.com/jstrachan/jenkins-x-boot-config.git boot-source
 cd boot-source
 git checkout f8fcc0707c7e6736484950ad2dd9d96456cdd82b
-cp jx/bdd/boot-local/jx-requirements.yml .
-cp jx/bdd/boot-local/parameters.yaml env
+cd ..
+cp jx/bdd/boot-local/jx-requirements.yml boot-source
+cp jx/bdd/boot-local/parameters.yaml boot-source/env
+cd boot-source
+
 
 # TODO hack until we fix boot to do this too!
 helm init --client-only
