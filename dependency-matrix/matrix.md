@@ -21,7 +21,7 @@ Dependency | Sources | Version | Mismatched versions
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager) |  | [v0.6.7]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.5.4]() | 
-[grafana/grafana](https://github.com/grafana/grafana) |  | [3.8.5]() | 
+[grafana/grafana](https://github.com/grafana/grafana) |  | [3.8.6]() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.1.0]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.18.2](https://github.com/weaveworks/flagger/releases/tag/0.18.2) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.3.0]() | 
