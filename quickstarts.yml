@@ -8,3 +8,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+d9e925718
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/angular-io-quickstart/zip/bec4b999a
+  framework: ""
+  id: ""
+  language: TypeScript
+  name: angular-io-quickstart
+  owner: ""
+  tags: []
+  version: 1.0+bec4b999a
