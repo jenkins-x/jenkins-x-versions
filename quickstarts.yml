@@ -24,3 +24,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+5942045fc
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/dlang-http/zip/280f378d2
+  framework: ""
+  id: ""
+  language: D
+  name: dlang-http
+  owner: ""
+  tags: []
+  version: 1.0+280f378d2
