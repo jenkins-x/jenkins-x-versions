@@ -98,3 +98,10 @@ quickstarts:
   name: rails-shopping-cart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: JavaScript
+  name: react-quickstart
+  owner: ""
+  tags: []

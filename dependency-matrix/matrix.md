@@ -46,3 +46,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/php-helloworld](https://github.com/jenkins-x-quickstarts/php-helloworld.git) |  | []() | 
 [jenkins-x-quickstarts/python-http](https://github.com/jenkins-x-quickstarts/python-http.git) |  | []() | 
 [jenkins-x-quickstarts/rails-shopping-cart](https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git) |  | []() | 
+[jenkins-x-quickstarts/react-quickstart](https://github.com/jenkins-x-quickstarts/react-quickstart.git) |  | []() | 
