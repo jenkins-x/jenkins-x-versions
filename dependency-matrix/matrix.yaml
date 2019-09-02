@@ -314,3 +314,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: jenkins-cwp-quickstart
+  url: https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git
+  version: ""
+  versionURL: ""
