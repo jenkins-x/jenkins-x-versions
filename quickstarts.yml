@@ -70,3 +70,10 @@ quickstarts:
   name: node-http-watch-pipeline-activity
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: open-liberty
+  owner: ""
+  tags: []

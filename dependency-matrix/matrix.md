@@ -42,3 +42,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/jenkins-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | []() | 
 [jenkins-x-quickstarts/node-http-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git) |  | []() | 
+[jenkins-x-quickstarts/open-liberty](https://github.com/jenkins-x-quickstarts/open-liberty.git) |  | []() | 
