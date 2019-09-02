@@ -224,3 +224,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git
   version: 1.0.0+bec4b999a
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: aspnet-app
+  url: https://github.com/jenkins-x-quickstarts/aspnet-app.git
+  version: 1.0.0+5942045fc
+  versionURL: ""
