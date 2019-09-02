@@ -44,3 +44,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/php-helloworld](https://github.com/jenkins-x-quickstarts/php-helloworld.git) |  | []() | 
 [jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | []() | 
 [jenkins-x-quickstarts/spring-boot-rest-prometheus](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git) |  | []() | 
+[jenkins-x-quickstarts/python-http](https://github.com/jenkins-x-quickstarts/python-http.git) |  | []() | 
