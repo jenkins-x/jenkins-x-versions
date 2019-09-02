@@ -41,3 +41,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/jenkins-cwp-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git) |  | [1.0.0+47fa4d9cd]() | 
 [jenkins-x-quickstarts/jenkins-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git) |  | [1.0.0+f31f27201]() | 
 [jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | [1.0.0+14015fc0d]() | 
+[jenkins-x-quickstarts/node-http-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git) |  | [1.0.0+09c7ed32d]() | 

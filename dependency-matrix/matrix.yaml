@@ -266,3 +266,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/node-http.git
   version: 1.0.0+14015fc0d
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: node-http-watch-pipeline-activity
+  url: https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git
+  version: 1.0.0+09c7ed32d
+  versionURL: ""
