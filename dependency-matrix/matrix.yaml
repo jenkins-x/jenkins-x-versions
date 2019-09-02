@@ -248,3 +248,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/aspnet-app.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: scala-akka-http-quickstart
+  url: https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git
+  version: ""
+  versionURL: ""
