@@ -332,3 +332,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git
   version: 1.0.0+6c43e1d94
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: spring-boot-rest-prometheus-java11
+  url: https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git
+  version: 1.0.0+7e487fce2
+  versionURL: ""
