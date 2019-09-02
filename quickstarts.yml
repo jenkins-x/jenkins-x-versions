@@ -16,3 +16,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+bec4b999a
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/aspnet-app/zip/5942045fc
+  framework: ""
+  id: ""
+  language: C#
+  name: aspnet-app
+  owner: ""
+  tags: []
+  version: 1.0+5942045fc
