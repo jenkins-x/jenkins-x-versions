@@ -64,3 +64,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+f31f27201
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/node-http/zip/14015fc0d
+  framework: ""
+  id: ""
+  language: JavaScript
+  name: node-http
+  owner: ""
+  tags: []
+  version: 1.0+14015fc0d
