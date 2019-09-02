@@ -278,3 +278,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/open-liberty.git
   version: 1.0+c21a1e0bf
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: php-helloworld
+  url: https://github.com/jenkins-x-quickstarts/php-helloworld.git
+  version: 1.0+386ed8293
+  versionURL: ""

@@ -43,3 +43,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | [1.0+14015fc0d]() | 
 [jenkins-x-quickstarts/node-http-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git) |  | [1.0+09c7ed32d]() | 
 [jenkins-x-quickstarts/open-liberty](https://github.com/jenkins-x-quickstarts/open-liberty.git) |  | [1.0+c21a1e0bf]() | 
+[jenkins-x-quickstarts/php-helloworld](https://github.com/jenkins-x-quickstarts/php-helloworld.git) |  | [1.0+386ed8293]() | 
