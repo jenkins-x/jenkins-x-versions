@@ -56,3 +56,10 @@ quickstarts:
   name: jenkins-quickstart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: JavaScript
+  name: node-http
+  owner: ""
+  tags: []
