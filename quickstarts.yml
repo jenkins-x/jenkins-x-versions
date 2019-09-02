@@ -87,3 +87,7 @@ quickstarts:
   language: Java
   name: spring-boot-watch-pipeline-activity
   version: 1.0.0+177d75201
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/vertx-rest-prometheus/zip/fd180fd76
+  language: Java
+  name: vertx-rest-prometheus
+  version: 1.0.0+fd180fd76
