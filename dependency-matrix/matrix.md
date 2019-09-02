@@ -39,3 +39,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-http-gradle](https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git) |  | []() | 
 [jenkins-x-quickstarts/aspnet-app](https://github.com/jenkins-x-quickstarts/aspnet-app.git) |  | []() | 
 [jenkins-x-quickstarts/scala-akka-http-quickstart](https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git) |  | []() | 
+[jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | []() | 
