@@ -12,3 +12,7 @@ quickstarts:
   language: C#
   name: aspnet-app
   version: 1.0+5942045fc
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/dlang-http/zip/280f378d2
+  language: D
+  name: dlang-http
+  version: 1.0+280f378d2
