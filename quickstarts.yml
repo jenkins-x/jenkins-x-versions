@@ -120,3 +120,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+f1e295591
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/rollout-app/zip/953a29100
+  framework: ""
+  id: ""
+  language: HTML
+  name: rollout-app
+  owner: ""
+  tags: []
+  version: 1.0+953a29100
