@@ -4,3 +4,7 @@ quickstarts:
   language: Java
   name: android-quickstart
   version: 1.0+d9e925718
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/angular-io-quickstart/zip/bec4b999a
+  language: TypeScript
+  name: angular-io-quickstart
+  version: 1.0+bec4b999a
