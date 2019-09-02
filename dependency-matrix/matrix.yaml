@@ -254,3 +254,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git
   version: 1.0+47fa4d9cd
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: jenkins-quickstart
+  url: https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git
+  version: 1.0+f31f27201
+  versionURL: ""
