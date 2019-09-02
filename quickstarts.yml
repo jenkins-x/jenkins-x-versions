@@ -136,3 +136,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+6a2f622ca
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/scala-akka-http-quickstart/zip/d52c41a04
+  framework: ""
+  id: ""
+  language: Scala
+  name: scala-akka-http-quickstart
+  owner: ""
+  tags: []
+  version: 1.0+d52c41a04
