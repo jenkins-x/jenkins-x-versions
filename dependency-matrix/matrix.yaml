@@ -314,3 +314,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/rust-http.git
   version: 1.0+6a2f622ca
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: scala-akka-http-quickstart
+  url: https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git
+  version: 1.0+d52c41a04
+  versionURL: ""
