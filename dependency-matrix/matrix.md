@@ -48,3 +48,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/rails-shopping-cart](https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git) |  | []() | 
 [jenkins-x-quickstarts/react-quickstart](https://github.com/jenkins-x-quickstarts/react-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/rollout-app](https://github.com/jenkins-x-quickstarts/rollout-app.git) |  | []() | 
+[jenkins-x-quickstarts/rust-http](https://github.com/jenkins-x-quickstarts/rust-http.git) |  | []() | 

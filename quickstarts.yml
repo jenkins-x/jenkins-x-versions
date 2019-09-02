@@ -112,3 +112,10 @@ quickstarts:
   name: rollout-app
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Rust
+  name: rust-http
+  owner: ""
+  tags: []
