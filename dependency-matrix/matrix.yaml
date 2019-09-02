@@ -272,3 +272,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/php-helloworld.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: node-http
+  url: https://github.com/jenkins-x-quickstarts/node-http.git
+  version: ""
+  versionURL: ""
