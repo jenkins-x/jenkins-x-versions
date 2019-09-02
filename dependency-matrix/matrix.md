@@ -54,3 +54,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | []() | 
 [jenkins-x-quickstarts/rails-shopping-cart](https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git) |  | []() | 
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | []() | 
+[jenkins-x-quickstarts/rollout-app](https://github.com/jenkins-x-quickstarts/rollout-app.git) |  | []() | 
