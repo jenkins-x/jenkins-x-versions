@@ -49,3 +49,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/react-quickstart](https://github.com/jenkins-x-quickstarts/react-quickstart.git) |  | [1.0.0+f1e295591]() | 
 [jenkins-x-quickstarts/rollout-app](https://github.com/jenkins-x-quickstarts/rollout-app.git) |  | [1.0.0+953a29100]() | 
 [jenkins-x-quickstarts/rust-http](https://github.com/jenkins-x-quickstarts/rust-http.git) |  | [1.0.0+6a2f622ca]() | 
+[jenkins-x-quickstarts/scala-akka-http-quickstart](https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git) |  | [1.0.0+d52c41a04]() | 
