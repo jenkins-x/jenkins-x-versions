@@ -154,3 +154,10 @@ quickstarts:
   name: spring-boot-watch-pipeline-activity
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: vertx-rest-prometheus
+  owner: ""
+  tags: []
