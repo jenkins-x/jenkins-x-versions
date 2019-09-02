@@ -218,3 +218,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/android-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: angular-io-quickstart
+  url: https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git
+  version: ""
+  versionURL: ""
