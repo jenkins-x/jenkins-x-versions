@@ -284,3 +284,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: php-helloworld
+  url: https://github.com/jenkins-x-quickstarts/php-helloworld.git
+  version: ""
+  versionURL: ""
