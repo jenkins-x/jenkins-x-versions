@@ -212,3 +212,9 @@ dependencies:
   url: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes
   version: 1.0.0
   versionURL: https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: jenkins-quickstart
+  url: https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git
+  version: ""
+  versionURL: ""

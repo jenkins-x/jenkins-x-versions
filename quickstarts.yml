@@ -1,0 +1,9 @@
+defaultOwner: jenkins-x-quickstarts
+quickstarts:
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: HTML
+  name: rollout-app
+  owner: ""
+  tags: []
