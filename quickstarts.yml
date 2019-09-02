@@ -126,3 +126,10 @@ quickstarts:
   name: scala-akka-http-quickstart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-http-gradle
+  owner: ""
+  tags: []
