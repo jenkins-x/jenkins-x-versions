@@ -35,3 +35,10 @@ quickstarts:
   name: golang-http
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Go
+  name: golang-http-from-jenkins-x-yml
+  owner: ""
+  tags: []
