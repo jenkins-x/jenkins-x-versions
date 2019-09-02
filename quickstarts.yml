@@ -35,3 +35,10 @@ quickstarts:
   name: jenkins-cwp-quickstart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: open-liberty
+  owner: ""
+  tags: []
