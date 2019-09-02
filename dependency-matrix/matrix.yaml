@@ -186,3 +186,10 @@ dependencies:
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
   version: 0.1.652
   versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.652
+- component: cert-manager
+  host: github.com
+  owner: helm
+  repo: charts
+  url: https://github.com/helm/charts/tree/master/stable/cert-manager
+  version: v0.6.7
+  versionURL: ""
