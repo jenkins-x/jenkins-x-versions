@@ -152,3 +152,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+6f0115ab3
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus/zip/6c43e1d94
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-rest-prometheus
+  owner: ""
+  tags: []
+  version: 1.0+6c43e1d94
