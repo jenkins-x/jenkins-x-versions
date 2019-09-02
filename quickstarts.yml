@@ -63,3 +63,10 @@ quickstarts:
   name: spring-boot-rest-prometheus
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: vertx-rest-prometheus
+  owner: ""
+  tags: []

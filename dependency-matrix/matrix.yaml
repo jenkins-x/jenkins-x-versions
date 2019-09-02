@@ -266,3 +266,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: vertx-rest-prometheus
+  url: https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git
+  version: ""
+  versionURL: ""
