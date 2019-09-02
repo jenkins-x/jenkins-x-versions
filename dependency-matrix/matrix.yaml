@@ -236,3 +236,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/dlang-http.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: golang-http
+  url: https://github.com/jenkins-x-quickstarts/golang-http.git
+  version: ""
+  versionURL: ""
