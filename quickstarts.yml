@@ -20,3 +20,7 @@ quickstarts:
   language: Go
   name: golang-http
   version: 1.0+068a14d5f
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml/zip/ec39bbfac
+  language: Go
+  name: golang-http-from-jenkins-x-yml
+  version: 1.0+ec39bbfac

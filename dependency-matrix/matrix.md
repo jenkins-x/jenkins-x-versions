@@ -37,3 +37,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/aspnet-app](https://github.com/jenkins-x-quickstarts/aspnet-app.git) |  | [1.0+5942045fc]() | 
 [jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | [1.0+280f378d2]() | 
 [jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | [1.0+068a14d5f]() | 
+[jenkins-x-quickstarts/golang-http-from-jenkins-x-yml](https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git) |  | [1.0+ec39bbfac]() | 
