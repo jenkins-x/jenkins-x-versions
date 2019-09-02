@@ -29,3 +29,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.6]() | 
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.652](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.652) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [v0.6.7]() | 
+[helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.17.1]() | 
