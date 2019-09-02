@@ -50,3 +50,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/rollout-app](https://github.com/jenkins-x-quickstarts/rollout-app.git) |  | []() | 
 [jenkins-x-quickstarts/spring-boot-http-gradle](https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git) |  | []() | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | []() | 
+[jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | []() | 

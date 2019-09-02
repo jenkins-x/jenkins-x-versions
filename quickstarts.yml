@@ -126,3 +126,10 @@ quickstarts:
   name: android-quickstart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: D
+  name: dlang-http
+  owner: ""
+  tags: []

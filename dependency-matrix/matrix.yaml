@@ -320,3 +320,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/android-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: dlang-http
+  url: https://github.com/jenkins-x-quickstarts/dlang-http.git
+  version: ""
+  versionURL: ""
