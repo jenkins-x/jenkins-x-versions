@@ -51,3 +51,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-http-gradle](https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git) |  | []() | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | []() | 
+[jenkins-x-quickstarts/spring-boot-rest-prometheus-java11](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git) |  | []() | 
