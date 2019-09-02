@@ -119,3 +119,10 @@ quickstarts:
   name: rust-http
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Scala
+  name: scala-akka-http-quickstart
+  owner: ""
+  tags: []
