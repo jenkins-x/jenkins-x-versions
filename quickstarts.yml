@@ -51,3 +51,7 @@ quickstarts:
   language: Python
   name: python-http
   version: 1.0+ed258a723
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/rails-shopping-cart/zip/2712fbe9e
+  language: Ruby
+  name: rails-shopping-cart
+  version: 1.0+2712fbe9e
