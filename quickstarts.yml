@@ -75,3 +75,7 @@ quickstarts:
   language: Java
   name: spring-boot-http-gradle
   version: 1.0+6f0115ab3
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus/zip/6c43e1d94
+  language: Java
+  name: spring-boot-rest-prometheus
+  version: 1.0+6c43e1d94
