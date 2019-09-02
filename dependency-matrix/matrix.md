@@ -45,3 +45,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/open-liberty](https://github.com/jenkins-x-quickstarts/open-liberty.git) |  | []() | 
 [jenkins-x-quickstarts/php-helloworld](https://github.com/jenkins-x-quickstarts/php-helloworld.git) |  | []() | 
 [jenkins-x-quickstarts/python-http](https://github.com/jenkins-x-quickstarts/python-http.git) |  | []() | 
+[jenkins-x-quickstarts/rails-shopping-cart](https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git) |  | []() | 
