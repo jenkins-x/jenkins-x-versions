@@ -84,3 +84,10 @@ quickstarts:
   name: php-helloworld
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Python
+  name: python-http
+  owner: ""
+  tags: []

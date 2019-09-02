@@ -284,3 +284,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/php-helloworld.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: python-http
+  url: https://github.com/jenkins-x-quickstarts/python-http.git
+  version: ""
+  versionURL: ""
