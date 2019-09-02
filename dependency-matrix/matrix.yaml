@@ -266,3 +266,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: php-helloworld
+  url: https://github.com/jenkins-x-quickstarts/php-helloworld.git
+  version: ""
+  versionURL: ""
