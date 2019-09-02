@@ -128,3 +128,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+953a29100
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/rust-http/zip/6a2f622ca
+  framework: ""
+  id: ""
+  language: Rust
+  name: rust-http
+  owner: ""
+  tags: []
+  version: 1.0+6a2f622ca
