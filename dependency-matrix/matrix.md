@@ -47,3 +47,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/python-http](https://github.com/jenkins-x-quickstarts/python-http.git) |  | []() | 
 [jenkins-x-quickstarts/rust-http](https://github.com/jenkins-x-quickstarts/rust-http.git) |  | []() | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | []() | 
+[jenkins-x-quickstarts/node-http-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git) |  | []() | 

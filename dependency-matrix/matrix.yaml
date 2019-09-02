@@ -302,3 +302,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/android-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: node-http-watch-pipeline-activity
+  url: https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git
+  version: ""
+  versionURL: ""
