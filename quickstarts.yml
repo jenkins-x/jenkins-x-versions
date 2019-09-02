@@ -1,0 +1,10 @@
+defaultOwner: jenkins-x-quickstarts
+quickstarts:
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/android-quickstart/zip/d9e925718
+  framework: ""
+  id: ""
+  language: Java
+  name: android-quickstart
+  owner: ""
+  tags: []
+  version: 1.0+d9e925718
