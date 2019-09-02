@@ -70,3 +70,10 @@ quickstarts:
   name: vertx-rest-prometheus
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Scala
+  name: scala-akka-http-quickstart
+  owner: ""
+  tags: []

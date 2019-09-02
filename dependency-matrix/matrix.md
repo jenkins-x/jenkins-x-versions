@@ -42,3 +42,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | []() | 
 [jenkins-x-quickstarts/spring-boot-rest-prometheus](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git) |  | []() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | []() | 
+[jenkins-x-quickstarts/scala-akka-http-quickstart](https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git) |  | []() | 
