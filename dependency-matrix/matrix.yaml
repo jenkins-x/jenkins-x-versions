@@ -248,3 +248,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git
   version: 1.0.0+ec39bbfac
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: jenkins-cwp-quickstart
+  url: https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git
+  version: 1.0.0+47fa4d9cd
+  versionURL: ""

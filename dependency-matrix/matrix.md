@@ -38,3 +38,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | [1.0.0+280f378d2]() | 
 [jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | [1.0.0+068a14d5f]() | 
 [jenkins-x-quickstarts/golang-http-from-jenkins-x-yml](https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git) |  | [1.0.0+ec39bbfac]() | 
+[jenkins-x-quickstarts/jenkins-cwp-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git) |  | [1.0.0+47fa4d9cd]() | 
