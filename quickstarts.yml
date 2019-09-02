@@ -140,3 +140,10 @@ quickstarts:
   name: spring-boot-rest-prometheus
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-rest-prometheus-java11
+  owner: ""
+  tags: []
