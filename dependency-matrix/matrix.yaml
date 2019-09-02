@@ -296,3 +296,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git
   version: 1.0+2712fbe9e
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: react-quickstart
+  url: https://github.com/jenkins-x-quickstarts/react-quickstart.git
+  version: 1.0+f1e295591
+  versionURL: ""
