@@ -308,3 +308,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/rollout-app.git
   version: 1.0+953a29100
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: rust-http
+  url: https://github.com/jenkins-x-quickstarts/rust-http.git
+  version: 1.0+6a2f622ca
+  versionURL: ""
