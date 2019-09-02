@@ -52,3 +52,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/scala-akka-http-quickstart](https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/spring-boot-http-gradle](https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git) |  | []() | 
 [jenkins-x-quickstarts/spring-boot-rest-prometheus](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git) |  | []() | 
+[jenkins-x-quickstarts/spring-boot-rest-prometheus-java11](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git) |  | []() | 
