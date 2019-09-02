@@ -48,3 +48,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+ec39bbfac
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart/zip/47fa4d9cd
+  framework: ""
+  id: ""
+  language: ""
+  name: jenkins-cwp-quickstart
+  owner: ""
+  tags: []
+  version: 1.0+47fa4d9cd
