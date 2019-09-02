@@ -43,3 +43,7 @@ quickstarts:
   language: Java
   name: open-liberty
   version: 1.0.0+c21a1e0bf
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/php-helloworld/zip/386ed8293
+  language: PHP
+  name: php-helloworld
+  version: 1.0.0+386ed8293
