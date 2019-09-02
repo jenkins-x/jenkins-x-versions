@@ -39,3 +39,7 @@ quickstarts:
   language: JavaScript
   name: node-http-watch-pipeline-activity
   version: 1.0.0+09c7ed32d
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/open-liberty/zip/c21a1e0bf
+  language: Java
+  name: open-liberty
+  version: 1.0.0+c21a1e0bf
