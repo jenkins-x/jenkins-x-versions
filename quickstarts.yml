@@ -55,3 +55,7 @@ quickstarts:
   language: Ruby
   name: rails-shopping-cart
   version: 1.0.0+2712fbe9e
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/react-quickstart/zip/f1e295591
+  language: JavaScript
+  name: react-quickstart
+  version: 1.0.0+f1e295591
