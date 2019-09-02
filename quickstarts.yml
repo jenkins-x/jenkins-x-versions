@@ -56,3 +56,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+47fa4d9cd
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/jenkins-quickstart/zip/f31f27201
+  framework: ""
+  id: ""
+  language: Groovy
+  name: jenkins-quickstart
+  owner: ""
+  tags: []
+  version: 1.0+f31f27201
