@@ -140,3 +140,10 @@ quickstarts:
   name: spring-boot-rest-prometheus-java11
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Go
+  name: golang-http-from-jenkins-x-yml
+  owner: ""
+  tags: []

@@ -332,3 +332,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: golang-http-from-jenkins-x-yml
+  url: https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git
+  version: ""
+  versionURL: ""
