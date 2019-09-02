@@ -42,3 +42,10 @@ quickstarts:
   name: golang-http-from-jenkins-x-yml
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: ""
+  name: jenkins-cwp-quickstart
+  owner: ""
+  tags: []
