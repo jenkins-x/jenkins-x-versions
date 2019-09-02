@@ -52,3 +52,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/jenkins-cwp-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/golang-http-from-jenkins-x-yml](https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git) |  | []() | 
 [jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | []() | 
+[jenkins-x-quickstarts/rails-shopping-cart](https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git) |  | []() | 
