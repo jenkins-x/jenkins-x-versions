@@ -3,7 +3,6 @@ set -e
 set -x
 
 export GH_USERNAME="jenkins-x-bot-test"
-export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_OWNER="cb-kubecd"
 
 export GH_CREDS_PSW="$(jx step credential -s jenkins-x-bot-test-github)"
