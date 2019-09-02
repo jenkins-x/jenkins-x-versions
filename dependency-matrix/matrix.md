@@ -48,3 +48,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | []() | 
 [jenkins-x-quickstarts/python-http](https://github.com/jenkins-x-quickstarts/python-http.git) |  | []() | 
 [jenkins-x-quickstarts/rollout-app](https://github.com/jenkins-x-quickstarts/rollout-app.git) |  | []() | 
+[jenkins-x-quickstarts/spring-boot-http-gradle](https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git) |  | []() | 

@@ -112,3 +112,10 @@ quickstarts:
   name: rollout-app
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-http-gradle
+  owner: ""
+  tags: []
