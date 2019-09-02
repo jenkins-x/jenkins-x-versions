@@ -32,3 +32,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+280f378d2
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/golang-http/zip/068a14d5f
+  framework: ""
+  id: ""
+  language: Go
+  name: golang-http
+  owner: ""
+  tags: []
+  version: 1.0+068a14d5f

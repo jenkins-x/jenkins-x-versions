@@ -36,3 +36,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/aspnet-app](https://github.com/jenkins-x-quickstarts/aspnet-app.git) |  | []() | 
 [jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | []() | 
+[jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | []() | 
