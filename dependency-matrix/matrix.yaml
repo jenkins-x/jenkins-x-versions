@@ -218,3 +218,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: open-liberty
+  url: https://github.com/jenkins-x-quickstarts/open-liberty.git
+  version: ""
+  versionURL: ""
