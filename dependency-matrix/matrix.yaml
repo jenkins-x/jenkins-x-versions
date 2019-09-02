@@ -290,3 +290,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/python-http.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: rust-http
+  url: https://github.com/jenkins-x-quickstarts/rust-http.git
+  version: ""
+  versionURL: ""
