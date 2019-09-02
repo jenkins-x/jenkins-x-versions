@@ -40,3 +40,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/open-liberty](https://github.com/jenkins-x-quickstarts/open-liberty.git) |  | []() | 
 [jenkins-x-quickstarts/react-quickstart](https://github.com/jenkins-x-quickstarts/react-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | []() | 
+[jenkins-x-quickstarts/spring-boot-rest-prometheus](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git) |  | []() | 

@@ -56,3 +56,10 @@ quickstarts:
   name: node-http
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-rest-prometheus
+  owner: ""
+  tags: []
