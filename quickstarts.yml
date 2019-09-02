@@ -63,3 +63,10 @@ quickstarts:
   name: node-http
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: JavaScript
+  name: node-http-watch-pipeline-activity
+  owner: ""
+  tags: []
