@@ -91,3 +91,10 @@ quickstarts:
   name: python-http
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Ruby
+  name: rails-shopping-cart
+  owner: ""
+  tags: []
