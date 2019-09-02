@@ -302,3 +302,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/react-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: rollout-app
+  url: https://github.com/jenkins-x-quickstarts/rollout-app.git
+  version: ""
+  versionURL: ""
