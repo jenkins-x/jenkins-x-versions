@@ -14,3 +14,10 @@ quickstarts:
   name: node-http-watch-pipeline-activity
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: C#
+  name: aspnet-app
+  owner: ""
+  tags: []
