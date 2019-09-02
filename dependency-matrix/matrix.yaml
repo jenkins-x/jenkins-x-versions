@@ -326,3 +326,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git
   version: 1.0.0+6f0115ab3
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: spring-boot-rest-prometheus
+  url: https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git
+  version: 1.0.0+6c43e1d94
+  versionURL: ""
