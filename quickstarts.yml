@@ -59,3 +59,7 @@ quickstarts:
   language: JavaScript
   name: react-quickstart
   version: 1.0+f1e295591
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/rollout-app/zip/953a29100
+  language: HTML
+  name: rollout-app
+  version: 1.0+953a29100
