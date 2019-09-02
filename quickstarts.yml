@@ -42,3 +42,10 @@ quickstarts:
   name: open-liberty
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: JavaScript
+  name: react-quickstart
+  owner: ""
+  tags: []
