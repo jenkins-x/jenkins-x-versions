@@ -104,3 +104,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+ed258a723
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/rails-shopping-cart/zip/2712fbe9e
+  framework: ""
+  id: ""
+  language: Ruby
+  name: rails-shopping-cart
+  owner: ""
+  tags: []
+  version: 1.0+2712fbe9e
