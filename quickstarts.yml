@@ -47,3 +47,7 @@ quickstarts:
   language: PHP
   name: php-helloworld
   version: 1.0+386ed8293
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/python-http/zip/ed258a723
+  language: Python
+  name: python-http
+  version: 1.0+ed258a723
