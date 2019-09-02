@@ -308,3 +308,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: spring-boot-watch-pipeline-activity
+  url: https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git
+  version: ""
+  versionURL: ""
