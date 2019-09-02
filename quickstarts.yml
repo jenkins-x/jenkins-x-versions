@@ -28,3 +28,10 @@ quickstarts:
   name: jenkins-quickstart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: ""
+  name: jenkins-cwp-quickstart
+  owner: ""
+  tags: []
