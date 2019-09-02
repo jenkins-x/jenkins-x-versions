@@ -230,3 +230,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/aspnet-app.git
   version: 1.0.0+5942045fc
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: dlang-http
+  url: https://github.com/jenkins-x-quickstarts/dlang-http.git
+  version: 1.0.0+280f378d2
+  versionURL: ""
