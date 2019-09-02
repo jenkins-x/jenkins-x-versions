@@ -154,3 +154,10 @@ quickstarts:
   name: rust-http
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: TypeScript
+  name: angular-io-quickstart
+  owner: ""
+  tags: []
