@@ -236,3 +236,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/react-quickstart.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: spring-boot-http-gradle
+  url: https://github.com/jenkins-x-quickstarts/spring-boot-http-gradle.git
+  version: ""
+  versionURL: ""
