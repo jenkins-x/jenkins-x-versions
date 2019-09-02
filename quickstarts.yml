@@ -144,3 +144,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+d52c41a04
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/spring-boot-http-gradle/zip/6f0115ab3
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-http-gradle
+  owner: ""
+  tags: []
+  version: 1.0+6f0115ab3
