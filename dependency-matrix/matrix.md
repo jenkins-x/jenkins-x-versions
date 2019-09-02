@@ -53,3 +53,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | []() | 
 [jenkins-x-quickstarts/spring-boot-rest-prometheus-java11](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git) |  | []() | 
 [jenkins-x-quickstarts/golang-http-from-jenkins-x-yml](https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git) |  | []() | 
+[jenkins-x-quickstarts/rust-http](https://github.com/jenkins-x-quickstarts/rust-http.git) |  | []() | 
