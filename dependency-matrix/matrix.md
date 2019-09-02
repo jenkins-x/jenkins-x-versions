@@ -39,3 +39,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/jenkins-cwp-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/open-liberty](https://github.com/jenkins-x-quickstarts/open-liberty.git) |  | []() | 
 [jenkins-x-quickstarts/react-quickstart](https://github.com/jenkins-x-quickstarts/react-quickstart.git) |  | []() | 
+[jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | []() | 
