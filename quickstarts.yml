@@ -83,3 +83,7 @@ quickstarts:
   language: Java
   name: spring-boot-rest-prometheus-java11
   version: 1.0+7e487fce2
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity/zip/177d75201
+  language: Java
+  name: spring-boot-watch-pipeline-activity
+  version: 1.0+177d75201
