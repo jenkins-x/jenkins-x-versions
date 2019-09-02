@@ -112,3 +112,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+2712fbe9e
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/react-quickstart/zip/f1e295591
+  framework: ""
+  id: ""
+  language: JavaScript
+  name: react-quickstart
+  owner: ""
+  tags: []
+  version: 1.0+f1e295591
