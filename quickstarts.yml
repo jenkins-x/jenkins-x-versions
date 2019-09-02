@@ -21,3 +21,10 @@ quickstarts:
   name: aspnet-app
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Groovy
+  name: jenkins-quickstart
+  owner: ""
+  tags: []

@@ -35,3 +35,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/rails-shopping-cart](https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git) |  | []() | 
 [jenkins-x-quickstarts/node-http-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity.git) |  | []() | 
 [jenkins-x-quickstarts/aspnet-app](https://github.com/jenkins-x-quickstarts/aspnet-app.git) |  | []() | 
+[jenkins-x-quickstarts/jenkins-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git) |  | []() | 
