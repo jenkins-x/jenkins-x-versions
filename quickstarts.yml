@@ -133,3 +133,10 @@ quickstarts:
   name: spring-boot-http-gradle
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-rest-prometheus
+  owner: ""
+  tags: []
