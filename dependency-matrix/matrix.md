@@ -40,3 +40,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/golang-http-from-jenkins-x-yml](https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git) |  | [1.0.0+ec39bbfac]() | 
 [jenkins-x-quickstarts/jenkins-cwp-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-cwp-quickstart.git) |  | [1.0.0+47fa4d9cd]() | 
 [jenkins-x-quickstarts/jenkins-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git) |  | [1.0.0+f31f27201]() | 
+[jenkins-x-quickstarts/node-http](https://github.com/jenkins-x-quickstarts/node-http.git) |  | [1.0.0+14015fc0d]() | 

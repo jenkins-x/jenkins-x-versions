@@ -31,3 +31,7 @@ quickstarts:
   language: Groovy
   name: jenkins-quickstart
   version: 1.0.0+f31f27201
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/node-http/zip/14015fc0d
+  language: JavaScript
+  name: node-http
+  version: 1.0.0+14015fc0d
