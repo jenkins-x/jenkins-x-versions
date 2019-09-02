@@ -290,3 +290,9 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/python-http.git
   version: 1.0.0+ed258a723
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-quickstarts
+  repo: rails-shopping-cart
+  url: https://github.com/jenkins-x-quickstarts/rails-shopping-cart.git
+  version: 1.0.0+2712fbe9e
+  versionURL: ""
