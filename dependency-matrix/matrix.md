@@ -43,3 +43,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-rest-prometheus](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus.git) |  | []() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | []() | 
 [jenkins-x-quickstarts/scala-akka-http-quickstart](https://github.com/jenkins-x-quickstarts/scala-akka-http-quickstart.git) |  | []() | 
+[jenkins-x-quickstarts/spring-boot-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git) |  | []() | 

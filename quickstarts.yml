@@ -77,3 +77,10 @@ quickstarts:
   name: scala-akka-http-quickstart
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: spring-boot-watch-pipeline-activity
+  owner: ""
+  tags: []
