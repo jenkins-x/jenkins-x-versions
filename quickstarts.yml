@@ -119,3 +119,10 @@ quickstarts:
   name: spring-boot-http-gradle
   owner: ""
   tags: []
+- downloadZipURL: ""
+  framework: ""
+  id: ""
+  language: Java
+  name: android-quickstart
+  owner: ""
+  tags: []
