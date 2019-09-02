@@ -35,3 +35,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/jenkins-quickstart](https://github.com/jenkins-x-quickstarts/jenkins-quickstart.git) |  | []() | 
 [jenkins-x-quickstarts/open-liberty](https://github.com/jenkins-x-quickstarts/open-liberty.git) |  | []() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | []() | 
+[jenkins-x-quickstarts/react-quickstart](https://github.com/jenkins-x-quickstarts/react-quickstart.git) |  | []() | 
