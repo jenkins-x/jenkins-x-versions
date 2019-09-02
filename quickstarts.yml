@@ -16,3 +16,7 @@ quickstarts:
   language: D
   name: dlang-http
   version: 1.0+280f378d2
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/golang-http/zip/068a14d5f
+  language: Go
+  name: golang-http
+  version: 1.0+068a14d5f
