@@ -80,3 +80,11 @@ quickstarts:
   owner: ""
   tags: []
   version: 1.0+09c7ed32d
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/open-liberty/zip/c21a1e0bf
+  framework: ""
+  id: ""
+  language: Java
+  name: open-liberty
+  owner: ""
+  tags: []
+  version: 1.0+c21a1e0bf
