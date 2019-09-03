@@ -1,0 +1,24 @@
+buildPack: none
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      pipeline:
+        options:
+          containerOptions:
+            resources:
+              limits:
+                cpu: 4
+                memory: 6144Mi
+              requests:
+                cpu: 1
+                memory: 2048Mi
+        environment:
+          - name: GOPROXY
+            value: http://jenkins-x-athens-proxy:80
+        agent:
+          image: gcr.io/jenkinsxio/builder-go-maven:0.1.707
+        stages:
+          - name: ci
+            steps:
+              - command: jx/bdd/boot-lh-gl/ci.sh
+                name: runci
