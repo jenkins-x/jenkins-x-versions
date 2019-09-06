@@ -49,6 +49,5 @@ jx step bdd \
     --tests test-upgrade-platform \
     --tests test-upgrade-ingress \
     --tests test-app-lifecycle \
-    --tests test-create-spring \
     --tests test-quickstart-golang-http \
     --tests test-import
