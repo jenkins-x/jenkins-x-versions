@@ -6,6 +6,7 @@ This repository  contains the consistent set of versions of packages and helm ch
 * [docker](docker) contains the versions of container images
 * [packages](packages) contains the versions of CLI tools like `jx`, `helm` etc
 
+
 ## Update to latest versions of all depdendencies
 
 To update all the dependencies in the repo to their latest version run
