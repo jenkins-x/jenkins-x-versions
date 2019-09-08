@@ -23,7 +23,7 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.6.0]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [3.8.10]() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.1.0]() | 
-[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.18.2](https://github.com/weaveworks/flagger/releases/tag/0.18.2) | 
+[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.18.4](https://github.com/weaveworks/flagger/releases/tag/0.18.4) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.3.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.6]() | 
