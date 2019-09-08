@@ -97,7 +97,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.78
+  version: 0.0.82
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -158,8 +158,8 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 0.18.2
-  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.18.2
+  version: 0.18.4
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.18.4
 - component: grafana
   host: github.com
   owner: weaveworks
