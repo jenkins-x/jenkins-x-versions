@@ -178,7 +178,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-resources
   url: https://github.com/jenkins-x-charts/jxboot-resources
-  version: 0.0.6
+  version: 0.0.9
   versionURL: ""
 - host: github.com
   owner: jenkins-x
