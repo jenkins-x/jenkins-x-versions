@@ -7,9 +7,6 @@ pipelineConfig:
           image: gcr.io/jenkinsxio/builder-jx:0.1.610
         stages:
           - name: changelog
-            environment:
-              - name: JX_VERSION
-                value: $(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" dependency-matrix/matrix.md)
             steps:
               - name: changelog
                 command: jx
