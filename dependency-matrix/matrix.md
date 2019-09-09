@@ -3,11 +3,11 @@
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
 [jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) |  | [0.1.741](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.741) | 
-[jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [2.0.697](https://github.com/jenkins-x/jx/releases/tag/v2.0.697) | **2.0.696**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow)
+[jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [2.0.697](https://github.com/jenkins-x/jx/releases/tag/v2.0.697) | **2.0.696**: [github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow)
 [kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.6.0]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger) |  | [1.3.0]() | 
 [jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.12]() | 
-[jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.292](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.292) | 
+[jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.293](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.293) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.111](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.111) | 
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1125](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1125) | 
