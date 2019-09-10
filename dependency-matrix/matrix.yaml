@@ -350,3 +350,10 @@ dependencies:
   url: https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git
   version: 1.0.0+fd180fd76
   versionURL: ""
+- component: velero
+  host: github.com
+  owner: heptio
+  repo: velero
+  url: https://github.com/heptio/velero
+  version: 2.1.6
+  versionURL: ""
