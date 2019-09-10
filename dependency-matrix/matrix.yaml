@@ -14,10 +14,10 @@ dependencies:
       owner: jenkins-x-charts
       repo: environment-controller
       url: https://github.com/jenkins-x-charts/environment-controller
-      version: 0.0.299
-      versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.299
-    version: 2.0.702
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.702
+      version: 0.0.305
+      versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.305
+    version: 2.0.709
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.709
   - path:
     - host: github.com
       owner: jenkins-x-charts
@@ -37,8 +37,8 @@ dependencies:
     version: 2.0.711
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.711
   url: https://github.com/jenkins-x/jx
-  version: 2.0.711
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.711
+  version: 2.0.709
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.709
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
@@ -61,8 +61,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: environment-controller
   url: https://github.com/jenkins-x-charts/environment-controller
-  version: 0.0.299
-  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.299
+  version: 0.0.305
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.305
 - host: github.com
   owner: jenkins-x
   repo: exposecontroller-service
