@@ -1,0 +1,13 @@
+versions:
+- name: git
+  value: 2.21.0
+- name: helm
+  value: 2.14.1+g5270352
+- name: helm3
+  value: 3.alpha-js-1+unreleased+g4544d69
+- name: jx
+  value: 2.0.702
+- name: kubectl
+  value: 1.15.0
+- name: skaffold
+  value: 0.31.0
