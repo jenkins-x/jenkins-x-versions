@@ -8,7 +8,6 @@ export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_CREDS_PSW="$(jx step credential -s jx-pipeline-git-bitbucketserver-bs)"
 
 export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
-export GKE_SA="$(jx step credential -k bdd-credentials.json -s bdd-secret)"
 
 # fix broken `BUILD_NUMBER` env var
 export BUILD_NUMBER="$BUILD_ID"

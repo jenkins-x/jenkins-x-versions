@@ -15,10 +15,24 @@ pipelineConfig:
         environment:
           - name: GOPROXY
             value: http://jenkins-x-athens-proxy:80
+          - name: GKE_SA
+            value: /secrets/bdd/sa.json
         agent:
           image: gcr.io/jenkinsxio/builder-go-maven:0.1.753
         stages:
           - name: ci
+            options:
+              volumes:
+                - name: sa
+                  secret:
+                    secretName: bdd-secret
+                    items:
+                      - key: bdd-credentials.json
+                        path: bdd/sa.json
+              containerOptions:
+                volumeMounts:
+                  - mountPath: /secrets
+                    name: sa
             steps:
               - command: jx/bdd/tekton/ci.sh
                 name: runci
