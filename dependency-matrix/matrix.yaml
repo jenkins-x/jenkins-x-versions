@@ -204,8 +204,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-boot-config
   url: https://github.com/jenkins-x/jenkins-x-boot-config
-  version: 1.0.13
-  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.13
+  version: 1.0.16
+  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.16
 - host: github.com
   owner: jenkins-x-buildpacks
   repo: jenkins-x-kubernetes
