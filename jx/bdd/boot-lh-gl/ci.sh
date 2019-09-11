@@ -8,7 +8,6 @@ export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_CREDS_PSW="$(jx step credential -s jx-pipeline-git-gitlab-gl)"
 
 export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
-export GKE_SA="$(jx step credential -k bdd-credentials.json -s bdd-secret)"
 
 # fix broken `BUILD_NUMBER` env var
 export BUILD_NUMBER="$BUILD_ID"
@@ -30,7 +29,7 @@ git config --global --add user.email jenkins-x@googlegroups.com
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
 # setup jx boot parameters
-export JX_VALUE_ADMINUSER_PASSWORD="$JENKINS_CREDS_PSW"
+export JX_VALUE_ADMINUSER_PASSWORD="$JENKINS_CREDS_PSW" # pragma: allowlist secret
 export JX_VALUE_PIPELINEUSER_USERNAME="$GH_USERNAME"
 export JX_VALUE_PIPELINEUSER_EMAIL="$GH_EMAIL"
 export JX_VALUE_PIPELINEUSER_TOKEN="$GH_CREDS_PSW"
