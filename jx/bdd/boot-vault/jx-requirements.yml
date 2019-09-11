@@ -1,7 +1,7 @@
 cluster:
   clusterName: bdd-boot-v
   environmentGitOwner: cb-kubecd
-  project: jenkins-x-bdd2
+  project: jenkins-x-bdd3
   provider: gke
   zone: europe-west1-c
 environments:
@@ -26,12 +26,9 @@ secretStorage: vault
 storage:
   logs:
     enabled: true
-    url: "gs://jx-bdd-log-store"
+    url: "gs://jx-bdd-log-store3"
   reports:
     enabled: true
-    url: "gs://jx-bdd-log-store"
-  repository:
-    enabled: true
-    url: "gs://jx-bdd-repo"
+    url: "gs://jx-bdd-log-store3"
 webhook: prow
 

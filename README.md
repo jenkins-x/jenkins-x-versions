@@ -49,13 +49,13 @@ Or to run all the boot based BDD tests
 BDD clusters are marked for deletion if the tests pass or after 2 hours from the cluster creation date if the tests fail. If you would like your cluster to not be deleted you can run:
 
 ```
-jx step e2e label --keep clusterName --project-id=jenkins-x-bdd2
+jx step e2e label --keep clusterName --project-id=jenkins-x-bdd3
 ```
 The above command will add a label to the cluster with the value `keep-me=true`
 
 To mark the cluster for deletion again run:
 
 ```
-jx step e2e label --delete clusterName --project-id=jenkins-x-bdd2
+jx step e2e label --delete clusterName --project-id=jenkins-x-bdd3
 ```
 The above command will add a label to the cluster with the value `delete-me=true`
