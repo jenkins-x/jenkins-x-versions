@@ -18,7 +18,7 @@ pipelineConfig:
           - name: GKE_SA
             value: /secrets/bdd/sa.json
         agent:
-          image: gcr.io/jenkinsxio/builder-terraform:0.1.754
+          image: gcr.io/jenkinsxio/builder-terraform:0.1.758
         stages:
           - name: ci
             options:
