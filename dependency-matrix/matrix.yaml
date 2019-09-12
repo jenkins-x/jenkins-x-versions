@@ -191,7 +191,7 @@ dependencies:
   owner: helm
   repo: charts
   url: https://github.com/helm/charts/tree/master/stable/cert-manager
-  version: v0.6.7
+  version: 0.6.7
   versionURL: ""
 - component: nginx-ingress
   host: github.com
