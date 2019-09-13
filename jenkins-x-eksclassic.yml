@@ -17,6 +17,26 @@ pipelineConfig:
             value: http://jenkins-x-athens-proxy:80
           - name: GKE_SA
             value: /secrets/bdd/sa.json
+          - name: GHE_ACCESS_TOKEN 
+            valueFrom:
+              secretKeyRef:
+                name: jx-pipeline-git-github-ghe
+                key: password
+          - name: JENKINS_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: test-jenkins-user 
+                key: password
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+              secretKeyRef:
+                name: jx-bdd-aws 
+                key: AWS_ACCESS_KEY_ID
+          - name: AWS_SECRET_ACCESS_KEY
+            valueFrom:
+              secretKeyRef:
+                name: jx-bdd-aws 
+                key: AWS_SECRET_ACCESS_KEY
         agent:
           image: gcr.io/jenkinsxio/builder-go-maven:0.1.759
         stages:

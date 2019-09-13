@@ -2,10 +2,6 @@
 set -e
 set -x
 
-export GHE_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
-export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
-export AWS_ACCESS_KEY_ID="$(jx step credential -s jx-bdd-aws -k AWS_ACCESS_KEY_ID)"
-export AWS_SECRET_ACCESS_KEY="$(jx step credential -s jx-bdd-aws -k AWS_SECRET_ACCESS_KEY)"
 export AWS_REGION="us-east-1"
 [[ -d ~/.aws ]] || mkdir ~/.aws
 
@@ -32,4 +28,4 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-jx step bdd --use-revision --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/eksclassic/cluster.yaml --gopath /tmp --base-domain=jxbdd.beescloud.com --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd --use-revision --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/eksclassic/cluster.yaml --gopath /tmp --base-domain=jxbdd.beescloud.com --git-provider=ghe --git-provider-url=https://github.beescloud.com --git-username dev1 --git-api-token $GHE_ACCESS_TOKEN --default-admin-password $JENKINS_PASSWORD --no-delete-app --no-delete-repo --tests install --tests test-create-spring
