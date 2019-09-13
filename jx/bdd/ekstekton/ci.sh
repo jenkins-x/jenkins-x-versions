@@ -3,7 +3,7 @@ set -e
 set -x
 
 export GH_USERNAME="jenkins-x-bot-test"
-export GH_OWNER="cb-kubecd"
+export GH_OWNER="jenkins-x-bot-test"
 
 export AWS_REGION="us-east-1"
 [[ -d ~/.aws ]] || mkdir ~/.aws
