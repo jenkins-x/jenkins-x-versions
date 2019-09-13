@@ -5,9 +5,6 @@ set -x
 export GH_USERNAME="jenkins-x-bot-test"
 export GH_OWNER="cb-kubecd"
 
-export GH_CREDS_PSW="$(jx step credential -s jenkins-x-bot-test-github)"
-export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
-
 # fix broken `BUILD_NUMBER` env var
 export BUILD_NUMBER="$BUILD_ID"
 
@@ -35,4 +32,4 @@ git clone https://github.com/jenkins-x/jenkins-x-versions.git
 popd
 cp -r * ~/.jx/jenkins-x-versions
 
-jx step bdd --dir . --config jx/bdd/staticjenkins.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_CREDS_PSW --default-admin-password $JENKINS_CREDS_PSW --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+jx step bdd --dir . --config jx/bdd/staticjenkins.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_ACCESS_TOKEN --default-admin-password $JENKINS_PASSWORD --no-delete-app --no-delete-repo --tests install --tests test-create-spring

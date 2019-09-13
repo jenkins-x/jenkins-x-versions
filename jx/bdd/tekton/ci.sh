@@ -5,9 +5,6 @@ set -x
 export GH_USERNAME="jenkins-x-bot-test"
 export GH_OWNER="cb-kubecd"
 
-export GH_CREDS_PSW="$(jx step credential -s jenkins-x-bot-test-github)"
-export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
-
 # fix broken `BUILD_NUMBER` env var
 export BUILD_NUMBER="$BUILD_ID"
 
@@ -39,8 +36,8 @@ jx step bdd \
     --git-provider=github \
     --git-username $GH_USERNAME \
     --git-owner $GH_OWNER \
-    --git-api-token $GH_CREDS_PSW \
-    --default-admin-password $JENKINS_CREDS_PSW \
+    --git-api-token $GH_ACCESS_TOKEN \
+    --default-admin-password $JENKINS_PASSWORD \
     --no-delete-app \
     --no-delete-repo \
     --tests install \

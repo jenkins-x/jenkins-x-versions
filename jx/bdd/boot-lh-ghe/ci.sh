@@ -2,14 +2,8 @@
 set -e
 set -x
 
-export GH_USERNAME="dev1"
-export GH_EMAIL="jenkins-x@googlegroups.com"
-export GH_CREDS_PSW="$(jx step credential -s jx-pipeline-git-github-ghe)"
-# export GH_OWNER="cb-kubecd"
-# --git-owner $GH_OWNER
-
-
-export JENKINS_CREDS_PSW="$(jx step credential -s  test-jenkins-user)"
+export GHE_USERNAME="dev1"
+export GHE_EMAIL="jenkins-x@googlegroups.com"
 
 # fix broken `BUILD_NUMBER` env var
 export BUILD_NUMBER="$BUILD_ID"
@@ -31,11 +25,11 @@ git config --global --add user.email jenkins-x@googlegroups.com
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
 # setup jx boot parameters
-export JX_VALUE_ADMINUSER_PASSWORD="$JENKINS_CREDS_PSW"
-export JX_VALUE_PIPELINEUSER_USERNAME="$GH_USERNAME"
-export JX_VALUE_PIPELINEUSER_EMAIL="$GH_EMAIL"
-export JX_VALUE_PIPELINEUSER_TOKEN="$GH_CREDS_PSW"
-export JX_VALUE_PROW_HMACTOKEN="$GH_CREDS_PSW"
+export JX_VALUE_ADMINUSER_PASSWORD="$JENKINS_PASSWORD"
+export JX_VALUE_PIPELINEUSER_USERNAME="$GHE_USERNAME"
+export JX_VALUE_PIPELINEUSER_EMAIL="$GHE_EMAIL"
+export JX_VALUE_PIPELINEUSER_TOKEN="$GHE_ACCESS_TOKEN"
+export JX_VALUE_PROW_HMACTOKEN="$GHE_ACCESS_TOKEN"
 
 # TODO temporary hack until the batch mode in jx is fixed...
 export JX_BATCH_MODE="true"
@@ -58,9 +52,9 @@ jx step bdd \
     --gopath /tmp \
     --git-provider=github \
     --git-provider-url https://github.beescloud.com \
-    --git-username $GH_USERNAME \
-    --git-api-token $GH_CREDS_PSW \
-    --default-admin-password $JENKINS_CREDS_PSW \
+    --git-username $GHE_USERNAME \
+    --git-api-token $GHE_ACCESS_TOKEN \
+    --default-admin-password $JENKINS_PASSWORD \
     --no-delete-app \
     --no-delete-repo \
     --tests install \
