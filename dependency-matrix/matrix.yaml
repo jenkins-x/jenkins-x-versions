@@ -12,6 +12,15 @@ dependencies:
       versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.320
     version: 0.1.769
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.769
+  - path:
+    - host: github.com
+      owner: jenkins-x-charts
+      repo: prow
+      url: https://github.com/jenkins-x-charts/prow
+      version: 0.0.1229
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1229
+    version: 0.1.769
+    versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.769
   url: https://github.com/jenkins-x/jenkins-x-builders
   version: 0.1.769
   versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.769
@@ -113,8 +122,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1209
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1209
+  version: 0.0.1229
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1229
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
