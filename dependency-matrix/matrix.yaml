@@ -373,6 +373,15 @@ dependencies:
   sources:
   - path:
     - host: github.com
+      owner: jenkins-x-charts
+      repo: environment-controller
+      url: https://github.com/jenkins-x-charts/environment-controller
+      version: 0.0.322
+      versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.322
+    version: 0.0.60
+    versionURL: https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.60
+  - path:
+    - host: github.com
       owner: jenkins-x
       repo: jenkins-x-builders
       url: https://github.com/jenkins-x/jenkins-x-builders.git
