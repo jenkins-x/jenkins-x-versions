@@ -53,7 +53,7 @@ dependencies:
   owner: kubernetes-incubator
   repo: external-dns
   url: https://github.com/kubernetes-incubator/external-dns
-  version: 2.6.1
+  version: 2.6.2
   versionURL: ""
 - host: github.com
   owner: weaveworks
