@@ -33,10 +33,10 @@ dependencies:
       owner: jenkins-x-charts
       repo: prow
       url: https://github.com/jenkins-x-charts/prow
-      version: 0.0.1253
-      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1253
-    version: 2.0.757
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.757
+      version: 0.0.1254
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1254
+    version: 2.0.758
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.758
   - path:
     - host: github.com
       owner: jenkins-x
@@ -47,13 +47,13 @@ dependencies:
     version: 2.0.757
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.757
   url: https://github.com/jenkins-x/jx
-  version: 2.0.757
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.757
+  version: 2.0.758
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.758
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
   url: https://github.com/kubernetes-incubator/external-dns
-  version: 2.6.1
+  version: 2.6.2
   versionURL: ""
 - host: github.com
   owner: weaveworks
@@ -89,8 +89,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1246
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1246
+  version: 2.0.1247
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1247
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -113,8 +113,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1253
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1253
+  version: 0.0.1254
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1254
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
@@ -149,7 +149,7 @@ dependencies:
   owner: bitnami
   repo: charts
   url: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
-  version: 2.6.1
+  version: 2.6.2
   versionURL: ""
 - host: github.com
   owner: grafana
@@ -194,8 +194,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.731
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.731
+  version: 0.1.732
+  versionURL: ""
 - component: cert-manager
   host: github.com
   owner: helm
