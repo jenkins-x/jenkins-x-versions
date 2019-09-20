@@ -95,7 +95,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jx-build-templates
   url: https://github.com/jenkins-x-charts/jx-build-templates
-  version: 0.0.1017
+  version: 0.0.1025
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
