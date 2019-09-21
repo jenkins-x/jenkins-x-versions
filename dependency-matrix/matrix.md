@@ -2,19 +2,19 @@
 
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
-[jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) | [0.1.789](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.789) | **0.1.758**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller)
-[jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [2.0.770](https://github.com/jenkins-x/jx/releases/tag/v2.0.770) | 
+[jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) | [0.1.791](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.791) | **0.1.758**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller)
+[jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [2.0.773](https://github.com/jenkins-x/jx/releases/tag/v2.0.773) | 
 [kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.6.4]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger) |  | [1.3.0]() | 
 [jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.12]() | 
-[jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.341](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.341) | 
+[jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.343](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.343) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.111](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.111) | 
-[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1276](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1276) | 
-[jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1028]() | 
+[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1283](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1283) | 
+[jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1030]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
 [jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.121]() | 
-[jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1276](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1276) | 
+[jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1281](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1281) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.32]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.42]() | 
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.1]() | 
@@ -27,9 +27,9 @@ Dependency | Sources | Version | Mismatched versions
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.3.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.13]() | 
-[jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.744]() | 
+[jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.747](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.747) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
-[helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.20.0]() | 
+[helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.21.0]() | 
 [jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.19](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.19) | 
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
