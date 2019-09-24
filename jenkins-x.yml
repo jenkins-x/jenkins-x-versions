@@ -4,7 +4,7 @@ pipelineConfig:
     release:
       pipeline:
         agent:
-          image: gcr.io/jenkinsxio/builder-jx:0.1.610
+          image: gcr.io/jenkinsxio/builder-jx:0.1.792
         stages:
           - name: changelog
             steps:
@@ -21,3 +21,14 @@ pipelineConfig:
 
               - name: release-jx
                 command: ./jx/scripts/release-jx.sh
+
+              - name: update-jx-bot
+                command: ./jx/scripts/update-jx-bot.sh
+
+              - name: update-jx-website
+                image: gcr.io/jenkinsxio/builder-go:0.1.792
+                command: ./jx/scripts/update-jx-website.sh
+
+              - name: update-jx-clients
+                image: gcr.io/jenkinsxio/builder-maven:0.1.792
+                command: ./jx/scripts/update-jx-clients.sh
