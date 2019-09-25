@@ -7,6 +7,24 @@ pipelineConfig:
           image: gcr.io/jenkinsxio/builder-jx:0.1.792
         stages:
           - name: changelog
+            environment:
+              - name: GIT_COMMITTER_EMAIL
+                value: jenkins-x@googlegroups.com
+              - name: GIT_AUTHOR_EMAIL
+                value: jenkins-x@googlegroups.com
+              - name: GIT_AUTHOR_NAME
+                value: jenkins-x-bot
+              - name: GIT_COMMITTER_NAME
+                value: jenkins-x-bot
+              - name: GOPATH
+                value: /workspace/go
+              - name: GOPROXY
+                value: http://jenkins-x-athens-proxy
+              - name: MAVEN_OPTS
+                value: -Xmx4g
+              - name: _JAVA_OPTIONS
+                value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolic
+yWeight=90 -Xms1G -Xmx4G
             steps:
               - name: changelog
                 command: jx
