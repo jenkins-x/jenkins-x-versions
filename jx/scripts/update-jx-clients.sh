@@ -5,15 +5,14 @@ JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-m
 
 if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
 then
-  if [ ! -d ./jx ]
-  then
+  pushd $(mktemp -d)
     git clone https://github.com/jenkins-x/jx.git
-  fi
-  pushd jx
-    git fetch --tags
-    git checkout v${JX_VERSION}
-    pushd docs/apidocs/openapi-spec
-      SRCDIR=`pwd`
+    pushd jx
+      git fetch --tags
+      git checkout v${JX_VERSION}
+      pushd docs/apidocs/openapi-spec
+        SRCDIR=`pwd`
+      popd
     popd
   popd
   SRC="${SRCDIR}/openapiv2.yaml"
