@@ -9,8 +9,11 @@ JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-m
 if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
 then
   echo "updating the CLI reference"
-  git clone https://github.com/jenkins-x/jx-docs.git
 
+  if [ ! -d ./jx-docs ]
+  then
+    git clone https://github.com/jenkins-x/jx-docs.git
+  fi
   pushd jx-docs/content/en/docs/reference/commands
     jx create docs
     git config credential.helper store
@@ -30,7 +33,11 @@ then
   popd
 
   echo "Updating the JX CLI & API reference docs"
-  git clone https://github.com/jenkins-x/jx.git
+
+  if [ ! -d ./jx ]
+  then
+    git clone https://github.com/jenkins-x/jx.git
+  fi
   pushd jx
     git fetch --tags
     git checkout v${JX_VERSION}
