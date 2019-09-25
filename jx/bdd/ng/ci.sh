@@ -24,4 +24,22 @@ git config --global --add user.email jenkins-x@googlegroups.com
 
 echo "running the BDD tests with JX_HOME = $JX_HOME"
 
-jx step bdd --use-revision  --version-repo-pr --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git --config jx/bdd/ng/cluster.yaml --gopath /tmp --git-provider=github --git-username $GH_USERNAME --git-owner $GH_OWNER --git-api-token $GH_ACCESS_TOKEN --default-admin-password $JENKINS_PASSWORD --no-delete-app --no-delete-repo --tests install --tests test-create-spring
+# Just run the spring-boot-http-gradle import test here
+export BDD_TEST_SINGLE_IMPORT="spring-boot-http-gradle"
+
+jx step bdd \
+    --use-revision \
+    --version-repo-pr \
+    --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
+    --config jx/bdd/ng/cluster.yaml \
+    --gopath /tmp \
+    --git-provider=github \
+    --git-username $GH_USERNAME \
+    --git-owner $GH_OWNER \
+    --git-api-token $GH_ACCESS_TOKEN \
+    --default-admin-password $JENKINS_PASSWORD \
+    --no-delete-app \
+    --no-delete-repo \
+    --tests install \
+    --tests test-create-spring \
+    --tests test-single-import
