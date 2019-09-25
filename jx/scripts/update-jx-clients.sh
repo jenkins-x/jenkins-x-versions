@@ -5,11 +5,11 @@ JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-m
 
 if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
 then
-  if [ ! -d ./jx ]
+  if [ ! -d ./jx-clone ]
   then
-    git clone https://github.com/jenkins-x/jx.git
+    git clone https://github.com/jenkins-x/jx.git jx-clone
   fi
-  pushd jx
+  pushd jx-clone
     git fetch --tags
     git checkout v${JX_VERSION}
     pushd docs/apidocs/openapi-spec

@@ -34,16 +34,16 @@ then
 
   echo "Updating the JX CLI & API reference docs"
 
-  if [ ! -d ./jx ]
+  if [ ! -d ./jx-clone ]
   then
-    git clone https://github.com/jenkins-x/jx.git
+    git clone https://github.com/jenkins-x/jx.git jx-clone
   fi
-  pushd jx
+  pushd jx-clone
     git fetch --tags
     git checkout v${JX_VERSION}
     make generate-docs
   popd
-  cp -r jx/docs/apidocs/site ../jx-docs/static/apidocs
+  cp -r jx-clone/docs/apidocs/site ../jx-docs/static/apidocs
 
   pushd jx-docs/static/apidocs
     git add *
