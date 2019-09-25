@@ -23,8 +23,7 @@ pipelineConfig:
               - name: MAVEN_OPTS
                 value: -Xmx4g
               - name: _JAVA_OPTIONS
-                value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolic
-yWeight=90 -Xms1G -Xmx4G
+                value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms1G -Xmx4G
             steps:
               - name: changelog
                 command: jx
