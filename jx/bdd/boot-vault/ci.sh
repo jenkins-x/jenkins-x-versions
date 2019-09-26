@@ -44,6 +44,8 @@ cd boot-source
 helm init --client-only
 helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
+sleep  infinity
+
 jx step bdd \
     --use-revision \
     --version-repo-pr \
