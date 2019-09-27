@@ -20,10 +20,6 @@ pipelineConfig:
                 value: /workspace/go
               - name: GOPROXY
                 value: http://jenkins-x-athens-proxy
-              - name: MAVEN_OPTS
-                value: -Xmx4g
-              - name: _JAVA_OPTIONS
-                value: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms1G -Xmx4G
               - name: IS_JX_PRERELEASE
                 value: is_jx_prerelease.bool
             steps:
@@ -50,7 +46,3 @@ pipelineConfig:
               - name: update-jx-website
                 image: gcr.io/jenkinsxio/builder-go:0.1.792
                 command: ./jx/scripts/update-jx-website.sh
-
-              - name: update-jx-clients
-                image: gcr.io/jenkinsxio/builder-maven:0.1.792
-                command: ./jx/scripts/update-jx-clients.sh
