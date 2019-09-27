@@ -44,6 +44,8 @@ cd boot-source
 helm init --client-only
 helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
+# Just run the node-http import test here
+export BDD_TEST_SINGLE_IMPORT="node-http"
 
 jx step bdd \
     --use-revision \
@@ -59,4 +61,5 @@ jx step bdd \
     --no-delete-app \
     --no-delete-repo \
     --tests install \
-    --tests test-create-spring
+    --tests test-create-spring \
+    --tests test-single-import

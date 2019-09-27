@@ -27,6 +27,9 @@ echo "running the BDD tests with JX_HOME = $JX_HOME"
 # test configuration
 export SKIP_JENKINS_CHECK="yes"
 
+# Just run the golang-http-from-jenkins-x-yml import test here
+export BDD_TEST_SINGLE_IMPORT="golang-http-from-jenkins-x-yml"
+
 jx step bdd \
     --use-revision \
     --version-repo-pr \
@@ -46,4 +49,4 @@ jx step bdd \
     --tests test-upgrade-ingress \
     --tests test-app-lifecycle \
     --tests test-quickstart-golang-http \
-    --tests test-import
+    --tests test-single-import
