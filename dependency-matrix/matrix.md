@@ -29,7 +29,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.14]() | 
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.762](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.762) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
-[helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.21.0]() | 
+[helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.22.1]() | 
 [jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.19](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.19) | 
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
