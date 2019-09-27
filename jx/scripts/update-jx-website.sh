@@ -40,7 +40,7 @@ then
         git checkout v${JX_VERSION}
         make generate-docs
       popd
-      cp -r jx/docs/apidocs/site ../jx-docs/static/apidocs
+      cp -r jx/docs/apidocs/site jx-docs/static/apidocs
 
       pushd jx-docs/static/apidocs
         git add *
