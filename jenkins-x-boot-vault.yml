@@ -17,6 +17,8 @@ pipelineConfig:
             value: http://jenkins-x-athens-proxy:80
           - name: GKE_SA
             value: /secrets/bdd/sa.json
+          - name: JX_REQUIREMENT_VAULT_DISABLE_URL_DISCOVERY
+            value: "true"
           - name: GH_ACCESS_TOKEN 
             valueFrom:
               secretKeyRef:
@@ -28,7 +30,7 @@ pipelineConfig:
                 name: test-jenkins-user 
                 key: password
         agent:
-          image: gcr.io/jenkinsxio/builder-go-maven:0.1.810
+          image: gcr.io/jenkinsxio/builder-go-maven:0.1.811
         stages:
           - name: ci
             options:
