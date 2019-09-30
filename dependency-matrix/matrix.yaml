@@ -56,8 +56,8 @@ dependencies:
     version: 2.0.803
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.803
   url: https://github.com/jenkins-x/jx
-  version: 2.0.803
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.803
+  version: 2.0.802
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.802
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
