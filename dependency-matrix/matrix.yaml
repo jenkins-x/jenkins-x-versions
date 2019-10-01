@@ -374,5 +374,5 @@ dependencies:
   owner: heptio
   repo: velero
   url: https://github.com/heptio/velero
-  version: 2.1.6
+  version: 2.1.7
   versionURL: ""
