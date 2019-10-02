@@ -247,7 +247,7 @@ dependencies:
   owner: jenkins-x-quickstarts
   repo: aspnet-app
   url: https://github.com/jenkins-x-quickstarts/aspnet-app.git
-  version: 1.0.0+5942045fc
+  version: 1.0.0+ce1da4a8f
   versionURL: ""
 - host: github.com
   owner: jenkins-x-quickstarts

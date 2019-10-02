@@ -8,10 +8,10 @@ quickstarts:
   language: TypeScript
   name: angular-io-quickstart
   version: 1.0.0+bec4b999a
-- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/aspnet-app/zip/5942045fc
-  language: C#
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/aspnet-app/zip/ce1da4a8f
+  language: HTML
   name: aspnet-app
-  version: 1.0.0+5942045fc
+  version: 1.0.0+ce1da4a8f
 - downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/dlang-http/zip/280f378d2
   language: D
   name: dlang-http
