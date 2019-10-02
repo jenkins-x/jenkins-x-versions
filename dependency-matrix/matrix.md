@@ -34,7 +34,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | [1.0.0+bec4b999a]() | 
-[jenkins-x-quickstarts/aspnet-app](https://github.com/jenkins-x-quickstarts/aspnet-app.git) |  | [1.0.0+5942045fc]() | 
+[jenkins-x-quickstarts/aspnet-app](https://github.com/jenkins-x-quickstarts/aspnet-app.git) |  | [1.0.0+ce1da4a8f]() | 
 [jenkins-x-quickstarts/dlang-http](https://github.com/jenkins-x-quickstarts/dlang-http.git) |  | [1.0.0+280f378d2]() | 
 [jenkins-x-quickstarts/golang-http](https://github.com/jenkins-x-quickstarts/golang-http.git) |  | [1.0.0+068a14d5f]() | 
 [jenkins-x-quickstarts/golang-http-from-jenkins-x-yml](https://github.com/jenkins-x-quickstarts/golang-http-from-jenkins-x-yml.git) |  | [1.0.0+ec39bbfac]() | 
