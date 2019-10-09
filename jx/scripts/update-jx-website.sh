@@ -23,10 +23,11 @@ then
       popd
 
       echo "Updating the JSON Schema"
-      pushd jx-docs/content
+      pushd jx-docs/static
         mkdir -p schemas
         cd schemas
         jx step syntax schema -o jx-schema.json
+        jx step syntax schema --requirements -o jx-requirements.json
         git add *
         git commit --allow-empty -a -m "updated jx Json Schema from $JX_VERSION"
         git fetch origin && git rebase origin/master
