@@ -164,7 +164,7 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 3.8.19
+  version: 3.9.0
   versionURL: ""
 - host: github.com
   owner: prometheus
