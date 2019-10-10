@@ -46,7 +46,9 @@ then
       pushd jx-docs/static/apidocs
         git add *
         git commit --allow-empty -a -m "updated jx API docs from $JX_VERSION"
-        git fetch origin && git rebase origin/master
+
+        # this seems to cause rebase errors due to removed old site dir
+        #git fetch origin && git rebase origin/master
       popd
 
       pushd jx-docs
