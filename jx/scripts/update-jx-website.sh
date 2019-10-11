@@ -19,7 +19,9 @@ then
         git config credential.helper store
         git add *
         git commit --allow-empty -a -m "updated jx commands & API docs from $JX_VERSION"
-        git fetch origin && git rebase origin/master
+        
+        # this seems to cause rebase errors due to removed old site dir
+        #git fetch origin && git rebase origin/master
       popd
 
       echo "Updating the JSON Schema"
@@ -30,7 +32,9 @@ then
         jx step syntax schema --requirements -o jx-requirements.json
         git add *
         git commit --allow-empty -a -m "updated jx Json Schema from $JX_VERSION"
-        git fetch origin && git rebase origin/master
+        
+        # this seems to cause rebase errors due to removed old site dir
+        #git fetch origin && git rebase origin/master
       popd
 
       echo "Updating the JX CLI & API reference docs"
