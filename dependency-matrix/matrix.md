@@ -20,7 +20,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.1]() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
-[bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.9.1]() | 
+[bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.9.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [3.11.0]() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.1.2]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.19.0](https://github.com/weaveworks/flagger/releases/tag/0.19.0) | 
