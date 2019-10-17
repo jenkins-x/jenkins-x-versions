@@ -39,14 +39,17 @@ then
 
       echo "Updating the JX CLI & API reference docs"
 
-      git clone https://github.com/jenkins-x/jx.git
-      pushd jx
-        git fetch --tags
-        git checkout v${JX_VERSION}
-        make generate-refdocs
+      mkdir -p ${GOPATH}/src/github.com/jenkins-x
+      pushd ${GOPATH}/src/github.com/jenkins-x
+        git clone https://github.com/jenkins-x/jx.git
+        pushd jx
+          git fetch --tags
+          git checkout v${JX_VERSION}
+          make generate-refdocs
+        popd
       popd
-      cp jx/docs/apidocs.md jx-docs/content/en/docs/reference/api.md
-      cp jx/docs/config.md jx-docs/content/en/docs/reference/config
+      cp ${GOPATH}/src/github.com/jenkins-x/jx/docs/apidocs.md jx-docs/content/en/docs/reference/api.md
+      cp ${GOPATH}/src/github.com/jenkins-x/jx/docs/config.md jx-docs/content/en/docs/reference/config
 
       pushd jx-docs/content/en/docs/reference
         git add *
