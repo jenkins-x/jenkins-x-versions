@@ -45,7 +45,8 @@ then
         pushd jx
           git fetch --tags
           git checkout v${JX_VERSION}
-          make generate-refdocs
+          # make generate-refdocs needs go modules enabled. The long term solution is probably to turn it on in jx's makefile, but for the moment...
+          GO111MODULE=on make generate-refdocs
         popd
       popd
       cp ${GOPATH}/src/github.com/jenkins-x/jx/docs/apidocs.md jx-docs/content/en/docs/reference/api.md
