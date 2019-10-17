@@ -13,8 +13,10 @@ pipelineConfig:
                 cpu: 1
                 memory: 2048Mi
         environment:
+          - name: GOPATH
+            value: /workspace/go
           - name: GOPROXY
-            value: http://jenkins-x-athens-proxy:80
+            value: http://jenkins-x-athens-proxy
           - name: GKE_SA
             value: /secrets/bdd/sa.json
           - name: GHE_ACCESS_TOKEN 
@@ -44,5 +46,6 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - command: jx/bdd/static/ci.sh
-                name: runci
+              - name: update-jx-website
+                image: gcr.io/jenkinsxio/builder-go:2.0.885-235
+                command: ./jx/scripts/update-jx-website.sh
