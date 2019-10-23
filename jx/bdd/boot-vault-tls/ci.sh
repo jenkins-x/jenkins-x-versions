@@ -2,13 +2,6 @@
 set -euo pipefail
 set -x
 
-if [ $# -ne 2 ]; then
-    echo "Please provide the source and destination paths for configuration"
-    exit -1
-fi
-SRC_PATH=$1
-DST_PATH=$2
-
 export GH_USERNAME="jenkins-x-bot-test"
 export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_OWNER="jenkins-x-bot-test"
@@ -44,11 +37,10 @@ export JX_VALUE_PROW_HMACTOKEN="$GH_ACCESS_TOKEN"
 export JX_BATCH_MODE="true"
 
 # prepare the BDD configuration
-mkdir -p $DST_PATH
-cp -r `ls -A | grep -v "${DST_PATH}"` $DST_PATH
-cp $SRC_PATH/jx-requirements.yml $DST_PATH
-cp $SRC_PATH/parameters.yaml $DST_PATH/env
-cd $DST_PATH
+git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
+cp jx/bdd/boot-vault-tls/jx-requirements.yml boot-source
+cp jx/bdd/boot-vault-tls/parameters.yaml boot-source/env
+cd boot-source
 
 # Rotate the domains to avoid cert-manager API rate limit. 
 # This rotation is using # 2 domains per hour.
@@ -78,7 +70,7 @@ jx step bdd \
     --use-revision \
     --version-repo-pr \
     --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
-    --config $SRC_PATH/cluster.yaml \
+    --config ../jx/bdd/boot-vault-tls/cluster.yaml \
     --gopath /tmp \
     --git-provider=github \
     --git-username $GH_USERNAME \

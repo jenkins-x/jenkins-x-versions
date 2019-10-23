@@ -54,6 +54,5 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - name: run-bdd
+              - name: runci
                 command: jx/bdd/boot-vault-tls/ci.sh
-                args: ['jx/bdd/boot-vault-tls', 'boot-source']
