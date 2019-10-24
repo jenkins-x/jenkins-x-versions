@@ -46,6 +46,9 @@ cd boot-source
 # This rotation is using # 2 domains per hour.
 if [[ "${DOMAIN_ROTATION}" == "true" ]]; then
     SHARD=$(date +"%l" | xargs)
+    if [[ $SHARD -eq 12 ]]; then
+        SHARD=0
+    fi
     SHARD=$((2 * SHARD + 1))
     MIN=$(date +"%M" | xargs)
     if [[ $MIN -gt 30 ]]; then
