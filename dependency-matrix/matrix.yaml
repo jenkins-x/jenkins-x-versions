@@ -374,7 +374,7 @@ dependencies:
   owner: heptio
   repo: velero
   url: https://github.com/heptio/velero
-  version: 2.2.0
+  version: 2.2.1
   versionURL: ""
 - host: github.com
   owner: jenkins-x
