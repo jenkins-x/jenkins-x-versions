@@ -1,6 +1,7 @@
 cluster:
-  clusterName: bdd-boot-v
-  environmentGitOwner: jenkins-x-bot-test
+  clusterName: bdd-boot-tls
+  environmentGitOwner: cb-kubecd
+  environmentGitPublic: true
   project: jenkins-x-bdd3
   provider: gke
   zone: europe-west1-c
