@@ -28,7 +28,7 @@ pipelineConfig:
                 name: test-jenkins-user 
                 key: password
                   agent:
-          image: gcr.io/jenkinsxio/builder-go-maven:2.0.923-271
+          image: gcr.io/jenkinsxio/builder-go-maven:2.0.927-275
         stages:
           - name: ci
             options:
