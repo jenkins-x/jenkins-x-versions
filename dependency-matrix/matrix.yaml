@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.0.929-277
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.929-277
+  version: 2.0.933-279
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.933-279
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -33,31 +33,31 @@ dependencies:
       owner: jenkins-x-charts
       repo: prow
       url: https://github.com/jenkins-x-charts/prow
-      version: 0.0.1438
-      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1438
-    version: 2.0.929
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.929
+      version: 0.0.1440
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1440
+    version: 2.0.933
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.933
   - path:
     - host: github.com
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.879
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.879
-    version: 2.0.923
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.923
+      version: 0.1.885
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.885
+    version: 2.0.934
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.934
   - path:
     - host: github.com
       owner: jenkins-x
       repo: jenkins-x-builders
       url: https://github.com/jenkins-x/jenkins-x-builders.git
-      version: 2.0.929-277
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.929-277
-    version: 2.0.929
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.929
+      version: 2.0.933-279
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.933-279
+    version: 2.0.933
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.933
   url: https://github.com/jenkins-x/jx
-  version: 2.0.929
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.929
+  version: 2.0.933
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.933
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
@@ -80,8 +80,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: environment-controller
   url: https://github.com/jenkins-x-charts/environment-controller
-  version: 0.0.475
-  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.475
+  version: 0.0.477
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.477
 - host: github.com
   owner: jenkins-x
   repo: exposecontroller-service
@@ -98,13 +98,13 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1542
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1542
+  version: 2.0.1546
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1546
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
   url: https://github.com/jenkins-x-charts/jx-build-templates
-  version: 0.0.1162
+  version: 0.0.1164
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -116,14 +116,14 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.240
+  version: 0.0.242
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1438
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1438
+  version: 0.0.1440
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1440
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.882
-  versionURL: ""
+  version: 0.1.885
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.885
 - component: cert-manager
   host: github.com
   owner: helm
@@ -217,7 +217,7 @@ dependencies:
   owner: helm
   repo: charts
   url: https://github.com/helm/charts/tree/master/stable/nginx-ingress
-  version: 1.24.4
+  version: 1.24.5
   versionURL: ""
 - host: github.com
   owner: jenkins-x
