@@ -43,7 +43,8 @@ cp jx/bdd/boot-vault-tls/parameters.yaml boot-source/env
 cd boot-source
 
 # Rotate the domains to avoid cert-manager API rate limit. 
-# This rotation is using # 2 domains per hour.
+# This rotation is using # 2 domains per hour, using a "seed" of today's day-of-year to ensure a different start of
+# the rotation daily.
 if [[ "${DOMAIN_ROTATION}" == "true" ]]; then
     SHARD=$(date +"%l" | xargs)
     if [[ $SHARD -eq 12 ]]; then
@@ -54,6 +55,9 @@ if [[ "${DOMAIN_ROTATION}" == "true" ]]; then
     if [[ $MIN -gt 30 ]]; then
         SHARD=$((SHARD + 1))
     fi
+    DOY=$(date +"%j" | xargs)
+    SHARD=$(((SHARD + DOY) % 24))
+
     DOMAIN="${DOMAIN_PREFIX}${SHARD}${DOMAIN_SUFFIX}"
     if [[ -z "${DOMAIN}" ]]; then
         echo "Domain rotation enabled. Please set DOMAIN_PREFIX and DOMAIN_SUFFIX environment variables" 
