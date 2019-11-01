@@ -392,3 +392,9 @@ dependencies:
   url: https://github.com/jenkins-x/jenkins-x-builders-base
   version: 0.0.68
   versionURL: https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.68
+- host: github.com
+  owner: jenkins-x
+  repo: bucketrepo
+  url: https://github.com/jenkins-x/bucketrepo
+  version: 0.1.21
+  versionURL: ""
