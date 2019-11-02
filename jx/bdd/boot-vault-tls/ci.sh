@@ -57,7 +57,10 @@ if [[ "${DOMAIN_ROTATION}" == "true" ]]; then
     fi
     DOY=$(date +"%j" | xargs)
     SHARD=$(((SHARD + DOY) % 24))
-
+    # If we end up at 0, then roll back over to 24.
+    if [[ $SHARD -eq 0 ]]; then
+      SHARD=24
+    fi
     DOMAIN="${DOMAIN_PREFIX}${SHARD}${DOMAIN_SUFFIX}"
     if [[ -z "${DOMAIN}" ]]; then
         echo "Domain rotation enabled. Please set DOMAIN_PREFIX and DOMAIN_SUFFIX environment variables" 
