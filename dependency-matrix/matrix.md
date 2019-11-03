@@ -23,14 +23,14 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.0]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [4.0.1](https://github.com/grafana/grafana/releases/tag/v4.0.1) | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.2.0]() | 
-[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.20.0](https://github.com/weaveworks/flagger/releases/tag/0.20.0) | 
+[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.20.1](https://github.com/weaveworks/flagger/releases/tag/0.20.1) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.3.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.21]() | 
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.893]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.5]() | 
-[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.40](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.40) | 
+[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.41](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.41) | 
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | [1.0.0+bec4b999a]() | 
