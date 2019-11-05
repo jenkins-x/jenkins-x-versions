@@ -57,4 +57,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | [1.0.0+fd180fd76]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.3.0]() | 
 [jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.68](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.68) | 
-[jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.24]() | 
+[jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.26]() | 
