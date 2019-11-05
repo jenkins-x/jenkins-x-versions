@@ -35,7 +35,9 @@ storage:
     enabled: true
     url: "gs://jx-bdd-log-store3"
   repository:
+    # TODO enable when we have workload identity enabled
+    # url: "gs://jx-bdd-repository"
     enabled: false
-    url: "gs://jx-bdd-repository"
+    url: ""
 webhook: lighthouse
 
