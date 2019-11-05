@@ -35,7 +35,7 @@ storage:
     enabled: true
     url: "gs://jx-bdd-log-store3"
   repository:
-    enabled: true
+    enabled: false
     url: "gs://jx-bdd-repository"
 webhook: lighthouse
 
