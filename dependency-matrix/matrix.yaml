@@ -396,5 +396,5 @@ dependencies:
   owner: jenkins-x
   repo: bucketrepo
   url: https://github.com/jenkins-x/bucketrepo
-  version: 0.1.26
+  version: 0.1.27
   versionURL: ""
