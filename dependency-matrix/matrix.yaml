@@ -177,8 +177,8 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 0.20.1
-  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.20.1
+  version: 0.20.2
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.20.2
 - component: grafana
   host: github.com
   owner: weaveworks
