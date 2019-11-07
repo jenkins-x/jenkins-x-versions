@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.0.966-303
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.966-303
+  version: 2.0.967-305
+  versionURL: ""
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -42,10 +42,10 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.906
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.906
-    version: 2.0.966
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.966
+      version: 0.1.907
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.907
+    version: 2.0.967
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.967
   - path:
     - host: github.com
       owner: jenkins-x
@@ -80,8 +80,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: environment-controller
   url: https://github.com/jenkins-x-charts/environment-controller
-  version: 0.0.500
-  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.500
+  version: 0.0.501
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.501
 - host: github.com
   owner: jenkins-x
   repo: exposecontroller-service
@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1582
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1582
+  version: 2.0.1583
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1583
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.267
+  version: 0.0.268
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -177,8 +177,8 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 0.20.1
-  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.20.1
+  version: 0.20.2
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/0.20.2
 - component: grafana
   host: github.com
   owner: weaveworks
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.906
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.906
+  version: 0.1.907
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.907
 - component: cert-manager
   host: github.com
   owner: helm
