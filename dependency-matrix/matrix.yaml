@@ -92,8 +92,8 @@ dependencies:
   owner: jenkins-x
   repo: exposecontroller
   url: https://github.com/jenkins-x/exposecontroller
-  version: 2.3.112
-  versionURL: https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.112
+  version: 2.3.114
+  versionURL: https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.114
 - host: github.com
   owner: jenkins-x
   repo: jenkins-x-platform
