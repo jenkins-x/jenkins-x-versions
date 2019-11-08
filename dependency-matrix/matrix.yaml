@@ -398,3 +398,10 @@ dependencies:
   url: https://github.com/jenkins-x/bucketrepo
   version: 0.1.27
   versionURL: ""
+- component: cert-manager
+  host: github.com
+  owner: helm
+  repo: cert-manager
+  url: https://github.com/helm/charts/tree/master/stable/cert-manager
+  version: 0.6.7
+  versionURL: ""
