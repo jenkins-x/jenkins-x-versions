@@ -33,8 +33,8 @@ dependencies:
       owner: jenkins-x-charts
       repo: prow
       url: https://github.com/jenkins-x-charts/prow
-      version: 0.0.1465
-      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1465
+      version: 0.0.1466
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1466
     version: 2.0.971
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.971
   - path:
@@ -56,8 +56,8 @@ dependencies:
     version: 2.0.972
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.972
   url: https://github.com/jenkins-x/jx
-  version: 2.0.972
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.972
+  version: 2.0.971
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.971
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
@@ -122,8 +122,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1465
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1465
+  version: 0.0.1466
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1466
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
