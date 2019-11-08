@@ -13,24 +13,14 @@ pipelineConfig:
                 cpu: 1
                 memory: 2048Mi
         environment:
-          - name: DOMAIN_ROTATION
-            value: "true"
-          - name: DOMAIN_PREFIX
-            value: "boot"
-          - name: DOMAIN_SUFFIX
-            value: ".bdd.jenkins-x.rocks"
           - name: GOPROXY
             value: http://jenkins-x-athens-proxy:80
-          - name: JX_REQUIREMENT_VAULT_DISABLE_URL_DISCOVERY
-            value: "true"
           - name: GKE_SA
             value: /secrets/bdd/sa.json
-          - name: JX_REQUIREMENT_VAULT_DISABLE_URL_DISCOVERY
-            value: "true"
-          - name: GH_ACCESS_TOKEN
+          - name: GHE_ACCESS_TOKEN 
             valueFrom:
               secretKeyRef:
-                name: jenkins-x-bot-test-github
+                name: jx-pipeline-git-github-ghe
                 key: password
           - name: JENKINS_PASSWORD
             valueFrom:
@@ -54,5 +44,5 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - name: runci
-                command: jx/bdd/boot-vault-tls/ci.sh
+              - command: jx/bdd/bucketrepo/ci.sh
+                name: runci
