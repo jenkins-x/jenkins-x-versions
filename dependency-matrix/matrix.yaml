@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1599
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1599
+  version: 2.0.1600
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1600
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.276
+  version: 0.0.279
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.915
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.915
+  version: 0.1.918
+  versionURL: ""
 - component: cert-manager
   host: github.com
   owner: helm
@@ -223,8 +223,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-boot-config
   url: https://github.com/jenkins-x/jenkins-x-boot-config
-  version: 1.0.46
-  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.46
+  version: 1.0.47
+  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.47
 - host: github.com
   owner: jenkins-x-buildpacks
   repo: jenkins-x-kubernetes
