@@ -6,7 +6,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow);[github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [2.0.992](https://github.com/jenkins-x/jx/releases/tag/v2.0.992) | **2.0.806**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller)<br>**2.0.979**: [github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow)
 [kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.10.2]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger) |  | [1.3.0]() | 
-[jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.17]() | 
+[jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.19]() | 
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.509](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.509) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.114](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.114) | 
