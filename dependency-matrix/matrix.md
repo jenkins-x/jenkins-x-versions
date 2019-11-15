@@ -27,7 +27,7 @@ Dependency | Sources | Version | Mismatched versions
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.3.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.22]() | 
-[jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.923](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.923) | 
+[jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.925](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.925) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.7]() | 
 [jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.47](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.47) | 
@@ -56,7 +56,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git) |  | [1.0.0+177d75201]() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | [1.0.0+fd180fd76]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.3.2]() | 
-[jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [0.0.72](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.72) | **0.0.68**: [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git)
+[jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [0.0.72](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.72) | 
 [jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.27]() | 
 [helm/cert-manager](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [bitnami/external-dns](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
