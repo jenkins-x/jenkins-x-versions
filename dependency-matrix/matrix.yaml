@@ -416,5 +416,5 @@ dependencies:
   owner: helm
   repo: nginx-ingress
   url: https://github.com/helm/charts/tree/master/stable/nginx-ingress
-  version: 1.24.7
+  version: 1.25.0
   versionURL: ""
