@@ -283,7 +283,7 @@ dependencies:
   owner: jenkins-x-quickstarts
   repo: node-http
   url: https://github.com/jenkins-x-quickstarts/node-http.git
-  version: 1.0.0+14015fc0d
+  version: 1.0.0+3ed56e893
   versionURL: ""
 - host: github.com
   owner: jenkins-x-quickstarts
