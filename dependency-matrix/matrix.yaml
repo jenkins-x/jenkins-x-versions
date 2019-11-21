@@ -74,7 +74,7 @@ dependencies:
   owner: jenkins-x
   repo: dex
   url: https://github.com/jenkins-x/dex
-  version: 2.13.19
+  version: 2.13.20
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
