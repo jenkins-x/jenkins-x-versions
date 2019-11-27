@@ -21,10 +21,15 @@ export BUILD_NUMBER="$BUILD_ID"
 JX_HOME="/tmp/jxhome"
 KUBECONFIG="/tmp/jxhome/config"
 
-mkdir -p $JX_HOME
+# lets avoid the git/credentials causing confusion during the test
+export XDG_CONFIG_HOME=$JX_HOME
+
+mkdir -p $JX_HOME/git
 
 jx --version
-jx step git credentials
+
+# replace the credentials file with a single user entry
+echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@github.com" > $JX_HOME/git/credentials
 
 # lets setup git 
 git config --global --add user.name JenkinsXBot
