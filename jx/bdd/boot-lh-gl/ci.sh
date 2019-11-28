@@ -20,7 +20,7 @@ mkdir -p $JX_HOME/git
 jx --version
 
 # replace the credentials file with a single user entry
-echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@gitlab.com" > $JX_HOME/git/credentials
+echo "https://$GL_USERNAME:$GL_ACCESS_TOKEN@gitlab.com" > $JX_HOME/git/credentials
 
 gcloud auth activate-service-account --key-file $GKE_SA
 
