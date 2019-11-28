@@ -21,7 +21,7 @@ mkdir -p $JX_HOME/git
 jx --version
 
 # replace the credentials file with a single user entry
-echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@github.com" > $JX_HOME/git/credentials
+echo "https://dev1:$GHE_ACCESS_TOKEN@github.beescloud.com" > $JX_HOME/git/credentials
 
 gcloud auth activate-service-account --key-file $GKE_SA
 
