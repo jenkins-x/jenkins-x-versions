@@ -7,7 +7,7 @@ Dependency | Sources | Version | Mismatched versions
 [kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.11.0]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger) |  | [1.3.0]() | 
 [jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.21]() | 
-[jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.555](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.555) | 
+[jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.556](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.556) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.116](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.116) | 
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1695](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1695) | 
