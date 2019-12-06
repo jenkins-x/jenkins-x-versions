@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.0.1061-388
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1061-388
+  version: 2.0.1062-389
+  versionURL: ""
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -42,10 +42,10 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.985
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.985
-    version: 2.0.1061
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1061
+      version: 0.1.986
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.986
+    version: 2.0.1062
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1062
   - path:
     - host: github.com
       owner: jenkins-x
@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1728
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1728
+  version: 2.0.1729
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1729
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -164,8 +164,8 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 4.1.0
-  versionURL: https://github.com/grafana/grafana/releases/tag/v4.1.0
+  version: 4.1.1
+  versionURL: https://github.com/grafana/grafana/releases/tag/v4.1.1
 - host: github.com
   owner: prometheus
   repo: alertmanager
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.985
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.985
+  version: 0.1.986
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.986
 - component: cert-manager
   host: github.com
   owner: helm
@@ -223,8 +223,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-boot-config
   url: https://github.com/jenkins-x/jenkins-x-boot-config
-  version: 1.0.53
-  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.53
+  version: 1.0.54
+  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.54
 - host: github.com
   owner: jenkins-x-buildpacks
   repo: jenkins-x-kubernetes
