@@ -62,7 +62,7 @@ dependencies:
   owner: kubernetes-incubator
   repo: external-dns
   url: https://github.com/kubernetes-incubator/external-dns
-  version: 2.13.0
+  version: 2.12.0
   versionURL: ""
 - host: github.com
   owner: weaveworks
@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 9.5.2
+  version: 9.5.1
   versionURL: ""
 - component: flagger
   host: github.com
@@ -418,7 +418,7 @@ dependencies:
   owner: bitnami
   repo: external-dns
   url: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
-  version: 2.13.0
+  version: 2.12.0
   versionURL: ""
 - component: nginx-ingress
   host: github.com
