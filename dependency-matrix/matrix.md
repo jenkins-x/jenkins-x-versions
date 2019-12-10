@@ -22,7 +22,7 @@ Dependency | Sources | Version | Mismatched versions
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [4.1.3]() | 
-[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.5.1]() | 
+[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.5.2]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.20.4](https://github.com/weaveworks/flagger/releases/tag/0.20.4) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
