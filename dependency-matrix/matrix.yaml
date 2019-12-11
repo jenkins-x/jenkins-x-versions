@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.0.1065-392
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1065-392
+  version: 2.0.1065-393
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1065-393
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -394,13 +394,13 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders
       url: https://github.com/jenkins-x/jenkins-x-builders.git
-      version: 2.0.993-323
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.993-323
-    version: 0.0.72
-    versionURL: https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.72
+      version: 2.0.1065-393
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1065-393
+    version: 0.0.75
+    versionURL: https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.75
   url: https://github.com/jenkins-x/jenkins-x-builders-base
-  version: 0.0.72
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.72
+  version: 0.0.75
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.75
 - host: github.com
   owner: jenkins-x
   repo: bucketrepo
