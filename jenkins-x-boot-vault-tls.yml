@@ -30,7 +30,7 @@ pipelineConfig:
           - name: GH_ACCESS_TOKEN
             valueFrom:
               secretKeyRef:
-                name: jenkins-x-bot-test-github
+                name: jenkins-x-versions-bot-test-github
                 key: password
           - name: JENKINS_PASSWORD
             valueFrom:
@@ -38,7 +38,7 @@ pipelineConfig:
                 name: test-jenkins-user 
                 key: password
         agent:
-          image: gcr.io/jenkinsxio/builder-go-nodejs:2.0.992-321
+          image: gcr.io/jenkinsxio/builder-go-nodejs:2.0.1065-393
         stages:
           - name: ci
             options:

@@ -31,10 +31,10 @@ quickstarts:
   language: Groovy
   name: jenkins-quickstart
   version: 1.0.0+f31f27201
-- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/node-http/zip/14015fc0d
+- downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/node-http/zip/3ed56e893
   language: JavaScript
   name: node-http
-  version: 1.0.0+14015fc0d
+  version: 1.0.0+3ed56e893
 - downloadZipURL: https://codeload.github.com/jenkins-x-quickstarts/node-http-watch-pipeline-activity/zip/09c7ed32d
   language: JavaScript
   name: node-http-watch-pipeline-activity
