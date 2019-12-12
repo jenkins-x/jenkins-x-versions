@@ -40,7 +40,7 @@ export JX_VALUE_PROW_HMACTOKEN="$GH_ACCESS_TOKEN"
 # TODO temporary hack until the batch mode in jx is fixed...
 export JX_BATCH_MODE="true"
 
-git clone --single-branch --branch feature/restore_exdns_cm_eks https://github.com/dgozalo/jenkins-x-boot-config.git boot-source
+git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
 cp jx/bdd/boot-vault/jx-requirements.yml boot-source
 cp jx/bdd/boot-vault/parameters.yaml boot-source/env
 cd boot-source
