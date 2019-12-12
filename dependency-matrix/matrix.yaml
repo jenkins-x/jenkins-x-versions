@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.0.1067-396
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1067-396
+  version: 2.0.1074-404
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1074-404
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -33,19 +33,19 @@ dependencies:
       owner: jenkins-x-charts
       repo: prow
       url: https://github.com/jenkins-x-charts/prow
-      version: 0.0.1536
-      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1536
-    version: 2.0.1067
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1067
+      version: 0.0.1543
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1543
+    version: 2.0.1074
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1074
   - path:
     - host: github.com
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.992
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.992
-    version: 2.0.1067
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1067
+      version: 0.1.1000
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1000
+    version: 2.0.1075
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1075
   - path:
     - host: github.com
       owner: jenkins-x
@@ -56,8 +56,8 @@ dependencies:
     version: 2.0.1067
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1067
   url: https://github.com/jenkins-x/jx
-  version: 2.0.1067
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1067
+  version: 2.0.1074
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1074
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
@@ -80,8 +80,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: environment-controller
   url: https://github.com/jenkins-x-charts/environment-controller
-  version: 0.0.573
-  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.573
+  version: 0.0.580
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.580
 - host: github.com
   owner: jenkins-x
   repo: exposecontroller-service
@@ -98,13 +98,13 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1742
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1742
+  version: 2.0.1757
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1757
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
   url: https://github.com/jenkins-x-charts/jx-build-templates
-  version: 0.0.1258
+  version: 0.0.1265
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -116,14 +116,14 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.342
+  version: 0.0.349
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1536
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1536
+  version: 0.0.1543
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1543
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.992
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.992
+  version: 0.1.1000
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1000
 - component: cert-manager
   host: github.com
   owner: helm
