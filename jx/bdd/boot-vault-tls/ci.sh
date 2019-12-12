@@ -42,7 +42,7 @@ export JX_VALUE_PROW_HMACTOKEN="$GH_ACCESS_TOKEN"
 export JX_BATCH_MODE="true"
 
 # prepare the BDD configuration
-git clone --single-branch --branch feature/external_dns_cert_manager_eks https://github.com/dgozalo/jenkins-x-boot-config.git boot-source
+git clone --single-branch --branch feature/restore_exdns_cm_eks https://github.com/dgozalo/jenkins-x-boot-config.git boot-source
 cp jx/bdd/boot-vault-tls/jx-requirements.yml boot-source
 cp jx/bdd/boot-vault-tls/parameters.yaml boot-source/env
 cd boot-source
