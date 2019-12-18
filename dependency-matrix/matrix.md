@@ -55,7 +55,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-rest-prometheus-java11](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git) |  | [1.0.0+7e487fce2]() | 
 [jenkins-x-quickstarts/spring-boot-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git) |  | [1.0.0+177d75201]() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | [1.0.0+fd180fd76]() | 
-[heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.1]() | 
+[heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.3]() | 
 [jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [0.0.75](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.75) | 
 [jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.27]() | 
 [helm/cert-manager](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
