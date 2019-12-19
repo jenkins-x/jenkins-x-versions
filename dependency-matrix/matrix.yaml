@@ -164,13 +164,13 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 4.2.1
+  version: 4.2.2
   versionURL: ""
 - host: github.com
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 9.5.6
+  version: 9.7.0
   versionURL: ""
 - component: flagger
   host: github.com
