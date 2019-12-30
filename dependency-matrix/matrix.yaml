@@ -146,8 +146,8 @@ dependencies:
   owner: jetstack
   repo: cert-manager
   url: https://github.com/jetstack/cert-manager
-  version: v0.9.1
-  versionURL: https://github.com/jetstack/cert-manager/releases/tag/v0.9.1
+  version: 0.13.0-alpha.0
+  versionURL: https://github.com/jetstack/cert-manager/releases/tag/v0.13.0-alpha.0
 - host: github.com
   owner: helm
   repo: charts
