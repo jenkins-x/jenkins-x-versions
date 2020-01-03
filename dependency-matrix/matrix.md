@@ -13,11 +13,11 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1809](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1809) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1293]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
-[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.370]() | 
+[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.371]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1571](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1571) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.33]() | 
-[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.47]() | 
-[jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.1]() | 
+[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.48]() | 
+[jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.2]() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
@@ -26,7 +26,7 @@ Dependency | Sources | Version | Mismatched versions
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.20.4](https://github.com/weaveworks/flagger/releases/tag/0.20.4) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
-[jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.23]() | 
+[jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.26]() | 
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1027](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1027) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.7]() | 

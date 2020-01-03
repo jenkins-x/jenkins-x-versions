@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.370
+  version: 0.0.371
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -134,13 +134,13 @@ dependencies:
   owner: jenkins-x-charts
   repo: tekton
   url: https://github.com/jenkins-x-charts/tekton
-  version: 0.0.47
+  version: 0.0.48
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
   repo: vault-operator
   url: https://github.com/jenkins-x-charts/vault-operator
-  version: 0.3.1
+  version: 0.3.2
   versionURL: ""
 - host: github.com
   owner: jetstack
@@ -197,7 +197,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-resources
   url: https://github.com/jenkins-x-charts/jxboot-resources
-  version: 0.0.23
+  version: 0.0.26
   versionURL: ""
 - host: github.com
   owner: jenkins-x
