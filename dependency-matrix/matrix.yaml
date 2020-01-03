@@ -140,7 +140,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: vault-operator
   url: https://github.com/jenkins-x-charts/vault-operator
-  version: 0.3.1
+  version: 0.3.2
   versionURL: ""
 - host: github.com
   owner: jetstack
