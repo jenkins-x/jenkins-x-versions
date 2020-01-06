@@ -4,16 +4,16 @@ Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
 [jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) | [2.0.1102-438](https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1102-438) | **0.1.758**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller)
 [jenkins-x/jx](https://github.com/jenkins-x/jx) | [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller);[github.com/jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow);[github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [2.0.1102](https://github.com/jenkins-x/jx/releases/tag/v2.0.1102) | **2.0.806**: [github.com/jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller)
-[kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.13.2]() | 
+[kubernetes-incubator/external-dns](https://github.com/kubernetes-incubator/external-dns) |  | [2.13.3]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger) |  | [1.3.0]() | 
 [jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.21]() | 
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.610](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.610) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.117](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.117) | 
-[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1813](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1813) | 
+[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1819](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1819) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1295]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
-[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.373]() | 
+[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.374]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1573](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1573) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.33]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.48]() | 
@@ -30,7 +30,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1029](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1029) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.7]() | 
-[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.60](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.60) | 
+[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.62](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.62) | 
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | [1.0.0+bec4b999a]() | 
@@ -59,6 +59,6 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [0.0.75](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.75) | 
 [jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.27]() | 
 [helm/cert-manager](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
-[bitnami/external-dns](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.13.2]() | 
+[bitnami/external-dns](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.13.3]() | 
 [helm/nginx-ingress](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.27.1]() | 
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
