@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.372
+  version: 0.0.373
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 9.7.3
+  version: 9.7.4
   versionURL: ""
 - component: flagger
   host: github.com
