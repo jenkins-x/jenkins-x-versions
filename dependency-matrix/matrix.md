@@ -9,7 +9,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/dex](https://github.com/jenkins-x/dex) |  | [2.13.21]() | 
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.610](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.610) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
-[jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.116](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.116) | 
+[jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.117](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.117) | 
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.1813](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1813) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1295]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
@@ -23,7 +23,7 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [4.3.0](https://github.com/grafana/grafana/releases/tag/v4.3.0) | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [9.7.4]() | 
-[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.20.4](https://github.com/weaveworks/flagger/releases/tag/0.20.4) | 
+[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.21.0](https://github.com/weaveworks/flagger/releases/tag/0.21.0) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.27]() | 
