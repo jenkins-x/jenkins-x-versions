@@ -14,7 +14,11 @@ then
 
     pushd $(mktemp -d)
       git clone https://github.com/jenkins-x/jx-docs.git
-      git checkout -b $LOCAL_BRANCH_NAME
+
+      pushd jx-docs
+        git checkout -b $LOCAL_BRANCH_NAME
+      popd
+
       pushd jx-docs/content/en/docs/reference/commands
         # Cleanup the commands directory before generating new docs to avoid keeping the 
         # deprecated commands of which doc is not anymore generated.
