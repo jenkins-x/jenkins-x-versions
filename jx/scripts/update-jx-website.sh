@@ -7,13 +7,14 @@ set -o pipefail
 if $(cat ${IS_JX_PRERELEASE})
 then
   JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-matrix/matrix.md)
-
+  LOCAL_BRANCH_NAME="jx_cli_$VERSION"
   if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
   then
     echo "updating the CLI reference"
 
     pushd $(mktemp -d)
       git clone https://github.com/jenkins-x/jx-docs.git
+      git checkout -b $LOCAL_BRANCH_NAME
       pushd jx-docs/content/en/docs/reference/commands
         # Cleanup the commands directory before generating new docs to avoid keeping the 
         # deprecated commands of which doc is not anymore generated.
@@ -55,16 +56,19 @@ then
       cp ${GOPATH}/src/github.com/jenkins-x/jx/docs/apidocs.md jx-docs/content/en/docs/reference/api.md
       cp ${GOPATH}/src/github.com/jenkins-x/jx/docs/config.md jx-docs/content/en/docs/reference/config
 
+      MESSAGE="chore: updated jx API docs from $JX_VERSION"
+
       pushd jx-docs/content/en/docs/reference
         git add *
-        git commit --allow-empty -a -m "updated jx API docs from $JX_VERSION"
+        git commit --allow-empty -a -m "$MESSAGE"
 
         # Note that when doing a rebase theirs and ours are swapped so -X theirs actually automatically accepts our changes in case of conflict
         git fetch origin && git rebase -X theirs origin/master
       popd
 
       pushd jx-docs
-        git push origin
+        git push origin $LOCAL_BRANCH_NAME
+        jx create pullrequest -t "$MESSAGE" -l updatebot
       popd
     popd
   fi
