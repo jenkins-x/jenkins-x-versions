@@ -15,3 +15,6 @@ repositories:
   - prefix: flagger
     urls:
       - https://flagger.app
+  - prefix: gloo
+    urls:
+      - https://storage.googleapis.com/solo-public-helm
