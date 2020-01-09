@@ -50,6 +50,7 @@ cd boot-source
 # Rotate the domains to avoid cert-manager API rate limit. 
 # This rotation is using # 2 domains per hour, using a "seed" of today's day-of-year to ensure a different start of
 # the rotation daily.
+echo "DOMAIN_ROTATION value: ${DOMAIN_ROTATION}"
 if [[ "${DOMAIN_ROTATION}" == "true" ]]; then
     SHARD=$(date +"%l" | xargs)
     if [[ $SHARD -eq 12 ]]; then
