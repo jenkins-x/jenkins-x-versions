@@ -58,10 +58,11 @@ export JX_BIN_DIR=$(pwd)
 export PATH=$JX_BIN_DIR:$PATH
 cd ..
 
+export BOOT_CONFIG_VERSION=$(jx step get dependency-version --host=github.com --owner=jenkins-x --repo=jenkins-x-boot-config --dir . | sed 's/.*: \(.*\)/\1/')
 git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
-cp jx/bdd/boot-vault-upgrade/jx-requirements.yml boot-source
-cp jx/bdd/boot-vault-upgrade/parameters.yaml boot-source/env
 cd boot-source
+cp ../jx/bdd/boot-vault-upgrade/jx-requirements.yml .
+cp ../jx/bdd/boot-vault-upgrade/parameters.yaml env
 
 # TODO hack until we fix boot to do this too!
 helm init --client-only

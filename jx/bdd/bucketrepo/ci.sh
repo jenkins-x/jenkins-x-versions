@@ -39,10 +39,12 @@ export JX_VALUE_PROW_HMACTOKEN="$GHE_ACCESS_TOKEN"
 # TODO temporary hack until the batch mode in jx is fixed...
 export JX_BATCH_MODE="true"
 
+export BOOT_CONFIG_VERSION=$(jx step get dependency-version --host=github.com --owner=jenkins-x --repo=jenkins-x-boot-config --dir . | sed 's/.*: \(.*\)/\1/')
 git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
-cp jx/bdd/bucketrepo/jx-requirements.yml boot-source
-cp jx/bdd/bucketrepo/parameters.yaml boot-source/env
 cd boot-source
+git checkout tags/v${BOOT_CONFIG_VERSION} -b latest-boot-config
+cp ../jx/bdd/bucketrepo/jx-requirements.yml .
+cp ../jx/bdd/bucketrepo/parameters.yaml env
 
 # TODO hack until we fix boot to do this too!
 helm init --client-only
