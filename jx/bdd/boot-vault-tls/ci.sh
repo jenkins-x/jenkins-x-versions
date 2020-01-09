@@ -41,11 +41,14 @@ export JX_VALUE_PROW_HMACTOKEN="$GH_ACCESS_TOKEN"
 # TODO temporary hack until the batch mode in jx is fixed...
 export JX_BATCH_MODE="true"
 
+export BOOT_CONFIG_VERSION=$(jx step get dependency-version --host=github.com --owner=jenkins-x --repo=jenkins-x-boot-config --dir . | sed 's/.*: \(.*\)/\1/')
+
 # prepare the BDD configuration
 git clone https://github.com/jenkins-x/jenkins-x-boot-config.git boot-source
-cp jx/bdd/boot-vault-tls/jx-requirements.yml boot-source
-cp jx/bdd/boot-vault-tls/parameters.yaml boot-source/env
 cd boot-source
+git checkout tags/v${BOOT_CONFIG_VERSION} -b latest-boot-config
+cp ../jx/bdd/boot-vault-tls/jx-requirements.yml . 
+cp ../jx/bdd/boot-vault-tls/parameters.yaml env
 
 # Rotate the domains to avoid cert-manager API rate limit. 
 # This rotation is using # 2 domains per hour, using a "seed" of today's day-of-year to ensure a different start of
