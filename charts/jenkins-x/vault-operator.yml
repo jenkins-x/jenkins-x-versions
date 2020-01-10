@@ -1,2 +1,2 @@
-gitUrl: https://github.com/jenkins-x-charts/vault-operator
-version: 0.3.2
+gitUrl: https://github.com/maticue/vault-operator
+version: v0.3.2-k8s-v1.16
