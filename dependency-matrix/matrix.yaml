@@ -62,7 +62,7 @@ dependencies:
   owner: kubernetes-incubator
   repo: external-dns
   url: https://github.com/kubernetes-incubator/external-dns
-  version: 2.14.1
+  version: 2.14.2
   versionURL: ""
 - host: github.com
   owner: weaveworks
@@ -74,7 +74,7 @@ dependencies:
   owner: jenkins-x
   repo: dex
   url: https://github.com/jenkins-x/dex
-  version: 2.13.22
+  version: 2.13.23
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -128,7 +128,7 @@ dependencies:
   owner: jenkins-x
   repo: sso-operator
   url: https://github.com/jenkins-x/sso-operator
-  version: 1.2.33
+  version: 1.2.34
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -223,8 +223,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-boot-config
   url: https://github.com/jenkins-x/jenkins-x-boot-config
-  version: 1.0.68
-  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.68
+  version: 1.0.69
+  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.69
 - host: github.com
   owner: jenkins-x-buildpacks
   repo: jenkins-x-kubernetes
@@ -418,7 +418,7 @@ dependencies:
   owner: bitnami
   repo: external-dns
   url: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
-  version: 2.14.1
+  version: 2.14.2
   versionURL: ""
 - component: nginx-ingress
   host: github.com
