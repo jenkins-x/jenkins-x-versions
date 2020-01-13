@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 10.0.1
+  version: 10.0.2
   versionURL: ""
 - component: flagger
   host: github.com
@@ -425,7 +425,7 @@ dependencies:
   owner: helm
   repo: nginx-ingress
   url: https://github.com/helm/charts/tree/master/stable/nginx-ingress
-  version: 1.28.2
+  version: 1.28.3
   versionURL: ""
 - host: github.com
   owner: jenkins-x

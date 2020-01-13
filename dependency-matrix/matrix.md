@@ -22,7 +22,7 @@ Dependency | Sources | Version | Mismatched versions
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [4.3.0](https://github.com/grafana/grafana/releases/tag/v4.3.0) | 
-[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [10.0.1]() | 
+[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [10.0.2]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [0.21.0](https://github.com/weaveworks/flagger/releases/tag/0.21.0) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
@@ -60,5 +60,5 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.27]() | 
 [helm/cert-manager](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [bitnami/external-dns](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.14.2]() | 
-[helm/nginx-ingress](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.28.2]() | 
+[helm/nginx-ingress](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.28.3]() | 
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
