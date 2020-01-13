@@ -425,7 +425,7 @@ dependencies:
   owner: helm
   repo: nginx-ingress
   url: https://github.com/helm/charts/tree/master/stable/nginx-ingress
-  version: 1.28.2
+  version: 1.28.3
   versionURL: ""
 - host: github.com
   owner: jenkins-x
