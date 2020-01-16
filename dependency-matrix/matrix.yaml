@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.389
+  version: 0.0.392
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -128,7 +128,7 @@ dependencies:
   owner: jenkins-x
   repo: sso-operator
   url: https://github.com/jenkins-x/sso-operator
-  version: 1.2.39
+  version: 1.2.40
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -164,13 +164,13 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 4.3.0
-  versionURL: https://github.com/grafana/grafana/releases/tag/v4.3.0
+  version: 4.3.2
+  versionURL: https://github.com/grafana/grafana/releases/tag/v4.3.2
 - host: github.com
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 10.2.0
+  version: 10.3.0
   versionURL: ""
 - component: flagger
   host: github.com
