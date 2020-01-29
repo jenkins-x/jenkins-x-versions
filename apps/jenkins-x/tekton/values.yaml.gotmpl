@@ -1,0 +1,16 @@
+webhook:
+  enabled: false
+
+auth:
+  git:
+    username: "{{ .Values.secrets.pipelineUser.username }}"
+    password: "{{ .Values.secrets.pipelineUser.token }}"
+    url: {{ .Values.jxRequirements.cluster.gitServer | default "https://github.com" }}
+{{- if hasKey .Values.secrets "docker" }}
+  docker:
+    username: "{{ .Values.secrets.docker.username }}"
+    password: "{{ .Values.secrets.docker.password }}"
+    url: "{{ .Values.secrets.docker.url }}"
+{{- end }}
+
+tillerNamespace: ""

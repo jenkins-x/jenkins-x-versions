@@ -1,0 +1,29 @@
+enabled: true
+
+hmacToken: "{{ .Values.secrets.hmacToken | default "123abc" }}"
+
+git:
+  kind: {{ .Values.jxRequirements.cluster.gitKind | default "github" }}
+  name: {{ .Values.jxRequirements.cluster.gitName | default "github" }}
+  server: {{ .Values.jxRequirements.cluster.gitServer | default "https://github.com" }}
+
+service:
+  name: hook
+  
+replicaCount: 2
+
+image:
+  repository: gcr.io/jenkinsxio/lighthouse
+
+vault:
+{{- if eq .Values.jxRequirements.secretStorage "vault" }}
+  enabled: true
+{{- else }}
+  enabled: false
+{{- end }}
+
+clusterName: "{{ .Values.jxRequirements.cluster.clusterName }}"
+
+user: "{{ .Values.secrets.pipelineUser.username }}"
+
+oauthToken: "{{ .Values.secrets.pipelineUser.token }}"
