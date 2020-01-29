@@ -22,7 +22,10 @@ then
       pushd jx-docs/content/en/docs/reference/commands
         # Cleanup the commands directory before generating new docs to avoid keeping the 
         # deprecated commands of which doc is not anymore generated.
-        rm -rf *
+        # lets preserve the index file
+        mv _index.md _index.md.backup
+        rm -rf *.md
+        mv _index.md.backup _index.md
         jx create docs
         git config credential.helper store
         git add *
