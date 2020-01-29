@@ -1,0 +1,28 @@
+enabled: true
+service:
+  annotations:
+    fabric8.io/expose: "true"
+    fabric8.io/ingress.annotations: "kubernetes.io/ingress.class: nginx"
+
+fullnameOverride: jenkins-x-chartmuseum
+
+persistence:
+  enabled: true
+  AccessMode: ReadWriteOnce
+  Size: 8Gi
+env:
+  open:
+    AUTH_ANONYMOUS_GET: true
+    DISABLE_API: false
+  secret:
+    BASIC_AUTH_USER: {{ .Values.secrets.adminUser.username }}
+    BASIC_AUTH_PASS: {{ .Values.secrets.adminUser.username }}
+image:
+  tag: v0.7.1
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 160m
+    memory: 128Mi
