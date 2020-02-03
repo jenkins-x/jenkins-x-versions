@@ -164,8 +164,8 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 4.5.0
-  versionURL: ""
+  version: 4.5.1
+  versionURL: https://github.com/grafana/grafana/releases/tag/v4.5.1
 - host: github.com
   owner: prometheus
   repo: alertmanager
