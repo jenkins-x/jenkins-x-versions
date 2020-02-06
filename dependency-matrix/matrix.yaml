@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.1965
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1965
+  version: 2.0.1967
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.1967
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
