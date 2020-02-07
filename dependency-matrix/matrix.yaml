@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.1105
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1105
+  version: 0.1.1106
+  versionURL: ""
 - component: cert-manager
   host: github.com
   owner: helm
