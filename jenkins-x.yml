@@ -44,5 +44,5 @@ pipelineConfig:
                 command: ./jx/scripts/update-jx-bot.sh
 
               - name: update-jx-website
-                image: gcr.io/jenkinsxio/builder-go:2.0.1186-524
+                image: gcr.io/jenkinsxio/builder-go:2.0.1187-525
                 command: ./jx/scripts/update-jx-website.sh
