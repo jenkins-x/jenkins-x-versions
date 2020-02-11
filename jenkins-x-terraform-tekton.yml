@@ -28,7 +28,7 @@ pipelineConfig:
                 name: test-jenkins-user 
                 key: password
         agent:
-          image: gcr.io/jenkinsxio/builder-terraform:2.0.1187-525
+          image: gcr.io/jenkinsxio/builder-terraform:2.0.1188-526
         stages:
           - name: ci
             options:
