@@ -128,7 +128,7 @@ dependencies:
   owner: jenkins-x
   repo: sso-operator
   url: https://github.com/jenkins-x/sso-operator
-  version: 1.2.40
+  version: 1.2.41
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
