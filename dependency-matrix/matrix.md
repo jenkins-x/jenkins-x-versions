@@ -62,4 +62,4 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/external-dns](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.16.1]() | 
 [helm/nginx-ingress](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.29.0]() | 
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
-[solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.3.4](https://github.com/solo-io/gloo/releases/tag/v1.3.4) | 
+[solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.3.5](https://github.com/solo-io/gloo/releases/tag/v1.3.5) | 
