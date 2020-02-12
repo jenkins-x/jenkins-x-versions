@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.436
+  version: 0.0.437
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
