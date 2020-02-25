@@ -27,7 +27,7 @@ Dependency | Sources | Version | Mismatched versions
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.33]() | 
-[jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1120](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1120) | 
+[jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1124](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1124) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.7]() | 
 [jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.80](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.80) | 
