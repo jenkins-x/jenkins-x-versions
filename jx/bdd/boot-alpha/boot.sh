@@ -41,7 +41,7 @@ jenkins-x-installer/create_cluster.sh
 echo "using the version stream ref: $PULL_PULL_SHA"
 
 ## create the boot git repository
-jxl boot create --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --out giturl.txt
+jxl boot create -b --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --out giturl.txt
 
 
 # import secrets...
@@ -56,9 +56,9 @@ echo "secrets:
     token: $GH_ACCESS_TOKEN
     email: $GH_EMAIL" > /tmp/secrets.yaml
 
-jxl boot import -f /tmp/secrets.yaml
+jxl boot secrets import -f /tmp/secrets.yaml
 
 # run boot
-echo running: jxl boot run --git-url `cat giturl.txt`
+echo running: jxl boot run -b --git-url `cat giturl.txt`
 
-jxl boot run --git-url `cat giturl.txt`
+jxl boot run -b --git-url `cat giturl.txt` --job
