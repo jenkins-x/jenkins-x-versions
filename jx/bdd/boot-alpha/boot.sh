@@ -15,9 +15,6 @@ export GH_USERNAME="jenkins-x-versions-bot-test"
 export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_OWNER="jenkins-x-versions-bot-test"
 
-# fix broken `BUILD_NUMBER` env var
-export BUILD_NUMBER="$BUILD_ID"
-
 gcloud auth activate-service-account --key-file $GKE_SA
 
 # lets setup git
@@ -34,6 +31,8 @@ echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@github.com" > $JX_HOME/git/credentia
 export PROJECT_ID=jenkins-x-bdd3
 export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-alpha"
 export ZONE=europe-west1-c
+
+echo "creating cluster $CLUSTER_NAME"
 
 git clone https://github.com/jenkins-x-charts/jenkins-x-installer
 jenkins-x-installer/create_cluster.sh
