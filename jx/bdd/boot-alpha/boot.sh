@@ -41,7 +41,7 @@ jenkins-x-installer/create_cluster.sh
 echo "using the version stream ref: $PULL_PULL_SHA"
 
 ## create the boot git repository
-jxl boot create -b --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --region=$ZONE --out giturl.txt
+jxl boot create -b --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --out giturl.txt
 
 
 # import secrets...
