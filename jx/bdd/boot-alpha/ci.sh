@@ -4,7 +4,7 @@ set -x
 
 
 export PROJECT_ID=jenkins-x-bdd3
-export CLUSTER_NAME="$BRANCH_NAME-$BUILD_ID-bdd-alpha"
+export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-alpha"
 export ZONE=europe-west1-c
 
 gcloud container clusters get-credentials $CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
