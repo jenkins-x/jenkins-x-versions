@@ -33,7 +33,7 @@ export CREATED_TIME=$(date '+%a-%b-%d-%Y-%H-%M-%S')
 export PROJECT_ID=jenkins-x-bdd3
 export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-alpha"
 export ZONE=europe-west1-c
-export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-alpha,create-time:${CREATED_TIME,,}"
+export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-alpha,create-time=${CREATED_TIME,,}"
 
 echo "creating cluster $CLUSTER_NAME with labels $LABELS"
 
