@@ -45,5 +45,5 @@ pipelineConfig:
                     name: sa
             steps:
               - command: jx/bdd/boot-alpha/ci.sh
-                image: jenkinsxio/jenkins-x-installer:0.0.37
+                image: jenkinsxio/jenkins-x-installer:0.0.41
                 name: runci
