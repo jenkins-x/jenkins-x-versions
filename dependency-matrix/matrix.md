@@ -10,11 +10,11 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.707](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.707) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.118](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.118) | 
-[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2012](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2012) | 
+[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2013](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2013) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1374]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
 [jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.451]() | 
-[jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1671](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1671) | 
+[jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1672](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1672) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.41]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.48]() | 
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.2]() | 
