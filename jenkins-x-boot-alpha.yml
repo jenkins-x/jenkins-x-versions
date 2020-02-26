@@ -44,8 +44,6 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - command: jx/bdd/boot-alpha/boot.sh
-                name: boot
-                image: jenkinsxio/jenkins-x-installer:0.0.37
               - command: jx/bdd/boot-alpha/ci.sh
+                image: jenkinsxio/jenkins-x-installer:0.0.37
                 name: runci
