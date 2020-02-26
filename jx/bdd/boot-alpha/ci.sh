@@ -69,6 +69,8 @@ jxl boot run -b --git-url `cat giturl.txt` --job
 # lets make sure jx defaults to helm3
 export JX_HELM3="true"
 
+jx ns jx
+
 # TODO not sure we need this?
 helm init
 helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
