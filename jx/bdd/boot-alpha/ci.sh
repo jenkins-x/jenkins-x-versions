@@ -21,6 +21,7 @@ jx step bdd \
     --use-revision \
     --version-repo-pr \
     --versions-repo https://github.com/jenkins-x/jenkins-x-versions.git \
+    --use-current-team \
     --gopath /tmp \
     --git-provider=github \
     --git-username $GH_USERNAME \
