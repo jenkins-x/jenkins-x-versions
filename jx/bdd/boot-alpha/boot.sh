@@ -29,11 +29,13 @@ echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@github.com" > $JX_HOME/git/credentia
 # lets create a new GKE cluster
 gcloud auth activate-service-account --key-file $GKE_SA
 
+export CREATED_TIME=$(date '+%a-%b-%d-%Y-%H-%M-%S')
 export PROJECT_ID=jenkins-x-bdd3
 export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-alpha"
 export ZONE=europe-west1-c
+export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-alpha,create-time:${CREATED_TIME,,}"
 
-echo "creating cluster $CLUSTER_NAME"
+echo "creating cluster $CLUSTER_NAME with labels $LABELS"
 
 git clone https://github.com/jenkins-x-charts/jenkins-x-installer
 jenkins-x-installer/create_cluster.sh
