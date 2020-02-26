@@ -66,8 +66,11 @@ echo running: jxl boot run -b --git-url `cat giturl.txt`
 jxl boot run -b --git-url `cat giturl.txt` --job
 
 
+# lets make sure jx defaults to helm3
+export JX_HELM3="true"
+
 # TODO not sure we need this?
-helm init --client-only
+helm init
 helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 # Just run the node-http import test here
