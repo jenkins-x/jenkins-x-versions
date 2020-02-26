@@ -449,3 +449,9 @@ dependencies:
   url: https://github.com/solo-io/gloo
   version: 1.3.9
   versionURL: https://github.com/solo-io/gloo/releases/tag/v1.3.9
+- host: github.com
+  owner: jenkins-x-charts
+  repo: jxboot-helmfile-resources
+  url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
+  version: 0.0.63
+  versionURL: ""
