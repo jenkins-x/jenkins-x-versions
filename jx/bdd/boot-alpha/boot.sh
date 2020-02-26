@@ -2,6 +2,7 @@
 set -e
 set -x
 
+# setup environment
 JX_HOME="/tmp/jxhome"
 KUBECONFIG="/tmp/jxhome/config"
 
@@ -15,8 +16,6 @@ export GH_USERNAME="jenkins-x-versions-bot-test"
 export GH_EMAIL="jenkins-x@googlegroups.com"
 export GH_OWNER="jenkins-x-versions-bot-test"
 
-gcloud auth activate-service-account --key-file $GKE_SA
-
 # lets setup git
 git config --global --add user.name JenkinsXBot
 git config --global --add user.email jenkins-x@googlegroups.com
@@ -28,6 +27,8 @@ echo "https://$GH_USERNAME:$GH_ACCESS_TOKEN@github.com" > $JX_HOME/git/credentia
 
 
 # lets create a new GKE cluster
+gcloud auth activate-service-account --key-file $GKE_SA
+
 export PROJECT_ID=jenkins-x-bdd3
 export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-alpha"
 export ZONE=europe-west1-c
