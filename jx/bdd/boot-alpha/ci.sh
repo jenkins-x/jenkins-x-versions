@@ -41,6 +41,9 @@ git clone https://github.com/jenkins-x-charts/jenkins-x-installer
 jenkins-x-installer/create_cluster.sh
 
 
+# TODO remove once we remove the code from the multicluster branch of jx:
+export JX_SECRETS_YAML=/tmp/secrets.yaml
+
 echo "using the version stream ref: $PULL_PULL_SHA"
 
 # create the boot git repository
