@@ -45,5 +45,5 @@ pipelineConfig:
                     name: sa
             steps:
               - command: jx/bdd/boot-alpha/ci.sh
-                image: gcr.io/jx-development/jxl:0.0.1
+                image: gcr.io/jenkinsxio-labs/jxl:0.0.1
                 name: runci
