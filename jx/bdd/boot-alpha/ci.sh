@@ -88,6 +88,17 @@ helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 export BDD_TEST_SINGLE_IMPORT="node-http"
 
 
+# until we have a better image lets install go...
+export GOLANG_VERSION="1.12.16"
+wget https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz
+tar -C /usr/local -xzf go$GOLANG_VERSION.linux-amd64.tar.gz
+rm go${GOLANG_VERSION}.linux-amd64.tar.gz
+
+export GOROOT="/usr/local/go"
+export GOPATH="/home/jenkins/go"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+
+
 # lets run the BDD tests
 jx step bdd \
     --use-revision \
