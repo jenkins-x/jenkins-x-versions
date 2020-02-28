@@ -49,6 +49,12 @@ echo "using the version stream ref: $PULL_PULL_SHA"
 # create the boot git repository
 jxl boot create -b --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --out giturl.txt
 
+echo "cloning $(cat giturl.txt)"
+
+git clone `cat giturl.txt` dev-repo
+cd dev-repo
+
+echo "changing into the dev-repo dir..."
 
 # import secrets...
 echo "secrets:
@@ -64,9 +70,9 @@ echo "secrets:
 jxl boot secrets import -f /tmp/secrets.yaml
 
 # run the boot Job
-echo running: jxl boot run -b --git-url `cat giturl.txt`
+echo running: jxl boot run -b
 
-jxl boot run -b --git-url `cat giturl.txt` --job
+jxl boot run -b --job
 
 
 # lets make sure jx defaults to helm3
