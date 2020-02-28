@@ -95,4 +95,4 @@ helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 
 # run the BDD tests
-bddjx -ginkgo.focus=golang
+bddjx -ginkgo.focus=golang -test.v
