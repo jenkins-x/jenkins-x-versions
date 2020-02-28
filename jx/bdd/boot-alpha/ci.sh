@@ -47,11 +47,8 @@ export JX_SECRETS_YAML=/tmp/secrets.yaml
 echo "using the version stream ref: $PULL_PULL_SHA"
 
 # create the boot git repository
-jxl boot create -b --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --out giturl.txt
+jxl boot create -b --provider=gke --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --env-git-public  --git-public --dir dev-repo
 
-echo "cloning $(cat giturl.txt)"
-
-git clone `cat giturl.txt` dev-repo
 cd dev-repo
 
 echo "changing into the dev-repo dir..."
