@@ -73,6 +73,43 @@ then
         git fetch origin && git rebase -X theirs origin/master
       popd
 
+      MESSAGE="chore: updated enhancements content"
+
+      pushd jx-docs/content/en/docs/labs/enhancements
+        git checkout master
+        git pull
+        cd ..
+        git add *
+        git commit --allow-empty -a -m "$MESSAGE"
+
+        # Note that when doing a rebase theirs and ours are swapped so -X theirs actually automatically accepts our changes in case of conflict
+        git fetch origin && git rebase -X theirs origin/master
+      popd
+
+      mkdir -p /tmp/docgen
+      pushd /tmp/docgen
+        export DOC_GEN_VERSION="0.0.2"
+        echo "downloading cli-doc-gen version $DOC_GEN_VERSION"
+        curl -L https://github.com/jenkins-x-labs/cli-doc-gen/releases/download/v$DOC_GEN_VERSION/cli-doc-gen-linux-amd64.tar.gz | tar xzv
+      popd
+
+      pushd /tmp
+        git clone https://github.com/jenkins-x-labs/jenkins-x-installer.git
+      popd
+
+      MESSAGE="chore: updated GCP cloud resources docs"
+
+      pushd jx-docs/layouts/shortcodes
+        /tmp/docgen/cli-doc-gen -f /tmp/jenkins-x-installer/create_cluster.sh -o gcp-create-cluster.html
+        /tmp/docgen/cli-doc-gen -f /tmp/jenkins-x-installer/setup_resources.sh -o gcp-create-resources.html --trim-prefix="retry "
+
+        git add *
+        git commit --allow-empty -a -m "$MESSAGE"
+
+        # Note that when doing a rebase theirs and ours are swapped so -X theirs actually automatically accepts our changes in case of conflict
+        git fetch origin && git rebase -X theirs origin/master
+      popd
+
       pushd jx-docs
         git push origin $LOCAL_BRANCH_NAME
         jx create pullrequest -t "$MESSAGE" -l updatebot
