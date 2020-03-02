@@ -81,9 +81,6 @@ then
         cd ..
         git add *
         git commit --allow-empty -a -m "$MESSAGE"
-
-        # Note that when doing a rebase theirs and ours are swapped so -X theirs actually automatically accepts our changes in case of conflict
-        git fetch origin && git rebase -X theirs origin/master
       popd
 
       mkdir -p /tmp/docgen
@@ -105,9 +102,6 @@ then
 
         git add *
         git commit --allow-empty -a -m "$MESSAGE"
-
-        # Note that when doing a rebase theirs and ours are swapped so -X theirs actually automatically accepts our changes in case of conflict
-        git fetch origin && git rebase -X theirs origin/master
       popd
 
       pushd jx-docs
