@@ -68,19 +68,11 @@ echo running: jxl boot run -b --git-url `cat giturl.txt`
 jxl boot run -b --git-url `cat giturl.txt` --job
 
 
-# lets make sure jx defaults to helm3
-export JX_HELM3="true"
-
 gcloud container clusters get-credentials $CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx
 
-# diagnostic commands to test the image's kubectl
-kubectl version
-
 # for some reason we need to use the full name once for the second command to work!
 kubectl get environments
-kubectl get env
-kubectl get env dev -oyaml
 
 # TODO not sure we need this?
 helm init

@@ -68,19 +68,34 @@ echo running: jxl boot run -b --git-url `cat giturl.txt`
 jxl boot run -b --git-url `cat giturl.txt` --job
 
 
-# lets make sure jx defaults to helm3
-export JX_HELM3="true"
+# now lets create the staging cluster
+export DEV_CLUSTER_NAME=$CLUSTER_NAME
+export CLUSTER_NAME="${DEV_CLUSTER_NAME}-staging"
+export STAGING_CLUSTER_NAME=$CLUSTER_NAME
+export STAGING_GIT_URL="https://github.com/${GH_OWNER}/environment-${DEV_CLUSTER_NAME}-staging.git"
+export NAMESPACE=jx-staging
 
-gcloud container clusters get-credentials $CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
+echo "creating cluster $CLUSTER_NAME with namespace $NAMESPACE with labels $LABELS"
+
+cloud-resources/gcloud/create_cluster.sh
+
+
+
+
+gcloud container clusters get-credentials $STAGING_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
+jx ns jx-staging
+
+jxl boot verify -b --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --git-url=$STAGING_GIT_URL
+
+jxl boot secrets import -f /tmp/secrets.yaml --git-url=$STAGING_GIT_URL
+
+jxl boot run -b --git-url=$STAGING_GIT_URL --job
+
+gcloud container clusters get-credentials $DEV_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx
-
-# diagnostic commands to test the image's kubectl
-kubectl version
 
 # for some reason we need to use the full name once for the second command to work!
 kubectl get environments
-kubectl get env
-kubectl get env dev -oyaml
 
 # TODO not sure we need this?
 helm init
