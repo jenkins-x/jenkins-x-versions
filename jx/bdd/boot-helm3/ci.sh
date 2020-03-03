@@ -37,7 +37,7 @@ export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-helm3,create-time=${CREA
 
 echo "creating cluster $CLUSTER_NAME with labels $LABELS"
 
-git clone https://github.com/jenkins-x-charts/cloud-resources.git
+git clone https://github.com/jenkins-x-labs/cloud-resources.git
 cloud-resources/gcloud/create_cluster.sh
 
 
