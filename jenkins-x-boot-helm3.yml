@@ -44,6 +44,6 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - command: jx/bdd/boot-alpha/ci.sh
+              - command: jx/bdd/boot-helm3/ci.sh
                 image: gcr.io/jenkinsxio-labs/jxl:0.0.38
                 name: runci
