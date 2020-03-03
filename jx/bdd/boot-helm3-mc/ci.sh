@@ -31,9 +31,9 @@ gcloud auth activate-service-account --key-file $GKE_SA
 
 export CREATED_TIME=$(date '+%a-%b-%d-%Y-%H-%M-%S')
 export PROJECT_ID=jenkins-x-bdd3
-export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-boot-helm3-mc"
+export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-mc"
 export ZONE=europe-west1-c
-export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-helm3-mc,create-time=${CREATED_TIME,,}"
+export LABELS="branch=${BRANCH_NAME,,},cluster=helm3-mc,create-time=${CREATED_TIME,,}"
 
 echo "creating cluster $CLUSTER_NAME with labels $LABELS"
 
