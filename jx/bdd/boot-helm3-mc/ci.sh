@@ -36,7 +36,7 @@ export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-mc"
 export ZONE=europe-west1-c
 export LABELS="branch=${BRANCH_NAME,,},cluster=helm3-mc,create-time=${CREATED_TIME,,}"
 
-echo "creating cluster $CLUSTER_NAME with labels $LABELS"
+echo "CREATE dev cluster $CLUSTER_NAME with labels $LABELS"
 
 git clone https://github.com/jenkins-x-labs/cloud-resources.git
 cloud-resources/gcloud/create_cluster.sh
@@ -72,11 +72,11 @@ jxl boot run -b --git-url `cat giturl.txt` --job
 # now lets create the staging cluster
 export DEV_CLUSTER_NAME="$CLUSTER_NAME"
 export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-mc-staging"
-export STAGING_CLUSTER_NAME="$CLUSTER_NAME"
+export STAGING_CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-mc-staging"
 export STAGING_GIT_URL="https://github.com/${GH_OWNER}/environment-${DEV_CLUSTER_NAME}-staging.git"
 export NAMESPACE=jx-staging
 
-echo "creating cluster $CLUSTER_NAME with namespace $NAMESPACE with labels $LABELS"
+echo "CREATE: staging cluster $CLUSTER_NAME with namespace $NAMESPACE with labels $LABELS"
 
 cloud-resources/gcloud/create_cluster.sh
 
@@ -85,6 +85,7 @@ cloud-resources/gcloud/create_cluster.sh
 mkdir staging
 cd staging
 
+echo "SWITCH: to staging cluster: $STAGING_CLUSTER_NAME to setup staging"
 gcloud container clusters get-credentials $STAGING_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx-staging
 jx ctx -b
@@ -102,6 +103,7 @@ jx ns jx-staging
 jxl boot run -b --git-url=$STAGING_GIT_URL --job
 
 
+echo "SWITCH: to dev cluster: $STAGING_CLUSTER_NAME to start BDD tests"
 gcloud container clusters get-credentials $DEV_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx
 jx ctx -b
