@@ -46,5 +46,5 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - command: jx/bdd/boot-vault/ci.sh
+              - command: echo "skipping"
                 name: runci

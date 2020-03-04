@@ -44,5 +44,5 @@ pipelineConfig:
                   - mountPath: /secrets
                     name: sa
             steps:
-              - command: jx/bdd/tekton/ci.sh
+              - command: echo "skipping"
                 name: runci

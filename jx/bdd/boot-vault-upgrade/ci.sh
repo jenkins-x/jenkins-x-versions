@@ -73,6 +73,7 @@ helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 export BDD_TEST_SINGLE_IMPORT="spring-boot-http-gradle"
 
 jx step bdd \
+    --test-git-repo=https://github.com/abayer/bdd-jx.git \
     --config ../jx/bdd/boot-vault-upgrade/cluster.yaml \
     --gopath /tmp \
     --git-provider=github \
