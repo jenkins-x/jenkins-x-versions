@@ -70,9 +70,9 @@ jxl boot run -b --git-url `cat giturl.txt` --job
 
 
 # now lets create the staging cluster
-export DEV_CLUSTER_NAME=$CLUSTER_NAME
-export CLUSTER_NAME="${DEV_CLUSTER_NAME}-staging"
-export STAGING_CLUSTER_NAME=$CLUSTER_NAME
+export DEV_CLUSTER_NAME="$CLUSTER_NAME"
+export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-mc-staging"
+export STAGING_CLUSTER_NAME="$CLUSTER_NAME"
 export STAGING_GIT_URL="https://github.com/${GH_OWNER}/environment-${DEV_CLUSTER_NAME}-staging.git"
 export NAMESPACE=jx-staging
 
@@ -87,6 +87,7 @@ cd staging
 
 gcloud container clusters get-credentials $STAGING_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx-staging
+jx ctx -b
 
 jxl boot verify -b --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --git-url=$STAGING_GIT_URL
 
@@ -103,6 +104,7 @@ jxl boot run -b --git-url=$STAGING_GIT_URL --job
 
 gcloud container clusters get-credentials $DEV_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx
+jx ctx -b
 
 # for some reason we need to use the full name once for the second command to work!
 kubectl get environments
