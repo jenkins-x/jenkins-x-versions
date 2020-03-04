@@ -89,5 +89,8 @@ helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 export JX_DISABLE_DELETE_APP="true"
 
+export GIT_ORGANISATION="$GH_OWNER"
+
+
 # run the BDD tests
 bddjx -ginkgo.focus=golang -test.v
