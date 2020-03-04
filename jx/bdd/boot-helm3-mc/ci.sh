@@ -82,15 +82,24 @@ cloud-resources/gcloud/create_cluster.sh
 
 
 
+mkdir staging
+cd staging
 
 gcloud container clusters get-credentials $STAGING_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx-staging
 
 jxl boot verify -b --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --git-url=$STAGING_GIT_URL
 
+# TODO should not be needed but just in case
+jx ns jx-staging
+
 jxl boot secrets import -f /tmp/secrets.yaml --git-url=$STAGING_GIT_URL
 
+# TODO should not be needed but just in case
+jx ns jx-staging
+
 jxl boot run -b --git-url=$STAGING_GIT_URL --job
+
 
 gcloud container clusters get-credentials $DEV_CLUSTER_NAME --zone $ZONE --project $PROJECT_ID
 jx ns jx
