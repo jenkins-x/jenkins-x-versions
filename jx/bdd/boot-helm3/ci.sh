@@ -31,14 +31,14 @@ gcloud auth activate-service-account --key-file $GKE_SA
 
 export CREATED_TIME=$(date '+%a-%b-%d-%Y-%H-%M-%S')
 export PROJECT_ID=jenkins-x-bdd3
-export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-alpha"
+export CLUSTER_NAME="${BRANCH_NAME,,}-$BUILD_NUMBER-bdd-boot-helm3"
 export ZONE=europe-west1-c
-export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-alpha,create-time=${CREATED_TIME,,}"
+export LABELS="branch=${BRANCH_NAME,,},cluster=bdd-boot-helm3,create-time=${CREATED_TIME,,}"
 
 echo "creating cluster $CLUSTER_NAME with labels $LABELS"
 
-git clone https://github.com/jenkins-x-charts/jenkins-x-installer
-jenkins-x-installer/create_cluster.sh
+git clone https://github.com/jenkins-x-labs/cloud-resources.git
+cloud-resources/gcloud/create_cluster.sh
 
 
 # TODO remove once we remove the code from the multicluster branch of jx:
@@ -88,6 +88,9 @@ helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 
 export JX_DISABLE_DELETE_APP="true"
+
+export GIT_ORGANISATION="$GH_OWNER"
+
 
 # run the BDD tests
 bddjx -ginkgo.focus=golang -test.v
