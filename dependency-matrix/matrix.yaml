@@ -455,3 +455,9 @@ dependencies:
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   version: 0.0.83
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-labs
+  repo: jxl
+  url: https://github.com/jenkins-x-labs/jxl
+  version: 0.0.64
+  versionURL: https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.64
