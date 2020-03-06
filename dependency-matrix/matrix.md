@@ -64,3 +64,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.3.12](https://github.com/solo-io/gloo/releases/tag/v1.3.12) | 
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.84]() | 
+[jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.77]() | 
