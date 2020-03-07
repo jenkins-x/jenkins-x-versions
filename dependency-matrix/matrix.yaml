@@ -455,3 +455,9 @@ dependencies:
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
   version: 0.0.84
   versionURL: ""
+- host: github.com
+  owner: kubernetes-sigs
+  repo: external-dns
+  url: https://github.com/kubernetes-sigs/external-dns
+  version: 2.19.2
+  versionURL: ""
