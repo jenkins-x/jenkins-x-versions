@@ -461,3 +461,9 @@ dependencies:
   url: https://github.com/kubernetes-sigs/external-dns
   version: 2.19.2
   versionURL: ""
+- host: github.com
+  owner: jenkins-x-labs
+  repo: jxl
+  url: https://github.com/jenkins-x-labs/jxl
+  version: ""
+  versionURL: ""
