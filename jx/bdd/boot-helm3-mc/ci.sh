@@ -90,7 +90,7 @@ gcloud container clusters get-credentials $STAGING_CLUSTER_NAME --zone $ZONE --p
 jx ns jx-staging
 jx ctx -b
 
-jxl boot verify -b --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --git-url=$STAGING_GIT_URL
+jxl boot verify requirements -b --version-stream-ref=$PULL_PULL_SHA --env-git-owner=$GH_OWNER --project=$PROJECT_ID --cluster=$CLUSTER_NAME --zone=$ZONE --git-url=$STAGING_GIT_URL
 
 # TODO should not be needed but just in case
 jx ns jx-staging
