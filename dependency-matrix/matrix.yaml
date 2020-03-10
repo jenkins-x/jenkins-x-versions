@@ -465,5 +465,5 @@ dependencies:
   owner: jenkins-x-labs
   repo: jxl
   url: https://github.com/jenkins-x-labs/jxl
-  version: 0.0.93
-  versionURL: https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.93
+  version: 0.0.99
+  versionURL: https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99
