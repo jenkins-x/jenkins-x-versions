@@ -4,6 +4,9 @@ controller:
     publish-service: kube-system/jxing-nginx-ingress-controller
   service:
     omitClusterIP: true
+  {{- if eq .Values.jxRequirements.cluster.provider "kind" }}
+    type: NodePort
+  {{- end }}
   {{- if eq .Values.jxRequirements.cluster.provider "eks" }}
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: nlb
