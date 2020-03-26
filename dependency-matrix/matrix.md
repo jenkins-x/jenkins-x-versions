@@ -64,5 +64,5 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.3.15](https://github.com/solo-io/gloo/releases/tag/v1.3.15) | 
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.111]() | 
-[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [2.20.6]() | 
+[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [2.20.7]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
