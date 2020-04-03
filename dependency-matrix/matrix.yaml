@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.0.1263-602
-  versionURL: ""
+  version: 2.0.1263-603
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.0.1263-603
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -33,10 +33,10 @@ dependencies:
       owner: jenkins-x-charts
       repo: prow
       url: https://github.com/jenkins-x-charts/prow
-      version: 0.0.1717
-      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1717
-    version: 2.0.1261
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1261
+      version: 0.0.1719
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1719
+    version: 2.0.1263
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.0.1263
   - path:
     - host: github.com
       owner: jenkins-x
@@ -80,8 +80,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: environment-controller
   url: https://github.com/jenkins-x-charts/environment-controller
-  version: 0.0.755
-  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.755
+  version: 0.0.756
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.756
 - host: github.com
   owner: jenkins-x
   repo: exposecontroller-service
@@ -98,13 +98,13 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.2111
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2111
+  version: 2.0.2112
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2112
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
   url: https://github.com/jenkins-x-charts/jx-build-templates
-  version: 0.0.1397
+  version: 0.0.1398
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -122,8 +122,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1718
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1718
+  version: 0.0.1719
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1719
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
@@ -177,7 +177,7 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 0.26.0
+  version: 0.27.0
   versionURL: ""
 - component: grafana
   host: github.com
@@ -453,7 +453,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.121
+  version: 0.0.122
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
