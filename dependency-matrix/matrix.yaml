@@ -418,7 +418,7 @@ dependencies:
   owner: bitnami
   repo: external-dns
   url: https://github.com/bitnami/charts/tree/master/bitnami/external-dns
-  version: 2.20.3
+  version: 2.20.4
   versionURL: ""
 - component: nginx-ingress
   host: github.com
