@@ -164,7 +164,7 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 5.0.11
+  version: 5.0.12
   versionURL: ""
 - host: github.com
   owner: prometheus
