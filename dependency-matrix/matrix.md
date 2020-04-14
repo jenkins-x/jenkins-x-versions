@@ -18,7 +18,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.43]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.51]() | 
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.2]() | 
-[jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
+[jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [0.15.0-alpha.0](https://github.com/jetstack/cert-manager/releases/tag/v0.15.0-alpha.0) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [5.0.12]() | 
