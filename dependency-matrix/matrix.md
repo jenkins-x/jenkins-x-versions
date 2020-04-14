@@ -65,4 +65,4 @@ Dependency | Sources | Version | Mismatched versions
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.4.0-beta3](https://github.com/solo-io/gloo/releases/tag/v1.4.0-beta3) | 
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.138]() | 
 [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [2.20.12]() | 
-[jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
+[jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | []() | 
