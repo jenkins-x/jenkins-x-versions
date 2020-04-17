@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 11.1.0
+  version: 11.1.1
   versionURL: ""
 - component: flagger
   host: github.com
