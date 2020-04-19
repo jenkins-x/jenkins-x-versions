@@ -1,7 +1,7 @@
 controller:
   replicaCount: 3
-  extraArgs:
-    publish-service: kube-system/jxing-nginx-ingress-controller
+  publishService:
+    enabled: true
   service:
     omitClusterIP: true
   {{- if eq .Values.jxRequirements.cluster.provider "kind" }}
