@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.4-630
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.4-630
+  version: 2.1.4-631
+  versionURL: ""
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.539
+  version: 0.0.543
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
