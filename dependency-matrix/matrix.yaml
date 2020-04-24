@@ -467,3 +467,9 @@ dependencies:
   url: https://github.com/jenkins-x-labs/jxl
   version: 0.0.99
   versionURL: https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99
+- host: github.com
+  owner: datawire
+  repo: ambassador
+  url: https://github.com/datawire/ambassador
+  version: 6.3.2
+  versionURL: ""

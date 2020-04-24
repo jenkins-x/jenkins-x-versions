@@ -66,3 +66,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.160]() | 
 [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [2.21.2]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
+[datawire/ambassador](https://github.com/datawire/ambassador) |  | [6.3.2]() | 
