@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.550
+  version: 0.0.553
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -197,7 +197,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-resources
   url: https://github.com/jenkins-x-charts/jxboot-resources
-  version: 0.0.37
+  version: 0.0.38
   versionURL: ""
 - host: github.com
   owner: jenkins-x
