@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.14-641
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.14-641
+  version: 2.1.15-642
+  versionURL: ""
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -42,10 +42,10 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.1212
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1212
-    version: 2.1.14
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.14
+      version: 0.1.1213
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1213
+    version: 2.1.15
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.15
   - path:
     - host: github.com
       owner: jenkins-x
@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.2182
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2182
+  version: 2.0.2183
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2183
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.563
+  version: 0.0.564
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -164,13 +164,13 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 5.0.18
+  version: 5.0.19
   versionURL: ""
 - host: github.com
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 11.1.4
+  version: 11.1.5
   versionURL: ""
 - component: flagger
   host: github.com
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.1212
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1212
+  version: 0.1.1213
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1213
 - component: cert-manager
   host: github.com
   owner: helm
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 2.22.0
+  version: 2.22.1
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
