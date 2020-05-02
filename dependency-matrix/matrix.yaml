@@ -447,8 +447,8 @@ dependencies:
   owner: solo-io
   repo: gloo
   url: https://github.com/solo-io/gloo
-  version: 1.4.0-beta7
-  versionURL: https://github.com/solo-io/gloo/releases/tag/v1.4.0-beta7
+  version: 1.4.0-beta8
+  versionURL: https://github.com/solo-io/gloo/releases/tag/v1.4.0-beta8
 - host: github.com
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
