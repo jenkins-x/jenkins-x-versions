@@ -33,10 +33,10 @@ dependencies:
       owner: jenkins-x-charts
       repo: prow
       url: https://github.com/jenkins-x-charts/prow
-      version: 0.0.1761
-      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1761
-    version: 2.1.20
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.20
+      version: 0.0.1762
+      versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1762
+    version: 2.1.21
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.21
   - path:
     - host: github.com
       owner: jenkins-x
@@ -122,8 +122,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: prow
   url: https://github.com/jenkins-x-charts/prow
-  version: 0.0.1761
-  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1761
+  version: 0.0.1762
+  versionURL: https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1762
 - host: github.com
   owner: jenkins-x
   repo: sso-operator
