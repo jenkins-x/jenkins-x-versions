@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.20-647
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.20-647
+  version: 2.1.21-648
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.21-648
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -51,13 +51,13 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders
       url: https://github.com/jenkins-x/jenkins-x-builders.git
-      version: 2.1.20-646
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.20-646
-    version: 2.1.20
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.20
+      version: 2.1.21-648
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.21-648
+    version: 2.1.21
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.21
   url: https://github.com/jenkins-x/jx
-  version: 2.1.20
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.20
+  version: 2.1.21
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.21
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
