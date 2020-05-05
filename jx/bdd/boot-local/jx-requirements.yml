@@ -34,5 +34,5 @@ storage:
   repository:
     enabled: false
     url: ""
-webhook: prow
+webhook: lighthouse
 
