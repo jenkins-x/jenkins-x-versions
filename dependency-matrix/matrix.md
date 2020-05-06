@@ -13,7 +13,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2199](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2199) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1438]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
-[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.569]() | 
+[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.570]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1764](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1764) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.44]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.53]() | 
@@ -63,6 +63,6 @@ Dependency | Sources | Version | Mismatched versions
 [helm/nginx-ingress](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.34.2]() | 
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.4.0-beta8](https://github.com/solo-io/gloo/releases/tag/v1.4.0-beta8) | 
-[jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.178]() | 
+[jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.180]() | 
 [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [2.22.1]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
