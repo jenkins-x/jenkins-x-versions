@@ -10,6 +10,8 @@ KUBECONFIG="/tmp/jxhome/config"
 export XDG_CONFIG_HOME=$JX_HOME
 mkdir -p $JX_HOME/git
 
+jx install dependencies --all
+
 jx --version
 
 export GH_USERNAME="jenkins-x-versions-bot-test"
