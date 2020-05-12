@@ -405,7 +405,7 @@ dependencies:
   owner: jenkins-x
   repo: bucketrepo
   url: https://github.com/jenkins-x/bucketrepo
-  version: 0.1.38
+  version: 0.1.39
   versionURL: ""
 - component: cert-manager
   host: github.com
