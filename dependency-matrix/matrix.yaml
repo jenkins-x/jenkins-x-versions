@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.587
+  version: 0.0.591
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 11.1.6
+  version: 11.2.0
   versionURL: ""
 - component: flagger
   host: github.com
@@ -405,7 +405,7 @@ dependencies:
   owner: jenkins-x
   repo: bucketrepo
   url: https://github.com/jenkins-x/bucketrepo
-  version: 0.1.38
+  version: 0.1.39
   versionURL: ""
 - component: cert-manager
   host: github.com
@@ -453,13 +453,13 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.189
+  version: 0.0.190
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 2.22.1
+  version: 2.22.4
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
