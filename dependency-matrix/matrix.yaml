@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 11.2.0
+  version: 11.2.1
   versionURL: ""
 - component: flagger
   host: github.com
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 2.22.4
+  version: 2.24.0
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
