@@ -128,7 +128,7 @@ dependencies:
   owner: jenkins-x
   repo: sso-operator
   url: https://github.com/jenkins-x/sso-operator
-  version: 1.2.44
+  version: 1.2.48
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -170,7 +170,7 @@ dependencies:
   owner: prometheus
   repo: alertmanager
   url: https://github.com/prometheus/alertmanager
-  version: 11.2.1
+  version: 11.2.2
   versionURL: ""
 - component: flagger
   host: github.com
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 2.24.0
+  version: 2.24.1
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
