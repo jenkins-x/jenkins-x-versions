@@ -139,7 +139,7 @@ dependencies:
 - host: github.com
   owner: jenkins-x-charts
   repo: vault-operator
-  url: https://github.com/jenkins-x-charts/vault-operator
+  url: https://github.com/feczo/vault-operator
   version: 0.3.2
   versionURL: ""
 - host: github.com
