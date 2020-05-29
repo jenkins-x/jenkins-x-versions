@@ -38,7 +38,7 @@ pipelineConfig:
                 name: jx-bdd-aws 
                 key: AWS_SECRET_ACCESS_KEY
         agent:
-          image: gcr.io/jenkinsxio/builder-go-nodejs:2.1.49-682
+          image: gcr.io/jenkinsxio/builder-go-nodejs:2.1.54-686
         stages:
           - name: ci
             options:
