@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.55-687
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.55-687
+  version: 2.1.56-688
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.56-688
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -42,22 +42,22 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.1251
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1251
-    version: 2.1.55
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.55
+      version: 0.1.1252
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1252
+    version: 2.1.56
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.56
   - path:
     - host: github.com
       owner: jenkins-x
       repo: jenkins-x-builders
       url: https://github.com/jenkins-x/jenkins-x-builders.git
-      version: 2.1.55-687
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.55-687
-    version: 2.1.55
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.55
+      version: 2.1.56-688
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.56-688
+    version: 2.1.56
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.56
   url: https://github.com/jenkins-x/jx
-  version: 2.1.55
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.55
+  version: 2.1.56
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.56
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
@@ -80,8 +80,8 @@ dependencies:
   owner: jenkins-x-charts
   repo: environment-controller
   url: https://github.com/jenkins-x-charts/environment-controller
-  version: 0.0.825
-  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.825
+  version: 0.0.826
+  versionURL: https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.826
 - host: github.com
   owner: jenkins-x
   repo: exposecontroller-service
@@ -98,13 +98,13 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.2259
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2259
+  version: 2.0.2261
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2261
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
   url: https://github.com/jenkins-x-charts/jx-build-templates
-  version: 0.0.1468
+  version: 0.0.1469
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.618
+  version: 0.0.621
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -164,8 +164,8 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 5.1.0
-  versionURL: https://github.com/grafana/grafana/releases/tag/v5.1.0
+  version: 5.1.2
+  versionURL: https://github.com/grafana/grafana/releases/tag/v5.1.2
 - host: github.com
   owner: prometheus
   repo: alertmanager
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.1251
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1251
+  version: 0.1.1252
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1252
 - component: cert-manager
   host: github.com
   owner: helm
@@ -453,7 +453,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.211
+  version: 0.0.212
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
