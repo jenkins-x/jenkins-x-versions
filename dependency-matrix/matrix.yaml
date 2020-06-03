@@ -467,3 +467,10 @@ dependencies:
   url: https://github.com/jenkins-x-labs/jxl
   version: 0.0.99
   versionURL: https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99
+- component: falco
+  host: github.com
+  owner: helm
+  repo: falco
+  url: https://github.com/helm/charts/tree/master/stable/falco
+  version: 1.1.7
+  versionURL: ""
