@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.621
+  version: 0.0.624
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -134,7 +134,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: tekton
   url: https://github.com/jenkins-x-charts/tekton
-  version: 0.0.55
+  version: 0.0.56
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -223,8 +223,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-boot-config
   url: https://github.com/jenkins-x/jenkins-x-boot-config
-  version: 1.0.93
-  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.93
+  version: 1.0.94
+  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.94
 - host: github.com
   owner: jenkins-x-buildpacks
   repo: jenkins-x-kubernetes
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 3.1.0
+  version: 3.1.1
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs

@@ -13,10 +13,10 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2261](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2261) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1469]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
-[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.621]() | 
+[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.624]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1772](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1772) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.49]() | 
-[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.55]() | 
+[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.56]() | 
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.3]() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
@@ -30,7 +30,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1252](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1252) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.7]() | 
-[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.93](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.93) | 
+[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.94](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.94) | 
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | [1.0.0+bec4b999a]() | 
@@ -64,6 +64,6 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.4.0-beta9](https://github.com/solo-io/gloo/releases/tag/v1.4.0-beta9) | 
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.212]() | 
-[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.1.0]() | 
+[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.1.1]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.7]() | 
