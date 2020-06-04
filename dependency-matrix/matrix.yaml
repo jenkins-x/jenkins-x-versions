@@ -134,7 +134,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: tekton
   url: https://github.com/jenkins-x-charts/tekton
-  version: 0.0.55
+  version: 0.0.56
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
