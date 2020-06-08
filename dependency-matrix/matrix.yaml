@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 3.1.2
+  version: 3.2.0
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
