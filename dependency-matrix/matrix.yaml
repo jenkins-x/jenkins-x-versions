@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.59-691
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.59-691
+  version: 2.1.61-692
+  versionURL: ""
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -42,10 +42,10 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders-ml
       url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-      version: 0.1.1255
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1255
-    version: 2.1.59
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.59
+      version: 0.1.1256
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1256
+    version: 2.1.61
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.61
   - path:
     - host: github.com
       owner: jenkins-x
@@ -56,8 +56,8 @@ dependencies:
     version: 2.1.59
     versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.59
   url: https://github.com/jenkins-x/jx
-  version: 2.1.59
-  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.59
+  version: 2.1.61
+  versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.61
 - host: github.com
   owner: kubernetes-incubator
   repo: external-dns
@@ -203,8 +203,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-builders-ml
   url: https://github.com/jenkins-x/jenkins-x-builders-ml.git
-  version: 0.1.1255
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1255
+  version: 0.1.1256
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1256
 - component: cert-manager
   host: github.com
   owner: helm
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 3.1.2
+  version: 3.2.0
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
