@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.69-700
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.69-700
+  version: 2.1.69-701
+  versionURL: ""
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -164,8 +164,8 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 5.2.0
-  versionURL: https://github.com/grafana/grafana/releases/tag/v5.2.0
+  version: 5.2.1
+  versionURL: https://github.com/grafana/grafana/releases/tag/v5.2.1
 - host: github.com
   owner: prometheus
   repo: alertmanager
@@ -177,8 +177,8 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 0.27.0
-  versionURL: ""
+  version: 1.0.0
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/v1.0.0
 - component: grafana
   host: github.com
   owner: weaveworks
@@ -453,7 +453,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.224
+  version: 0.0.225
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
