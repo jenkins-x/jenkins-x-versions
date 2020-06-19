@@ -19,7 +19,7 @@ mkdir -p $JX_HOME/git
 
 jx install dependencies --all
 
-jx --version
+jx version --short
 
 # replace the credentials file with a single user entry
 echo "https://$BB_USERNAME:$BB_ACCESS_TOKEN@bitbucket.beescloud.com" > $JX_HOME/git/credentials
