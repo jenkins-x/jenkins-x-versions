@@ -12,7 +12,7 @@ mkdir -p $JX_HOME/git
 
 jx install dependencies --all
 
-jx --version
+jx version --short
 
 export GH_USERNAME="jenkins-x-versions-bot-test"
 export GH_EMAIL="jenkins-x@googlegroups.com"
