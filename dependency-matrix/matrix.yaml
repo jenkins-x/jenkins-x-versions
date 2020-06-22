@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.648
+  version: 0.0.649
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -164,8 +164,8 @@ dependencies:
   owner: grafana
   repo: grafana
   url: https://github.com/grafana/grafana
-  version: 5.2.1
-  versionURL: https://github.com/grafana/grafana/releases/tag/v5.2.1
+  version: 5.3.0
+  versionURL: https://github.com/grafana/grafana/releases/tag/v5.3.0
 - host: github.com
   owner: prometheus
   repo: alertmanager
