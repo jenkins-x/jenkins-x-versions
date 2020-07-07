@@ -371,10 +371,10 @@ dependencies:
   versionURL: ""
 - component: velero
   host: github.com
-  owner: heptio
+  owner: vmware-tanzu
   repo: velero
-  url: https://github.com/heptio/velero
-  version: 2.7.4
+  url: https://github.com/vmware-tanzu/velero
+  version: 1.4.0
   versionURL: ""
 - host: github.com
   owner: jenkins-x
