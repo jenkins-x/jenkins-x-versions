@@ -1,0 +1,3 @@
+component: velero
+gitUrl: https://github.com/vmware-tanzu/velero
+version: 1.4.0
