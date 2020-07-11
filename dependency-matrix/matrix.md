@@ -67,3 +67,4 @@ Dependency | Sources | Version | Mismatched versions
 [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.2.3]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.7]() | 
+[heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 

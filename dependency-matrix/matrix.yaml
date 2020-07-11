@@ -474,3 +474,10 @@ dependencies:
   url: https://github.com/helm/charts/tree/master/stable/falco
   version: 1.1.7
   versionURL: ""
+- component: velero
+  host: github.com
+  owner: heptio
+  repo: velero
+  url: https://github.com/heptio/velero
+  version: 2.7.4
+  versionURL: ""
