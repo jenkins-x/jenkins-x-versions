@@ -10,13 +10,13 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.865](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.865) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.118](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.118) | 
-[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2334](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2334) | 
+[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2335](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2335) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1505]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
-[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.671]() | 
+[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.673]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1772](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1772) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.50]() | 
-[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.56]() | 
+[jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.57]() | 
 [jenkins-x-charts/vault-operator](https://github.com/jenkins-x-charts/vault-operator) |  | [0.3.3]() | 
 [jetstack/cert-manager](https://github.com/jetstack/cert-manager) |  | [v0.9.1](https://github.com/jetstack/cert-manager/releases/tag/v0.9.1) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
@@ -55,7 +55,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-rest-prometheus-java11](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git) |  | [1.0.0+7e487fce2]() | 
 [jenkins-x-quickstarts/spring-boot-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git) |  | [1.0.0+177d75201]() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | [1.0.0+fd180fd76]() | 
-[vmware-tanzu/velero](https://github.com/vmware-tanzu/velero):velero |  | [1.4.0]() | 
+[vmware-tanzu/velero](https://github.com/vmware-tanzu/velero):velero |  | [2.12.0]() | 
 [jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [0.0.79](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.79) | 
 [jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.40]() | 
 [helm/cert-manager](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
@@ -67,3 +67,4 @@ Dependency | Sources | Version | Mismatched versions
 [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.2.3]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.7]() | 
+[heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 
