@@ -177,8 +177,8 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 1.0.0
-  versionURL: https://github.com/weaveworks/flagger/releases/tag/v1.0.0
+  version: 1.0.1
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/v1.0.1
 - component: grafana
   host: github.com
   owner: weaveworks
@@ -472,7 +472,7 @@ dependencies:
   owner: helm
   repo: falco
   url: https://github.com/helm/charts/tree/master/stable/falco
-  version: 1.1.7
+  version: 1.1.8
   versionURL: ""
 - component: velero
   host: github.com

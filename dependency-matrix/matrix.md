@@ -23,7 +23,7 @@ Dependency | Sources | Version | Mismatched versions
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [5.4.1](https://github.com/grafana/grafana/releases/tag/v5.4.1) | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [11.7.0]() | 
-[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [1.0.0](https://github.com/weaveworks/flagger/releases/tag/v1.0.0) | 
+[weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [1.0.1](https://github.com/weaveworks/flagger/releases/tag/v1.0.1) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.43]() | 
@@ -66,5 +66,5 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.257]() | 
 [kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.2.3]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
-[helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.7]() | 
+[helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.8]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 
