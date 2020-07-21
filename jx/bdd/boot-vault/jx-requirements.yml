@@ -33,5 +33,5 @@ storage:
     url: "gs://jx-bdd-log-store3"
 vault:
   disableURLDiscovery: true
-webhook: prow
+webhook: lighthouse
 
