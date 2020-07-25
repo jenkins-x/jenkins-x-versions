@@ -374,7 +374,7 @@ dependencies:
   owner: vmware-tanzu
   repo: velero
   url: https://github.com/vmware-tanzu/velero
-  version: 2.12.0
+  version: 2.12.1
   versionURL: ""
 - host: github.com
   owner: jenkins-x
