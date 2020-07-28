@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.2339
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2339
+  version: 2.0.2361
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2361
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -223,8 +223,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-boot-config
   url: https://github.com/jenkins-x/jenkins-x-boot-config
-  version: 1.0.100
-  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.100
+  version: 1.0.101
+  versionURL: https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.101
 - host: github.com
   owner: jenkins-x-buildpacks
   repo: jenkins-x-kubernetes
@@ -374,7 +374,7 @@ dependencies:
   owner: vmware-tanzu
   repo: velero
   url: https://github.com/vmware-tanzu/velero
-  version: 2.12.4
+  version: 2.12.6
   versionURL: ""
 - host: github.com
   owner: jenkins-x
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 3.2.4
+  version: 3.2.5
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs

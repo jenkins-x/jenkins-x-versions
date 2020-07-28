@@ -10,7 +10,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-charts/environment-controller](https://github.com/jenkins-x-charts/environment-controller) |  | [0.0.867](https://github.com/jenkins-x-charts/environment-controller/releases/tag/v0.0.867) | 
 [jenkins-x/exposecontroller-service](https://github.com/jenkins-x/exposecontroller-service) |  | [1.0.7]() | 
 [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) |  | [2.3.118](https://github.com/jenkins-x/exposecontroller/releases/tag/v2.3.118) | 
-[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2339](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2339) | 
+[jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2361](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2361) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1505]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
 [jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.691]() | 
@@ -30,7 +30,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1296](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1296) | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress):nginx-ingress |  | [1.24.7]() | 
-[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.100](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.100) | 
+[jenkins-x/jenkins-x-boot-config](https://github.com/jenkins-x/jenkins-x-boot-config) |  | [1.0.101](https://github.com/jenkins-x/jenkins-x-boot-config/releases/tag/v1.0.101) | 
 [jenkins-x-buildpacks/jenkins-x-kubernetes](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes) |  | [1.0.0](https://github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/releases/tag/v1.0.0) | 
 [jenkins-x-quickstarts/android-quickstart](https://github.com/jenkins-x-quickstarts/android-quickstart.git) |  | [1.0.0+d9e925718]() | 
 [jenkins-x-quickstarts/angular-io-quickstart](https://github.com/jenkins-x-quickstarts/angular-io-quickstart.git) |  | [1.0.0+bec4b999a]() | 
@@ -55,7 +55,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-quickstarts/spring-boot-rest-prometheus-java11](https://github.com/jenkins-x-quickstarts/spring-boot-rest-prometheus-java11.git) |  | [1.0.0+7e487fce2]() | 
 [jenkins-x-quickstarts/spring-boot-watch-pipeline-activity](https://github.com/jenkins-x-quickstarts/spring-boot-watch-pipeline-activity.git) |  | [1.0.0+177d75201]() | 
 [jenkins-x-quickstarts/vertx-rest-prometheus](https://github.com/jenkins-x-quickstarts/vertx-rest-prometheus.git) |  | [1.0.0+fd180fd76]() | 
-[vmware-tanzu/velero](https://github.com/vmware-tanzu/velero):velero |  | [2.12.4]() | 
+[vmware-tanzu/velero](https://github.com/vmware-tanzu/velero):velero |  | [2.12.6]() | 
 [jenkins-x/jenkins-x-builders-base](https://github.com/jenkins-x/jenkins-x-builders-base) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git);[github.com/jenkins-x/jenkins-x-builders](https://github.com/jenkins-x/jenkins-x-builders.git) | [0.0.79](https://github.com/jenkins-x/jenkins-x-builders-base/releases/tag/v0.0.79) | 
 [jenkins-x/bucketrepo](https://github.com/jenkins-x/bucketrepo) |  | [0.1.40]() | 
 [helm/cert-manager](https://github.com/helm/charts/tree/master/stable/cert-manager):cert-manager |  | [0.6.7]() | 
@@ -64,7 +64,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.5.0-beta9](https://github.com/solo-io/gloo/releases/tag/v1.5.0-beta9) | 
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.257]() | 
-[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.2.4]() | 
+[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.2.5]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.8]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 
