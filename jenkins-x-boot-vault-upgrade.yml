@@ -30,7 +30,7 @@ pipelineConfig:
                 name: test-jenkins-user 
                 key: password
         agent:
-          image: gcr.io/jenkinsxio/builder-go-nodejs:2.1.124-743
+          image: gcr.io/jenkinsxio/builder-go-nodejs:2.1.126-745
         stages:
           - name: ci
             options:
