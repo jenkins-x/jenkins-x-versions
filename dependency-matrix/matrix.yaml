@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.54
+  version: 0.0.56
   versionURL: ""
