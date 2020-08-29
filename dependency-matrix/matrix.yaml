@@ -13,8 +13,8 @@ dependencies:
     version: 0.1.758
     versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v0.1.758
   url: https://github.com/jenkins-x/jenkins-x-builders.git
-  version: 2.1.135-754
-  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.135-754
+  version: 2.1.136-755
+  versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.136-755
 - host: github.com
   owner: jenkins-x
   repo: jx
@@ -51,10 +51,10 @@ dependencies:
       owner: jenkins-x
       repo: jenkins-x-builders
       url: https://github.com/jenkins-x/jenkins-x-builders.git
-      version: 2.1.135-754
-      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.135-754
-    version: 2.1.135
-    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.135
+      version: 2.1.136-755
+      versionURL: https://github.com/jenkins-x/jenkins-x-builders/releases/tag/v2.1.136-755
+    version: 2.1.136
+    versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.136
   url: https://github.com/jenkins-x/jx
   version: 2.1.127
   versionURL: https://github.com/jenkins-x/jx/releases/tag/v2.1.127
@@ -98,8 +98,8 @@ dependencies:
   owner: jenkins-x
   repo: jenkins-x-platform
   url: https://github.com/jenkins-x/jenkins-x-platform
-  version: 2.0.2384
-  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2384
+  version: 2.0.2385
+  versionURL: https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2385
 - host: github.com
   owner: jenkins-x-charts
   repo: jx-build-templates
@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.779
+  version: 0.0.780
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -453,7 +453,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.286
+  version: 0.0.287
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.65
+  version: 0.0.66
   versionURL: ""
