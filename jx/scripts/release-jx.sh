@@ -4,7 +4,7 @@ set -x
 
 export GH_OWNER="jenkins-x"
 export GH_REPO="jx"
-export JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-matrix/matrix.md)
+export JX_VERSION=$(jx version --short|sed "s:Version \(.*\):\1:")
 
 if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
 then

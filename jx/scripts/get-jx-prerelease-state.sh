@@ -5,7 +5,7 @@ set -o nounset
 set -o pipefail
 
 JX_RELEASES_URL="https://api.github.com/repos/jenkins-x/jx/releases/tags"
-JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-matrix/matrix.md)
+JX_VERSION=$(jx version --short|sed "s:Version \(.*\):\1:")
 
 if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
 then

@@ -6,7 +6,7 @@ set -o pipefail
 
 if $(cat ${IS_JX_PRERELEASE})
 then
-  JX_VERSION=$(sed "s:^.*jenkins-x\/jx.*\[\([0-9.]*\)\].*$:\1:;t;d" ./dependency-matrix/matrix.md)
+  JX_VERSION=$(jx version --short|sed "s:Version \(.*\):\1:")
 
   if [[ $JX_VERSION =~ ^[0-9]*\.[0-9]*\.[0-9]*$ ]]
   then
