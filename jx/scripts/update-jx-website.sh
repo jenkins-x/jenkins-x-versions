@@ -57,6 +57,8 @@ then
         pushd jx
           git fetch --tags
           git checkout v${JX_VERSION}
+          # make generate-refdocs needs go modules enabled. The long term solution is probably to turn it on in jx's makefile, but for the moment...
+          GO111MODULE=on make generate-refdocs
           API_VERSION=$(cat go.mod | grep "jenkins-x/jx-api" | awk '{print $2}')
         popd
         git clone https://github.com/jenkins-x/jx-api.git
@@ -64,11 +66,11 @@ then
           git fetch --tags
           git checkout ${API_VERSION}
           # make generate-refdocs needs go modules enabled. The long term solution is probably to turn it on in jx's makefile, but for the moment...
-          GO111MODULE=on make generate-refdocs
+          GO111MODULE=on make generate-api-refdocs
         popd
       popd
       cp ${GOPATH}/src/github.com/jenkins-x/jx-api/docs/apidocs.md jx-docs/content/en/docs/reference/api.md
-      cp ${GOPATH}/src/github.com/jenkins-x/jx-api/docs/config.md jx-docs/content/en/docs/reference/config
+      cp ${GOPATH}/src/github.com/jenkins-x/jx/docs/config.md jx-docs/content/en/docs/reference/config
 
       MESSAGE="chore: updated jx API docs from $API_VERSION"
 
