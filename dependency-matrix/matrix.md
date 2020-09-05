@@ -13,7 +13,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-platform](https://github.com/jenkins-x/jenkins-x-platform) |  | [2.0.2395](https://github.com/jenkins-x/jenkins-x-platform/releases/tag/v2.0.2395) | 
 [jenkins-x-charts/jx-build-templates](https://github.com/jenkins-x-charts/jx-build-templates) |  | [0.0.1505]() | 
 [jenkins-x-charts/knative-build](https://github.com/jenkins-x-charts/knative-build) |  | [0.1.19]() | 
-[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.785]() | 
+[jenkins-x/lighthouse](https://github.com/jenkins-x/lighthouse) |  | [0.0.786]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow) |  | [0.0.1773](https://github.com/jenkins-x-charts/prow/releases/tag/v0.0.1773) | 
 [jenkins-x/sso-operator](https://github.com/jenkins-x/sso-operator) |  | [1.2.50]() | 
 [jenkins-x-charts/tekton](https://github.com/jenkins-x-charts/tekton) |  | [0.0.60]() | 
@@ -22,7 +22,7 @@ Dependency | Sources | Version | Mismatched versions
 [helm/charts](https://github.com/helm/charts/tree/master/stable/nginx-ingress) |  | [1.17.1]() | 
 [bitnami/charts](https://github.com/bitnami/charts/tree/master/bitnami/external-dns) |  | [2.10.2]() | 
 [grafana/grafana](https://github.com/grafana/grafana) |  | [5.5.7]() | 
-[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [11.12.0]() | 
+[prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [11.12.1]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [1.1.0](https://github.com/weaveworks/flagger/releases/tag/v1.1.0) | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
@@ -68,4 +68,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.8]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 
-[jenkins-x/lighthouse-jx-controller](https://github.com/jenkins-x/lighthouse-jx-controller) |  | [0.0.74]() | 
+[jenkins-x/lighthouse-jx-controller](https://github.com/jenkins-x/lighthouse-jx-controller) |  | [0.0.75]() | 
