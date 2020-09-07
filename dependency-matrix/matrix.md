@@ -68,4 +68,4 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.8]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 
-[jenkins-x/lighthouse-jx-controller](https://github.com/jenkins-x/lighthouse-jx-controller) |  | [0.0.75]() | 
+[jenkins-x/lighthouse-jx-controller](https://github.com/jenkins-x/lighthouse-jx-controller) |  | [0.0.76]() | 
