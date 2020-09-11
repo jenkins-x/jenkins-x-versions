@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.788
+  version: 0.0.800
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 3.3.1
+  version: 3.4.0
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.78
+  version: 0.0.87
   versionURL: ""
