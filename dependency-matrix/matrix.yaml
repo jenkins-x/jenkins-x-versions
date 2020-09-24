@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.827
+  version: 0.0.831
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.109
+  version: 0.0.112
   versionURL: ""
