@@ -64,7 +64,7 @@ Dependency | Sources | Version | Mismatched versions
 [jenkins-x/jenkins-x-builders-base-image](https://github.com/jenkins-x/jenkins-x-builders-base-image) | [github.com/jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) | [0.0.34]() | 
 [solo-io/gloo](https://github.com/solo-io/gloo) |  | [1.5.0-beta9](https://github.com/solo-io/gloo/releases/tag/v1.5.0-beta9) | 
 [jenkins-x-charts/jxboot-helmfile-resources](https://github.com/jenkins-x-charts/jxboot-helmfile-resources) |  | [0.0.310]() | 
-[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.4.2]() | 
+[kubernetes-sigs/external-dns](https://github.com/kubernetes-sigs/external-dns) |  | [3.4.3]() | 
 [jenkins-x-labs/jxl](https://github.com/jenkins-x-labs/jxl) |  | [0.0.99](https://github.com/jenkins-x-labs/jxl/releases/tag/v0.0.99) | 
 [helm/falco](https://github.com/helm/charts/tree/master/stable/falco):falco |  | [1.1.8]() | 
 [heptio/velero](https://github.com/heptio/velero):velero |  | [2.7.4]() | 
