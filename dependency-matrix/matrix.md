@@ -24,7 +24,7 @@ Dependency | Sources | Version | Mismatched versions
 [grafana/grafana](https://github.com/grafana/grafana) |  | [5.5.7]() | 
 [prometheus/alertmanager](https://github.com/prometheus/alertmanager) |  | [11.12.1]() | 
 [weaveworks/flagger](https://github.com/weaveworks/flagger):flagger |  | [1.2.0](https://github.com/weaveworks/flagger/releases/tag/v1.2.0) | 
-[weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.4.0]() | 
+[weaveworks/flagger](https://github.com/weaveworks/flagger):grafana |  | [1.5.0]() | 
 [jenkins-x-charts/prow](https://github.com/jenkins-x-charts/prow):knative |  | []() | 
 [jenkins-x-charts/jxboot-resources](https://github.com/jenkins-x-charts/jxboot-resources) |  | [0.0.43]() | 
 [jenkins-x/jenkins-x-builders-ml](https://github.com/jenkins-x/jenkins-x-builders-ml.git) |  | [0.1.1313](https://github.com/jenkins-x/jenkins-x-builders-ml/releases/tag/v0.1.1313) | 
