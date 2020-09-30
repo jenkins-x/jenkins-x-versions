@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.834
+  version: 0.0.835
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -177,14 +177,14 @@ dependencies:
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 1.1.0
-  versionURL: https://github.com/weaveworks/flagger/releases/tag/v1.1.0
+  version: 1.2.0
+  versionURL: https://github.com/weaveworks/flagger/releases/tag/v1.2.0
 - component: grafana
   host: github.com
   owner: weaveworks
   repo: flagger
   url: https://github.com/weaveworks/flagger
-  version: 1.4.0
+  version: 1.5.0
   versionURL: ""
 - component: knative
   host: github.com
@@ -453,7 +453,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.308
+  version: 0.0.310
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.116
+  version: 0.0.117
   versionURL: ""
