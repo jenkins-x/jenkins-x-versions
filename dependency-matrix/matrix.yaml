@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.835
+  version: 0.0.838
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -453,7 +453,7 @@ dependencies:
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
   url: https://github.com/jenkins-x-charts/jxboot-helmfile-resources
-  version: 0.0.310
+  version: 1.0.1
   versionURL: ""
 - host: github.com
   owner: kubernetes-sigs
@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.117
+  version: 0.0.118
   versionURL: ""
