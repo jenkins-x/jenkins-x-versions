@@ -116,7 +116,7 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse
   url: https://github.com/jenkins-x/lighthouse
-  version: 0.0.838
+  version: 0.0.843
   versionURL: ""
 - host: github.com
   owner: jenkins-x-charts
@@ -405,7 +405,7 @@ dependencies:
   owner: jenkins-x
   repo: bucketrepo
   url: https://github.com/jenkins-x/bucketrepo
-  version: 0.1.41
+  version: 0.1.42
   versionURL: ""
 - component: cert-manager
   host: github.com
@@ -447,8 +447,8 @@ dependencies:
   owner: solo-io
   repo: gloo
   url: https://github.com/solo-io/gloo
-  version: 1.5.0-beta9
-  versionURL: https://github.com/solo-io/gloo/releases/tag/v1.5.0-beta9
+  version: 1.5.0
+  versionURL: https://github.com/solo-io/gloo/releases/tag/v1.5.0
 - host: github.com
   owner: jenkins-x-charts
   repo: jxboot-helmfile-resources
@@ -459,7 +459,7 @@ dependencies:
   owner: kubernetes-sigs
   repo: external-dns
   url: https://github.com/kubernetes-sigs/external-dns
-  version: 3.4.3
+  version: 3.4.4
   versionURL: ""
 - host: github.com
   owner: jenkins-x-labs
@@ -485,5 +485,5 @@ dependencies:
   owner: jenkins-x
   repo: lighthouse-jx-controller
   url: https://github.com/jenkins-x/lighthouse-jx-controller
-  version: 0.0.118
+  version: 0.0.120
   versionURL: ""
