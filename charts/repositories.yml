@@ -11,7 +11,7 @@ repositories:
       - http://chartmuseum.jenkins-x.io
   - prefix: stable
     urls:
-      - https://kubernetes-charts.storage.googleapis.com
+      - https://charts.helm.sh/stable
   - prefix: flagger
     urls:
       - https://flagger.app
