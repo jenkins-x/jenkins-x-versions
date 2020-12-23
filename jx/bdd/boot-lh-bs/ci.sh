@@ -17,6 +17,10 @@ export XDG_CONFIG_HOME=$JX_HOME
 
 mkdir -p $JX_HOME/git
 
+# TODO hack until we fix boot to do this too!
+helm init --client-only --stable-repo-url https://charts.helm.sh/stable
+helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+
 jx install dependencies --all
 
 jx version --short
@@ -49,10 +53,6 @@ cd boot-source
 git checkout tags/v${BOOT_CONFIG_VERSION} -b latest-boot-config
 cp ../jx/bdd/boot-lh-bs/jx-requirements.yml .
 cp ../jx/bdd/boot-lh-bs/parameters.yaml env
-
-# TODO hack until we fix boot to do this too!
-helm init --client-only --stable-repo-url https://charts.helm.sh/stable
-helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 
 jx step bdd \
