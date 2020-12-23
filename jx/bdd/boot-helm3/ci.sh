@@ -10,6 +10,11 @@ KUBECONFIG="/tmp/jxhome/config"
 export XDG_CONFIG_HOME=$JX_HOME
 mkdir -p $JX_HOME/git
 
+# TODO not sure we need this?
+helm init --client-only --stable-repo-url https://charts.helm.sh/stable
+helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+
+
 jx install dependencies --all
 
 jx version --short
@@ -83,10 +88,6 @@ kubectl version
 kubectl get environments
 kubectl get env
 kubectl get env dev -oyaml
-
-# TODO not sure we need this?
-helm init
-helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
 
 
 export JX_DISABLE_DELETE_APP="true"
