@@ -1,6 +1,6 @@
 # Jenkins X 2.x versions stream
 
-**NOTE** that the v3 equivalent is [jenkins-x/jx3-versions](https://github.com/jenkins-x/jx3-versions)
+**NOTE** that the equivalent repository for Jenkins X version 3.x is: [jenkins-x/jx3-versions](https://github.com/jenkins-x/jx3-versions)
 
 This repository  contains the consistent set of versions of packages and helm charts for use with [Jenkins X](https://jenkins-x.io/) and its associated Apps to provide a [stable version stream](https://jenkins-x.io/architecture/version-stream/).
 
