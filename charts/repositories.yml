@@ -7,8 +7,7 @@ repositories:
       - https://charts.jetstack.io
   - prefix: jenkins-x
     urls:
-      - https://storage.googleapis.com/chartmuseum.jenkins-x.io
-      - http://chartmuseum.jenkins-x.io
+      - https://jenkins-x-charts.github.io/v2
   - prefix: stable
     urls:
       - https://charts.helm.sh/stable
