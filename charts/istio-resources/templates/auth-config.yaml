@@ -1,0 +1,23 @@
+apiVersion: security.istio.io/v1beta1
+kind: RequestAuthentication
+metadata:
+  name: istio-ingressgateway-nginx
+  namespace: istio-system
+spec:
+  selector:
+    matchLabels:
+      app:  dex-gateway
+  jwtRules:
+  - issuer: {{ .Values.dex.issuer }}
+    jwksUri: {{ .Values.dex.jwksUri }}
+    forwardOriginalToken: true
+---
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: istio-ingressgateway-nginx
+  namespace: istio-system
+spec:
+  action: ALLOW
+  rules:
+  - {}

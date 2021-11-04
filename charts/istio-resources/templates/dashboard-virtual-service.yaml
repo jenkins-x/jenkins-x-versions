@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: dashboard-jx
+  namespace: jx
+spec:
+  hosts:
+  - {{ .Values.dashboard.host }}
+  gateways:
+  - dashboard-gw
+  http:
+  - route:
+    - destination:
+        port:
+          number: 80
+        host: jx-pipelines-visualizer

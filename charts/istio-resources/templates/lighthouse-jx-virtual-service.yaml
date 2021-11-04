@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: lighthouse-jx-vs
+  namespace: jx
+spec:
+  hosts:
+  - {{ .Values.lighthouse.host }}
+  gateways:
+  - lighthouse-jx-gw
+  http:
+  - route:
+    - destination:
+        port:
+          number: 80
+        host: lighthouse-webui-plugin

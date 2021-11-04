@@ -1,0 +1,9 @@
+dex:
+  issuer: dex.com
+  jwksUri: dex.com
+
+dashboard:
+  host: dashboard.com
+
+lighthouse:
+  host: lighthouse.com
